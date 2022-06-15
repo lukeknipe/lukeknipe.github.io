@@ -24,7 +24,7 @@ function initMap() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          pos = {
+          const pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
@@ -51,17 +51,12 @@ function initMap() {
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
-    
-    navigator.geolocation.getCurrentPosition((position) {
-       const sposition = position.coords.latitude;
-    });
-    
     const position = event.feature.getGeometry().get();
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-        <p><a href="https://maps.google.com?saddr=${sposition}&daddr=${position.lat()},${position.lng()}">Get directions</a>
+        <p><a href="https://maps.google.com?saddr=${pos}&daddr=${position.lat()},${position.lng()}">Get directions</a>
       </div>
       `;
 
