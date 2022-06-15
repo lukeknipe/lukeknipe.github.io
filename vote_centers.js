@@ -1,12 +1,4 @@
-/**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
-// Note: This example requires that you consent to location sharing when
-// prompted by your browser. If you see the error "The Geolocation service
-// failed.", it means you probably did not give permission for the browser to
-// locate you.
+
 let map, infoWindow;
 
 function initMap() {
@@ -16,17 +8,17 @@ function initMap() {
     zoom: 11,
   });
   
-  // Show the voting centers on the map
+  // Display voting centers on the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'id'});
-  
   infoWindow = new google.maps.InfoWindow();
 
+  // Zoom to current location
   const locationButton = document.createElement("button");
-
-  locationButton.textContent = "Pan to Current Location";
+  locationButton.textContent = "Zoom to Current Location";
   locationButton.classList.add("custom-map-control-button");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
+    
     // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
