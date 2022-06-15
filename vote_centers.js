@@ -10,6 +10,7 @@ function initMap() {
   
   // Display voting centers on the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'id'});
+  apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   infoWindow = new google.maps.InfoWindow();
 
   // Zoom to current location
@@ -43,6 +44,28 @@ function initMap() {
       handleLocationError(false, infoWindow, map.getCenter());
     }
   });
+  
+  // Show information when a marker is clicked.
+  map.data.addListener('click', (event) => {
+    id_num = event.feature.getProperty('VC_ID');
+    name = event.feature.getProperty('VC_NAME');
+    address = event.feature.getProperty('VC_ADDRESS');
+    room = event.feature.getProperty('ROOM');
+    position = event.feature.getGeometry().get();
+    content = `
+      <div style="margin-left:220px; margin-bottom:20px;">
+        <h2>${name}</h2><p>${address}</p>
+        <p><b>Room:</b> ${room}<br/>
+        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
+      </div>
+      `;
+
+    infoWindow.setContent(content);
+    infoWindow.setPosition(position);
+    infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
+    infoWindow.open(map);
+  });
+  
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
