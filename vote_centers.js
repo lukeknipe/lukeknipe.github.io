@@ -34,6 +34,7 @@ function initMap() {
           const pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
+            zoom: 8,
           };
 
           infoWindow.setPosition(pos);
