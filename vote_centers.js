@@ -30,7 +30,7 @@ function initMap() {
           };
           
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found: " + position.coords.latitude);
+          infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
           infoWindow.open(map);
           map.setCenter(pos);
           map.setZoom(14);
@@ -52,6 +52,7 @@ function initMap() {
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
+    const sposition = navigator.geolocation.getCurrentPosition(position.coords.latitude);
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
