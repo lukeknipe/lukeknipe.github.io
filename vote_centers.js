@@ -30,7 +30,7 @@ function initMap() {
           };
           
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found: ", pos);
+          infoWindow.setContent("Location found: " + pos);
           infoWindow.open(map);
           map.setCenter(pos);
           map.setZoom(14);
