@@ -1,5 +1,5 @@
 
-let map, apiKey, infoWindow, pos, sposition;
+let map, apiKey, infoWindow, pos;
 
 function initMap() {
   // Create the map
@@ -51,9 +51,12 @@ function initMap() {
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
-    const position = event.feature.getGeometry().get();
+    
     navigator.geolocation.getCurrentPosition(function(position) {
-                const sposition = position.coords.latitude;
+                var sposition = position.coords.latitude;
+    });
+    
+    const position = event.feature.getGeometry().get();
     });
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
