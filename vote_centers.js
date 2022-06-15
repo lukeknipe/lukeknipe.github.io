@@ -53,7 +53,7 @@ function initMap() {
     const room = event.feature.getProperty('ROOM');
     
     navigator.geolocation.getCurrentPosition(function(position) {
-                var sposition = position.coords.latitude;
+       const sposition = position.coords.latitude;
     });
     
     const position = event.feature.getGeometry().get();
