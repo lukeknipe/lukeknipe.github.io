@@ -28,6 +28,9 @@ function initMap() {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
+          
+          const latitude  = position.coords.latitude;
+          const longitude = position.coords.longitude;
 
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location found.");
@@ -52,12 +55,11 @@ function initMap() {
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
-    const sposition = pos;
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-        <p><a href="https://maps.google.com?saddr=${sposition}&daddr=${position.lat()},${position.lng()}">Get directions</a>
+        <p><a href="https://maps.google.com?saddr=${latitude},${longitude}&daddr=${position.lat()},${position.lng()}">Get directions</a>
       </div>
       `;
 
