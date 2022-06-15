@@ -1,5 +1,5 @@
 
-let map, apiKey, infoWindow, pos;
+let map, apiKey, infoWindow, pos, slat, slong;
 
 function initMap() {
   // Create the map
