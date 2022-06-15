@@ -45,7 +45,7 @@ function initMap() {
     }
   });
   
-  // Show information when a marker is clicked.
+  // Display information in a popup when a marker is clicked.
   map.data.addListener('click', (event) => {
     const id_num = event.feature.getProperty('VC_ID');
     const name = event.feature.getProperty('VC_NAME');
@@ -53,10 +53,9 @@ function initMap() {
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
     const content = `
-      <div style="margin-left:220px; margin-bottom:20px;">
+      <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/>
-        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
       </div>
       `;
 
