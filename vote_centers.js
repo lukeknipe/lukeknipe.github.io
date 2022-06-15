@@ -1,6 +1,6 @@
 let map, apiKey, infoWindow;
 
-const pos = '';
+var pos;
 
 function initMap() {
   // Create the map
