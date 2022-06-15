@@ -1,5 +1,5 @@
 
-let map, apiKey, infoWindow, pos, latitude, longitude;
+let map, apiKey, infoWindow, pos;
 
 function initMap() {
   // Create the map
@@ -29,11 +29,8 @@ function initMap() {
             lng: position.coords.longitude,
           };
           
-          const latitude  = position.coords.latitude;
-          const longitude = position.coords.longitude;
-
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found: ${pos}");
+          infoWindow.setContent("Location found: ", pos);
           infoWindow.open(map);
           map.setCenter(pos);
           map.setZoom(14);
@@ -59,7 +56,7 @@ function initMap() {
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-        <p><a href="https://maps.google.com?saddr=${latitude},${longitude}&daddr=${position.lat()},${position.lng()}">Get directions</a>
+        <p><a href="https://maps.google.com?saddr=${pos}&daddr=${position.lat()},${position.lng()}">Get directions</a>
       </div>
       `;
 
