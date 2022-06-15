@@ -33,7 +33,7 @@ function initMap() {
           const longitude = position.coords.longitude;
 
           infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found.");
+          infoWindow.setContent("Location found: ${pos}");
           infoWindow.open(map);
           map.setCenter(pos);
           map.setZoom(14);
