@@ -10,10 +10,15 @@
 let map, infoWindow;
 
 function initMap() {
+  // Create the map
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 32.252, lng: -110.947 },
     zoom: 11,
   });
+  
+  // Show the voting centers on the map
+  map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'id'});
+  
   infoWindow = new google.maps.InfoWindow();
 
   const locationButton = document.createElement("button");
