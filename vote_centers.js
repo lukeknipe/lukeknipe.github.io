@@ -29,6 +29,9 @@ function initMap() {
             lng: position.coords.longitude,
           };
           
+          const slat = position.coords.latitude;
+          const slong = position.coords.longitude;
+          
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
           infoWindow.open(map);
@@ -57,7 +60,7 @@ function initMap() {
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-        <p><a href="https://maps.google.com?saddr=${position.coords.latitude}&daddr=${position.lat()},${position.lng()}">Get directions</a>
+        <p><a href="https://maps.google.com?saddr=${sposition}&daddr=${position.lat()},${position.lng()}">Get directions</a>
       </div>
       `;
 
