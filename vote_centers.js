@@ -58,8 +58,6 @@ function initMap() {
         <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}">Get directions</a>
       </div>
       `;
-
-    console.log(pos);
     
     infoWindow.setContent(content);
     infoWindow.setPosition(position);
