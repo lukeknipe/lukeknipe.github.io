@@ -59,6 +59,8 @@ function initMap() {
       </div>
       `;
 
+    console.log(pos);
+    
     infoWindow.setContent(content);
     infoWindow.setPosition(position);
     infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
