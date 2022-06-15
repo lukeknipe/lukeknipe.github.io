@@ -29,8 +29,8 @@ function initMap() {
             lng: position.coords.longitude,
           };
           
-          const slat = position.coords.latitude;
-          const slong = position.coords.longitude;
+          var slat = position.coords.latitude;
+          var slong = position.coords.longitude;
           
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
@@ -55,7 +55,7 @@ function initMap() {
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
-    const sposition = navigator.geolocation.getCurrentPosition(position.coords.latitude);
+    const sposition = slat;
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
