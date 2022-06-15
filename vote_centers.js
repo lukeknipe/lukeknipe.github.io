@@ -34,14 +34,13 @@ function initMap() {
           const pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
-            zoom: 14,
           };
 
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location found.");
           infoWindow.open(map);
           map.setCenter(pos);
-          map.setZoom(pos);
+          map.setZoom(14);
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
