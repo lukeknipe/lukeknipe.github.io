@@ -25,7 +25,7 @@ function initMap() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          pos = {
+          globalThis.pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
