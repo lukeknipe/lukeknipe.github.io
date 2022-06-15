@@ -55,7 +55,9 @@ function initMap() {
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
-    const sposition = slat;
+    navigator.geolocation.getCurrentPosition(function(position) {
+                const sposition = position.coords.latitude + "," + position.coords.longitude;
+    });
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
