@@ -47,12 +47,12 @@ function initMap() {
   
   // Show information when a marker is clicked.
   map.data.addListener('click', (event) => {
-    id_num = event.feature.getProperty('VC_ID');
-    name = event.feature.getProperty('VC_NAME');
-    address = event.feature.getProperty('VC_ADDRESS');
-    room = event.feature.getProperty('ROOM');
-    position = event.feature.getGeometry().get();
-    content = `
+    const id_num = event.feature.getProperty('VC_ID');
+    const name = event.feature.getProperty('VC_NAME');
+    const address = event.feature.getProperty('VC_ADDRESS');
+    const room = event.feature.getProperty('ROOM');
+    const position = event.feature.getGeometry().get();
+    const content = `
       <div style="margin-left:220px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/>
