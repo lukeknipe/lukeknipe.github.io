@@ -55,7 +55,8 @@ function initMap() {
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
         <h2>${name}</h2><p>${address}</p>
-        <p><b>Room:</b> ${room}<br/>
+        <p><b>Room:</b> ${room}<br/><br/>
+        <p><a href="https://maps.google.com?saddr=Current+Location&daddr=${position.lat()},${position.lng()}">Get directions</a>
       </div>
       `;
 
