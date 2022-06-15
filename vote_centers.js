@@ -1,5 +1,5 @@
 
-let map, apiKey, infoWindow, pos, slat, slong;
+let map, apiKey, infoWindow, pos, sposition;
 
 function initMap() {
   // Create the map
@@ -29,9 +29,6 @@ function initMap() {
             lng: position.coords.longitude,
           };
           
-          var slat = position.coords.latitude;
-          var slong = position.coords.longitude;
-          
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
           infoWindow.open(map);
@@ -56,7 +53,7 @@ function initMap() {
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
     navigator.geolocation.getCurrentPosition(function(position) {
-                const sposition = position.coords.latitude + "," + position.coords.longitude;
+                var sposition = position.coords.latitude + "," + position.coords.longitude;
     });
     const content = `
       <div style="margin-left:20px; margin-bottom:20px;">
