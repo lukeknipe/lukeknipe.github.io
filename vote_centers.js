@@ -1,7 +1,5 @@
 let map, apiKey, infoWindow;
 
-var pos;
-
 function initMap() {
   // Create the map
   map = new google.maps.Map(document.getElementById("map"), {
@@ -25,7 +23,7 @@ function initMap() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          globalThis.pos = {
+          pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude,
           };
