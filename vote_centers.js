@@ -246,7 +246,7 @@ function initMap() {
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
     const content = `
-      <div style="margin-left:20px; margin-bottom:20px;">
+      <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
         <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}">Get directions</a>
