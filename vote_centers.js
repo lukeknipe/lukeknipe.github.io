@@ -194,12 +194,12 @@ function initMap() {
   // Display voting centers on the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'id'});
   
-  // Define the custom marker icons, using the store's "category".
+  // Define marker(s)
   map.data.setStyle((feature) => {
     return {
       icon: {
-        url: `http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png`,
-        scaledSize: new google.maps.Size(64, 64),
+        url: `./dot.png`,
+        scaledSize: new google.maps.Size(50, 50),
       },
     };
   });
