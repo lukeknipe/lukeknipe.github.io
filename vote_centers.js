@@ -1,3 +1,10 @@
+const iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  const marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: iconBase + 'parking_lot_maps.png'
+  });
+
 const mapStyle = [
   {
     "featureType": "administrative.country",
