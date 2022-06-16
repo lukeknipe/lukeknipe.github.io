@@ -23,7 +23,8 @@ h1 {
 }
 
 h2 {
-  color: blue;
+  color: black;
+  font-size: 10vw;
 }
 
 .custom-map-control-button {
