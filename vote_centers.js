@@ -1,9 +1,4 @@
-const iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-  const marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    icon: iconBase + 'parking_lot_maps.png'
-  });
+
 
 const mapStyle = [
   {
@@ -198,6 +193,18 @@ function initMap() {
   
   // Display voting centers on the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'id'});
+  
+  // Define the custom marker icons, using the store's "category".
+  map.data.setStyle((feature) => {
+    return {
+      icon: {
+        url: `http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png`,
+        scaledSize: new google.maps.Size(64, 64),
+      },
+    };
+  });
+  
+  
   apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   infoWindow = new google.maps.InfoWindow();
 
