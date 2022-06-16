@@ -1,5 +1,4 @@
 
-
 const mapStyle = [
   {
     "featureType": "administrative.country",
@@ -199,11 +198,10 @@ function initMap() {
     return {
       icon: {
         url: `./dot.png`,
-        scaledSize: new google.maps.Size(50, 50),
+        scaledSize: new google.maps.Size(25, 25),
       },
     };
   });
-  
   
   apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   infoWindow = new google.maps.InfoWindow();
