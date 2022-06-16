@@ -1,80 +1,183 @@
-const mapStyle = [{
-  'featureType': 'administrative',
-  'elementType': 'all',
-  'stylers': [{
-    'visibility': 'on',
+const mapStyle = [
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
   },
   {
-    'lightness': 33,
-  },
-  ],
-},
-{
-  'featureType': 'landscape',
-  'elementType': 'all',
-  'stylers': [{
-    'color': '#f2e5d4',
-  }],
-},
-{
-  'featureType': 'poi.park',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#c5dac6',
-  }],
-},
-{
-  'featureType': 'poi.park',
-  'elementType': 'labels',
-  'stylers': [{
-    'visibility': 'on',
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
   },
   {
-    'lightness': 20,
-  },
-  ],
-},
-{
-  'featureType': 'road',
-  'elementType': 'all',
-  'stylers': [{
-    'lightness': 20,
-  }],
-},
-{
-  'featureType': 'road.highway',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#c5c6c6',
-  }],
-},
-{
-  'featureType': 'road.arterial',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#e4d7c6',
-  }],
-},
-{
-  'featureType': 'road.local',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#fbfaf7',
-  }],
-},
-{
-  'featureType': 'water',
-  'elementType': 'all',
-  'stylers': [{
-    'visibility': 'on',
+    "featureType": "administrative.locality",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": 55
+      },
+      {
+        "visibility": "simplified"
+      },
+      {
+        "weight": 2
+      }
+    ]
   },
   {
-    'color': '#acbcc9',
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "saturation": 5
+      },
+      {
+        "visibility": "off"
+      }
+    ]
   },
-  ],
-},
+  {
+    "featureType": "administrative.neighborhood",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": 5
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "stylers": [
+      {
+        "saturation": -10
+      },
+      {
+        "lightness": 5
+      },
+      {
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural.landcover",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.attraction",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.government",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.medical",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "stylers": [
+      {
+        "saturation": 20
+      },
+      {
+        "lightness": 25
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "lightness": 45
+      }
+    ]
+  }
 ];
-
 
 let map, apiKey, infoWindow, pos;
 
