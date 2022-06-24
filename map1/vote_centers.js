@@ -197,7 +197,7 @@ function initMap() {
     return {
       icon: {
         url: `./dot.png`,
-        scaledSize: new google.maps.Size(25, 25),
+        scaledSize: new google.maps.Size(15, 15),
       },
     };
   });
