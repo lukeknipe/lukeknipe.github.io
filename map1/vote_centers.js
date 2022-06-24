@@ -239,8 +239,15 @@ function initMap() {
   
   // Display information in a popup when a marker is clicked.
   map.data.addListener('click', (event) => {
-    const lat = 0;
-    const lng = 0;
+    
+        if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+          
     const id_num = event.feature.getProperty('VC_ID');
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
@@ -253,11 +260,21 @@ function initMap() {
         <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}" base target="_blank">Get directions</a>
       </div>
       `;
-    
+          
     infoWindow.setContent(content);
     infoWindow.setPosition(position);
     infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
     infoWindow.open(map);
+        },
+     
+        () => {
+          handleLocationError(true, infoWindow, map.getCenter());
+        }
+      );
+        } else {
+      // Browser doesn't support Geolocation
+      handleLocationError(false, infoWindow, map.getCenter());
+    }
   });
   
 }
