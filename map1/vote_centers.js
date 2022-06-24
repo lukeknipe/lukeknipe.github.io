@@ -1,3 +1,184 @@
+const mapStyle = [
+  {
+    "featureType": "administrative.country",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": 55
+      },
+      {
+        "visibility": "simplified"
+      },
+      {
+        "weight": 2
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "saturation": 5
+      },
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "lightness": 5
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.province",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.man_made",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "stylers": [
+      {
+        "saturation": -10
+      },
+      {
+        "lightness": 5
+      },
+      {
+        "weight": 5
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "landscape.natural.landcover",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.attraction",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.business",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.government",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.medical",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "stylers": [
+      {
+        "saturation": 20
+      },
+      {
+        "lightness": 25
+      },
+      {
+        "visibility": "simplified"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "lightness": 45
+      }
+    ]
+  }
+];
+
 let map, apiKey, infoWindow, pos;
 
 function initMap() {
@@ -5,10 +186,22 @@ function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 32.252, lng: -110.947 },
     zoom: 11,
+    styles: mapStyle,
   });
   
   // Display voting centers on the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'id'});
+  
+  // Define marker(s)
+  map.data.setStyle((feature) => {
+    return {
+      icon: {
+        url: `./dot.png`,
+        scaledSize: new google.maps.Size(25, 25),
+      },
+    };
+  });
+  
   apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   infoWindow = new google.maps.InfoWindow();
 
@@ -52,10 +245,10 @@ function initMap() {
     const room = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
     const content = `
-      <div style="margin-left:20px; margin-bottom:20px;">
+      <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-        <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}">Get directions</a>
+        <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}" base target="_blank">Get directions</a>
       </div>
       `;
     
