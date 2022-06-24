@@ -23,7 +23,7 @@ body {
 h2 {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   margin-top: 1vw;
   margin-bottom: 1vw;
 }
@@ -60,7 +60,7 @@ p {
 h2 {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 4vw;
+  font-size: 40px;
   margin-top: 1.5vw;
   margin-bottom: 1.5vw;
 }
@@ -68,7 +68,7 @@ h2 {
 p {
   color: black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
+  font-size: 25px;
   margin-top: .25vw;
   margin-bottom: .25vw;
 }
