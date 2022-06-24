@@ -179,7 +179,7 @@ const mapStyle = [
   }
 ];
 
-let map, apiKey, infoWindow, pos;
+let map, apiKey, infoWindow, pos, lat, lng;
 
 function initMap() {
   // Create the map
