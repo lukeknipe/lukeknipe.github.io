@@ -255,7 +255,6 @@ function initMap() {
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
-    const position = event.feature.getGeometry().get();
     const content = `
       <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
