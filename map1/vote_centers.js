@@ -225,7 +225,7 @@ function initMap() {
           const marker = new google.maps.Marker({
           position: pos,
           map,
-          title: "Uluru (Ayers Rock)",
+          title: "You are here",
            });
 
           infoWindow.setPosition(pos);
