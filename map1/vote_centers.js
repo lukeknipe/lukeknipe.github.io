@@ -222,6 +222,12 @@ function initMap() {
             lng: position.coords.longitude,
           };
           
+          const marker = new google.maps.Marker({
+          position: pos,
+          map,
+          title: "Uluru (Ayers Rock)",
+           });
+
           infoWindow.setPosition(pos);
           infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
           infoWindow.open(map);
