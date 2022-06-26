@@ -251,11 +251,24 @@ function initMap() {
             lng: position.coords.longitude,
           };
           
-          infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
-          infoWindow.open(map);
-          map.setCenter(pos);
-          map.setZoom(14);
+    const id_num = event.feature.getProperty('VC_ID');
+    const name = event.feature.getProperty('VC_NAME');
+    const address = event.feature.getProperty('VC_ADDRESS');
+    const room = event.feature.getProperty('ROOM');
+    const position = event.feature.getGeometry().get();
+    const content = `
+      <div style="margin-left:10px; margin-bottom:10px;">
+        <h2>${name}</h2><p>${address}</p>
+        <p><b>Room:</b> ${room}<br/><br/>
+        <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}" base target="_blank">Get directions</a>
+      </div>
+      `;
+    
+    infoWindow.setContent(content);
+    infoWindow.setPosition(position);
+    infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
+    infoWindow.open(map);
+          
         },
         () => {
           handleLocationError(true, infoWindow, map.getCenter());
