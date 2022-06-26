@@ -255,11 +255,12 @@ function initMap() {
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
     const room = event.feature.getProperty('ROOM');
+    const dpos = event.feature.getGeometry().get();
     const content = `
       <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-        <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${position.lat()},${position.lng()}" base target="_blank">Get directions</a>
+        <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${dpos.lat()},${dpos.lng()}" base target="_blank">Get directions</a>
       </div>
       `;
     
