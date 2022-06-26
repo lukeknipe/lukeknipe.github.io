@@ -222,17 +222,17 @@ function initMap() {
             lng: position.coords.longitude,
           };
 
-          infoWindow.setPosition(pos);
-          infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
-          infoWindow.open(map);
-          map.setCenter(pos);
-          map.setZoom(14);
-          
           const marker = new google.maps.Marker({
           position: pos,
           map,
           title: "You are here",
            });
+          
+          infoWindow.setPosition(pos);
+          infoWindow.setContent("Location found: " + position.coords.latitude + ", " + position.coords.longitude);
+          infoWindow.open(map, marker);
+          map.setCenter(pos);
+          map.setZoom(14);
           
         },
         () => {
