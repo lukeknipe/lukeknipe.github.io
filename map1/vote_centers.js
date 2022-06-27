@@ -225,6 +225,7 @@ function initMap() {
           const marker = new google.maps.Marker({
           position: pos,
           map,
+          icon: './bluedot.png',
           title: "You are here",
            });
           
