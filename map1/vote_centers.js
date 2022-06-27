@@ -227,6 +227,7 @@ function initMap() {
           map,
           icon: './bluedot.png',
           title: "You are here",
+          scaledSize: new google.maps.Size(25, 25),
            });
           
           infoWindow.setPosition(pos);
