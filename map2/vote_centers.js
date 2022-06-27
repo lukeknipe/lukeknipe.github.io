@@ -302,7 +302,7 @@ function initMap() {
 
   card.setAttribute('id', 'pac-card');
   title.setAttribute('id', 'title');
-  title.textContent = 'Find the nearest store';
+  title.textContent = 'Find the nearest center';
   titleBar.appendChild(title);
   container.setAttribute('id', 'pac-container');
   input.setAttribute('id', 'pac-input');
@@ -339,7 +339,7 @@ async function calculateDistances(data, origin) {
 
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
-    const storeNum = store.getProperty('storeid');
+    const storeNum = store.getProperty('id');
     const storeLoc = store.getGeometry().get();
 
     stores.push(storeNum);
