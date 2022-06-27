@@ -289,6 +289,38 @@ function initMap() {
     }
   });
   
+    // Build and add the search bar
+  const card = document.createElement('div');
+  const titleBar = document.createElement('div');
+  const title = document.createElement('div');
+  const container = document.createElement('div');
+  const input = document.createElement('input');
+  const options = {
+    types: ['address'],
+    componentRestrictions: {country: 'gb'},
+  };
+
+  card.setAttribute('id', 'pac-card');
+  title.setAttribute('id', 'title');
+  title.textContent = 'Find the nearest store';
+  titleBar.appendChild(title);
+  container.setAttribute('id', 'pac-container');
+  input.setAttribute('id', 'pac-input');
+  input.setAttribute('type', 'text');
+  input.setAttribute('placeholder', 'Enter an address');
+  container.appendChild(input);
+  card.appendChild(titleBar);
+  card.appendChild(container);
+  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+
+  // Make the search bar into a Places Autocomplete search bar and select
+  // which detail fields should be returned about the place that
+  // the user selects from the suggestions.
+  const autocomplete = new google.maps.places.Autocomplete(input, options);
+
+  autocomplete.setFields(
+      ['address_components', 'geometry', 'name']);
+  
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
