@@ -362,7 +362,7 @@ async function calculateDistances(data, origin) {
             const distanceText = element.distance.text;
             const distanceVal = element.distance.value;
             const distanceObject = {
-              storeid: stores[j],
+              id: stores[j],
               distanceText: distanceText,
               distanceVal: distanceVal,
             };
@@ -418,7 +418,7 @@ function showStoresList(data, stores) {
     // Add store details with text formatting
     const name = document.createElement('p');
     name.classList.add('place');
-    const currentStore = data.getFeatureById(store.storeid);
+    const currentStore = data.getFeatureById(store.id);
     name.textContent = currentStore.getProperty('name');
     panel.appendChild(name);
     const distanceText = document.createElement('p');
