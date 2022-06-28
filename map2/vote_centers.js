@@ -453,7 +453,7 @@ function showStoresList(data, stores) {
     const name = document.createElement('p');
     name.classList.add('place');
     const currentStore = data.getFeatureById(store.id);
-    name.textContent = currentStore.getProperty('name');
+    name.textContent = currentStore.getProperty('VC_NAME');
     panel.appendChild(name);
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
