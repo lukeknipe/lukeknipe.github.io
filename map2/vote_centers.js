@@ -289,6 +289,41 @@ function initMap() {
     }
   });
   
+  
+   // Set the origin point when the user selects an address
+  const originMarker = new google.maps.Marker({map: map});
+  originMarker.setVisible(false);
+  let originLocation = map.getCenter();
+
+  autocomplete.addListener('place_changed', async () => {
+    originMarker.setVisible(false);
+    originLocation = map.getCenter();
+    const place = autocomplete.getPlace();
+
+    if (!place.geometry) {
+      // User entered the name of a Place that was not suggested and
+      // pressed the Enter key, or the Place Details request failed.
+      window.alert('No address available for input: \'' + place.name + '\'');
+      return;
+    }
+
+    // Recenter the map to the selected address
+    originLocation = place.geometry.location;
+    map.setCenter(originLocation);
+    map.setZoom(9);
+    console.log(place);
+
+    originMarker.setPosition(originLocation);
+    originMarker.setVisible(true);
+
+    // Use the selected address as the origin to calculate distances
+    // to each of the store locations
+    const rankedStores = await calculateDistances(map.data, originLocation);
+    showStoresList(map.data, rankedStores);
+
+    return;
+  });
+  
     // Build and add the search bar
   const card = document.createElement('div');
   const titleBar = document.createElement('div');
