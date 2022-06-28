@@ -289,8 +289,41 @@ function initMap() {
     }
   });
   
+ 
+    // Build and add the search bar
+  const card = document.createElement('div');
+  const titleBar = document.createElement('div');
+  const title = document.createElement('div');
+  const container = document.createElement('div');
+  const input = document.createElement('input');
+  const options = {
+    types: ['address'],
+    componentRestrictions: {country: 'us'},
+  };
+
+  card.setAttribute('id', 'pac-card');
+  title.setAttribute('id', 'title');
+  title.textContent = 'Find the nearest center';
+  titleBar.appendChild(title);
+  container.setAttribute('id', 'pac-container');
+  input.setAttribute('id', 'pac-input');
+  input.setAttribute('type', 'text');
+  input.setAttribute('placeholder', 'Enter an address');
+  container.appendChild(input);
+  card.appendChild(titleBar);
+  card.appendChild(container);
+  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+
+  // Make the search bar into a Places Autocomplete search bar and select
+  // which detail fields should be returned about the place that
+  // the user selects from the suggestions.
+  const autocomplete = new google.maps.places.Autocomplete(input, options);
+
+  autocomplete.setFields(
+      ['address_components', 'geometry', 'name']);
+ 
   
-   // Set the origin point when the user selects an address
+    // Set the origin point when the user selects an address
   const originMarker = new google.maps.Marker({map: map});
   originMarker.setVisible(false);
   let originLocation = map.getCenter();
@@ -324,37 +357,6 @@ function initMap() {
     return;
   });
   
-    // Build and add the search bar
-  const card = document.createElement('div');
-  const titleBar = document.createElement('div');
-  const title = document.createElement('div');
-  const container = document.createElement('div');
-  const input = document.createElement('input');
-  const options = {
-    types: ['address'],
-    componentRestrictions: {country: 'us'},
-  };
-
-  card.setAttribute('id', 'pac-card');
-  title.setAttribute('id', 'title');
-  title.textContent = 'Find the nearest center';
-  titleBar.appendChild(title);
-  container.setAttribute('id', 'pac-container');
-  input.setAttribute('id', 'pac-input');
-  input.setAttribute('type', 'text');
-  input.setAttribute('placeholder', 'Enter an address');
-  container.appendChild(input);
-  card.appendChild(titleBar);
-  card.appendChild(container);
-  map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
-
-  // Make the search bar into a Places Autocomplete search bar and select
-  // which detail fields should be returned about the place that
-  // the user selects from the suggestions.
-  const autocomplete = new google.maps.places.Autocomplete(input, options);
-
-  autocomplete.setFields(
-      ['address_components', 'geometry', 'name']);
   
 }
 
