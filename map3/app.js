@@ -117,7 +117,7 @@ function initMap() {
   });
 
   // Load the stores GeoJSON onto the map.
-  map.data.loadGeoJson('stores.json', {idPropertyName: 'storeid'});
+  map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'FID'});
 
   // Define the custom marker icons, using the store's "category".
   map.data.setStyle((feature) => {
@@ -134,11 +134,11 @@ function initMap() {
 
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', (event) => {
-    const category = event.feature.getProperty('category');
-    const name = event.feature.getProperty('name');
-    const description = event.feature.getProperty('description');
-    const hours = event.feature.getProperty('hours');
-    const phone = event.feature.getProperty('phone');
+    const category = event.feature.getProperty('VC_ID');
+    const name = event.feature.getProperty('VC_NAME');
+    const description = event.feature.getProperty('VC_ADDRESS');
+    const hours = event.feature.getProperty('BOS_DIST');
+    const phone = event.feature.getProperty('ROOM');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
       <img style="float:left; width:200px; margin-top:30px" src="img/logo_${category}.png">
@@ -237,7 +237,7 @@ async function calculateDistances(data, origin) {
 
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
-    const storeNum = store.getProperty('storeid');
+    const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
 
     stores.push(storeNum);
@@ -324,7 +324,7 @@ function showStoresList(data, stores) {
     const name = document.createElement('p');
     name.classList.add('place');
     const currentStore = data.getFeatureById(store.storeid);
-    name.textContent = currentStore.getProperty('name');
+    name.textContent = currentStore.getProperty('VC_NAME');
     panel.appendChild(name);
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
