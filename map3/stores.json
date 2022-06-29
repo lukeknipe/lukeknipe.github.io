@@ -191,23 +191,6 @@
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-3.319575,
-                    52.517827
-                ]
-            },
-            "type": "Feature",
-            "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "Come in and unwind at this idyllic cafe with fresh coffee and home made cakes. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Newtown",
-                "phone": "+44 1414 141414",
-                "storeid": "12"
-            }
-        },
-        {
-            "geometry": {
-                "type": "Point",
                 "coordinates": [
                     1.158167,
                     52.071634
