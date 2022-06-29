@@ -356,8 +356,6 @@ function initMap() {
     return;
   });
   
-    .catch(error => alert(error.message));
-  
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
