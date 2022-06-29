@@ -355,6 +355,9 @@ function initMap() {
 
     return;
   });
+  
+    .catch(error => alert(error.message));
+  
 }
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -466,11 +469,3 @@ function showStoresList(data, stores) {
 
   return;
 }
-
-getAllPosts().then(response => {
-    console.log(response);
-}).catch(e => {
-    console.log(e);
-});
-
-window.initMap = initMap;
