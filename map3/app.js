@@ -132,8 +132,19 @@ function initMap() {
   const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   const infoWindow = new google.maps.InfoWindow();
 
-  // Show the information for a store when its marker is clicked.
+  // Display information in a popup when a marker is clicked.
+  
   map.data.addListener('click', (event) => {
+    
+        // Try HTML5 geolocation.
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+    
     const id_num = event.feature.getProperty('VC_ID');
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
