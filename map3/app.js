@@ -123,8 +123,8 @@ function initMap() {
   map.data.setStyle((feature) => {
     return {
       icon: {
-        url: `img/icon_${feature.getProperty('category')}.png`,
-        scaledSize: new google.maps.Size(64, 64),
+        url: `./dot.png`,
+        scaledSize: new google.maps.Size(15, 15),
       },
     };
   });
@@ -163,7 +163,7 @@ function initMap() {
   const input = document.createElement('input');
   const options = {
     types: ['address'],
-    componentRestrictions: {country: 'gb'},
+    componentRestrictions: {country: 'us'},
   };
 
   card.setAttribute('id', 'pac-card');
