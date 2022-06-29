@@ -1,0 +1,68 @@
+{
+   "type":"FeatureCollection",
+   "crs":{
+      "type":"name",
+      "properties":{
+         "name":"EPSG:4326"
+      }
+   },
+   "features":[
+      {
+         "type":"Feature",
+         "id":1,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.065526557114,
+               32.3033186001062
+            ]
+         },
+         "properties":{
+            "FID":1,
+            "VC_ID":1,
+            "VC_NAME":"Accelerated Elementary & Secondary School",
+            "VC_ADDRESS":"5245 N Camino De Oeste",
+            "BOS_DIST":3,
+            "ROOM":"MULTIPURPOSE ROOM"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":2,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.863408635396,
+               32.3722482846573
+            ]
+         },
+         "properties":{
+            "FID":2,
+            "VC_ID":2,
+            "VC_NAME":"Ajo Federated Church",
+            "VC_ADDRESS":"101 W Lomita Avenue",
+            "BOS_DIST":3,
+            "ROOM":"SOCIAL HALL"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":3,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.012165684583,
+               32.3820813177266
+            ]
+         },
+         "properties":{
+            "FID":3,
+            "VC_ID":3,
+            "VC_NAME":"ALIVE CHRISTIAN FELLOWSHIP",
+            "VC_ADDRESS":"9662 N LA CHOLLA BOULEVARD",
+            "BOS_DIST":1,
+            "ROOM":"LOBBY"
+         }
+      }
+   ]
+}
