@@ -373,7 +373,7 @@ async function calculateDistances(data, origin) {
 
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
-    const storeNum = store.getProperty('id');
+    const storeNum = store.getProperty('VC_ID');
     const storeLoc = store.getGeometry().get();
 
     stores.push(storeNum);
