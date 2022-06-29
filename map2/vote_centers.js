@@ -467,4 +467,10 @@ function showStoresList(data, stores) {
   return;
 }
 
+getAllPosts().then(response => {
+    console.log(response);
+}).catch(e => {
+    console.log(e);
+});
+
 window.initMap = initMap;
