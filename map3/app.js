@@ -159,7 +159,7 @@ function initMap() {
       `;
 
     infoWindow.setContent(content);
-    infoWindow.setPosition(position);
+    infoWindow.setPosition(dpos);
     infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
     infoWindow.open(map);
           
