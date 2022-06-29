@@ -134,18 +134,16 @@ function initMap() {
 
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', (event) => {
-    const category = event.feature.getProperty('VC_ID');
+    const id_num = event.feature.getProperty('VC_ID');
     const name = event.feature.getProperty('VC_NAME');
-    const description = event.feature.getProperty('VC_ADDRESS');
-    const hours = event.feature.getProperty('BOS_DIST');
-    const phone = event.feature.getProperty('ROOM');
-    const position = event.feature.getGeometry().get();
-    const content = sanitizeHTML`
-      <img style="float:left; width:200px; margin-top:30px" src="img/logo_${category}.png">
-      <div style="margin-left:220px; margin-bottom:20px;">
-        <h2>${name}</h2><p>${description}</p>
-        <p><b>Open:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>
-        <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}&solution_channel=GMP_codelabs_simplestorelocator_v1_a"></p>
+    const address = event.feature.getProperty('VC_ADDRESS');
+    const room = event.feature.getProperty('ROOM');
+    const dpos = event.feature.getGeometry().get();
+    const content = `
+      <div style="margin-left:10px; margin-bottom:10px;">
+        <h2>${name}</h2><p>${address}</p>
+        <p><b>Room:</b> ${room}<br/><br/>
+        <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${dpos.lat()},${dpos.lng()}" base target="_blank">Get directions</a>
       </div>
       `;
 
