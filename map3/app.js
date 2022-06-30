@@ -267,7 +267,7 @@ async function calculateDistances(data, origin) {
 
   // Calculate and display the distance between markers
   var straightDistance = haversine_distance(originLocation, storeLoc);
-  console.log(distance.toFixed(2) + " mi.");
+  console.log(straightDistance.toFixed(2) + " mi.");
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
