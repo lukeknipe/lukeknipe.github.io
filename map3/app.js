@@ -262,7 +262,6 @@ async function calculateDistances(data, origin) {
     const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
     const straightDistance = haversine_distance(origin, storeLoc);
-    console.log(straightDistance.toFixed(2) + " mi.");
     
     stores.push(storeNum);
     destinations.push(storeLoc);
@@ -286,7 +285,8 @@ async function calculateDistances(data, origin) {
     toptenDestinations.push(toptenLoc);
   });
     
-  console.log(toptenDistances);
+  console.log(toptenStores);
+  console.log(toptenDestinations);
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
