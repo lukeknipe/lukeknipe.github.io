@@ -273,6 +273,7 @@ async function calculateDistances(data, origin) {
   console.log(straightDistances);
   
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
+  console.log(toptenDistances);
  
   // Build parallel arrays for the closest 10 store IDs and destinations
   
