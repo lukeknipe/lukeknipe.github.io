@@ -370,6 +370,7 @@ function showStoresList(data, stores) {
 }
 
 function haversine_distance(origin, storeLoc) {
+      console.log(origin, storeLoc);
       const R = 3958.8; // Radius of the Earth in miles
       const rlat1 = origin.position.lat() * (Math.PI/180); // Convert degrees to radians
       const rlat2 = storeLoc.position.lat() * (Math.PI/180); // Convert degrees to radians
