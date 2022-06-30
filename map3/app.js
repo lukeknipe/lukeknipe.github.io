@@ -250,8 +250,7 @@ function initMap() {
  * a distanceText, distanceVal, and storeid property, sorted ascending
  * by distanceVal.
  */
-
-async function calculateDistances(data, toptenData, origin) {
+async function calculateDistances(data, origin) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
@@ -276,7 +275,8 @@ async function calculateDistances(data, toptenData, origin) {
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
  
   // Build parallel arrays for the closest 10 store IDs and destinations
-  toptenData.forEach((toptenDistances) => {
+  
+  data.forEach((toptenDistances) => {
     const toptenNum = toptenDistances.getProperty('FID');
     const toptenLoc = toptenDistances.getGeometry().get();
     console.log(toptenNum, toptenLoc);
