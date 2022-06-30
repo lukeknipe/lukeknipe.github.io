@@ -254,7 +254,9 @@ async function calculateDistances(data, origin) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
-
+  const toptenStores = [];
+  const toptenDestinations = [];
+  
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
     const storeNum = store.getProperty('FID');
@@ -272,13 +274,16 @@ async function calculateDistances(data, origin) {
   console.log(straightDistances);
   
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
-  
+ 
   // Build parallel arrays for the closest 10 store IDs and destinations
   
-  data.forEach((toptenDistancea) => {
-    const toptenNum = store.getProperty('FID');
-    const toptenLoc = store.getGeometry().get();
+  data.forEach((toptenDistances) => {
+    const toptenNum = toptenDistances.getProperty('FID');
+    const toptenLoc = toptenDistances.getGeometry().get();
     console.log(toptenNum, toptenLoc);
+    
+    toptenStores.push(toptenNum);
+    toptenDestinations.push(toptenLoc);
   });
     
   console.log(toptenDistances);
