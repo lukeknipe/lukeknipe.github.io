@@ -275,6 +275,8 @@ async function calculateDistances(data, origin) {
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
   console.log(toptenDistances);
 
+  const storesObject = {stores, destinations, straightDistances};
+  console.log(storesObject);
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
