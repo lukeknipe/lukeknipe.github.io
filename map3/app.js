@@ -259,15 +259,18 @@ async function calculateDistances(data, origin) {
     const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
 
-    console.log(storeNum);
+    console.log(storeLoc);
     
     stores.push(storeNum);
     destinations.push(storeLoc);
   });
 
   // Calculate and display the distance between markers
-  var straightDistance = haversine_distance(origin, storeLoc);
-  console.log(straightDistance.toFixed(2) + " mi.");
+//  var straightDistance = haversine_distance(origin, storeLoc);
+//  console.log(straightDistance.toFixed(2) + " mi.");
+  
+  console.log(origin);
+  console.log(destinations);
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
