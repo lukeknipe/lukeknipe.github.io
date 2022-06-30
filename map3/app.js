@@ -253,6 +253,7 @@ function initMap() {
 async function calculateDistances(data, origin) {
   const stores = [];
   const destinations = [];
+  const straightDistances = [];
 
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
@@ -263,11 +264,12 @@ async function calculateDistances(data, origin) {
     
     stores.push(storeNum);
     destinations.push(storeLoc);
+    straightDistances.push(straightDistance);
   });
   
-  console.log(origin);
-  console.log(destinations);
   console.log(stores);
+  console.log(destinations);
+  console.log(straightDistances);
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
