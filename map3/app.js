@@ -277,7 +277,6 @@ async function calculateDistances(data, origin) {
 
   const storesObject = {
     storeid: stores, 
-    destination: destinations, 
     distance: straightDistances
   };
   console.log(storesObject);
