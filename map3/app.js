@@ -266,7 +266,7 @@ async function calculateDistances(data, origin) {
   });
 
   // Calculate and display the distance between markers
-  var straightDistance = haversine_distance(originLocation, storeLoc);
+  var straightDistance = haversine_distance(origin, storeLoc);
   console.log(straightDistance.toFixed(2) + " mi.");
   
   // Retrieve the distances of each store from the origin
