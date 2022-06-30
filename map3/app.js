@@ -259,6 +259,8 @@ async function calculateDistances(data, origin) {
     const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
 
+    console.log(storeNum);
+    
     stores.push(storeNum);
     destinations.push(storeLoc);
   });
@@ -302,9 +304,10 @@ async function calculateDistances(data, origin) {
     return first.distanceVal - second.distanceVal;
   });
 
+  console.log(distancesList);
+  
   return distancesList;
   
-  console.log(distancesList);
 }
 
 /**
