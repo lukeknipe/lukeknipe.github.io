@@ -303,6 +303,8 @@ async function calculateDistances(data, origin) {
   });
 
   return distancesList;
+  
+  console.log(distancesList);
 }
 
 /**
