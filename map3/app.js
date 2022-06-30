@@ -254,7 +254,6 @@ async function calculateDistances(data, origin) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
-  const toptenDistances = [];
 
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
