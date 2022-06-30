@@ -277,9 +277,9 @@ async function calculateDistances(data, origin) {
  
   // Build parallel arrays for the closest 10 store IDs and destinations
   
-  data.forEach((toptenDistances) => {
-    const toptenNum = toptenDistances.getProperty('FID');
-    const toptenLoc = toptenDistances.getGeometry().get();
+  toptenDistances.forEach((store) => {
+    const toptenNum = store.getProperty('FID');
+    const toptenLoc = store.getGeometry().get();
     console.log(toptenNum, toptenLoc);
     
     toptenStores.push(toptenNum);
