@@ -255,8 +255,6 @@ async function calculateDistances(data, origin, response) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
-  const toptenStores = [];
-  const toptenDestinations = [];
   
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
@@ -268,10 +266,6 @@ async function calculateDistances(data, origin, response) {
     destinations.push(storeLoc);
     straightDistances.push(straightDistance);
   });
-  
-  console.log(stores);
-  console.log(destinations);
-  console.log(straightDistances);
   
 const topTen = [];  
 stores.forEach(element => {
@@ -292,12 +286,7 @@ stores.forEach(element => {
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
-  
-  const storesObject = {
-    storeid: stores, 
-    distance: straightDistances
-  };
-  console.log(storesObject);
+ 
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
