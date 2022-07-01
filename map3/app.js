@@ -279,13 +279,11 @@ stores.forEach(element => {
     distance: newDistance
   };
   topTen.push(toptenObject);
-  nDistance.push(newDistance);
 });
   
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
   console.log(toptenDistances);
   
-  console.log(nDistance);
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
