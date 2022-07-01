@@ -286,6 +286,7 @@ async function calculateDistances(data, origin) {
               destination: destination,
               distance: distance,
             };
+            };
   console.log(distObject);
   
   const storesObject = {
@@ -314,9 +315,8 @@ async function calculateDistances(data, origin) {
               distanceText: distanceText,
               distanceVal: distanceVal,
             };
-            
-            console.log(distances);
-            
+           
+    
             distances.push(distanceObject);
           }
 
