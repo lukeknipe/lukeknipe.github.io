@@ -284,6 +284,8 @@ stores.forEach(element => {
   
   console.log(toptenDistances);
   
+  console.log(toptenDistances.distance);
+  
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
  
