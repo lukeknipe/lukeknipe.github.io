@@ -250,12 +250,14 @@ function initMap() {
  * a distanceText, distanceVal, and storeid property, sorted ascending
  * by distanceVal.
  */
-async function calculateDistances(data, origin, response) {
+async function calculateDistances(data) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
   const toptenStores = [];
   const toptenDestinations = [];
+  
+  console.log(data);
   
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
