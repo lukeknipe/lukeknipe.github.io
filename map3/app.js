@@ -250,7 +250,7 @@ function initMap() {
  * a distanceText, distanceVal, and storeid property, sorted ascending
  * by distanceVal.
  */
-async function calculateDistances(data, origin) {
+async function calculateDistances(data, origin, response) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
