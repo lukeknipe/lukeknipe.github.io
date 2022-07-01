@@ -285,8 +285,6 @@ stores.forEach(element => {
   };
   topTen.push(toptenObject);
 });
-
-  console.log(topTen);
   
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
   
