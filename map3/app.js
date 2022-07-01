@@ -257,8 +257,6 @@ async function calculateDistances(data, origin, response) {
   const toptenStores = [];
   const toptenDestinations = [];
   
-  console.log(data);
-  
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
     const storeNum = store.getProperty('FID');
@@ -270,9 +268,15 @@ async function calculateDistances(data, origin, response) {
     straightDistances.push(straightDistance);
   });
   
+  stores.forEach(
+  
   console.log(stores);
   console.log(destinations);
   console.log(straightDistances);
+  
+for (let j = 0; j <stores.length; j++){
+  console.log(stores[j]);
+  }
   
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
   console.log(toptenDistances);
