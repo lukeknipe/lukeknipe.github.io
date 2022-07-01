@@ -153,6 +153,7 @@ function initMap() {
     const content = `
       <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
+        <p><b>ID:</b> ${id_num}<br/><br/>
         <p><b>Room:</b> ${room}<br/><br/>
         <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${dpos.lat()},${dpos.lng()}" base target="_blank">Get directions</a>
       </div>
