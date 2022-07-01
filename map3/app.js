@@ -285,7 +285,7 @@ stores.forEach(element => {
   topTen.push(toptenObject);
 });
 
-  console.log(toptenObject);
+  console.log(topTen);
   
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
   console.log(toptenDistances);
