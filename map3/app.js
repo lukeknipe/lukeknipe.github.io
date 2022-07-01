@@ -274,20 +274,6 @@ async function calculateDistances(data, origin, response) {
   
   const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
   console.log(toptenDistances);
-
-  const distObject = [];
-          const results = response.rows[0].elements;
-          for (let j = 0; j < results.length; j++) {
-            const element = results[j];
-            const destination = element.destinations;
-            const distance = element.straightDistances;
-            const distanceObject = {
-              storeid: stores[j],
-              destination: destination,
-              distance: distance,
-            };
-            };
-  console.log(distObject);
   
   const storesObject = {
     storeid: stores, 
