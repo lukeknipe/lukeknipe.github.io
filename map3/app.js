@@ -257,6 +257,8 @@ async function calculateDistances(data, origin, response) {
   const toptenStores = [];
   const toptenDestinations = [];
   
+  console.log(data);
+  
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
     const storeNum = store.getProperty('FID');
