@@ -268,8 +268,6 @@ async function calculateDistances(data, origin, response) {
     straightDistances.push(straightDistance);
   });
   
-  stores.forEach(
-  
   console.log(stores);
   console.log(destinations);
   console.log(straightDistances);
