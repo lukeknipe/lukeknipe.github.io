@@ -251,6 +251,7 @@ function initMap() {
  * a distanceText, distanceVal, and storeid property, sorted ascending
  * by distanceVal.
  */
+
 async function calculateDistances(data, origin, response) {
   const stores = [];
   const destinations = [];
@@ -267,25 +268,25 @@ async function calculateDistances(data, origin, response) {
     straightDistances.push(straightDistance);
   });
   
-const topTen = [];
-const nDistance = [];
-stores.forEach(element => {
-  const newStore = stores[element];
-  const newDestination = destinations[element];
-  const newDistance = straightDistances[element];
-  const toptenObject = {
-    storeid: newStore,
-    destination: newDestination,
-    distance: newDistance
-  };
-  topTen.push(toptenObject);
-});
+// const topTen = [];
+// const nDistance = [];
+// stores.forEach(element => {
+//  const newStore = stores[element];
+//  const newDestination = destinations[element];
+//  const newDistance = straightDistances[element];
+//  const toptenObject = {
+//    storeid: newStore,
+//    destination: newDestination,
+//    distance: newDistance
+//  };
+//  topTen.push(toptenObject);
+//  });
   
-  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
-  console.log(toptenDistances);
+//  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
+//  console.log(toptenDistances);
   
-  let result = toptenDistances.map(a => a.destination);
-  console.log(result);
+//  let result = toptenDistances.map(a => a.destination);
+//  console.log(result);
 //  destinations.push(result);
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
