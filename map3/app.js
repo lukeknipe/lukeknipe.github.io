@@ -263,7 +263,7 @@ async function calculateDistances(data, origin, response) {
     const straightDistance = haversine_distance(origin, storeLoc);
     
     stores.push(storeNum);
-//    destinations.push(storeLoc);
+    destinations.push(storeLoc);
     straightDistances.push(straightDistance);
   });
   
@@ -286,7 +286,7 @@ stores.forEach(element => {
   
   let result = toptenDistances.map(a => a.destination);
   console.log(result);
-  destinations.push(result);
+//  destinations.push(result);
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
