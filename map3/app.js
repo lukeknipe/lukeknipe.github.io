@@ -457,10 +457,11 @@ function showStoresList(data, stores) {
     panel.removeChild(panel.lastChild);
   }
 
-    const name = document.createElement('p');
-    name.classList.add('place');
-    name.textContent = "Header";
-    panel.appendChild(name);
+  // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one.
+  const name = document.createElement('p');
+  name.classList.add('panelHeader');
+  name.textContent = "Header goes here...";
+  panel.appendChild(name);
   
   stores.forEach((store) => {
     // Add store details with text formatting
