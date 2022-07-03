@@ -389,7 +389,8 @@ function haversine_distance(origin, storeLoc) {
     }
 
 function getTopten() {
-    const id = getProperty('FID');
+    const id = map.data.getProperty('FID');
     return id;
+  console.log(id);
 }
 
