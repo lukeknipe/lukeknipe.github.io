@@ -468,9 +468,6 @@ function showStoresList(data, stores) {
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
     distanceText.textContent = store.distanceText;
-    
-    panel.appendChild("XXX");
-    
   });
   
   // Open the panel
