@@ -1,3 +1,4 @@
+
 const mapStyle = [{
   'featureType': 'administrative',
   'elementType': 'all',
@@ -74,6 +75,7 @@ const mapStyle = [{
   ],
 },
 ];
+
 // Escapes HTML characters in a template literal string, to prevent XSS.
 // See https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.231_-_HTML_Escape_Before_Inserting_Untrusted_Data_into_HTML_Element_Content
 function sanitizeHTML(strings) {
@@ -87,6 +89,7 @@ function sanitizeHTML(strings) {
   }
   return result;
 }
+
 /**
  * Initialize the Google Map.
  */
@@ -97,8 +100,10 @@ function initMap() {
     center: {lat: 32.252, lng: -110.947},
     styles: mapStyle,
   });
+
   // Load the stores GeoJSON onto the map.
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'FID'});
+
   // Define the custom marker icons, using the store's "category".
   map.data.setStyle((feature) => {
     return {
@@ -108,8 +113,10 @@ function initMap() {
       },
     };
   });
+
   const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   const infoWindow = new google.maps.InfoWindow();
+
   // Display information in a popup when a marker is clicked.
   
   map.data.addListener('click', (event) => {
@@ -136,6 +143,7 @@ function initMap() {
         <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${dpos.lat()},${dpos.lng()}" base target="_blank">Get directions</a>
       </div>
       `;
+
     infoWindow.setContent(content);
     infoWindow.setPosition(dpos);
     infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
@@ -151,6 +159,7 @@ function initMap() {
       handleLocationError(false, infoWindow, map.getCenter());
     }    
   });
+
   // Build and add the search bar
   const card = document.createElement('div');
   const titleBar = document.createElement('div');
@@ -161,6 +170,7 @@ function initMap() {
     types: ['address'],
     componentRestrictions: {country: 'us'},
   };
+
   card.setAttribute('id', 'pac-card');
   title.setAttribute('id', 'title');
   title.textContent = 'Find the nearest store';
@@ -173,40 +183,50 @@ function initMap() {
   card.appendChild(titleBar);
   card.appendChild(container);
   map.controls[google.maps.ControlPosition.TOP_RIGHT].push(card);
+
   // Make the search bar into a Places Autocomplete search bar and select
   // which detail fields should be returned about the place that
   // the user selects from the suggestions.
   const autocomplete = new google.maps.places.Autocomplete(input, options);
+
   autocomplete.setFields(
       ['address_components', 'geometry', 'name']);
+
   // Set the origin point when the user selects an address
   const originMarker = new google.maps.Marker({map: map});
   originMarker.setVisible(false);
   let originLocation = map.getCenter();
+
   autocomplete.addListener('place_changed', async () => {
     originMarker.setVisible(false);
     originLocation = map.getCenter();
     const place = autocomplete.getPlace();
+
     if (!place.geometry) {
       // User entered the name of a Place that was not suggested and
       // pressed the Enter key, or the Place Details request failed.
       window.alert('No address available for input: \'' + place.name + '\'');
       return;
     }
+
     // Recenter the map to the selected address
     originLocation = place.geometry.location;
     map.setCenter(originLocation);
     map.setZoom(9);
     console.log(place);
+
     originMarker.setPosition(originLocation);
     originMarker.setVisible(true);
+
     // Use the selected address as the origin to calculate distances
     // to each of the store locations
     const rankedStores = await calculateDistances(map.data, originLocation);
     showStoresList(map.data, rankedStores);
+
     return;
   });
 }
+
 /**
  * Use Distance Matrix API to calculate distance from origin to each store.
  * @param {google.maps.Data} data The geospatial data object layer for the map
@@ -219,10 +239,19 @@ function initMap() {
 async function calculateDistances(data, origin, response) {
   const stores = [];
   const destinations = [];
-	@@ -267,25 +268,25 @@ async function calculateDistances(data, origin, response) {
+  const straightDistances = [];
+  
+  // Build parallel arrays for the store IDs and destinations
+  data.forEach((store) => {
+    const storeNum = store.getProperty('FID');
+    const storeLoc = store.getGeometry().get();
+    const straightDistance = haversine_distance(origin, storeLoc);
+    
+    stores.push(storeNum);
+//    destinations.push(storeLoc);
     straightDistances.push(straightDistance);
   });
-
+  
 const topTen = [];
 const nDistance = [];
 stores.forEach(element => {
@@ -236,14 +265,14 @@ stores.forEach(element => {
   };
   topTen.push(toptenObject);
 });
-
+  
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
   console.log(toptenDistances);
-
+  
   let result = toptenDistances.map(a => a.destination);
   console.log(result);
-//  destinations.push(result);
-
+  destinations.push(result);
+  
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
  
@@ -272,10 +301,12 @@ stores.forEach(element => {
     
             distances.push(distanceObject);
           }
+
           resolve(distances);
         }
       });
     });
+
   
   
   const distancesList = await getDistanceMatrix(service, {
@@ -284,14 +315,17 @@ stores.forEach(element => {
     travelMode: 'DRIVING',
     unitSystem: google.maps.UnitSystem.IMPERIAL,
   });
+
   distancesList.sort((first, second) => {
     return first.distanceVal - second.distanceVal;
   });
+
   console.log(distancesList);
   
   return distancesList;
   
 }
+
 /**
  * Build the content of the side panel from the sorted list of stores
  * and display it.
@@ -304,6 +338,7 @@ function showStoresList(data, stores) {
     console.log('empty stores');
     return;
   }
+
   let panel = document.createElement('div');
   // If the panel already exists, use it. Else, create it and add to the page.
   if (document.getElementById('panel')) {
@@ -317,10 +352,13 @@ function showStoresList(data, stores) {
     const body = document.body;
     body.insertBefore(panel, body.childNodes[0]);
   }
+
+
   // Clear the previous details
   while (panel.lastChild) {
     panel.removeChild(panel.lastChild);
   }
+
   stores.forEach((store) => {
     // Add store details with text formatting
     const name = document.createElement('p');
@@ -333,10 +371,13 @@ function showStoresList(data, stores) {
     distanceText.textContent = store.distanceText;
     panel.appendChild(distanceText);
   });
+
   // Open the panel
   panel.classList.add('open');
+
   return;
 }
+
 function haversine_distance(origin, storeLoc) {
       const R = 3958.8; // Radius of the Earth in miles
       const rlat1 = origin.lat() * (Math.PI/180); // Convert degrees to radians
