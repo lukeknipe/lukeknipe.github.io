@@ -275,6 +275,7 @@ async function calculateDistances(data, origin, response) {
   console.log(qlocArray);
   console.log(qdistanceArray);
   
+// Make an object array of stores, locations, and Haversine distances
   const topTen = [];
   const nDistance = [];
   qnumArray.forEach(element => {
@@ -289,18 +290,22 @@ async function calculateDistances(data, origin, response) {
   topTen.push(toptenObject);
 });
   
+// Show our object array of stores, locations, and Haversine distances
   console.log(topTen);
-  
-    const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
+
+// Sort our object array of stores, locations, and Haversine distances according to Haversine distance
+  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
   console.log(toptenDistances);
   
-  let destResult = toptenDistances.map(a => a.destination);
-  console.log(destResult);
-//  destinations.push(destResult);
-  
+// Make an array of the ten closest store IDs according to the Haversine formula  
   let storeResult = toptenDistances.map(a => a.storeid);
   console.log(storeResult);
 //  stores.push(storeResult);
+  
+// Make an array of the ten closest destinations according to haversine distance
+  let destResult = toptenDistances.map(a => a.destination);
+  console.log(destResult);
+//  destinations.push(destResult);
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
@@ -310,7 +315,6 @@ async function calculateDistances(data, origin, response) {
   data.forEach((store) => {
     const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
-//    const straightDistance = haversine_distance(origin, storeLoc);
     
     stores.push(storeNum);
     destinations.push(storeLoc);
