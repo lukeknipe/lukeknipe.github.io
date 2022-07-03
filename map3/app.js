@@ -457,10 +457,11 @@ function showStoresList(data, stores) {
     panel.removeChild(panel.lastChild);
   }
 
-  name.classList.add('place');
-  const panelHeader = "Header";
-  name.textContent = panelHeader;
-  panel.appendChild(name);
+    const name = document.createElement('p');
+    name.classList.add('place');
+    const currentStore = data.getFeatureById(store.storeid);
+    name.textContent = "Header";
+    panel.appendChild(name);
   
   stores.forEach((store) => {
     // Add store details with text formatting
