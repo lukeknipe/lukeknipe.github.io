@@ -1,19 +1,4 @@
-/*
- * Copyright 2017 Google Inc. All rights reserved.
- *
- *
- * Licensed under the Apache License, Version 2.0 (the "License"); you may not use this
- * file except in compliance with the License. You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF
- * ANY KIND, either express or implied. See the License for the specific language governing
- * permissions and limitations under the License.
- */
 
-// Style credit: https://snazzymaps.com/style/1/pale-dawn
 const mapStyle = [{
   'featureType': 'administrative',
   'elementType': 'all',
@@ -91,8 +76,7 @@ const mapStyle = [{
 },
 ];
 
-// Escapes HTML characters in a template literal string, to prevent XSS.
-// See https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.231_-_HTML_Escape_Before_Inserting_Untrusted_Data_into_HTML_Element_Content
+// Escape HTML characters in a template literal string to prevent XSS.
 function sanitizeHTML(strings) {
   const entities = {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', '\'': '&#39;'};
   let result = strings[0];
@@ -105,9 +89,8 @@ function sanitizeHTML(strings) {
   return result;
 }
 
-/**
- * Initialize the Google Map.
- */
+// Initialize the map.
+ 
 function initMap() {
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
@@ -116,10 +99,10 @@ function initMap() {
     styles: mapStyle,
   });
 
-  // Load the stores GeoJSON onto the map.
+  // Load the vote centers GeoJSON onto the map.
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'FID'});
 
-  // Define the custom marker icons, using the store's "category".
+  // Define the marker icons
   map.data.setStyle((feature) => {
     return {
       icon: {
@@ -129,14 +112,15 @@ function initMap() {
     };
   });
 
+  // Define API key 
   const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
+
   const infoWindow = new google.maps.InfoWindow();
 
   // Display information in a popup when a marker is clicked.
-  
   map.data.addListener('click', (event) => {
     
-        // Try HTML5 geolocation.
+  // Try HTML5 geolocation.
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -188,7 +172,7 @@ function initMap() {
 
   card.setAttribute('id', 'pac-card');
   title.setAttribute('id', 'title');
-  title.textContent = 'Find the nearest store';
+  title.textContent = 'Find your nearest vote center';
   titleBar.appendChild(title);
   container.setAttribute('id', 'pac-container');
   input.setAttribute('id', 'pac-input');
@@ -202,6 +186,7 @@ function initMap() {
   // Make the search bar into a Places Autocomplete search bar and select
   // which detail fields should be returned about the place that
   // the user selects from the suggestions.
+  
   const autocomplete = new google.maps.places.Autocomplete(input, options);
 
   autocomplete.setFields(
@@ -234,7 +219,7 @@ function initMap() {
     originMarker.setVisible(true);
 
     // Use the selected address as the origin to calculate distances
-    // to each of the store locations
+    // to each vote center
     const rankedStores = await calculateDistances(map.data, originLocation);
     showStoresList(map.data, rankedStores);
 
