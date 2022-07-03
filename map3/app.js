@@ -458,7 +458,7 @@ function showStoresList(data, stores) {
   }
 
   const panelHeader = "Header";
-  panel.appendChild(panelHeader);
+  panel.innerHTML(panelHeader);
   
   stores.forEach((store) => {
     // Add store details with text formatting
