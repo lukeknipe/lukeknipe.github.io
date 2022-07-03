@@ -459,7 +459,6 @@ function showStoresList(data, stores) {
 
     const name = document.createElement('p');
     name.classList.add('place');
-    const currentStore = data.getFeatureById(store.storeid);
     name.textContent = "Header";
     panel.appendChild(name);
   
