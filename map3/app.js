@@ -253,11 +253,11 @@ function initMap() {
  */
 
 async function calculateDistances(data, origin, response) {
+  
   const stores = [];
   const destinations = [];
   const straightDistances = [];
 
-  
   const qnumArray = [];
   const qlocArray = [];
   const qdistanceArray = [];
@@ -274,25 +274,14 @@ async function calculateDistances(data, origin, response) {
   console.log(qnumArray);
   console.log(qlocArray);
   console.log(qdistanceArray);
-    
-  // Build parallel arrays for the store IDs and destinations
-  data.forEach((store) => {
-    const storeNum = store.getProperty('FID');
-    const storeLoc = store.getGeometry().get();
-    const straightDistance = haversine_distance(origin, storeLoc);
-    
-    stores.push(storeNum);
-    destinations.push(storeLoc);
-    straightDistances.push(straightDistance);
-  });
   
-const topTen = [];
-const nDistance = [];
-stores.forEach(element => {
-  const newStore = stores[element];
-  const newDestination = destinations[element];
-  const newDistance = straightDistances[element];
-  const toptenObject = {
+  const topTen = [];
+  const nDistance = [];
+  stores.forEach(element => {
+    const newStore = qnumArray[element];
+    const newDestination = qlocArray[element];
+    const newDistance = qdistanceArray[element];
+    const toptenObject = {
     storeid: newStore,
     destination: newDestination,
     distance: newDistance
@@ -300,7 +289,9 @@ stores.forEach(element => {
   topTen.push(toptenObject);
 });
   
-  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
+  console.log(topTen);
+  
+    const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
   console.log(toptenDistances);
   
   let destResult = toptenDistances.map(a => a.destination);
@@ -313,6 +304,18 @@ stores.forEach(element => {
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
+  
+  
+  // Build parallel arrays for the store IDs and destinations
+  data.forEach((store) => {
+    const storeNum = store.getProperty('FID');
+    const storeLoc = store.getGeometry().get();
+    const straightDistance = haversine_distance(origin, storeLoc);
+    
+    stores.push(storeNum);
+    destinations.push(storeLoc);
+    straightDistances.push(straightDistance);
+  });
  
   
   // Retrieve the distances of each store from the origin
