@@ -308,9 +308,10 @@ async function calculateDistances(data, origin, response) {
 //  destinations.push(destResult);
 
 // Iterate parallel arrays for the 10 stores and destinations
-  storeResult.forEach(element => {
+  storeResult.forEach((element) => {
   const sid = storeResult[element];
   const dest = destResult[element];
+    
   stores.push(sid);
   destinations.push(destResult);
   });
