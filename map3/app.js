@@ -459,6 +459,7 @@ function showStoresList(data, stores) {
 
   stores.forEach((store) => {
     // Add store details with text formatting
+    
     const name = document.createElement('p');
     name.classList.add('place');
     const currentStore = data.getFeatureById(store.storeid);
@@ -467,10 +468,10 @@ function showStoresList(data, stores) {
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
     distanceText.textContent = store.distanceText;
-    panel.appendChild(distanceText);
+    
+    panel.appendChild("XXX");
+    
   });
-
-  panel.appendChild("xxx");
   
   // Open the panel
   panel.classList.add('open');
