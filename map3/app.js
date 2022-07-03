@@ -252,9 +252,6 @@ async function calculateDistances(data, origin, response) {
     straightDistances.push(straightDistance);
   });
   
-  const q = getTopten()
-  console.log(q)
-  
   
 const topTen = [];
 const nDistance = [];
@@ -391,10 +388,4 @@ function haversine_distance(origin, storeLoc) {
       const d = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat/2)*Math.sin(difflat/2)+Math.cos(rlat1)*Math.cos(rlat2)*Math.sin(difflon/2)*Math.sin(difflon/2)));
       return d;
     }
-
-function getTopten() {
-    const id = map.data.getProperty('FID');
-    return id;
-  console.log(id);
-}
 
