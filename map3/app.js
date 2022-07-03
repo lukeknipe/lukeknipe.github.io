@@ -277,7 +277,7 @@ async function calculateDistances(data, origin, response) {
   
   const topTen = [];
   const nDistance = [];
-  stores.forEach(element => {
+  qnumArray.forEach(element => {
     const newStore = qnumArray[element];
     const newDestination = qlocArray[element];
     const newDistance = qdistanceArray[element];
