@@ -267,7 +267,7 @@ async function calculateDistances(data, origin, response) {
     const qDistance = haversine_distance(origin, qLoc);
 
     qnumArray.push(qNum);
-    qlocArray.push(qLoc;);
+    qlocArray.push(qLoc);
     qdistanceArray.push(qDistance);
   });
   
