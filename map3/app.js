@@ -284,9 +284,13 @@ stores.forEach(element => {
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
   console.log(toptenDistances);
   
-  let result = toptenDistances.map(a => a.destination);
-  console.log(result);
-//  destinations.push(result);
+  let destResult = toptenDistances.map(a => a.destination);
+  console.log(destResult);
+//  destinations.push(destResult);
+  
+  let storeResult = toptenDistances.map(a => a.storeid);
+  console.log(storeResult);
+//  stores.push(storeResult);
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
