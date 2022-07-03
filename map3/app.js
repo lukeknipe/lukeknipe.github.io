@@ -470,6 +470,8 @@ function showStoresList(data, stores) {
     panel.appendChild(distanceText);
   });
 
+  panel.appendChild("xxx");
+  
   // Open the panel
   panel.classList.add('open');
 
