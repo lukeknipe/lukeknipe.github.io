@@ -313,7 +313,7 @@ async function calculateDistances(data, origin, response) {
   const dest = destResult[element];
   stores.push(sid);
   destinations.push(destResult);
-  };
+  });
                       
     
   // Build parallel arrays for the store IDs and destinations
