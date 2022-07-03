@@ -458,10 +458,10 @@ function showStoresList(data, stores) {
     panel.removeChild(panel.lastChild);
   }
 
-  // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one.
+  // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one
   const name = document.createElement('p');
   name.classList.add('panelHeader');
-  name.textContent = "Nearest vote centers:" + streetAddress;
+  name.textContent = "Vote centers closest to " + streetAddress + ":";
   panel.appendChild(name);
   
   stores.forEach((store) => {
