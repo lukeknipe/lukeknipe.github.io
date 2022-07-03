@@ -387,3 +387,9 @@ function haversine_distance(origin, storeLoc) {
       const d = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat/2)*Math.sin(difflat/2)+Math.cos(rlat1)*Math.cos(rlat2)*Math.sin(difflon/2)*Math.sin(difflon/2)));
       return d;
     }
+
+function getTopten() {
+    const id = getProperty('FID');
+    return id;
+}
+
