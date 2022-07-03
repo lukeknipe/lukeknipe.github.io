@@ -251,6 +251,8 @@ function initMap() {
  * a distanceText, distanceVal, and storeid property, sorted ascending
  * by distanceVal.
  */
+
+
 async function calculateDistances(data, origin, response) {
   const stores = [];
   const destinations = [];
@@ -263,7 +265,6 @@ async function calculateDistances(data, origin, response) {
     const straightDistance = haversine_distance(origin, storeLoc);
     
     stores.push(storeNum);
-    console.log(stores);
     destinations.push(storeLoc);
     straightDistances.push(straightDistance);
   });
