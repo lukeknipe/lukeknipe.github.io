@@ -300,32 +300,22 @@ async function calculateDistances(data, origin, response) {
 // Make an array of the ten closest store IDs according to the Haversine formula  
   let storeResult = toptenDistances.map(a => a.storeid);
   console.log(storeResult);
-//  stores.push(storeResult);
+  stores.push(storeResult);
   
 // Make an array of the ten closest destinations according to haversine distance
   let destResult = toptenDistances.map(a => a.destination);
   console.log(destResult);
-//  destinations.push(destResult);
-
-// Iterate parallel arrays for the 10 stores and destinations
-  storeResult.forEach((element) => {
-  const sid = storeResult[element];
-  const dest = destResult[element];
-    
-  stores.push(sid);
   destinations.push(destResult);
-  });
-                      
     
   // Build parallel arrays for the store IDs and destinations
-  data.forEach((store) => {
-    const storeNum = store.getProperty('FID');
-    const storeLoc = store.getGeometry().get();
+//  data.forEach((store) => {
+//    const storeNum = store.getProperty('FID');
+//    const storeLoc = store.getGeometry().get();
     
 //    stores.push(storeNum);
 //    destinations.push(storeLoc);
 //    straightDistances.push(straightDistance);
-  });
+//  });
  
   console.log(stores);
   console.log(destinations);
