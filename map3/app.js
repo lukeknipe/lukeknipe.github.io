@@ -252,18 +252,28 @@ function initMap() {
  * by distanceVal.
  */
 
-
 async function calculateDistances(data, origin, response) {
   const stores = [];
   const destinations = [];
   const straightDistances = [];
+
   
-  const qArray = [];
+  const qnumArray = [];
+  const qlocArray = [];
+  const qdistanceArray = [];
   data.forEach(q => {
     const qNum = q.getProperty('FID');
-    qArray.push(qNum);
+    const qLoc = q.getGeometry().get();
+    const qDistance = haversine_distance(origin, qLoc);
+
+    qnumArray.push(qNum);
+    qlocArray.push(qLoc;);
+    qdistanceArray.push(qDistance);
   });
-  console.log(qArray);
+  
+  console.log(qnumArray);
+  console.log(qnumArray);
+  console.log(qnumArray);
     
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
