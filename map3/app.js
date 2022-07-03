@@ -316,9 +316,7 @@ function initMap() {
     originLocation = place.geometry.location;
     map.setCenter(originLocation);
     map.setZoom(13);
-    console.log(place);
-    let streetAddress = place.map(a => a.name);
-    console.log(streetAddress)
+    console.log(place.name);
     
     originMarker.setPosition(originLocation);
     originMarker.setVisible(true);
