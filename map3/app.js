@@ -254,8 +254,6 @@ function initMap() {
 
 async function calculateDistances(data, origin, response) {
   
-  const stores = [];
-  const destinations = [];
   const straightDistances = [];
 
   const qnumArray = [];
