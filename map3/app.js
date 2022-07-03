@@ -252,6 +252,10 @@ async function calculateDistances(data, origin, response) {
     straightDistances.push(straightDistance);
   });
   
+  const q = getTopten()
+  console.log(q)
+  
+  
 const topTen = [];
 const nDistance = [];
 stores.forEach(element => {
