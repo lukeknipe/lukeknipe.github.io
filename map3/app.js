@@ -317,6 +317,7 @@ function initMap() {
     map.setCenter(originLocation);
     map.setZoom(13);
     console.log(place.name);
+    globalThis.streetAddress = (place.name);
     
     originMarker.setPosition(originLocation);
     originMarker.setVisible(true);
@@ -460,7 +461,7 @@ function showStoresList(data, stores) {
   // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one.
   const name = document.createElement('p');
   name.classList.add('panelHeader');
-  name.textContent = "Nearest vote centers:";
+  name.textContent = "Nearest vote centers:" + streetAddress;
   panel.appendChild(name);
   
   stores.forEach((store) => {
