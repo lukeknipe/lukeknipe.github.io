@@ -272,8 +272,8 @@ async function calculateDistances(data, origin, response) {
   });
   
   console.log(qnumArray);
-  console.log(qnumArray);
-  console.log(qnumArray);
+  console.log(qlocArray);
+  console.log(qdistanceArray);
     
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
