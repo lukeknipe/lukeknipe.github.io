@@ -296,11 +296,11 @@ async function calculateDistances(data, origin, response) {
   
   let destResult = toptenDistances.map(a => a.destination);
   console.log(destResult);
-  destinations.push(destResult);
+//  destinations.push(destResult);
   
   let storeResult = toptenDistances.map(a => a.storeid);
   console.log(storeResult);
-  stores.push(storeResult);
+//  stores.push(storeResult);
   
 //  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
 //  console.log(toptenDistances);
@@ -310,13 +310,15 @@ async function calculateDistances(data, origin, response) {
   data.forEach((store) => {
     const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
-    const straightDistance = haversine_distance(origin, storeLoc);
+//    const straightDistance = haversine_distance(origin, storeLoc);
     
-//    stores.push(storeNum);
-//    destinations.push(storeLoc);
-    straightDistances.push(straightDistance);
+    stores.push(storeNum);
+    destinations.push(storeLoc);
+//    straightDistances.push(straightDistance);
   });
  
+  console.log(stores);
+  console.log(destinations);
   
   // Retrieve the distances of each store from the origin
   // The returned list will be in the same order as the destinations list
