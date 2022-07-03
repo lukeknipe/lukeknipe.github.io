@@ -306,18 +306,23 @@ async function calculateDistances(data, origin, response) {
   let destResult = toptenDistances.map(a => a.destination);
   console.log(destResult);
 //  destinations.push(destResult);
-  
-//  const toptenDistances = straightDistances.sort((a,b) => a-b).slice(0,10);
-//  console.log(toptenDistances);
-  
-  
+
+// Iterate parallel arrays for the 10 stores and destinations
+  storeResult.forEach(element => {
+  const sid = storeResult[element];
+  const dest = destResult[element];
+  stores.push(sid);
+  destinations.push(destResult);
+  };
+                      
+    
   // Build parallel arrays for the store IDs and destinations
   data.forEach((store) => {
     const storeNum = store.getProperty('FID');
     const storeLoc = store.getGeometry().get();
     
-    stores.push(storeNum);
-    destinations.push(storeLoc);
+//    stores.push(storeNum);
+//    destinations.push(storeLoc);
 //    straightDistances.push(straightDistance);
   });
  
