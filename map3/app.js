@@ -460,7 +460,7 @@ function showStoresList(data, stores) {
   // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one.
   const name = document.createElement('p');
   name.classList.add('panelHeader');
-  name.textContent = "Header goes here...";
+  name.textContent = "Nearest vote centers:";
   panel.appendChild(name);
   
   stores.forEach((store) => {
