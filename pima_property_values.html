@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Pima Property Values</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Luke Knipe</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Sample Post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/pima_prop_val_bg.png')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>The Pima Property Values Map</h1>
+                            <h2 class="subheading">An interactive map of residential property values in Pima County</h2>
+                            <span class="meta">
+                                Updated July 14, 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>The map below shows values per square foot of residential properties in Pima County. You can view it in a full browser window by clicking <a href="pima_property_values_map.html" base target="_blank">here</a>.</p>
+                        <p>Interact with the map by zooming in and out, and clicking on the dots to see individual property characteristics.</p>
+                        <iframe loading="lazy" src="pima_property_values_map.html" width="100%" height="600"></iframe>
+                        <h2 class="section-heading">The data</h2>
+                        <p>The appraised value and square footage data shown here was obtained from records <a href="https://www.asr.pima.gov/Download" base target="_blank">publicly available for download on the Pima County Assessor’s website</a>. The values shown are for tax year 2023 and reflect the assessor’s most current appraisals.</p>
+                        <p>This map shows the 304,486 parcels <a href="https://www.asr.pima.gov/Division/Real/Residential" base target="_blank">treated as “residential”</a> by the assessor. Each is represented by a color-coded dot, colored according to its value per square foot. (See the key in the bottom right corner of the map.)</p>
+                        <h2 class="section-heading">A vector tile approach</h2>
+                        <p>300K is too many features for a client-side mapping system like Leaflet to render. Instead, this map's features are displayed and accessed using vector tiles, which I created using <a href="https://github.com/mapbox/tippecanoe" base target="_blank">a cool program called Tippecanoe</a>. Tippecanoe inputs a GeoJSON file and outputs a vector <a href="https://docs.mapbox.com/help/glossary/mbtiles/" base target="_blank">.mbtiles file</a>, which can then be uploaded to <a href="https://www.mapbox.com/" base target="_blank">mapbox.com</a> and styled using <a href="https://www.mapbox.com/mapbox-studio" base target="_blank">Mapbox Studio</a>.
+                        <p>The algorithms in Tippecanoe aim to represent the texture and density of your data at any level of zoom. They're complex, and the user has the option of specifying all sorts of parameters. But I found that just using the <a href="https://github.com/mapbox/tippecanoe#try-this-first" base target="_blank">"Try this first" command example</a> in the program's README file provided exactly the result I was looking for.
+                        <h2 class="section-heading">Adding interactivity</h2>
+                        <p>One of the things that makes this map special is its ability to quickly show attribute data in a pop-up window for any of its 304,486 features. Click on one of the dots, and the map will show you that property's address, value, square footage, and value per square feet. I developed this feature using the <a href="https://docs.mapbox.com/mapbox-gl-js/guides/" base target="_blank">Mapbox GL JavaScript Library</a>, which allows for client-side rendering of vector tile data in the form of pop-ups, hover effects, and so on.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <ul class="list-inline text-center">
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Luke Knipe 2022</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
