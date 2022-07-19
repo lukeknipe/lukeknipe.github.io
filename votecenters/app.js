@@ -310,7 +310,9 @@ function initMap() {
       window.alert('No address available for input: \'' + place.name + '\'');
       return;
     }
-
+    
+console.log(autocomplete);
+    
     // Recenter the map to the selected address
     originLocation = place.geometry.location;
     map.setCenter(originLocation);
