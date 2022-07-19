@@ -241,7 +241,6 @@ function initMap() {
       <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Room:</b> ${room}<br/><br/>
-<!--    <p><a href="https://maps.google.com?saddr=${pos.lat},${pos.lng}&daddr=${dpos.lat()},${dpos.lng()}" base target="_blank">Get directions </a>${place.name} -->
       </div>
       `;
 
