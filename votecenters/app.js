@@ -224,13 +224,13 @@ function initMap() {
   map.data.addListener('click', (event) => {
     
   // Try HTML5 geolocation.
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          pos = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          };
+//    if (navigator.geolocation) {
+//      navigator.geolocation.getCurrentPosition(
+//        (position) => {
+//          pos = {
+//            lat: position.coords.latitude,
+//            lng: position.coords.longitude,
+//          };
     
     const id_num = event.feature.getProperty('FID');
     const name = event.feature.getProperty('VC_NAME');
@@ -249,15 +249,15 @@ function initMap() {
     infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
     infoWindow.open(map);
           
-              },
-        () => {
-          handleLocationError(true, infoWindow, map.getCenter());
-        }
-      );
-    } else {
-      // Browser doesn't support Geolocation
-      handleLocationError(false, infoWindow, map.getCenter());
-    }    
+ //             },
+ //       () => {
+ //         handleLocationError(true, infoWindow, map.getCenter());
+ //       }
+ //     );
+ //   } else {
+ //     // Browser doesn't support Geolocation
+ //     handleLocationError(false, infoWindow, map.getCenter());
+//    }    
   });
 
   // Build and add the search bar
