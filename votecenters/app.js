@@ -222,16 +222,6 @@ function initMap() {
 
   // Display information in a popup when a marker is clicked.
   map.data.addListener('click', (event) => {
-    
-  // Try HTML5 geolocation.
-//    if (navigator.geolocation) {
-//      navigator.geolocation.getCurrentPosition(
-//        (position) => {
-//          pos = {
-//            lat: position.coords.latitude,
-//            lng: position.coords.longitude,
-//          };
-    
     const id_num = event.feature.getProperty('FID');
     const name = event.feature.getProperty('VC_NAME');
     const address = event.feature.getProperty('VC_ADDRESS');
@@ -243,21 +233,10 @@ function initMap() {
         <p><b>Room:</b> ${room}<br/><br/>
       </div>
       `;
-
     infoWindow.setContent(content);
     infoWindow.setPosition(dpos);
     infoWindow.setOptions({pixelOffset: new google.maps.Size(0, -30)});
     infoWindow.open(map);
-          
- //             },
- //       () => {
- //         handleLocationError(true, infoWindow, map.getCenter());
- //       }
- //     );
- //   } else {
- //     // Browser doesn't support Geolocation
- //     handleLocationError(false, infoWindow, map.getCenter());
-//    }    
   });
 
   // Build and add the search bar
@@ -378,7 +357,6 @@ async function calculateDistances(data, origin, response) {
   let destResult = toptenDistances.map(a => a.destination);
   const destinations = destResult;
   
-  
 // Now we call Google with our short list
   const service = new google.maps.DistanceMatrixService();
   const getDistanceMatrix =
@@ -398,7 +376,6 @@ async function calculateDistances(data, origin, response) {
               distanceText: distanceText,
               distanceVal: distanceVal,
             };
-           
     
             distances.push(distanceObject);
           }
@@ -430,6 +407,7 @@ async function calculateDistances(data, origin, response) {
  * @param {object[]} stores An array of objects with a distanceText,
  * distanceVal, and storeid property.
  */
+
 function showStoresList(data, stores) {
   if (stores.length == 0) {
     console.log('empty stores');
