@@ -311,8 +311,6 @@ function initMap() {
       return;
     }
     
-console.log(autocomplete);
-    
     // Recenter the map to the selected address
     originLocation = place.geometry.location;
     map.setCenter(originLocation);
