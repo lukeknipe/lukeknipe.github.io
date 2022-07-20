@@ -197,7 +197,7 @@ function sanitizeHTML(strings) {
 function initMap() {
   
   // Display overlay
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById("overlay_b").style.display = "block";
   
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
