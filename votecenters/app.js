@@ -200,6 +200,9 @@ function initMap() {
     zoom: 11,
     center: {lat: 32.252, lng: -110.947},
     styles: mapStyle,
+    options: {
+    gestureHandling: 'greedy'
+  }
   });
 
   // Load the vote centers GeoJSON onto the map.
