@@ -195,6 +195,9 @@ function sanitizeHTML(strings) {
 // Initialize the map.
  
 function initMap() {
+  // Display overlay
+  document.getElementById("overlay").style.display = "block";
+  
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
@@ -206,7 +209,7 @@ function initMap() {
   }
   });
 
-  // Load the vote centers GeoJSON onto the map.
+  // Load the vote centers GeoJSON onto the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'FID'});
 
   // Define the marker icons
