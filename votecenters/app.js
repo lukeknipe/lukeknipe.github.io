@@ -196,7 +196,8 @@ function sanitizeHTML(strings) {
  
 function initMap() {
   
-  // Display overlay
+  // Display overlays
+  document.getElementById("overlay_a").style.display = "block";
   document.getElementById("overlay_b").style.display = "block";
   
   // Create the map.
