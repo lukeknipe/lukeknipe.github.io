@@ -195,8 +195,6 @@ function sanitizeHTML(strings) {
 // Initialize the map.
  
 function initMap() {
-  // Display overlay
-  document.getElementById("overlay").style.display = "block";
   
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
@@ -313,6 +311,10 @@ function initMap() {
 
     return;
   });
+  
+    // Display overlay
+  document.getElementById("overlay").style.display = "block";
+  
 }
 
 // Use Distance Matrix API to calculate driving distance from origin to each vote center
