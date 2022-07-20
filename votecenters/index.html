@@ -3,15 +3,28 @@
 <head>
   <title>Vote Centers 2022</title>
  <style>
+   
     #map {
-      height: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
     }
-
-    body {
+   
+   header {
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    right: 0px;    
+    height: 40px;
+    background-color: #CFCFCF;
+    }
+   
+    html, body {
       height: 100%;
+      width: 100%;
       margin: 0;
-      padding: 0;
-      border-top: 5vh solid #1F3161;
     }
    
     /* Styling for autocomplete search bar */
@@ -107,6 +120,7 @@
 </head>
 
 <body>
+  <header>Title</header>
   <!-- The div to hold the map -->
 <div id="map">
   <img src="./img/ready_set.png">
