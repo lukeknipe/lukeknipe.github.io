@@ -200,6 +200,7 @@ function initMap() {
     zoom: 11,
     center: {lat: 32.252, lng: -110.947},
     styles: mapStyle,
+    disableDefaultUI: true,
     options: {
     gestureHandling: 'greedy'
   }
