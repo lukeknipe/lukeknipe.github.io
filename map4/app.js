@@ -335,9 +335,11 @@ async function calculateDistances(data, origin, response) {
     const qNum = q.getProperty('FID');
     const qLoc = q.getGeometry().get();
     const qDistance = haversine_distance(origin, qLoc);
+    if (qNum < 130) {
     qnumArray.push(qNum);
     qlocArray.push(qLoc);
     qdistanceArray.push(qDistance);
+    }
   });
   
 // Now we'll dump those parallel arrays into an object array for easy sorting.
