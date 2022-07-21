@@ -219,7 +219,7 @@ function initMap() {
     return {
       icon: {
         url: `./img/checkmark.png`,
-        scaledSize: new google.maps.Size(15, 15),
+//        scaledSize: new google.maps.Size(25, 20),
       },
     };
   });
