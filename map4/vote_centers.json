@@ -2555,6 +2555,71 @@
           32.26994569207049
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 136,
+        "VC_NAME": "Wheeler Taft Abbett Sr. Library",
+        "VC_ADDRESS": "7800 N Schisler Dr",
+        "TYPE": "EV"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.09516084194182,
+          32.34895507846969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 137,
+        "VC_NAME": "Miller Golf Links Library",
+        "VC_ADDRESS": "9640 E Golf Links",
+        "TYPE": "EV",
+        "ROOM": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.78732639551163,
+          32.19072558063662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 138,
+        "VC_NAME": "Kirk Bear Canyon Library",
+        "VC_ADDRESS": "8959 E Tanque Verde Rd",
+        "TYPE": "EV"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.8012282848358,
+          32.25953534034731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 139,
+        "VC_NAME": "Richard Elias Mission Library",
+        "VC_ADDRESS": "3770 S Mission Rd",
+        "TYPE": "EV"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.00417695939541,
+          32.178522924665806
+        ]
+      }
     }
   ]
 }
