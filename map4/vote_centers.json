@@ -2546,7 +2546,7 @@
         "VC_ID": "",
         "VC_NAME": "Woods Memorial Library",
         "VC_ADDRESS": "3455 N 1st Ave",
-        "TYPE": "EV",
+        "TYPE": "EV"
       },
       "geometry": {
         "type": "Point",
