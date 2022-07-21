@@ -2528,7 +2528,8 @@
         "VC_NAME": "Pima County Natural Resources, Parks, and Recreation Building",
         "VC_ADDRESS": "3500 W River Rd",
         "VC_ID": "",
-        "ROOM": ""
+        "ROOM": "",
+        "TYPE": "EV"
       },
       "geometry": {
         "type": "Point",
@@ -2544,7 +2545,8 @@
         "FID": 135,
         "VC_ID": "",
         "VC_NAME": "Woods Memorial Library",
-        "VC_ADDRESS": "3455 N 1st Ave"
+        "VC_ADDRESS": "3455 N 1st Ave",
+        "TYPE": "EV",
       },
       "geometry": {
         "type": "Point",
