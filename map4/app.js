@@ -359,7 +359,7 @@ async function calculateDistances(data, origin, response) {
 });
 
 // Sort our object array according to Haversine distance
-  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
+  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,3);
   
 // Make an array of the ten closest store IDs according to the Haversine formula  
   let storeResult = toptenDistances.map(a => a.storeid);
@@ -412,7 +412,7 @@ async function calculateDistances(data, origin, response) {
   
 }
 
-// Use Distance Matrix API to calculate driving distance from origin to each vote center
+// Use Distance Matrix API to calculate driving distance from origin to each early voting location
 async function evcalculateDistances(data, origin, response) {
   
 // Since Google won't let us run more than 25 origins or destinations through the API at a time, we'll
@@ -429,7 +429,7 @@ async function evcalculateDistances(data, origin, response) {
     const qNum = q.getProperty('FID');
     const qLoc = q.getGeometry().get();
     const qDistance = haversine_distance(origin, qLoc);
-    if (qNum < 130) {
+    if (qNum > 130) {
     qnumArray.push(qNum);
     qlocArray.push(qLoc);
     qdistanceArray.push(qDistance);
