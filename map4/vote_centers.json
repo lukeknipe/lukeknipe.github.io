@@ -2537,6 +2537,22 @@
           32.31565884556762
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 135,
+        "VC_ID": "",
+        "VC_NAME": "Woods Memorial Library",
+        "VC_ADDRESS": "3455 N 1st Ave"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9614721685648,
+          32.26994569207049
+        ]
+      }
     }
   ]
 }
