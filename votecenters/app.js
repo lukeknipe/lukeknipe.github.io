@@ -218,7 +218,7 @@ function initMap() {
   map.data.setStyle((feature) => {
     return {
       icon: {
-        url: `./dot.png`,
+        url: `./checkmark.png`,
         scaledSize: new google.maps.Size(15, 15),
       },
     };
