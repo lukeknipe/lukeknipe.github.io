@@ -2502,6 +2502,24 @@
           32.132712344109855
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 133,
+        "VC_NAME": "Oro Valley Public Library",
+        "VC_ADDRESS": "1305 W Naranja Dr",
+        "ROOM": "",
+        "TYPE": "EV",
+        "VC_ID": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.9941703081131,
+          32.40943779565006
+        ]
+      }
     }
   ]
 }
