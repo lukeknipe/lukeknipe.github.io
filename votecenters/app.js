@@ -282,7 +282,12 @@ function initMap() {
       ['address_components', 'geometry', 'name']);
 
   // Set the origin point when the user selects an address
-  const originMarker = new google.maps.Marker({map: map});
+  const originMarker = new google.maps.Marker({
+    map: map,
+    icon: "./img/locator.png",
+    title: "You are here",
+  });
+  
   originMarker.setVisible(false);
   let originLocation = map.getCenter();
 
