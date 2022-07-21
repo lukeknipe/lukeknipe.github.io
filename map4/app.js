@@ -412,6 +412,100 @@ async function calculateDistances(data, origin, response) {
   
 }
 
+// Use Distance Matrix API to calculate driving distance from origin to each vote center
+async function evcalculateDistances(data, origin, response) {
+  
+// Since Google won't let us run more than 25 origins or destinations through the API at a time, we'll
+// use a Haversine distance function to narrow our list down to 10 by making simple "as the crow flies"
+// distance calculations on the client side. Once we've done that, we can send our short list off to
+// Google and let api calculate proper driving distances. 
+  
+// We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances. 
+  
+  const qnumArray = [];
+  const qlocArray = [];
+  const qdistanceArray = [];
+  data.forEach(q => {
+    const qNum = q.getProperty('FID');
+    const qLoc = q.getGeometry().get();
+    const qDistance = haversine_distance(origin, qLoc);
+    if (qNum < 130) {
+    qnumArray.push(qNum);
+    qlocArray.push(qLoc);
+    qdistanceArray.push(qDistance);
+    }
+  });
+  
+// Now we'll dump those parallel arrays into an object array for easy sorting.
+  
+  const topTen = [];
+  const nDistance = [];
+  qnumArray.forEach(element => {
+    const newStore = qnumArray[element];
+    const newDestination = qlocArray[element];
+    const newDistance = qdistanceArray[element];
+    const toptenObject = {
+    storeid: newStore,
+    destination: newDestination,
+    distance: newDistance
+  };
+  topTen.push(toptenObject);
+});
+
+// Sort our object array according to Haversine distance
+  const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
+  
+// Make an array of the ten closest store IDs according to the Haversine formula  
+  let storeResult = toptenDistances.map(a => a.storeid);
+  const stores = storeResult;
+  
+// Make an array of the ten closest destinations according to haversine distance
+  let destResult = toptenDistances.map(a => a.destination);
+  const destinations = destResult;
+  
+// Now we call Google with our short list
+  const service = new google.maps.DistanceMatrixService();
+  const getDistanceMatrix =
+    (service, parameters) => new Promise((resolve, reject) => {
+      service.getDistanceMatrix(parameters, (response, status) => {
+        if (status != google.maps.DistanceMatrixStatus.OK) {
+          reject(response);
+        } else {
+          const distances = [];
+          const results = response.rows[0].elements;
+          for (let j = 0; j < results.length; j++) {
+            const element = results[j];
+            const distanceText = element.distance.text;
+            const distanceVal = element.distance.value;
+            const distanceObject = {
+              storeid: stores[j],
+              distanceText: distanceText,
+              distanceVal: distanceVal,
+            };
+    
+            distances.push(distanceObject);
+          }
+
+          resolve(distances);
+        }
+      });
+    });
+  
+  const distancesList = await getDistanceMatrix(service, {
+    origins: [origin],
+    destinations: destinations,
+    travelMode: 'DRIVING',
+    unitSystem: google.maps.UnitSystem.IMPERIAL,
+  });
+
+  distancesList.sort((first, second) => {
+    return first.distanceVal - second.distanceVal;
+  });
+  
+  return distancesList;
+  
+}
+
 /**
  * Build the content of the side panel from the sorted list of stores
  * and display it.
