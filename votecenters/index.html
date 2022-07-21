@@ -3,17 +3,48 @@
 <head>
   <title>Vote Centers 2022</title>
  <style>
-    #map {
-      height: 100%;
-    }
-    
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
+   
+   #overlay_a {
+   border-top: 5vh solid #1F3161;
+   position: fixed;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 1;
+   pointer-events: none;
+   }
+   
+   #overlay_b {
+   position: fixed;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 1vh;
+   left: 17px;
+   right: 0;
+   bottom: 0;
+   z-index: 2;
+   pointer-events: none;
+   }
+   
+   #map {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   bottom: 0px;
+   }
+   
+   html, body {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+   }
+   
     /* Styling for autocomplete search bar */
     #pac-card {
       background-color: #fff;
@@ -21,7 +52,7 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
       box-sizing: border-box;
       font-family: Roboto;
-      margin: 10px 10px 0 0;
+      margin: 7vh 1vw 0 0;
       -moz-box-sizing: border-box;
       outline: none;
     }
@@ -49,7 +80,7 @@
     
     #title {
       color: #fff;
-      background-color: #acbcc9;
+      background-color: #1F3161;
       font-size: 18px;
       font-weight: 400;
       padding: 6px 12px;
@@ -62,9 +93,10 @@
     /* Styling for an info pane that slides out from the left. 
      * Hidden by default. */
     #panel {
+      padding-top: 250px;
       height: 100%;
       width: null;
-      background-color: white;
+      background-color: #F2352F;
       position: fixed;
       z-index: 1;
       overflow-x: hidden;
@@ -76,15 +108,17 @@
     }
     
      .panelHeader {
+      color: #F5CE42;
       font-family: 'open sans', arial, sans-serif;
       font-size: 1.2em;
-      font-weight: 800;
+      font-weight: 700;
       margin-block-end: 0px;
       padding-left: 18px;
       padding-right: 18px;
     }
     
     .place {
+      color: #FFFFFF;
       font-family: 'open sans', arial, sans-serif;
       font-size: 1.2em;
       font-weight: 500;
@@ -94,7 +128,7 @@
     }
     
     .distanceText {
-      color: silver;
+      color: #F5CE42;
       font-family: 'open sans', arial, sans-serif;
       font-size: 1em;
       font-weight: 400;
@@ -107,12 +141,26 @@
 </head>
 
 <body>
-  <!-- The div to hold the map -->
-  <div id="map"></div>
+    
+<div id="overlay_a">
+</div>
+  
+<div id="overlay_b">
+  <img src = "./img/ready_set.png" width=200><br>
+  <img src = "./img/find_polling.png" width=200>
+</div>
+  
+<div id="map">
+</div>
 
+
+  
   <script src="app.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI&libraries=places&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI&libraries=places&callback=initMap"> 
   </script>
+  
+
+  
 </body>
 
 </html>

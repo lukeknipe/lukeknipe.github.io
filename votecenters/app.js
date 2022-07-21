@@ -195,14 +195,23 @@ function sanitizeHTML(strings) {
 // Initialize the map.
  
 function initMap() {
+  
+  // Display overlays
+  document.getElementById("overlay_a").style.display = "block";
+  document.getElementById("overlay_b").style.display = "block";
+  
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: {lat: 32.252, lng: -110.947},
     styles: mapStyle,
+    disableDefaultUI: true,
+    options: {
+    gestureHandling: 'greedy'
+  }
   });
 
-  // Load the vote centers GeoJSON onto the map.
+  // Load the vote centers GeoJSON onto the map
   map.data.loadGeoJson('vote_centers.json', {idPropertyName: 'FID'});
 
   // Define the marker icons
@@ -306,6 +315,7 @@ function initMap() {
 
     return;
   });
+    
 }
 
 // Use Distance Matrix API to calculate driving distance from origin to each vote center
