@@ -285,7 +285,7 @@ function initMap() {
   const originMarker = new google.maps.Marker({
     map: map,
     icon: "./img/locator.png",
-    title: autocomplete.getPlace(),
+    title: streetAddress,
   });
   
   originMarker.setVisible(false);
