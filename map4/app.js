@@ -312,6 +312,9 @@ function initMap() {
     // to each vote center
     const rankedStores = await calculateDistances(map.data, originLocation);
     showStoresList(map.data, rankedStores);
+    
+    const rankedEvs = await evcalculateDistances(map.data, originLocation);
+    evshowStoresList(map.data, rankedEvs);
 
     return;
   });
@@ -544,6 +547,57 @@ function showStoresList(data, stores) {
   const name = document.createElement('p');
   name.classList.add('panelHeader');
   name.textContent = "Vote centers closest to " + streetAddress + ":";
+  panel.appendChild(name);
+  
+  stores.forEach((store) => {
+    // Add store details with text formatting
+    const name = document.createElement('p');
+    name.classList.add('place');
+    const currentStore = data.getFeatureById(store.storeid);
+    name.textContent = currentStore.getProperty('VC_NAME');
+    panel.appendChild(name);
+    const distanceText = document.createElement('p');
+    distanceText.classList.add('distanceText');
+    distanceText.textContent = store.distanceText;
+    panel.appendChild(distanceText);
+  });
+  
+  // Open the panel
+  panel.classList.add('open');
+
+  return;
+}
+
+function evshowStoresList(data, stores) {
+  if (stores.length == 0) {
+    console.log('empty stores');
+    return;
+  }
+
+  let panel = document.createElement('div');
+  // If the panel already exists, use it. Else, create it and add to the page.
+  if (document.getElementById('panel-two')) {
+    panel = document.getElementById('panel-two');
+    // If panel is already open, close it
+    if (panel.classList.contains('open')) {
+      panel.classList.remove('open');
+    }
+  } else {
+    panel.setAttribute('id', 'panel-two');
+    const body = document.body;
+    body.insertBefore(panel, body.childNodes[0]);
+  }
+
+
+  // Clear the previous details
+  while (panel.lastChild) {
+    panel.removeChild(panel.lastChild);
+  }
+
+  // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one
+  const name = document.createElement('p');
+  name.classList.add('panelHeader-two');
+  name.textContent = "Early vote locations closest to " + streetAddress + ":";
   panel.appendChild(name);
   
   stores.forEach((store) => {
