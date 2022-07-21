@@ -2520,6 +2520,23 @@
           32.40943779565006
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 134,
+        "VC_NAME": "Pima County Natural Resources, Parks, and Recreation Building",
+        "VC_ADDRESS": "3500 W River Rd",
+        "VC_ID": "",
+        "ROOM": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.03873252868652,
+          32.31565884556762
+        ]
+      }
     }
   ]
 }
