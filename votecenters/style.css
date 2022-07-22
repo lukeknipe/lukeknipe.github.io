@@ -147,20 +147,6 @@
 
 @media only screen and (max-width: 600px) {
 
-  #overlay_a {
-     border-top: 5vh solid #1F3161;
-     position: fixed;
-     display: none;
-     width: 100%;
-     height: 100%;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     z-index: 1;
-     pointer-events: none;
-     }
-
      #map {
      position: absolute;
      top: 0px;
