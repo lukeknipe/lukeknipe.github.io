@@ -462,6 +462,12 @@ function showList(data, stores) {
     name.textContent = centerName.getProperty('VC_NAME');
     panel.appendChild(name);
 
+    const address = document.createElement('p');
+    address.classList.add('place');
+    const centerName = data.getFeatureById(store.storeid);
+    address.textContent = centerName.getProperty('VC_ADDRESS');
+    panel.appendChild(address);
+    
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
     distanceText.textContent = store.distanceText;
