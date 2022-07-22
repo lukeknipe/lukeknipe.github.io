@@ -315,7 +315,7 @@ function initMap() {
     // Use the selected address as the origin to calculate distances
     // to each vote center
     const rankedStores = await calculateDistances(map.data, originLocation);
-    showStoresList(map.data, rankedStores);
+    showList(map.data, rankedStores);
 
     return;
   });
@@ -422,7 +422,7 @@ async function calculateDistances(data, origin, response) {
  * distanceVal, and storeid property.
  */
 
-function showStoresList(data, stores) {
+function showList(data, stores) {
   if (stores.length == 0) {
     console.log('empty stores');
     return;
