@@ -445,7 +445,7 @@ function showList(data, stores) {
         const address = document.createElement('p');
         address.classList.add('address');
         const centerAddress = data.getFeatureById(store.storeid);
-        address.textContent = "<a id='foo'>" + centerAddress.getProperty('VC_ADDRESS') + "</a>";
+        address.textContent = centerAddress.getProperty('VC_ADDRESS');
         panel.appendChild(address);
 
         const distanceText = document.createElement('p');
