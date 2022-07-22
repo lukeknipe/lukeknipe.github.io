@@ -243,8 +243,8 @@
       /* Styling for an info pane that slides out from the left.
        * Hidden by default. */
       #panel {
-        padding-top: 250px;
-        height: 100%;
+        bottom: 0px;
+        height: 35%;
         width: null;
         background-color: #F2352F;
         position: fixed;
