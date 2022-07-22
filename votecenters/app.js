@@ -463,7 +463,7 @@ function showList(data, stores) {
     panel.appendChild(name);
 
     const address = document.createElement('p');
-    address.classList.add('place');
+    address.classList.add('address');
     const centerAddress = data.getFeatureById(store.storeid);
     address.textContent = centerAddress.getProperty('VC_ADDRESS');
     panel.appendChild(address);
