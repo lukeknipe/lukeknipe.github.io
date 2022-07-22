@@ -138,6 +138,16 @@
       padding-right: 18px;
     }
 
+      .address {
+      color: #F5CE42;
+      font-family: 'open sans', arial, sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+      margin-block-start: 0.25em;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+   
     .distanceText {
       color: #F5CE42;
       font-family: 'open sans', arial, sans-serif;
