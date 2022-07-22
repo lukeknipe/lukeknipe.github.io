@@ -464,8 +464,8 @@ function showList(data, stores) {
 
     const address = document.createElement('p');
     address.classList.add('place');
-    const centerName = data.getFeatureById(store.storeid);
-    address.textContent = centerName.getProperty('VC_ADDRESS');
+    const centerAddress = data.getFeatureById(store.storeid);
+    address.textContent = centerAddress.getProperty('VC_ADDRESS');
     panel.appendChild(address);
     
     const distanceText = document.createElement('p');
