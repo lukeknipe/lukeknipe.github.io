@@ -229,7 +229,7 @@
         background-color: #F2352F;
         position: fixed;
         z-index: 1;
-        overflow: hidden;
+        overflow: scroll;
         transition: all .2s ease-out;
       }
 
