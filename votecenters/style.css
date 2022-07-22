@@ -39,13 +39,13 @@
 
    #logo {
    position: fixed;
-   right: 30px; bottom: 40px;
+   right: 4vh; bottom: 5vh;
    z-index: 3;
    pointer-events: none;
    }
 
    .logo {
-   max-width: 20vh;
+   max-width: 28vh;
    height: auto;
    }
 
