@@ -182,6 +182,10 @@
        width: 100%;
        margin: 0;
      }
+   
+      p {
+      margin: 0px;
+   }
 
      #logo {
      position: fixed;
@@ -256,35 +260,43 @@
         width: 100%;
       }
 
-       .panelHeader {
-        color: #F5CE42;
-        font-family: 'open sans', arial, sans-serif;
-        font-size: 1.2em;
-        font-weight: 700;
-        margin-block-end: 0px;
-        padding-left: 18px;
-        padding-right: 18px;
-      }
+     .panelHeader {
+      color: #F5CE42;
+      font-family: 'open sans', arial, sans-serif;
+      font-size: 2.7vh;
+      font-weight: 700;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 
-      .place {
-        color: #FFFFFF;
-        font-family: 'open sans', arial, sans-serif;
-        font-size: 1.2em;
-        font-weight: 500;
-        margin-block-end: 0px;
-        padding-left: 18px;
-        padding-right: 18px;
-      }
+    .place {
+      color: #FFFFFF;
+      font-family: 'open sans', arial, sans-serif;
+      font-size: 2.4vh;
+      font-weight: 500;
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 
-      .distanceText {
-        color: #F5CE42;
-        font-family: 'open sans', arial, sans-serif;
-        font-size: 1em;
-        font-weight: 400;
-        margin-block-start: 0.25em;
-        padding-left: 18px;
-        padding-right: 18px;
-      }
+      .address {
+      color: #F5CE42;
+      font-family: 'open sans', arial, sans-serif;
+      font-size: 2.4vh;
+      font-weight: 500;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+   
+    .distanceText {
+      color: #F5CE42;
+      font-family: 'open sans', arial, sans-serif;
+      font-size: 2.1vh;
+      font-weight: 400;
+      margin-block-start: 0em;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   /* CSS for mobile devices in landscape view ------------------------------- */
