@@ -42,6 +42,8 @@
    right: 30px; bottom: 40px;
    z-index: 3;
    pointer-events: none;
+   max-width: 20vw;
+   height: auto;
    }
 
    html, body {
