@@ -169,7 +169,7 @@
      #logo {
      position: fixed;
      top: 13.5vh;
-     left: 40vh;
+     right: 5px;
      z-index: 3;
      pointer-events: none;
      }
