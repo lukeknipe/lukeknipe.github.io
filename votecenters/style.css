@@ -147,8 +147,8 @@
       .address {
       color: #F5CE42;
       font-family: 'open sans', arial, sans-serif;
-      font-size: 1em;
-      font-weight: 400;
+      font-size: 1.7vh;
+      font-weight: 500;
       margin-block-start: 0em;
       padding-left: 18px;
       padding-right: 18px;
@@ -157,7 +157,7 @@
     .distanceText {
       color: #F5CE42;
       font-family: 'open sans', arial, sans-serif;
-      font-size: 1em;
+      font-size: 1.6vh;
       font-weight: 400;
       margin-block-start: 0em;
       padding-left: 18px;
