@@ -424,7 +424,7 @@ async function calculateDistances(data, origin, response) {
 
 function showList(data, stores) {
   if (stores.length == 0) {
-    console.log('empty stores');
+    console.log('No centers to display');
     return;
   }
 
@@ -449,18 +449,19 @@ function showList(data, stores) {
   }
 
   // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one
-  const name = document.createElement('p');
-  name.classList.add('panelHeader');
-  name.textContent = "Vote centers closest to " + streetAddress + ":";
-  panel.appendChild(name);
+  const header = document.createElement('p');
+  header.classList.add('panelHeader');
+  header.textContent = "Vote centers closest to " + streetAddress + ":";
+  panel.appendChild(header);
   
   stores.forEach((store) => {
     // Add store details with text formatting
     const name = document.createElement('p');
     name.classList.add('place');
-    const currentStore = data.getFeatureById(store.storeid);
-    name.textContent = currentStore.getProperty('VC_NAME');
+    const centerName = data.getFeatureById(store.storeid);
+    name.textContent = centerName.getProperty('VC_NAME');
     panel.appendChild(name);
+
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
     distanceText.textContent = store.distanceText;
