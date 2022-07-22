@@ -168,7 +168,7 @@
 
      #logo {
      position: fixed;
-     right: 1vh; top: 12vh;
+     right: 1vh; top: 13vh;
      z-index: 3;
      pointer-events: none;
      }
