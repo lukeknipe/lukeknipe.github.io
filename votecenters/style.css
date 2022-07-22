@@ -150,7 +150,7 @@
 
 /* CSS for mobile devices in portrait view ---------------------------------- */
 
-@media only screen and (max-width: 600px) and (orientation:portrait) {
+@media only screen and (max-width: 710px) and (orientation:portrait) {
 
      #map {
      position: absolute;
@@ -272,7 +272,7 @@
 
   /* CSS for mobile devices in landscape view ------------------------------- */
 
-  @media only screen and (max-width: 600px) and (orientation:portrait) {
+  @media only screen and (max-width: 600px) and (orientation:landscape) {
 
        #map {
        position: absolute;
