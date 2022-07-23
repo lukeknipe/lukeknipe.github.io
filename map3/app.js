@@ -438,7 +438,7 @@ function showList(data, stores) {
         // Add store details with text formatting
         var a = document.createElement('a');
         a.classList.add('a');
-        var linkText = document.createTextNode("my title text");
+        var linkText = document.createTextNode("my tittle text");
         a.appendChild(linkText);
         a.title = "my title text";
         a.href = "http://example.com";
