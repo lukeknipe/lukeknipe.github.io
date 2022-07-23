@@ -437,6 +437,7 @@ function showList(data, stores) {
     stores.forEach((store) => {
         // Add store details with text formatting
         var a = document.createElement('a');
+        a.classList.add('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
         a.title = "my title text";
