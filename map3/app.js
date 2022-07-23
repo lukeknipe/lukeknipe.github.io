@@ -439,7 +439,7 @@ function showList(data, stores) {
         const name = document.createElement('p');
         name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
-        name.textContent = 'Blah ' + centerName.getProperty('VC_NAME');
+        name.textContent = '<a id=123>' + centerName.getProperty('VC_NAME') + '</a>';
         panel.appendChild(name);
 
         const address = document.createElement('p');
