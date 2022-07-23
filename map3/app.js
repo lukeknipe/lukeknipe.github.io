@@ -433,9 +433,6 @@ function showList(data, stores) {
     header.classList.add('panelHeader');
     header.textContent = "Vote centers closest to " + streetAddress + ":";
     panel.appendChild(header);
-    header.title = "my title text";
-    header.href = "http://example.com";
-    document.body.appendChild(header);
 
     var a = document.createElement('a');
     var linkText = document.createTextNode("my title text");
