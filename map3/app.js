@@ -433,6 +433,9 @@ function showList(data, stores) {
     header.classList.add('panelHeader');
     header.textContent = "Vote centers closest to " + streetAddress + ":";
     panel.appendChild(header);
+    header.title = "my title text";
+    header.href = "http://example.com";
+    panel.appendChild(header);
 
     stores.forEach((store) => {
         // Add store details with text formatting
