@@ -439,7 +439,7 @@ function showList(data, stores) {
     a.appendChild(linkText);
     a.title = "my title text";
     a.href = "http://example.com";
-    document.body.appendChild(a);
+    panel.appendChild(a);
 
     stores.forEach((store) => {
         // Add store details with text formatting
