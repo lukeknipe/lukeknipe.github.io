@@ -437,7 +437,7 @@ function showList(data, stores) {
         // Add store details with text formatting
 
         const a = document.createElement('a');
-        name.classList.add('place');
+        a.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         const linkText = centerName.getProperty('VC_NAME');
         a.appendChild(linkText);
