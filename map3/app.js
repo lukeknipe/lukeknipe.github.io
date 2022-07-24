@@ -436,9 +436,6 @@ function showList(data, stores) {
     stores.forEach((store) => {
     // Add vote center details with text formatting
 
-        var el = document.getElementById('foo');
-        el.onclick = showFoo;
-
         var a = document.createElement('a');
         a.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
@@ -449,6 +446,7 @@ function showList(data, stores) {
         a.title = "Get some foo!";
         a.id = "foo";
         panel.appendChild(a);
+        a.onclick = showFoo;
 
 //        const name = document.createElement('p');
 //        name.classList.add('place');
