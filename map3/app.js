@@ -436,11 +436,17 @@ function showList(data, stores) {
     stores.forEach((store) => {
     // Add vote center details with text formatting
 
+        var a = document.createElement('a');
+        var linkText = document.createTextNode("my title text");
+        a.appendChild(linkText);
+        a.title = "my title text";
+        a.href = "http://example.com";
+        panel.appendChild(a);
+
         const name = document.createElement('p');
         name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         name.textContent = centerName.getProperty('VC_NAME');
-        name.href = "http://example.com";
         panel.appendChild(name);
 
         const address = document.createElement('p');
