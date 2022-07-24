@@ -436,6 +436,14 @@ function showList(data, stores) {
     stores.forEach((store) => {
         // Add store details with text formatting
 
+        var a = document.createElement('a');
+        name.classList.add('a');
+        var linkText = document.createTextNode("my title text");
+        a.appendChild(linkText);
+        a.title = "my title text";
+        a.href = "http://example.com";
+        document.body.appendChild(a);
+
         const name = document.createElement('p');
         name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
