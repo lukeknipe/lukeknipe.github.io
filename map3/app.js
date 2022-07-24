@@ -434,21 +434,13 @@ function showList(data, stores) {
     header.textContent = "Vote centers closest to " + streetAddress + ":";
     panel.appendChild(header);
     stores.forEach((store) => {
-        // Add store details with text formatting
+    // Add vote center details with text formatting
 
-        const a = document.createElement('a');
-        a.classList.add('place');
+        const name = document.createElement('p');
+        name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
-        a.textContent = centerName.getProperty('VC_NAME');
-        a.appendChild(a);
-        a.href = "http://example.com";
-        panel.appendChild(a);
-
-//        const name = document.createElement('p');
-//        name.classList.add('place');
-//        const centerName = data.getFeatureById(store.storeid);
-//        name.textContent = centerName.getProperty('VC_NAME');
-//        panel.appendChild(name);
+        name.textContent = centerName.getProperty('VC_NAME');
+        panel.appendChild(name);
 
         const address = document.createElement('p');
         address.classList.add('address');
