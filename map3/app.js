@@ -436,18 +436,19 @@ function showList(data, stores) {
     stores.forEach((store) => {
         // Add store details with text formatting
 
-        const a = document.createElement('a');
-        a.classList.add('a');
-        const linkText = document.createTextNode("my title text");
+        const name = document.createElement('p');
+        a.classList.add('place');
+        const centerName = data.getFeatureById(store.storeid);
+        const linkText = centerName.getProperty('VC_NAME');
         a.appendChild(linkText);
         a.href = "http://example.com";
         panel.appendChild(a);
 
-        const name = document.createElement('p');
-        name.classList.add('place');
-        const centerName = data.getFeatureById(store.storeid);
-        name.textContent = centerName.getProperty('VC_NAME');
-        panel.appendChild(name);
+//        const name = document.createElement('p');
+//        name.classList.add('place');
+//        const centerName = data.getFeatureById(store.storeid);
+//        name.textContent = centerName.getProperty('VC_NAME');
+//        panel.appendChild(name);
 
         const address = document.createElement('p');
         address.classList.add('address');
