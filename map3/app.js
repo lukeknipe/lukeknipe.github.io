@@ -440,7 +440,7 @@ function showList(data, stores) {
         a.classList.add('a');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
-        a.title = "my title text";
+//        a.title = "my title text";
         a.href = "http://example.com";
         panel.appendChild(a);
 
