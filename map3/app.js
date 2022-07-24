@@ -436,6 +436,9 @@ function showList(data, stores) {
     stores.forEach((store) => {
     // Add vote center details with text formatting
 
+        var el = document.getElementById('foo');
+        el.onclick = showFoo;
+
         var a = document.createElement('a');
         a.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
@@ -443,6 +446,8 @@ function showList(data, stores) {
         var linkText = document.createTextNode(vcName);
         a.appendChild(linkText);
         a.href = "http://example.com";
+        a.title = "Get some foo!";
+        a.id = "foo";
         panel.appendChild(a);
 
 //        const name = document.createElement('p');
@@ -477,4 +482,9 @@ function haversine_distance(origin, storeLoc) {
     const difflon = (storeLoc.lng() - origin.lng()) * (Math.PI / 180); // Radian difference (longitudes)
     const d = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) + Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)));
     return d;
+}
+
+function showFoo() {
+  alert('I am foo!');
+  return false;
 }
