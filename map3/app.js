@@ -438,16 +438,18 @@ function showList(data, stores) {
 
         var a = document.createElement('a');
         a.classList.add('place');
-        var linkText = document.createTextNode("my title text");
+        const centerName = data.getFeatureById(store.storeid);
+        const vcName =  centerName.getProperty('VC_NAME');
+        var linkText = document.createTextNode(vcName);
         a.appendChild(linkText);
         a.href = "http://example.com";
         panel.appendChild(a);
 
-        const name = document.createElement('p');
-        name.classList.add('place');
-        const centerName = data.getFeatureById(store.storeid);
-        name.textContent = centerName.getProperty('VC_NAME');
-        panel.appendChild(name);
+//        const name = document.createElement('p');
+//        name.classList.add('place');
+//        const centerName = data.getFeatureById(store.storeid);
+//        name.textContent = centerName.getProperty('VC_NAME');
+//        panel.appendChild(name);
 
         const address = document.createElement('p');
         address.classList.add('address');
