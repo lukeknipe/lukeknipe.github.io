@@ -438,17 +438,18 @@ function showList(data, stores) {
         // Add store details with text formatting
         var a = document.createElement('a');
         a.classList.add('a');
-        var linkText = document.createTextNode("my tittle text");
+        const centerName = data.getFeatureById(store.storeid);
+        name.linkText = centerName.getProperty('VC_NAME');
         a.appendChild(linkText);
         a.title = "my title text";
         a.href = "http://example.com";
         panel.appendChild(a);
 
-        const name = document.createElement('p');
-        name.classList.add('place');
-        const centerName = data.getFeatureById(store.storeid);
-        name.textContent = centerName.getProperty('VC_NAME');
-        panel.appendChild(name);
+  //      const name = document.createElement('p');
+  //      name.classList.add('place');
+  //      const centerName = data.getFeatureById(store.storeid);
+  //      name.textContent = centerName.getProperty('VC_NAME');
+  //      panel.appendChild(name);
 
         const address = document.createElement('p');
         address.classList.add('address');
