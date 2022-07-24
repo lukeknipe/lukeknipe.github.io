@@ -437,11 +437,11 @@ function showList(data, stores) {
         // Add store details with text formatting
 
         const name = document.createElement('p');
-        a.classList.add('place');
+        name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         const linkText = centerName.getProperty('VC_NAME');
-        a.appendChild(linkText);
-        a.href = "http://example.com";
+        name.appendChild(linkText);
+        name.href = "http://example.com";
         panel.appendChild(a);
 
 //        const name = document.createElement('p');
