@@ -447,6 +447,8 @@ function showList(data, stores) {
         name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         name.textContent = centerName.getProperty('VC_NAME');
+        name.appendChild(centerName.getProperty('VC_NAME'));
+        a.href = "http://example.com";
         panel.appendChild(name);
 
         const address = document.createElement('p');
