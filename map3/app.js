@@ -437,7 +437,7 @@ function showList(data, stores) {
     // Add vote center details with text formatting
 
         var a = document.createElement('a');
-        name.classList.add('place');
+        a.classList.add('place');
         var linkText = document.createTextNode("my title text");
         a.appendChild(linkText);
         a.title = "my title text";
