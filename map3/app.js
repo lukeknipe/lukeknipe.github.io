@@ -436,12 +436,12 @@ function showList(data, stores) {
     stores.forEach((store) => {
         // Add store details with text formatting
 
-        const name = document.createElement('p');
+        const a = document.createElement('a');
         name.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         const linkText = centerName.getProperty('VC_NAME');
-        name.appendChild(linkText);
-        name.href = "http://example.com";
+        a.appendChild(linkText);
+        a.href = "http://example.com";
         panel.appendChild(a);
 
 //        const name = document.createElement('p');
