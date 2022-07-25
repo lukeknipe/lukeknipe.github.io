@@ -441,13 +441,14 @@ function showList(data, stores) {
         a.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         const vcName =  centerName.getProperty('VC_NAME');
+        const vcGeo =  centerName.getGeometry().get();
         var linkText = document.createTextNode(vcName);
         a.appendChild(linkText);
         a.href = "#";
         a.title = "Get some foo!";
         a.id = "foo";
         panel.appendChild(a);
-        a.onclick = showFoo;
+        a.onclick = showFoo(vcGeo);
 
 //        const name = document.createElement('p');
 //        name.classList.add('place');
@@ -485,6 +486,7 @@ function haversine_distance(origin, storeLoc) {
 
 function showFoo() {
 //  alert('I am foo!');
+  console.log(vcGeo);
   infoWindow.setContent("Foo");
   infoWindow.setPosition(dpos);
   infoWindow.setOptions({
