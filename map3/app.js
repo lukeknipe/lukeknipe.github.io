@@ -203,7 +203,7 @@ function initMap() {
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
-    const infoWindow = new google.maps.InfoWindow({});
+    var infoWindow = new google.maps.InfoWindow({});
 
     // Display information in a popup when a marker is clicked.
     map.data.addListener('click', (event) => {
