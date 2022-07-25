@@ -224,6 +224,7 @@ function initMap() {
             pixelOffset: new google.maps.Size(0, -30)
         });
         infoWindow.open(map);
+        console.log(dpos);
     });
 
     // Build and add the search bar
