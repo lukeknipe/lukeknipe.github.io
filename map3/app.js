@@ -483,8 +483,12 @@ function haversine_distance(origin, storeLoc) {
 }
 
 function showFoo() {
-  alert('I am foo!');
+//  alert('I am foo!');
   infoWindow.setContent("Foo");
+  infoWindow.setPosition(dpos);
+  infoWindow.setOptions({
+      pixelOffset: new google.maps.Size(0, -30)
+  });
   infoWindow.open(map);
   return false;
 }
