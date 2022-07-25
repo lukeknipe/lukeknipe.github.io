@@ -165,7 +165,7 @@ function sanitizeHTML(strings) {
 
 // Initialize the map.
 
-function initMap(infoWindow) {
+function initMap() {
 
     // Display overlays
     document.getElementById("overlay_a").style.display = "block";
@@ -496,7 +496,6 @@ function showFoo(vcId, vcGeo) {
       pixelOffset: new google.maps.Size(0, -30)
   });
   infoWindow.open(map);
-  initMap(infoWindow);
   console.log(vcGeo);
   console.log(vcId);
   return false;
