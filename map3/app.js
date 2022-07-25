@@ -165,7 +165,7 @@ function sanitizeHTML(strings) {
 
 // Initialize the map.
 
-function initMap() {
+function initMap(infoWindow) {
 
     // Display overlays
     document.getElementById("overlay_a").style.display = "block";
@@ -488,7 +488,7 @@ function haversine_distance(origin, storeLoc) {
 }
 
 function showFoo(vcId, vcGeo) {
-  const infoWindow = new google.maps.InfoWindow();
+//  const infoWindow = new google.maps.InfoWindow();
 //  alert('I am foo!');
   infoWindow.setContent("Foo");
   infoWindow.setPosition(vcGeo);
@@ -496,6 +496,7 @@ function showFoo(vcId, vcGeo) {
       pixelOffset: new google.maps.Size(0, -30)
   });
   infoWindow.open(map);
+  initMap(infoWindow);
   console.log(vcGeo);
   console.log(vcId);
   return false;
