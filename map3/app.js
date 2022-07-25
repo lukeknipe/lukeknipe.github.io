@@ -487,7 +487,7 @@ function haversine_distance(origin, storeLoc) {
 function showFoo(vcGeo) {
 //  alert('I am foo!');
   infoWindow.setContent("Foo");
-  infoWindow.setPosition(dpos);
+  infoWindow.setPosition(vcGeo);
   infoWindow.setOptions({
       pixelOffset: new google.maps.Size(0, -30)
   });
