@@ -488,16 +488,17 @@ function haversine_distance(origin, storeLoc) {
 }
 
 function showFoo(vcId, vcGeo) {
-//  const infoWindow = new google.maps.InfoWindow();
+  initMap();
+  const infoWindow = new google.maps.InfoWindow();
 //  alert('I am foo!');
-//  infoWindow.setContent("Foo");
-//  infoWindow.setPosition(vcGeo);
-//  infoWindow.setOptions({
-//      pixelOffset: new google.maps.Size(0, -30)
-//  });
-//  infoWindow.open(map);
+  infoWindow.setContent("Foo");
+  infoWindow.setPosition(vcGeo);
+  infoWindow.setOptions({
+      pixelOffset: new google.maps.Size(0, -30)
+  });
+  infoWindow.open(map);
   console.log(vcGeo);
   console.log(vcId);
-  initMap();
+
   return false;
 }
