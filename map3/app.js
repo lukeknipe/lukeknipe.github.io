@@ -442,7 +442,7 @@ function showList(data, stores) {
         const vcName =  centerName.getProperty('VC_NAME');
         var linkText = document.createTextNode(vcName);
         a.appendChild(linkText);
-        a.href = "http://example.com";
+        a.href = "#";
         a.title = "Get some foo!";
         a.id = "foo";
         panel.appendChild(a);
