@@ -450,7 +450,7 @@ function showList(data, stores) {
         a.id = "foo";
         panel.appendChild(a);
         a.onclick = function(){
-          showFoo(vcId);
+          showFoo(vcId, vcGeo);
         };
 
 //        const name = document.createElement('p');
