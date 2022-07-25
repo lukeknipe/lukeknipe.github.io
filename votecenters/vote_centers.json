@@ -23,7 +23,7 @@
             "VC_NAME":"Accelerated Elementary & Secondary School",
             "VC_ADDRESS":"5245 N Camino De Oeste",
             "BOS_DIST":3,
-            "ROOM":"MULTIPURPOSE ROOM"
+            "ROOM":"Multipurpose Room"
          }
       },
       {
@@ -42,7 +42,7 @@
             "VC_NAME":"Ajo Federated Church",
             "VC_ADDRESS":"101 W Lomita Avenue",
             "BOS_DIST":3,
-            "ROOM":"SOCIAL HALL"
+            "ROOM":"Social Hall"
          }
       },
       {
@@ -58,10 +58,10 @@
          "properties":{
             "FID":3,
             "VC_ID":3,
-            "VC_NAME":"ALIVE CHRISTIAN FELLOWSHIP",
-            "VC_ADDRESS":"9662 N LA CHOLLA BOULEVARD",
+            "VC_NAME":"Alive Christian Fellowship",
+            "VC_ADDRESS":"9662 N La Cholla Blvd",
             "BOS_DIST":1,
-            "ROOM":"LOBBY"
+            "ROOM":"Lobby"
          }
       },
       {
@@ -99,7 +99,7 @@
             "VC_NAME":"American Legion Post 109",
             "VC_ADDRESS":"15921 S Houghton Road",
             "BOS_DIST":4,
-            "ROOM":"DINING ROOM"
+            "ROOM":"Dining Room"
          }
       },
       {
@@ -115,10 +115,10 @@
          "properties":{
             "FID":6,
             "VC_ID":6,
-            "VC_NAME":"American Legion Sahuaro Post #68",
+            "VC_NAME":"American Legion Sahuaro Post 68",
             "VC_ADDRESS":"4724 S 12th Avenue",
             "BOS_DIST":5,
-            "ROOM":"LEGION MAIN BALLROOM"
+            "ROOM":"Legion Main Ballroom"
          }
       },
       {
@@ -134,8 +134,8 @@
          "properties":{
             "FID":7,
             "VC_ID":7,
-            "VC_NAME":"The Good Sheperd United Church",
-            "VC_ADDRESS":"17750 S La Canada Dr.",
+            "VC_NAME":"The Good Shepherd United Church",
+            "VC_ADDRESS":"17750 S La Canada Dr",
             "BOS_DIST":3,
             "ROOM":"No Information"
          }
@@ -154,9 +154,9 @@
             "FID":8,
             "VC_ID":8,
             "VC_NAME":"Arivaca Old School Building",
-            "VC_ADDRESS":"17180 W 4th Street",
+            "VC_ADDRESS":"17180 W 4th St",
             "BOS_DIST":3,
-            "ROOM":"OLD SCHOOL HOUSE"
+            "ROOM":"Old School House"
          }
       },
       {
@@ -172,10 +172,10 @@
          "properties":{
             "FID":9,
             "VC_ID":9,
-            "VC_NAME":"ARMORY PARK CENTER",
-            "VC_ADDRESS":"220 S 5TH AVENUE",
+            "VC_NAME":"Armory Park Center",
+            "VC_ADDRESS":"220 S 5th Ave",
             "BOS_DIST":2,
-            "ROOM":"QUIET ROOM"
+            "ROOM":"Quiet Room"
          }
       },
       {
@@ -191,10 +191,10 @@
          "properties":{
             "FID":10,
             "VC_ID":10,
-            "VC_NAME":"AUSD - Donaldson Elementary School",
-            "VC_ADDRESS":"2040 W Omar Drive",
+            "VC_NAME":"Donaldson Elementary School",
+            "VC_ADDRESS":"2040 W Omar Dr",
             "BOS_DIST":1,
-            "ROOM":"GYMNASIUM"
+            "ROOM":"Gymnasium"
          }
       },
       {
@@ -210,10 +210,10 @@
          "properties":{
             "FID":11,
             "VC_ID":11,
-            "VC_NAME":"AUSD - Rio Vista Elementary School",
-            "VC_ADDRESS":"1351 E Limberlost Drive",
+            "VC_NAME":"Rio Vista Elementary School",
+            "VC_ADDRESS":"1351 E Limberlost Dr",
             "BOS_DIST":3,
-            "ROOM":"GYMNASIUM"
+            "ROOM":"Gymnasium"
          }
       },
       {
@@ -230,9 +230,9 @@
             "FID":12,
             "VC_ID":12,
             "VC_NAME":"Avra Valley Fire District",
-            "VC_ADDRESS":"15790 W Silverbell Road",
+            "VC_ADDRESS":"15790 W Silverbell Rd",
             "BOS_DIST":3,
-            "ROOM":"CLASSROOM"
+            "ROOM":"Classroom"
          }
       },
       {
@@ -251,7 +251,7 @@
             "VC_NAME":"Beautiful Savior Lutheran Church",
             "VC_ADDRESS":"7570 N Thornydale Road",
             "BOS_DIST":1,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -267,10 +267,10 @@
          "properties":{
             "FID":14,
             "VC_ID":15,
-            "VC_NAME":"BETHEL BAPTIST CHURCH",
-            "VC_ADDRESS":"11040 E ESCALANTE ROAD",
+            "VC_NAME":"Bethel Baptist Church",
+            "VC_ADDRESS":"11040 E Escalante Rd",
             "BOS_DIST":4,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -286,10 +286,10 @@
          "properties":{
             "FID":15,
             "VC_ID":16,
-            "VC_NAME":"CANOA RANCH RECREATION CENTER",
-            "VC_ADDRESS":"5750 S TURQUOISE MOUNTAIN DRIVE",
+            "VC_NAME":"Canoa Ranch Recreation Center",
+            "VC_ADDRESS":"5750 S Turquoise Mountain Dr",
             "BOS_DIST":4,
-            "ROOM":"AMADO ROOM"
+            "ROOM":"Amado Room"
          }
       },
       {
@@ -305,10 +305,10 @@
          "properties":{
             "FID":16,
             "VC_ID":17,
-            "VC_NAME":"CANYON DEL ORO ASSEMBLY OF GOD",
-            "VC_ADDRESS":"2950 W LAMBERT LANE",
+            "VC_NAME":"Canyon del Oro Assembly of God",
+            "VC_ADDRESS":"2950 W Lambert Lane",
             "BOS_DIST":1,
-            "ROOM":"FOYER"
+            "ROOM":"Foyer"
          }
       },
       {
@@ -324,10 +324,10 @@
          "properties":{
             "FID":17,
             "VC_ID":18,
-            "VC_NAME":"CANYON DEL ORO BAPTIST CHURCH",
-            "VC_ADDRESS":"9200 N ORACLE ROAD",
+            "VC_NAME":"Canyon del Oro Baptist Church",
+            "VC_ADDRESS":"9200 N Oracle Rd",
             "BOS_DIST":1,
-            "ROOM":"CHAPEL HALL"
+            "ROOM":"Chapel Hall"
          }
       },
       {
@@ -346,7 +346,7 @@
             "VC_NAME":"Baboquivari District Office",
             "VC_ADDRESS":"Federal Route 19 & Fresnal Canyon Road",
             "BOS_DIST":3,
-            "ROOM":"MAIN OFFICE"
+            "ROOM":"Main Office"
          }
       },
       {
@@ -362,10 +362,10 @@
          "properties":{
             "FID":19,
             "VC_ID":19,
-            "VC_NAME":"CASA PALOMA I RECREATION CENTER",
-            "VC_ADDRESS":"400 W CIRCULO DEL PALADIN",
+            "VC_NAME":"Casa Paloma I Recreation Center",
+            "VC_ADDRESS":"400 W Circulo del Paladin",
             "BOS_DIST":4,
-            "ROOM":"RECREATION ROOM"
+            "ROOM":"Recreation Room"
          }
       },
       {
@@ -384,7 +384,7 @@
             "VC_NAME":"Casas Adobes Baptist Church",
             "VC_ADDRESS":"10801 N La Cholla Boulevard",
             "BOS_DIST":1,
-            "ROOM":"PALO VERDE ROOM"
+            "ROOM":"Palo Verde Room"
          }
       },
       {
@@ -403,7 +403,7 @@
             "VC_NAME":"Catalina Community Center",
             "VC_ADDRESS":"16562 N Oracle Road",
             "BOS_DIST":1,
-            "ROOM":"RECREATION ROOM"
+            "ROOM":"Recreation Room"
          }
       },
       {
@@ -422,7 +422,7 @@
             "VC_NAME":"Christ Lutheran Vail Church",
             "VC_ADDRESS":"14600 E Colossal Cave Road",
             "BOS_DIST":4,
-            "ROOM":"SANCTUARY ROOM"
+            "ROOM":"Sanctuary Room"
          }
       },
       {
@@ -441,7 +441,7 @@
             "VC_NAME":"Chukut Kuk District",
             "VC_ADDRESS":"Federal Route 19, Mile Post 8, Miguel Community",
             "BOS_DIST":3,
-            "ROOM":"MIGUEL COMMUNITY BUILDING"
+            "ROOM":"MIGUEL Community Building"
          }
       },
       {
@@ -498,7 +498,7 @@
             "VC_NAME":"Continental Ranch Community Center",
             "VC_ADDRESS":"8881 N Coachline Boulevard",
             "BOS_DIST":3,
-            "ROOM":"COMMUNITY CENTER"
+            "ROOM":"Community Center"
          }
       },
       {
@@ -552,10 +552,10 @@
          "properties":{
             "FID":29,
             "VC_ID":29,
-            "VC_NAME":"DESERT SPRINGS BAPTIST CHURCH",
-            "VC_ADDRESS":"10425 N THORNYDALE ROAD",
+            "VC_NAME":"Desert Springs Baptist Church",
+            "VC_ADDRESS":"10425 N Thornydale Rd",
             "BOS_DIST":1,
-            "ROOM":"MULTIPURPOSE ROOM"
+            "ROOM":"Multipurpose Room"
          }
       },
       {
@@ -571,10 +571,10 @@
          "properties":{
             "FID":30,
             "VC_ID":30,
-            "VC_NAME":"DESERT SPRINGS PRESBYTERIAN CHURCH",
-            "VC_ADDRESS":"1555 W OVERTON ROAD",
+            "VC_NAME":"Desert Springs Presbyterian Church",
+            "VC_ADDRESS":"1555 W Overton Road",
             "BOS_DIST":1,
-            "ROOM":"SANCTUARY"
+            "ROOM":"Sanctuary"
          }
       },
       {
@@ -593,7 +593,7 @@
             "VC_NAME":"Donna R Liggins Neighborhood Center",
             "VC_ADDRESS":"2160 N 6th Avenue",
             "BOS_DIST":5,
-            "ROOM":"MULTIPURPOSE ROOM 1,2,3"
+            "ROOM":"Multipurpose Rooms 1,2,3"
          }
       },
       {
@@ -631,7 +631,7 @@
             "VC_NAME":"Dove of Peace Lutheran Church",
             "VC_ADDRESS":"665 W Roller Coaster Road",
             "BOS_DIST":3,
-            "ROOM":"LIBRARY"
+            "ROOM":"Library"
          }
       },
       {
@@ -650,7 +650,7 @@
             "VC_NAME":"East Social Center",
             "VC_ADDRESS":"7 S Abergo Drive",
             "BOS_DIST":4,
-            "ROOM":"AUDITORIUM"
+            "ROOM":"Auditorium"
          }
       },
       {
@@ -669,7 +669,7 @@
             "VC_NAME":"El Pueblo Senior Center",
             "VC_ADDRESS":"101 W Irvington Road",
             "BOS_DIST":5,
-            "ROOM":"SENIOR CENTER BUILDING, MULTIPURPOSEROOM"
+            "ROOM":"Senior Center Building, Multipurpose Room"
          }
       },
       {
@@ -688,7 +688,7 @@
             "VC_NAME":"Ellie Town Flowing Wells Community Center",
             "VC_ADDRESS":"1660 W Ruthrauff Road",
             "BOS_DIST":3,
-            "ROOM":"MULTIPURPOSE ROOM 2 & 3"
+            "ROOM":"Multipurpose Rooms 2 & 3"
          }
       },
       {
@@ -726,7 +726,7 @@
             "VC_NAME":"Embassy Suites Tucson-Paloma Village",
             "VC_ADDRESS":"3110 E Skyline Drive",
             "BOS_DIST":1,
-            "ROOM":"LA PALOMA BALLROOM"
+            "ROOM":"La Paloma Ballroom"
          }
       },
       {
@@ -742,10 +742,10 @@
          "properties":{
             "FID":39,
             "VC_ID":39,
-            "VC_NAME":"FOOTHILLS COMMUNITY CHURCH",
-            "VC_ADDRESS":"3301 W OVERTON ROAD",
+            "VC_NAME":"Foothills Community Church",
+            "VC_ADDRESS":"3301 W Overton Rd",
             "BOS_DIST":1,
-            "ROOM":"FELLOWSHIP CENTER"
+            "ROOM":"Fellowship Center"
          }
       },
       {
@@ -780,10 +780,10 @@
          "properties":{
             "FID":41,
             "VC_ID":41,
-            "VC_NAME":"GLAD TIDINGS ASSEMBLY OF GOD CHURCH",
-            "VC_ADDRESS":"600 N KOLB ROAD",
+            "VC_NAME":"Glad Tidings Assembly of God",
+            "VC_ADDRESS":"600 N Kolb Rd",
             "BOS_DIST":4,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -799,10 +799,10 @@
          "properties":{
             "FID":42,
             "VC_ID":42,
-            "VC_NAME":"GRACE COMMUNITY COVENANT CHURCH",
-            "VC_ADDRESS":"9755 N LA CHOLLA BOULEVARD",
+            "VC_NAME":"Grace Community Covenant Church",
+            "VC_ADDRESS":"9755 N La Cholla Blvd",
             "BOS_DIST":1,
-            "ROOM":"MULTIPURPOSE ROOM"
+            "ROOM":"Multipurpose Room"
          }
       },
       {
@@ -821,7 +821,7 @@
             "VC_NAME":"Gu Achi District",
             "VC_ADDRESS":"Santa Rosa Community",
             "BOS_DIST":3,
-            "ROOM":"SANTA ROSA MULTIPURPOSE BUILDING"
+            "ROOM":"Santa Rosa Multipurpose Building"
          }
       },
       {
@@ -840,7 +840,7 @@
             "VC_NAME":"Gu Vo District Office Compound",
             "VC_ADDRESS":"Indian Route 1, Mile Post 19, Gu Vo Village",
             "BOS_DIST":3,
-            "ROOM":"GU VO DISTRICT COMPOUND CONFERENCEROOM"
+            "ROOM":"Gu Vo District Compound Conference Room"
          }
       },
       {
@@ -878,7 +878,7 @@
             "VC_NAME":"Hilton Garden Inn",
             "VC_ADDRESS":"6575 S Country Club Road",
             "BOS_DIST":2,
-            "ROOM":"MULTIPURPOSE  ROOM"
+            "ROOM":"Multipurpose Room"
          }
       },
       {
@@ -916,7 +916,7 @@
             "VC_NAME":"Hope Church",
             "VC_ADDRESS":"3353 N Houghton Road",
             "BOS_DIST":4,
-            "ROOM":"CHURCH / EDUCATION CENTER"
+            "ROOM":"Church / Education Center"
          }
       },
       {
@@ -935,7 +935,7 @@
             "VC_NAME":"Hotel Tucson City Center",
             "VC_ADDRESS":"475 N Granada Avenue",
             "BOS_DIST":5,
-            "ROOM":"Gold/Silver/Copper Room- 2000-3500Sq ft"
+            "ROOM":"Gold/Silver/Copper Room"
          }
       },
       {
@@ -952,7 +952,7 @@
             "FID":50,
             "VC_ID":51,
             "VC_NAME":"Sam Lena Library",
-            "VC_ADDRESS":"1607 S 6TH AVENUE",
+            "VC_ADDRESS":"1607 S 6th Ave",
             "BOS_DIST":2,
             "ROOM":"No Information"
          }
@@ -971,7 +971,7 @@
             "FID":51,
             "VC_ID":52,
             "VC_NAME":"Journey Church",
-            "VC_ADDRESS":"4700 N Swan Road",
+            "VC_ADDRESS":"4700 N Swan Rd",
             "BOS_DIST":2,
             "ROOM":"Hall"
          }
@@ -1068,7 +1068,7 @@
             "VC_NAME":"Lord of Grace Lutheran Church",
             "VC_ADDRESS":"7250 N Cortaro Road",
             "BOS_DIST":3,
-            "ROOM":"MEETING ROOM"
+            "ROOM":"Meeting Room"
          }
       },
       {
@@ -1087,7 +1087,7 @@
             "VC_NAME":"Lutheran Church of the Foothills",
             "VC_ADDRESS":"5102 N Craycroft Road",
             "BOS_DIST":1,
-            "ROOM":"ACTIVITIES ROOM"
+            "ROOM":"Activities Room"
          }
       },
       {
@@ -1106,7 +1106,7 @@
             "VC_NAME":"Marana Municipal Complex",
             "VC_ADDRESS":"11555 W Civic Center",
             "BOS_DIST":3,
-            "ROOM":"MARANA POLICE DEPT. COMMUNITY ROOM"
+            "ROOM":"Marana Police Dept Community Room"
          }
       },
       {
@@ -1144,7 +1144,7 @@
             "VC_NAME":"Marymar Events",
             "VC_ADDRESS":"2264 E Benson Highway",
             "BOS_DIST":2,
-            "ROOM":"Hall - 200 People Capacity"
+            "ROOM":"Hall"
          }
       },
       {
@@ -1163,7 +1163,7 @@
             "VC_NAME":"Morris K. Udall Regional Center",
             "VC_ADDRESS":"7200 E Tanque Verde Road",
             "BOS_DIST":4,
-            "ROOM":"SENIOR CENTER BUILDING"
+            "ROOM":"Senior Center Building"
          }
       },
       {
@@ -1179,10 +1179,10 @@
          "properties":{
             "FID":62,
             "VC_ID":63,
-            "VC_NAME":"MOUNT OLIVE LUTHERAN CHURCH",
-            "VC_ADDRESS":"2005 S HOUGHTON ROAD",
+            "VC_NAME":"Mount Olive Lutheran Church",
+            "VC_ADDRESS":"2005 S Houghton Rd",
             "BOS_DIST":4,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -1201,7 +1201,7 @@
             "VC_NAME":"Mt. Lemmon Community Center",
             "VC_ADDRESS":"12949 N Sabino Canyon Park, Mt lemmon",
             "BOS_DIST":4,
-            "ROOM":"RECREATION ROOM"
+            "ROOM":"Recreation Room"
          }
       },
       {
@@ -1217,10 +1217,10 @@
          "properties":{
             "FID":64,
             "VC_ID":65,
-            "VC_NAME":"MT. ZION LUTHERAN CHURCH",
-            "VC_ADDRESS":"4520 W AJO WAY",
+            "VC_NAME":"Mt Zion Lutheran Church",
+            "VC_ADDRESS":"4520 W Ajo Way",
             "BOS_DIST":5,
-            "ROOM":"Fellowship Hall ( 1,600 Sq.ft)"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -1236,10 +1236,10 @@
          "properties":{
             "FID":65,
             "VC_ID":66,
-            "VC_NAME":"MUSD - Marana High School",
+            "VC_NAME":"Marana High School",
             "VC_ADDRESS":"12000 W Emigh Road",
             "BOS_DIST":3,
-            "ROOM":"LIBRARY CLASSROOM"
+            "ROOM":"Library Classroom"
          }
       },
       {
@@ -1255,10 +1255,10 @@
          "properties":{
             "FID":66,
             "VC_ID":67,
-            "VC_NAME":"MUSD - Roadrunner Elementary School",
+            "VC_NAME":"Roadrunner Elementary School",
             "VC_ADDRESS":"16651 West Calle Carmela",
             "BOS_DIST":3,
-            "ROOM":"AM STAGE"
+            "ROOM":"AM Stage"
          }
       },
       {
@@ -1315,7 +1315,7 @@
             "VC_NAME":"Oro Valley Church of the Nazarene",
             "VC_ADDRESS":"500 W Calle Concordia",
             "BOS_DIST":1,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -1353,7 +1353,7 @@
             "VC_NAME":"Our Lady of Fatima Parish",
             "VC_ADDRESS":"1950 W Irvington Place",
             "BOS_DIST":5,
-            "ROOM":"FELLOWSHIP"
+            "ROOM":"Fellowship"
          }
       },
       {
@@ -1372,7 +1372,7 @@
             "VC_NAME":"Pascua Neighborhood Center",
             "VC_ADDRESS":"785 W Sahuaro Street",
             "BOS_DIST":5,
-            "ROOM":"BUILDING #1"
+            "ROOM":"Building #1"
          }
       },
       {
@@ -1388,10 +1388,10 @@
          "properties":{
             "FID":73,
             "VC_ID":74,
-            "VC_NAME":"PASCUA YAQUI TRIBE WELLNESS CENTER",
-            "VC_ADDRESS":"5305 CALLE TORIM",
+            "VC_NAME":"Pascua Yaqui Tribe Wellness Center",
+            "VC_ADDRESS":"5305 Calle Torim",
             "BOS_DIST":5,
-            "ROOM":"AZUL ROOM ( BLUE)"
+            "ROOM":"Azul Room"
          }
       },
       {
@@ -1410,7 +1410,7 @@
             "VC_NAME":"Picture Rocks Community Center",
             "VC_ADDRESS":"5615 N Sanders Road",
             "BOS_DIST":3,
-            "ROOM":"MULTIPURPOSE ROOM"
+            "ROOM":"Multipurpose Room"
          }
       },
       {
@@ -1448,7 +1448,7 @@
             "VC_NAME":"Pisinemo District",
             "VC_ADDRESS":"West Highway 86, Route 21",
             "BOS_DIST":3,
-            "ROOM":"DISTRICT OFFICE"
+            "ROOM":"District Office"
          }
       },
       {
@@ -1524,7 +1524,7 @@
             "VC_NAME":"Redeemer Evangelical Lutheran Church & School",
             "VC_ADDRESS":"8845 N Silverbell Road",
             "BOS_DIST":3,
-            "ROOM":"MINISTRY CENTER"
+            "ROOM":"Ministry Center"
          }
       },
       {
@@ -1543,7 +1543,7 @@
             "VC_NAME":"Robles Ranch Community Center",
             "VC_ADDRESS":"16150 W Ajo Way",
             "BOS_DIST":3,
-            "ROOM":"COMMUNITY CENTER"
+            "ROOM":"Community Center"
          }
       },
       {
@@ -1578,10 +1578,10 @@
          "properties":{
             "FID":83,
             "VC_ID":85,
-            "VC_NAME":"SAHUARO BAPTIST CHURCH",
-            "VC_ADDRESS":"10361 E OLD SPANISH TRAIL",
+            "VC_NAME":"Sahuaro Baptist Church",
+            "VC_ADDRESS":"10361 E Old Spanish Trail",
             "BOS_DIST":4,
-            "ROOM":"AARON HALL"
+            "ROOM":"Aaron Hall"
          }
       },
       {
@@ -1600,7 +1600,7 @@
             "VC_NAME":"Charron Vineyards",
             "VC_ADDRESS":"18585 S Sonoita Hwy, Vail, AZ 85641",
             "BOS_DIST":4,
-            "ROOM":"MAIN ROOM"
+            "ROOM":"Main Room"
          }
       },
       {
@@ -1635,10 +1635,10 @@
          "properties":{
             "FID":86,
             "VC_ID":87,
-            "VC_NAME":"SAINT MATTHEW'S EPISCOPAL CHURCH",
-            "VC_ADDRESS":"9071 E OLD SPANISH TRAIL",
+            "VC_NAME":"Saint Matthew's Episcopal Church",
+            "VC_ADDRESS":"9071 E Old Spanish Trail",
             "BOS_DIST":4,
-            "ROOM":"MATTS PLACE"
+            "ROOM":"Matt's Place"
          }
       },
       {
@@ -1654,10 +1654,10 @@
          "properties":{
             "FID":87,
             "VC_ID":88,
-            "VC_NAME":"SAN XAVIER DISTRICT",
-            "VC_ADDRESS":"2018 SAN XAVIER ROAD",
+            "VC_NAME":"San Xavier District",
+            "VC_ADDRESS":"2018 San Xavier Rd",
             "BOS_DIST":3,
-            "ROOM":"SAN XAVIER DISTRICT CENTER"
+            "ROOM":"San Xavier District Center"
          }
       },
       {
@@ -1676,7 +1676,7 @@
             "VC_NAME":"Sandario Baptist Church",
             "VC_ADDRESS":"6971 N Sandario Road",
             "BOS_DIST":3,
-            "ROOM":"AUDITORIUM"
+            "ROOM":"Auditorium"
          }
       },
       {
@@ -1692,10 +1692,10 @@
          "properties":{
             "FID":89,
             "VC_ID":90,
-            "VC_NAME":"SANTA CATALINA CATHOLIC CHURCH",
-            "VC_ADDRESS":"14380 N ORACLE ROAD",
+            "VC_NAME":"Santa Catalina Catholic Church",
+            "VC_ADDRESS":"14380 N Oracle Road",
             "BOS_DIST":1,
-            "ROOM":"MULTIPURPOSE ROOM"
+            "ROOM":"Multipurpose Room"
          }
       },
       {
@@ -1711,10 +1711,10 @@
          "properties":{
             "FID":90,
             "VC_ID":91,
-            "VC_NAME":"SANTA CRUZ VALLEY UNITED METHODIST CHURCH",
-            "VC_ADDRESS":"71 E SAHUARITA ROAD",
+            "VC_NAME":"Santa Cruz Valley United Methodist Church",
+            "VC_ADDRESS":"71 E Sahuarita Rd",
             "BOS_DIST":2,
-            "ROOM":"SANCTUARY"
+            "ROOM":"Sanctuary"
          }
       },
       {
@@ -1733,7 +1733,7 @@
             "VC_NAME":"Schuk Toak District Office",
             "VC_ADDRESS":"Highway 86, Mile Post 126.5",
             "BOS_DIST":3,
-            "ROOM":"DISTRICT OFFICE CONFERENCE ROOM"
+            "ROOM":"District Office Conference Room"
          }
       },
       {
@@ -1771,7 +1771,7 @@
             "VC_NAME":"Sells District Office",
             "VC_ADDRESS":"Arizona Highway 86 and Mile Post 112",
             "BOS_DIST":3,
-            "ROOM":"CONFERENCE ROOM"
+            "ROOM":"Conference Room"
          }
       },
       {
@@ -1790,7 +1790,7 @@
             "VC_NAME":"Sierrita Mining and Ranching Co. Community Building",
             "VC_ADDRESS":"10094 W McGee Ranch Road",
             "BOS_DIST":3,
-            "ROOM":"COMMUNITY BUILDING"
+            "ROOM":"Community Building"
          }
       },
       {
@@ -1847,7 +1847,7 @@
             "VC_NAME":"St. Alban's Episcopal Church",
             "VC_ADDRESS":"3738 N Old Sabino Canyon Road",
             "BOS_DIST":1,
-            "ROOM":"PARISH HALL"
+            "ROOM":"Parish Hall"
          }
       },
       {
@@ -1863,10 +1863,10 @@
          "properties":{
             "FID":98,
             "VC_ID":99,
-            "VC_NAME":"ST. JOHN ON THE DESERT PRESBYTERIAN CHURCH",
-            "VC_ADDRESS":"2695 N HOUGHTON ROAD",
+            "VC_NAME":"St. John on the Desert Presbyterian Church",
+            "VC_ADDRESS":"2695 N Houghton Rd",
             "BOS_DIST":4,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -1882,7 +1882,7 @@
          "properties":{
             "FID":99,
             "VC_ID":100,
-            "VC_NAME":"AUSD-Richard Wilson K-8",
+            "VC_NAME":"Richard Wilson K-8 School",
             "VC_ADDRESS":"2330 W Glover",
             "BOS_DIST":1,
             "ROOM":"No Information"
@@ -1901,10 +1901,10 @@
          "properties":{
             "FID":100,
             "VC_ID":101,
-            "VC_NAME":"ST. PAUL'S UNITED METHODIST CHURCH",
-            "VC_ADDRESS":"8051 E BROADWAY BOULEVARD",
+            "VC_NAME":"St. Paul's United Methodist Church",
+            "VC_ADDRESS":"8051 E Broadway Blvd",
             "BOS_DIST":4,
-            "ROOM":"BRUMMETT HALL"
+            "ROOM":"Brummett Hall"
          }
       },
       {
@@ -1923,7 +1923,7 @@
             "VC_NAME":"St. Thomas the Apostle Catholic Church",
             "VC_ADDRESS":"5150 N Valley View Road",
             "BOS_DIST":1,
-            "ROOM":"O'LEARY HALL"
+            "ROOM":"O'Leary Hall"
          }
       },
       {
@@ -1942,7 +1942,7 @@
             "VC_NAME":"Sun City Oro Valley - Catalina Vista",
             "VC_ADDRESS":"14055 N Del Webb Boulevard",
             "BOS_DIST":1,
-            "ROOM":"MT. LEMMON ROOM"
+            "ROOM":"Mt. Lemmon Room"
          }
       },
       {
@@ -1961,7 +1961,7 @@
             "VC_NAME":"SUSD - Sopori Elementary School",
             "VC_ADDRESS":"5000 W Arivaca Road",
             "BOS_DIST":3,
-            "ROOM":"GYMNASIUM"
+            "ROOM":"Gymnasium"
          }
       },
       {
@@ -1980,7 +1980,7 @@
             "VC_NAME":"The Church of Latter Day Saints",
             "VC_ADDRESS":"55 W Arrowsmith Drive",
             "BOS_DIST":1,
-            "ROOM":"CULTURAL HALL"
+            "ROOM":"Cultural Hall"
          }
       },
       {
@@ -2037,7 +2037,7 @@
             "VC_NAME":"Tucson Estates",
             "VC_ADDRESS":"5900 W Western Way Circle",
             "BOS_DIST":3,
-            "ROOM":"MULTIPURPOSE HALL"
+            "ROOM":"Multipurpose Hall"
          }
       },
       {
@@ -2091,10 +2091,10 @@
          "properties":{
             "FID":110,
             "VC_ID":111,
-            "VC_NAME":"TUCSON MOUNTAIN BAPTIST CHURCH",
+            "VC_NAME":"Tucson Mountain Baptist Church",
             "VC_ADDRESS":"5757 W AJO HIGHWAY",
             "BOS_DIST":3,
-            "ROOM":"ROOM 108"
+            "ROOM":"Room 108"
          }
       },
       {
@@ -2110,10 +2110,10 @@
          "properties":{
             "FID":111,
             "VC_ID":112,
-            "VC_NAME":"VALENCIA BRANCH PUBLIC LIBRARY",
-            "VC_ADDRESS":"202 W VALENCIA ROAD",
+            "VC_NAME":"Valencia Branch Public Library",
+            "VC_ADDRESS":"202 W Valencia Rd",
             "BOS_DIST":5,
-            "ROOM":"LARGE MEETING ROOM"
+            "ROOM":"Large Meeting Room"
          }
       },
       {
@@ -2129,10 +2129,10 @@
          "properties":{
             "FID":112,
             "VC_ID":113,
-            "VC_NAME":"VIDA NUEVA CHURCH OF GOD",
-            "VC_ADDRESS":"504 W NEBRASKA STREET",
+            "VC_NAME":"Vida Nueva Church of God",
+            "VC_ADDRESS":"504 W Nebraska St",
             "BOS_DIST":5,
-            "ROOM":"YOUTH CENTER"
+            "ROOM":"Youth Center"
          }
       },
       {
@@ -2148,10 +2148,10 @@
          "properties":{
             "FID":113,
             "VC_ID":114,
-            "VC_NAME":"VUSD - Cienega High School",
+            "VC_NAME":"Cienega High School",
             "VC_ADDRESS":"12775 E Mary Ann Cleveland Way",
             "BOS_DIST":4,
-            "ROOM":"LIBRARY"
+            "ROOM":"Library"
          }
       },
       {
@@ -2167,10 +2167,10 @@
          "properties":{
             "FID":114,
             "VC_ID":115,
-            "VC_NAME":"VUSD - Copper Ridge Elementary School",
+            "VC_NAME":"Copper Ridge Elementary School",
             "VC_ADDRESS":"17650 S Canyon Edge Trail",
             "BOS_DIST":4,
-            "ROOM":"LIBRARY"
+            "ROOM":"Library"
          }
       },
       {
@@ -2186,10 +2186,10 @@
          "properties":{
             "FID":115,
             "VC_ID":116,
-            "VC_NAME":"VUSD - Desert Sky Middle School",
+            "VC_NAME":"Desert Sky Middle School",
             "VC_ADDRESS":"9850 E Rankin Loop",
             "BOS_DIST":4,
-            "ROOM":"GYM FOYER"
+            "ROOM":"Gym Foyer"
          }
       },
       {
@@ -2205,10 +2205,10 @@
          "properties":{
             "FID":116,
             "VC_ID":117,
-            "VC_NAME":"VUSD - Ocotillo Ridge Elementary School",
+            "VC_NAME":"Ocotillo Ridge Elementary School",
             "VC_ADDRESS":"10170 S White Lightning Lane",
             "BOS_DIST":4,
-            "ROOM":"LIBRARY"
+            "ROOM":"Library"
          }
       },
       {
@@ -2224,10 +2224,10 @@
          "properties":{
             "FID":117,
             "VC_ID":118,
-            "VC_NAME":"VUSD - Sycamore Elementary School",
+            "VC_NAME":"Sycamore Elementary School",
             "VC_ADDRESS":"16701 S Houghton Rd",
             "BOS_DIST":4,
-            "ROOM":"LIBRARY"
+            "ROOM":"Library"
          }
       },
       {
@@ -2262,10 +2262,10 @@
          "properties":{
             "FID":119,
             "VC_ID":120,
-            "VC_NAME":"SUSD - Summit View Elementary School",
-            "VC_ADDRESS":"1900 E SUMMIT STREET",
+            "VC_NAME":"Summit View Elementary School",
+            "VC_ADDRESS":"1900 E Summit St",
             "BOS_DIST":2,
-            "ROOM":"CAFETERIA"
+            "ROOM":"Cafeteria"
          }
       },
       {
@@ -2300,10 +2300,10 @@
          "properties":{
             "FID":121,
             "VC_ID":123,
-            "VC_NAME":"LIVING FAITH CHRISTIAN CENTER",
-            "VC_ADDRESS":"4108 E NORTH STREET",
+            "VC_NAME":"Living Faith Christian Center",
+            "VC_ADDRESS":"4108 E North St",
             "BOS_DIST":5,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -2319,10 +2319,10 @@
          "properties":{
             "FID":122,
             "VC_ID":122,
-            "VC_NAME":"WHY DOMESTIC WATER IMPROVEMENT DISTRICT",
-            "VC_ADDRESS":"341 S SONOITA WAY, HIGHWAY 85 SOUTH",
+            "VC_NAME":"Why Domestic Water Improvement District",
+            "VC_ADDRESS":"341 S Sonoita Way, Highway 85 South",
             "BOS_DIST":3,
-            "ROOM":"WHY COMMUNITY BUILDING"
+            "ROOM":"Why Community Building"
          }
       },
       {
@@ -2339,7 +2339,7 @@
             "FID":123,
             "VC_ID":124,
             "VC_NAME":"Miller-Golf Links Library",
-            "VC_ADDRESS":"9640 E GOLFLINKS ROAD",
+            "VC_ADDRESS":"9640 E Golf Links Rd",
             "BOS_DIST":4,
             "ROOM":"No Information"
          }
@@ -2357,10 +2357,10 @@
          "properties":{
             "FID":124,
             "VC_ID":125,
-            "VC_NAME":"GATES PASS COMMUNITY CHURCH",
-            "VC_ADDRESS":"1895 W SPEEDWAY BOULEVARD",
+            "VC_NAME":"Gates Pass Community Church",
+            "VC_ADDRESS":"1895 W Speedway Blvd",
             "BOS_DIST":5,
-            "ROOM":"FELLOWSHIP HALL"
+            "ROOM":"Fellowship Hall"
          }
       },
       {
@@ -2376,10 +2376,10 @@
          "properties":{
             "FID":125,
             "VC_ID":126,
-            "VC_NAME":"FRED ARCHER NEIGHBORHOOD CENTER",
-            "VC_ADDRESS":"1665 S LA CHOLLA BOULEVARD",
+            "VC_NAME":"Fred Archer Neighborhood Center",
+            "VC_ADDRESS":"1665 S La Cholla Boulevard",
             "BOS_DIST":5,
-            "ROOM":"ROOM 133"
+            "ROOM":"Room 133"
          }
       },
       {
@@ -2395,10 +2395,10 @@
          "properties":{
             "FID":126,
             "VC_ID":127,
-            "VC_NAME":"FIRST UNITED METHODIST CHURCH",
-            "VC_ADDRESS":"915 E 4TH STREET",
+            "VC_NAME":"First United Methodist Church",
+            "VC_ADDRESS":"915 E 4th Street",
             "BOS_DIST":5,
-            "ROOM":"ARIZONA ROOM"
+            "ROOM":"Arizona Room"
          }
       },
       {
@@ -2414,8 +2414,8 @@
          "properties":{
             "FID":127,
             "VC_ID":128,
-            "VC_NAME":"FAITH CHRISTIAN FELLOWSHIP",
-            "VC_ADDRESS":"3141 W IRONWOOD HILLS DRIVE",
+            "VC_NAME":"Faith Christian Fellowship",
+            "VC_ADDRESS":"3141 W Ironwood Hills Dr",
             "BOS_DIST":5,
             "ROOM":"Foyer"
          }
@@ -2433,8 +2433,8 @@
          "properties":{
             "FID":128,
             "VC_ID":129,
-            "VC_NAME":"TUSD-Tolson Elementary",
-            "VC_ADDRESS":"1000 S Greasewood",
+            "VC_NAME":"Tolson Elementary School",
+            "VC_ADDRESS":"1000 S Greasewood Rd",
             "BOS_DIST":5,
             "ROOM":"No Information"
          }
