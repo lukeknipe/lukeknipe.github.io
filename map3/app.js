@@ -490,5 +490,4 @@ function showFoo() {
       pixelOffset: new google.maps.Size(0, -30)
   });
   infoWindow.open(map);
-  return false;
 }
