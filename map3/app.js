@@ -448,7 +448,7 @@ function showList(data, stores) {
         a.title = "Get some foo!";
         a.id = "foo";
         panel.appendChild(a);
-//        a.onclick = showFoo();
+        a.onclick = showFoo(vcId);
 
 //        const name = document.createElement('p');
 //        name.classList.add('place');
@@ -484,15 +484,16 @@ function haversine_distance(origin, storeLoc) {
     return d;
 }
 
-function showFoo(vcGeo) {
-  const infoWindow = new google.maps.InfoWindow();
+function showFoo(vcId) {
+//  const infoWindow = new google.maps.InfoWindow();
 //  alert('I am foo!');
-  infoWindow.setContent("Foo");
-  infoWindow.setPosition(vcGeo);
-  infoWindow.setOptions({
-      pixelOffset: new google.maps.Size(0, -30)
-  });
-  infoWindow.open(map);
-  console.log(vcGeo);
+//  infoWindow.setContent("Foo");
+//  infoWindow.setPosition(vcGeo);
+//  infoWindow.setOptions({
+//      pixelOffset: new google.maps.Size(0, -30)
+//  });
+//  infoWindow.open(map);
+//  console.log(vcGeo);
+  console.log(vcId);
   return false;
 }
