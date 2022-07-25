@@ -484,5 +484,6 @@ function haversine_distance(origin, storeLoc) {
 
 function showFoo() {
   alert('I am foo!');
+  infoWindow.setContent("Foo");
   return false;
 }
