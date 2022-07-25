@@ -203,7 +203,7 @@ function initMap() {
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
-    const infoWindow = new google.maps.InfoWindow();
+    const infoWindow = new google.maps.InfoWindow({});
 
     // Display information in a popup when a marker is clicked.
     map.data.addListener('click', (event) => {
@@ -488,7 +488,7 @@ function haversine_distance(origin, storeLoc) {
 }
 
 function showFoo(vcId, vcGeo) {
-  const infoWindow = new google.maps.InfoWindow();
+//  const infoWindow = new google.maps.InfoWindow();
 //  alert('I am foo!');
   infoWindow.setContent("Foo");
   infoWindow.setPosition(vcGeo);
