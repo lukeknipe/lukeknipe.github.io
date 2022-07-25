@@ -441,14 +441,14 @@ function showList(data, stores) {
         a.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
         const vcName = centerName.getProperty('VC_NAME');
-        const vcGeo = centerName.getGeometry().get();
+        const vcId = centerName.getProperty('FID');
         var linkText = document.createTextNode(vcName);
         a.appendChild(linkText);
         a.href = "#";
         a.title = "Get some foo!";
         a.id = "foo";
         panel.appendChild(a);
-        a.onclick = showFoo(vcGeo);
+//        a.onclick = showFoo();
 
 //        const name = document.createElement('p');
 //        name.classList.add('place');
@@ -485,7 +485,6 @@ function haversine_distance(origin, storeLoc) {
 }
 
 function showFoo(vcGeo) {
-  const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
   const infoWindow = new google.maps.InfoWindow();
 //  alert('I am foo!');
   infoWindow.setContent("Foo");
