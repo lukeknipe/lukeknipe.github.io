@@ -440,8 +440,8 @@ function showList(data, stores) {
         var a = document.createElement('a');
         a.classList.add('place');
         const centerName = data.getFeatureById(store.storeid);
-        const vcName =  centerName.getProperty('VC_NAME');
-        const vcGeo =  centerName.getGeometry().get();
+        const vcName = centerName.getProperty('VC_NAME');
+        const vcGeo = centerName.getGeometry().get();
         var linkText = document.createTextNode(vcName);
         a.appendChild(linkText);
         a.href = "#";
@@ -484,13 +484,13 @@ function haversine_distance(origin, storeLoc) {
     return d;
 }
 
-function showFoo() {
+function showFoo(vcGeo) {
 //  alert('I am foo!');
-  console.log(vcGeo);
   infoWindow.setContent("Foo");
   infoWindow.setPosition(dpos);
   infoWindow.setOptions({
       pixelOffset: new google.maps.Size(0, -30)
   });
   infoWindow.open(map);
+  console.log(vcGeo);
 }
