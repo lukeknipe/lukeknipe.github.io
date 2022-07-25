@@ -498,5 +498,6 @@ function showFoo(vcId, vcGeo) {
 //  infoWindow.open(map);
   console.log(vcGeo);
   console.log(vcId);
+  initMap();
   return false;
 }
