@@ -494,4 +494,5 @@ function showFoo(vcGeo) {
   });
   infoWindow.open(map);
   console.log(vcGeo);
+  return false;
 }
