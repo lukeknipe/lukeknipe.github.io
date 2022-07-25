@@ -448,7 +448,9 @@ function showList(data, stores) {
         a.title = "Get some foo!";
         a.id = "foo";
         panel.appendChild(a);
-        a.onclick = showFoo(vcId);
+        a.onclick = function(){
+          showFoo(vcId);
+        };
 
 //        const name = document.createElement('p');
 //        name.classList.add('place');
