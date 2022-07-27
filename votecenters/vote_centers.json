@@ -1,1 +1,2462 @@
-{"type":"FeatureCollection","crs":{"type":"name","properties":{"name":"EPSG:4326"}},"features":[{"type":"Feature","id":1,"geometry":{"type":"Point","coordinates":[-111.065526557114,32.3033186001062]},"properties":{"FID":1,"VC_ID":1,"VC_NAME":"Accelerated Elementary & Secondary School","VC_ADDRESS":"5245 N Camino De Oeste","BOS_DIST":3,"ROOM":"MULTIPURPOSE ROOM"}},{"type":"Feature","id":2,"geometry":{"type":"Point","coordinates":[-112.863408635396,32.3722482846573]},"properties":{"FID":2,"VC_ID":2,"VC_NAME":"Ajo Federated Church","VC_ADDRESS":"101 W Lomita Avenue","BOS_DIST":3,"ROOM":"SOCIAL HALL"}},{"type":"Feature","id":3,"geometry":{"type":"Point","coordinates":[-111.012165684583,32.3820813177266]},"properties":{"FID":3,"VC_ID":3,"VC_NAME":"ALIVE CHRISTIAN FELLOWSHIP","VC_ADDRESS":"9662 N LA CHOLLA BOULEVARD","BOS_DIST":1,"ROOM":"LOBBY"}},{"type":"Feature","id":4,"geometry":{"type":"Point","coordinates":[-110.856572094412,32.1817485250138]},"properties":{"FID":4,"VC_ID":4,"VC_NAME":"Ambassador Event Center","VC_ADDRESS":"3455 S Wilmot Road","BOS_DIST":2,"ROOM":"Hall"}},{"type":"Feature","id":5,"geometry":{"type":"Point","coordinates":[-110.771606003279,31.9663945270734]},"properties":{"FID":5,"VC_ID":5,"VC_NAME":"American Legion Post 109","VC_ADDRESS":"15921 S Houghton Road","BOS_DIST":4,"ROOM":"DINING ROOM"}},{"type":"Feature","id":6,"geometry":{"type":"Point","coordinates":[-110.977788285256,32.1663172256991]},"properties":{"FID":6,"VC_ID":6,"VC_NAME":"American Legion Sahuaro Post #68","VC_ADDRESS":"4724 S 12th Avenue","BOS_DIST":5,"ROOM":"LEGION MAIN BALLROOM"}},{"type":"Feature","id":7,"geometry":{"type":"Point","coordinates":[-110.995709963737,31.9277242700251]},"properties":{"FID":7,"VC_ID":7,"VC_NAME":"The Good Sheperd United Church","VC_ADDRESS":"17750 S La Canada Dr.","BOS_DIST":3,"ROOM":"No Information"}},{"type":"Feature","id":8,"geometry":{"type":"Point","coordinates":[-111.329909054015,31.5767966114308]},"properties":{"FID":8,"VC_ID":8,"VC_NAME":"Arivaca Old School Building","VC_ADDRESS":"17180 W 4th Street","BOS_DIST":3,"ROOM":"OLD SCHOOL HOUSE"}},{"type":"Feature","id":9,"geometry":{"type":"Point","coordinates":[-110.967354133945,32.2195712643375]},"properties":{"FID":9,"VC_ID":9,"VC_NAME":"ARMORY PARK CENTER","VC_ADDRESS":"220 S 5TH AVENUE","BOS_DIST":2,"ROOM":"QUIET ROOM"}},{"type":"Feature","id":10,"geometry":{"type":"Point","coordinates":[-111.011383767516,32.3337798369436]},"properties":{"FID":10,"VC_ID":10,"VC_NAME":"AUSD - Donaldson Elementary School","VC_ADDRESS":"2040 W Omar Drive","BOS_DIST":1,"ROOM":"GYMNASIUM"}},{"type":"Feature","id":11,"geometry":{"type":"Point","coordinates":[-110.951664406257,32.2839451522737]},"properties":{"FID":11,"VC_ID":11,"VC_NAME":"AUSD - Rio Vista Elementary School","VC_ADDRESS":"1351 E Limberlost Drive","BOS_DIST":3,"ROOM":"GYMNASIUM"}},{"type":"Feature","id":12,"geometry":{"type":"Point","coordinates":[-111.303018124889,32.444864709608]},"properties":{"FID":12,"VC_ID":12,"VC_NAME":"Avra Valley Fire District","VC_ADDRESS":"15790 W Silverbell Road","BOS_DIST":3,"ROOM":"CLASSROOM"}},{"type":"Feature","id":13,"geometry":{"type":"Point","coordinates":[-111.045340620636,32.3442308225909]},"properties":{"FID":13,"VC_ID":14,"VC_NAME":"Beautiful Savior Lutheran Church","VC_ADDRESS":"7570 N Thornydale Road","BOS_DIST":1,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":14,"geometry":{"type":"Point","coordinates":[-110.757248869643,32.1766860430246]},"properties":{"FID":14,"VC_ID":15,"VC_NAME":"BETHEL BAPTIST CHURCH","VC_ADDRESS":"11040 E ESCALANTE ROAD","BOS_DIST":4,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":15,"geometry":{"type":"Point","coordinates":[-111.028989459472,31.7882000735662]},"properties":{"FID":15,"VC_ID":16,"VC_NAME":"CANOA RANCH RECREATION CENTER","VC_ADDRESS":"5750 S TURQUOISE MOUNTAIN DRIVE","BOS_DIST":4,"ROOM":"AMADO ROOM"}},{"type":"Feature","id":16,"geometry":{"type":"Point","coordinates":[-111.030817191023,32.3961567633285]},"properties":{"FID":16,"VC_ID":17,"VC_NAME":"CANYON DEL ORO ASSEMBLY OF GOD","VC_ADDRESS":"2950 W LAMBERT LANE","BOS_DIST":1,"ROOM":"FOYER"}},{"type":"Feature","id":17,"geometry":{"type":"Point","coordinates":[-110.964923963729,32.3746376707204]},"properties":{"FID":17,"VC_ID":18,"VC_NAME":"CANYON DEL ORO BAPTIST CHURCH","VC_ADDRESS":"9200 N ORACLE ROAD","BOS_DIST":1,"ROOM":"CHAPEL HALL"}},{"type":"Feature","id":18,"geometry":{"type":"Point","coordinates":[-111.812473668336,31.7979672945606]},"properties":{"FID":18,"VC_ID":13,"VC_NAME":"Baboquivari District Office","VC_ADDRESS":"Federal Route 19 & Fresnal Canyon Road","BOS_DIST":3,"ROOM":"MAIN OFFICE"}},{"type":"Feature","id":19,"geometry":{"type":"Point","coordinates":[-110.996826514126,31.8737087856613]},"properties":{"FID":19,"VC_ID":19,"VC_NAME":"CASA PALOMA I RECREATION CENTER","VC_ADDRESS":"400 W CIRCULO DEL PALADIN","BOS_DIST":4,"ROOM":"RECREATION ROOM"}},{"type":"Feature","id":20,"geometry":{"type":"Point","coordinates":[-111.016938050059,32.4027097028074]},"properties":{"FID":20,"VC_ID":20,"VC_NAME":"Casas Adobes Baptist Church","VC_ADDRESS":"10801 N La Cholla Boulevard","BOS_DIST":1,"ROOM":"PALO VERDE ROOM"}},{"type":"Feature","id":21,"geometry":{"type":"Point","coordinates":[-110.925280911003,32.5044466667465]},"properties":{"FID":21,"VC_ID":21,"VC_NAME":"Catalina Community Center","VC_ADDRESS":"16562 N Oracle Road","BOS_DIST":1,"ROOM":"RECREATION ROOM"}},{"type":"Feature","id":22,"geometry":{"type":"Point","coordinates":[-110.682958545638,32.0533961658989]},"properties":{"FID":22,"VC_ID":22,"VC_NAME":"Christ Lutheran Vail Church","VC_ADDRESS":"14600 E Colossal Cave Road","BOS_DIST":4,"ROOM":"SANCTUARY ROOM"}},{"type":"Feature","id":23,"geometry":{"type":"Point","coordinates":[-111.779847786238,31.6163828286224]},"properties":{"FID":23,"VC_ID":23,"VC_NAME":"Chukut Kuk District","VC_ADDRESS":"Federal Route 19, Mile Post 8, Miguel Community","BOS_DIST":3,"ROOM":"MIGUEL COMMUNITY BUILDING"}},{"type":"Feature","id":24,"geometry":{"type":"Point","coordinates":[-111.037102514596,32.2356342235747]},"properties":{"FID":24,"VC_ID":24,"VC_NAME":"Church of The Painted Hills","VC_ADDRESS":"3295 W Speedway Boulevard","BOS_DIST":5,"ROOM":"No Information"}},{"type":"Feature","id":25,"geometry":{"type":"Point","coordinates":[-110.818713105072,32.1683849305149]},"properties":{"FID":25,"VC_ID":25,"VC_NAME":"Clements Regional Center","VC_ADDRESS":"8155 E Poinciana Drive","BOS_DIST":2,"ROOM":"Room 117 - City Of Tucson"}},{"type":"Feature","id":26,"geometry":{"type":"Point","coordinates":[-111.122545749894,32.3676245441151]},"properties":{"FID":26,"VC_ID":26,"VC_NAME":"Continental Ranch Community Center","VC_ADDRESS":"8881 N Coachline Boulevard","BOS_DIST":3,"ROOM":"COMMUNITY CENTER"}},{"type":"Feature","id":27,"geometry":{"type":"Point","coordinates":[-110.961451918496,32.2699459447192]},"properties":{"FID":27,"VC_ID":27,"VC_NAME":"Woods Memorial Library","VC_ADDRESS":"3455 N. 1st Ave.","BOS_DIST":3,"ROOM":"No Information"}},{"type":"Feature","id":28,"geometry":{"type":"Point","coordinates":[-111.014136404678,31.8285846701287]},"properties":{"FID":28,"VC_ID":28,"VC_NAME":"Desert Hills Center","VC_ADDRESS":"2980 S Camino Del Sol","BOS_DIST":4,"ROOM":"Auditorium 2,400 Sq Ft"}},{"type":"Feature","id":29,"geometry":{"type":"Point","coordinates":[-111.048005907039,32.3958013066818]},"properties":{"FID":29,"VC_ID":29,"VC_NAME":"DESERT SPRINGS BAPTIST CHURCH","VC_ADDRESS":"10425 N THORNYDALE ROAD","BOS_DIST":1,"ROOM":"MULTIPURPOSE ROOM"}},{"type":"Feature","id":30,"geometry":{"type":"Point","coordinates":[-110.998902016121,32.3666426579871]},"properties":{"FID":30,"VC_ID":30,"VC_NAME":"DESERT SPRINGS PRESBYTERIAN CHURCH","VC_ADDRESS":"1555 W OVERTON ROAD","BOS_DIST":1,"ROOM":"SANCTUARY"}},{"type":"Feature","id":31,"geometry":{"type":"Point","coordinates":[-110.968098402378,32.2478219799209]},"properties":{"FID":31,"VC_ID":31,"VC_NAME":"Donna R Liggins Neighborhood Center","VC_ADDRESS":"2160 N 6th Avenue","BOS_DIST":5,"ROOM":"MULTIPURPOSE ROOM 1,2,3"}},{"type":"Feature","id":32,"geometry":{"type":"Point","coordinates":[-110.9733360253,32.2184745039506]},"properties":{"FID":32,"VC_ID":32,"VC_NAME":"Tucson Convention Center","VC_ADDRESS":"260 S. Church Ave","BOS_DIST":2,"ROOM":"No Information"}},{"type":"Feature","id":33,"geometry":{"type":"Point","coordinates":[-110.980423561311,32.3088343331609]},"properties":{"FID":33,"VC_ID":33,"VC_NAME":"Dove of Peace Lutheran Church","VC_ADDRESS":"665 W Roller Coaster Road","BOS_DIST":3,"ROOM":"LIBRARY"}},{"type":"Feature","id":34,"geometry":{"type":"Point","coordinates":[-110.988061496735,31.8699256136045]},"properties":{"FID":34,"VC_ID":34,"VC_NAME":"East Social Center","VC_ADDRESS":"7 S Abergo Drive","BOS_DIST":4,"ROOM":"AUDITORIUM"}},{"type":"Feature","id":35,"geometry":{"type":"Point","coordinates":[-110.969165589225,32.1627748228922]},"properties":{"FID":35,"VC_ID":35,"VC_NAME":"El Pueblo Senior Center","VC_ADDRESS":"101 W Irvington Road","BOS_DIST":5,"ROOM":"SENIOR CENTER BUILDING, MULTIPURPOSEROOM"}},{"type":"Feature","id":36,"geometry":{"type":"Point","coordinates":[-111.001089415606,32.287555452309]},"properties":{"FID":36,"VC_ID":36,"VC_NAME":"Ellie Town Flowing Wells Community Center","VC_ADDRESS":"1660 W Ruthrauff Road","BOS_DIST":3,"ROOM":"MULTIPURPOSE ROOM 2 & 3"}},{"type":"Feature","id":37,"geometry":{"type":"Point","coordinates":[-110.853195360813,32.2362166196809]},"properties":{"FID":37,"VC_ID":37,"VC_NAME":"Embassy Suites by Hilton Tucson East","VC_ADDRESS":"6555 E Speedway Boulevard","BOS_DIST":4,"ROOM":"Largest conference room"}},{"type":"Feature","id":38,"geometry":{"type":"Point","coordinates":[-110.926629502713,32.3217293121874]},"properties":{"FID":38,"VC_ID":38,"VC_NAME":"Embassy Suites Tucson-Paloma Village","VC_ADDRESS":"3110 E Skyline Drive","BOS_DIST":1,"ROOM":"LA PALOMA BALLROOM"}},{"type":"Feature","id":39,"geometry":{"type":"Point","coordinates":[-111.039038472386,32.3732618921143]},"properties":{"FID":39,"VC_ID":39,"VC_NAME":"FOOTHILLS COMMUNITY CHURCH","VC_ADDRESS":"3301 W OVERTON ROAD","BOS_DIST":1,"ROOM":"FELLOWSHIP CENTER"}},{"type":"Feature","id":40,"geometry":{"type":"Point","coordinates":[-110.933584452012,32.1282508707293]},"properties":{"FID":40,"VC_ID":40,"VC_NAME":"Best Western Tucson International Airport","VC_ADDRESS":"6801 S. Tucson Blvd","BOS_DIST":2,"ROOM":"No Information"}},{"type":"Feature","id":41,"geometry":{"type":"Point","coordinates":[-110.840321812777,32.2287492261113]},"properties":{"FID":41,"VC_ID":41,"VC_NAME":"GLAD TIDINGS ASSEMBLY OF GOD CHURCH","VC_ADDRESS":"600 N KOLB ROAD","BOS_DIST":4,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":42,"geometry":{"type":"Point","coordinates":[-111.014477466047,32.3834294368428]},"properties":{"FID":42,"VC_ID":42,"VC_NAME":"GRACE COMMUNITY COVENANT CHURCH","VC_ADDRESS":"9755 N LA CHOLLA BOULEVARD","BOS_DIST":1,"ROOM":"MULTIPURPOSE ROOM"}},{"type":"Feature","id":43,"geometry":{"type":"Point","coordinates":[-112.04081476157,32.3255891089159]},"properties":{"FID":43,"VC_ID":43,"VC_NAME":"Gu Achi District","VC_ADDRESS":"Santa Rosa Community","BOS_DIST":3,"ROOM":"SANTA ROSA MULTIPURPOSE BUILDING"}},{"type":"Feature","id":44,"geometry":{"type":"Point","coordinates":[-112.573916182203,32.0601128036204]},"properties":{"FID":44,"VC_ID":44,"VC_NAME":"Gu Vo District Office Compound","VC_ADDRESS":"Indian Route 1, Mile Post 19, Gu Vo Village","BOS_DIST":3,"ROOM":"GU VO DISTRICT COMPOUND CONFERENCEROOM"}},{"type":"Feature","id":45,"geometry":{"type":"Point","coordinates":[-110.872555065812,32.2764919852647]},"properties":{"FID":45,"VC_ID":45,"VC_NAME":"Dusenberry library","VC_ADDRESS":"5605 E River Rd, Tucson, AZ 85750","BOS_DIST":1,"ROOM":"No Information"}},{"type":"Feature","id":46,"geometry":{"type":"Point","coordinates":[-110.92566298334,32.1328141106734]},"properties":{"FID":46,"VC_ID":47,"VC_NAME":"Hilton Garden Inn","VC_ADDRESS":"6575 S Country Club Road","BOS_DIST":2,"ROOM":"MULTIPURPOSE  ROOM"}},{"type":"Feature","id":47,"geometry":{"type":"Point","coordinates":[-110.830239252564,32.2198382078987]},"properties":{"FID":47,"VC_ID":48,"VC_NAME":"Hilton Tucson East","VC_ADDRESS":"7600 E Broadway Boulevard","BOS_DIST":2,"ROOM":"Rosewood C"}},{"type":"Feature","id":48,"geometry":{"type":"Point","coordinates":[-110.773271832227,32.268149372656]},"properties":{"FID":48,"VC_ID":49,"VC_NAME":"Hope Church","VC_ADDRESS":"3353 N Houghton Road","BOS_DIST":4,"ROOM":"CHURCH / EDUCATION CENTER"}},{"type":"Feature","id":49,"geometry":{"type":"Point","coordinates":[-110.979259507807,32.2262789675899]},"properties":{"FID":49,"VC_ID":50,"VC_NAME":"Hotel Tucson City Center","VC_ADDRESS":"475 N Granada Avenue","BOS_DIST":5,"ROOM":"Gold/Silver/Copper Room- 2000-3500Sq ft"}},{"type":"Feature","id":50,"geometry":{"type":"Point","coordinates":[-110.968019700132,32.2024311986608]},"properties":{"FID":50,"VC_ID":51,"VC_NAME":"Sam Lena Library","VC_ADDRESS":"1607 S 6TH AVENUE","BOS_DIST":2,"ROOM":"No Information"}},{"type":"Feature","id":51,"geometry":{"type":"Point","coordinates":[-110.891321419541,32.292535129847]},"properties":{"FID":51,"VC_ID":52,"VC_NAME":"Journey Church","VC_ADDRESS":"4700 N Swan Road","BOS_DIST":2,"ROOM":"Hall"}},{"type":"Feature","id":52,"geometry":{"type":"Point","coordinates":[-110.930174971026,32.1802731433208]},"properties":{"FID":52,"VC_ID":53,"VC_NAME":"Kino Sports Complex","VC_ADDRESS":"2805 E Ajo Way","BOS_DIST":2,"ROOM":"Catalina & Rincon Rooms"}},{"type":"Feature","id":53,"geometry":{"type":"Point","coordinates":[-110.890506379967,32.2054465273545]},"properties":{"FID":53,"VC_ID":54,"VC_NAME":"Knights of Columbus #5133","VC_ADDRESS":"1330 S Mountain View Avenue","BOS_DIST":2,"ROOM":"HALL"}},{"type":"Feature","id":54,"geometry":{"type":"Point","coordinates":[-110.801303520371,32.2595321973575]},"properties":{"FID":54,"VC_ID":55,"VC_NAME":"Kirk-Bear Canyon Library","VC_ADDRESS":"8959 E. Tanque Verde Rd.","BOS_DIST":4,"ROOM":"No Information"}},{"type":"Feature","id":55,"geometry":{"type":"Point","coordinates":[-111.001330048617,31.8689184834239]},"properties":{"FID":55,"VC_ID":56,"VC_NAME":"Las Campanas","VC_ADDRESS":"565 W Belltower Drive","BOS_DIST":4,"ROOM":"Ocotillo & Agave Rooms"}},{"type":"Feature","id":56,"geometry":{"type":"Point","coordinates":[-111.106200625134,32.3382697062245]},"properties":{"FID":56,"VC_ID":57,"VC_NAME":"Lord of Grace Lutheran Church","VC_ADDRESS":"7250 N Cortaro Road","BOS_DIST":3,"ROOM":"MEETING ROOM"}},{"type":"Feature","id":57,"geometry":{"type":"Point","coordinates":[-110.874549044994,32.2985233770141]},"properties":{"FID":57,"VC_ID":58,"VC_NAME":"Lutheran Church of the Foothills","VC_ADDRESS":"5102 N Craycroft Road","BOS_DIST":1,"ROOM":"ACTIVITIES ROOM"}},{"type":"Feature","id":58,"geometry":{"type":"Point","coordinates":[-111.210871200091,32.4477325446839]},"properties":{"FID":58,"VC_ID":59,"VC_NAME":"Marana Municipal Complex","VC_ADDRESS":"11555 W Civic Center","BOS_DIST":3,"ROOM":"MARANA POLICE DEPT. COMMUNITY ROOM"}},{"type":"Feature","id":59,"geometry":{"type":"Point","coordinates":[-110.976730631868,32.1199187272604]},"properties":{"FID":59,"VC_ID":60,"VC_NAME":"Maranatha Ministries","VC_ADDRESS":"334 W Los Reales Road","BOS_DIST":5,"ROOM":"Fellowship hall"}},{"type":"Feature","id":60,"geometry":{"type":"Point","coordinates":[-110.938407545477,32.1643359727875]},"properties":{"FID":60,"VC_ID":61,"VC_NAME":"Marymar Events","VC_ADDRESS":"2264 E Benson Highway","BOS_DIST":2,"ROOM":"Hall - 200 People Capacity"}},{"type":"Feature","id":61,"geometry":{"type":"Point","coordinates":[-110.839743967622,32.2494720734055]},"properties":{"FID":61,"VC_ID":62,"VC_NAME":"Morris K. Udall Regional Center","VC_ADDRESS":"7200 E Tanque Verde Road","BOS_DIST":4,"ROOM":"SENIOR CENTER BUILDING"}},{"type":"Feature","id":62,"geometry":{"type":"Point","coordinates":[-110.771325934019,32.1980992212982]},"properties":{"FID":62,"VC_ID":63,"VC_NAME":"MOUNT OLIVE LUTHERAN CHURCH","VC_ADDRESS":"2005 S HOUGHTON ROAD","BOS_DIST":4,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":63,"geometry":{"type":"Point","coordinates":[-110.760362011067,32.4452342672943]},"properties":{"FID":63,"VC_ID":64,"VC_NAME":"Mt. Lemmon Community Center","VC_ADDRESS":"12949 N Sabino Canyon Park, Mt lemmon","BOS_DIST":4,"ROOM":"RECREATION ROOM"}},{"type":"Feature","id":64,"geometry":{"type":"Point","coordinates":[-111.061190299108,32.1750513258314]},"properties":{"FID":64,"VC_ID":65,"VC_NAME":"MT. ZION LUTHERAN CHURCH","VC_ADDRESS":"4520 W AJO WAY","BOS_DIST":5,"ROOM":"Fellowship Hall ( 1,600 Sq.ft)"}},{"type":"Feature","id":65,"geometry":{"type":"Point","coordinates":[-111.221997219524,32.3674134968497]},"properties":{"FID":65,"VC_ID":66,"VC_NAME":"MUSD - Marana High School","VC_ADDRESS":"12000 W Emigh Road","BOS_DIST":3,"ROOM":"LIBRARY CLASSROOM"}},{"type":"Feature","id":66,"geometry":{"type":"Point","coordinates":[-111.323557817866,32.4146677523452]},"properties":{"FID":66,"VC_ID":67,"VC_NAME":"MUSD - Roadrunner Elementary School","VC_ADDRESS":"16651 West Calle Carmela","BOS_DIST":3,"ROOM":"AM STAGE"}},{"type":"Feature","id":67,"geometry":{"type":"Point","coordinates":[-110.805721223607,32.2164906366896]},"properties":{"FID":67,"VC_ID":68,"VC_NAME":"New Spirit Church","VC_ADDRESS":"8701 E Old Spanish Trail","BOS_DIST":4,"ROOM":"Hall"}},{"type":"Feature","id":68,"geometry":{"type":"Point","coordinates":[-111.042285406265,32.3215855709183]},"properties":{"FID":68,"VC_ID":69,"VC_NAME":"Orange Grove Mobile Estates","VC_ADDRESS":"3635 W Mango Drive","BOS_DIST":1,"ROOM":"Clubhouse"}},{"type":"Feature","id":69,"geometry":{"type":"Point","coordinates":[-110.976966915972,32.3740579984939]},"properties":{"FID":69,"VC_ID":70,"VC_NAME":"Oro Valley Church of the Nazarene","VC_ADDRESS":"500 W Calle Concordia","BOS_DIST":1,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":70,"geometry":{"type":"Point","coordinates":[-110.970798858859,32.3897407675481]},"properties":{"FID":70,"VC_ID":71,"VC_NAME":"Oro Valley County Club","VC_ADDRESS":"300 W Greenock Drive","BOS_DIST":1,"ROOM":"Larger Meeting Room"}},{"type":"Feature","id":71,"geometry":{"type":"Point","coordinates":[-111.008517144058,32.163996561491]},"properties":{"FID":71,"VC_ID":72,"VC_NAME":"Our Lady of Fatima Parish","VC_ADDRESS":"1950 W Irvington Place","BOS_DIST":5,"ROOM":"FELLOWSHIP"}},{"type":"Feature","id":72,"geometry":{"type":"Point","coordinates":[-110.984618911398,32.248876753357]},"properties":{"FID":72,"VC_ID":73,"VC_NAME":"Pascua Neighborhood Center","VC_ADDRESS":"785 W Sahuaro Street","BOS_DIST":5,"ROOM":"BUILDING #1"}},{"type":"Feature","id":73,"geometry":{"type":"Point","coordinates":[-111.078571403449,32.1114512858131]},"properties":{"FID":73,"VC_ID":74,"VC_NAME":"PASCUA YAQUI TRIBE WELLNESS CENTER","VC_ADDRESS":"5305 CALLE TORIM","BOS_DIST":5,"ROOM":"AZUL ROOM ( BLUE)"}},{"type":"Feature","id":74,"geometry":{"type":"Point","coordinates":[-111.237552958774,32.3079534852751]},"properties":{"FID":74,"VC_ID":75,"VC_NAME":"Picture Rocks Community Center","VC_ADDRESS":"5615 N Sanders Road","BOS_DIST":3,"ROOM":"MULTIPURPOSE ROOM"}},{"type":"Feature","id":75,"geometry":{"type":"Point","coordinates":[-110.778943858676,32.0417942273391]},"properties":{"FID":75,"VC_ID":76,"VC_NAME":"Pima County Fairgounds","VC_ADDRESS":"11300 S Houghton Road","BOS_DIST":4,"ROOM":"Green Room or Ferber Room"}},{"type":"Feature","id":76,"geometry":{"type":"Point","coordinates":[-112.312505452405,32.0341378141677]},"properties":{"FID":76,"VC_ID":77,"VC_NAME":"Pisinemo District","VC_ADDRESS":"West Highway 86, Route 21","BOS_DIST":3,"ROOM":"DISTRICT OFFICE"}},{"type":"Feature","id":77,"geometry":{"type":"Point","coordinates":[-110.980991483655,32.2161475761282]},"properties":{"FID":77,"VC_ID":78,"VC_NAME":"Ramada by Wyndham","VC_ADDRESS":"777 W Cushing Street","BOS_DIST":5,"ROOM":"Larger Meeting Room"}},{"type":"Feature","id":78,"geometry":{"type":"Point","coordinates":[-110.878432732103,32.2227645543855]},"properties":{"FID":78,"VC_ID":79,"VC_NAME":"DoubleTree Suites by Hilton Tucson Williams Center","VC_ADDRESS":"5335 E Broadway Boulevard","BOS_DIST":5,"ROOM":"No Information"}},{"type":"Feature","id":79,"geometry":{"type":"Point","coordinates":[-110.908774262681,32.2239439245833]},"properties":{"FID":79,"VC_ID":80,"VC_NAME":" La Quinta Inn & Suites Tucson Reid Park","VC_ADDRESS":"102 N Alvernon Way","BOS_DIST":2,"ROOM":"No Information"}},{"type":"Feature","id":80,"geometry":{"type":"Point","coordinates":[-111.132463796544,32.3671334346672]},"properties":{"FID":80,"VC_ID":81,"VC_NAME":"Redeemer Evangelical Lutheran Church & School","VC_ADDRESS":"8845 N Silverbell Road","BOS_DIST":3,"ROOM":"MINISTRY CENTER"}},{"type":"Feature","id":81,"geometry":{"type":"Point","coordinates":[-111.310495597556,32.0791381252999]},"properties":{"FID":81,"VC_ID":82,"VC_NAME":"Robles Ranch Community Center","VC_ADDRESS":"16150 W Ajo Way","BOS_DIST":3,"ROOM":"COMMUNITY CENTER"}},{"type":"Feature","id":82,"geometry":{"type":"Point","coordinates":[-110.934823519607,32.2138312632162]},"properties":{"FID":82,"VC_ID":84,"VC_NAME":"Knight of Columbus","VC_ADDRESS":"601 S Tucson Boulevard","BOS_DIST":2,"ROOM":"No Information"}},{"type":"Feature","id":83,"geometry":{"type":"Point","coordinates":[-110.771335073443,32.1964333239181]},"properties":{"FID":83,"VC_ID":85,"VC_NAME":"SAHUARO BAPTIST CHURCH","VC_ADDRESS":"10361 E OLD SPANISH TRAIL","BOS_DIST":4,"ROOM":"AARON HALL"}},{"type":"Feature","id":84,"geometry":{"type":"Point","coordinates":[-110.646101047994,31.9173344673619]},"properties":{"FID":84,"VC_ID":83,"VC_NAME":"Charron Vineyards","VC_ADDRESS":"18585 S Sonoita Hwy, Vail, AZ 85641","BOS_DIST":4,"ROOM":"MAIN ROOM"}},{"type":"Feature","id":85,"geometry":{"type":"Point","coordinates":[-111.070540943634,32.3722085988191]},"properties":{"FID":85,"VC_ID":86,"VC_NAME":"Countryside Community Club","VC_ADDRESS":"9151 N Bald Eagle","BOS_DIST":1,"ROOM":"No Information"}},{"type":"Feature","id":86,"geometry":{"type":"Point","coordinates":[-110.799386183115,32.211068460547]},"properties":{"FID":86,"VC_ID":87,"VC_NAME":"SAINT MATTHEW'S EPISCOPAL CHURCH","VC_ADDRESS":"9071 E OLD SPANISH TRAIL","BOS_DIST":4,"ROOM":"MATTS PLACE"}},{"type":"Feature","id":87,"geometry":{"type":"Point","coordinates":[-111.009804565363,32.1075002820656]},"properties":{"FID":87,"VC_ID":88,"VC_NAME":"SAN XAVIER DISTRICT","VC_ADDRESS":"2018 SAN XAVIER ROAD","BOS_DIST":3,"ROOM":"SAN XAVIER DISTRICT CENTER"}},{"type":"Feature","id":88,"geometry":{"type":"Point","coordinates":[-111.219499533891,32.3314334608712]},"properties":{"FID":88,"VC_ID":89,"VC_NAME":"Sandario Baptist Church","VC_ADDRESS":"6971 N Sandario Road","BOS_DIST":3,"ROOM":"AUDITORIUM"}},{"type":"Feature","id":89,"geometry":{"type":"Point","coordinates":[-110.92368861953,32.4661258070978]},"properties":{"FID":89,"VC_ID":90,"VC_NAME":"SANTA CATALINA CATHOLIC CHURCH","VC_ADDRESS":"14380 N ORACLE ROAD","BOS_DIST":1,"ROOM":"MULTIPURPOSE ROOM"}},{"type":"Feature","id":90,"geometry":{"type":"Point","coordinates":[-110.974923227827,31.9591990680697]},"properties":{"FID":90,"VC_ID":91,"VC_NAME":"SANTA CRUZ VALLEY UNITED METHODIST CHURCH","VC_ADDRESS":"71 E SAHUARITA ROAD","BOS_DIST":2,"ROOM":"SANCTUARY"}},{"type":"Feature","id":91,"geometry":{"type":"Point","coordinates":[-111.706025453453,32.0015942616066]},"properties":{"FID":91,"VC_ID":92,"VC_NAME":"Schuk Toak District Office","VC_ADDRESS":"Highway 86, Mile Post 126.5","BOS_DIST":3,"ROOM":"DISTRICT OFFICE CONFERENCE ROOM"}},{"type":"Feature","id":92,"geometry":{"type":"Point","coordinates":[-110.882662257015,32.2515967727365]},"properties":{"FID":92,"VC_ID":95,"VC_NAME":"Sheraton Tucson Hotel","VC_ADDRESS":"5151 E Grant Road","BOS_DIST":4,"ROOM":"Sabino Room"}},{"type":"Feature","id":93,"geometry":{"type":"Point","coordinates":[-111.89945351559,31.9243046993371]},"properties":{"FID":93,"VC_ID":93,"VC_NAME":"Sells District Office","VC_ADDRESS":"Arizona Highway 86 and Mile Post 112","BOS_DIST":3,"ROOM":"CONFERENCE ROOM"}},{"type":"Feature","id":94,"geometry":{"type":"Point","coordinates":[-111.181285438624,31.8950195067571]},"properties":{"FID":94,"VC_ID":96,"VC_NAME":"Sierrita Mining and Ranching Co. Community Building","VC_ADDRESS":"10094 W McGee Ranch Road","BOS_DIST":3,"ROOM":"COMMUNITY BUILDING"}},{"type":"Feature","id":95,"geometry":{"type":"Point","coordinates":[-111.294298261577,32.0800748146258]},"properties":{"FID":95,"VC_ID":94,"VC_NAME":"Serenity Baptist Church","VC_ADDRESS":"15501 W Ajo Way, Three Points","BOS_DIST":3,"ROOM":"WORSHIP AREA"}},{"type":"Feature","id":96,"geometry":{"type":"Point","coordinates":[-110.978836495751,31.9752935914712]},"properties":{"FID":96,"VC_ID":97,"VC_NAME":"Sahuarita Town Hall","VC_ADDRESS":"375 W Sahuarita Center Way","BOS_DIST":3,"ROOM":"No Information"}},{"type":"Feature","id":97,"geometry":{"type":"Point","coordinates":[-110.838850189018,32.2754500489455]},"properties":{"FID":97,"VC_ID":98,"VC_NAME":"St. Alban's Episcopal Church","VC_ADDRESS":"3738 N Old Sabino Canyon Road","BOS_DIST":1,"ROOM":"PARISH HALL"}},{"type":"Feature","id":98,"geometry":{"type":"Point","coordinates":[-110.773907194346,32.2563341170123]},"properties":{"FID":98,"VC_ID":99,"VC_NAME":"ST. JOHN ON THE DESERT PRESBYTERIAN CHURCH","VC_ADDRESS":"2695 N HOUGHTON ROAD","BOS_DIST":4,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":99,"geometry":{"type":"Point","coordinates":[-111.018191879896,32.4188482093679]},"properties":{"FID":99,"VC_ID":100,"VC_NAME":"AUSD-Richard Wilson K-8","VC_ADDRESS":"2330 W Glover","BOS_DIST":1,"ROOM":"No Information"}},{"type":"Feature","id":100,"geometry":{"type":"Point","coordinates":[-110.820441196287,32.2219888453599]},"properties":{"FID":100,"VC_ID":101,"VC_NAME":"ST. PAUL'S UNITED METHODIST CHURCH","VC_ADDRESS":"8051 E BROADWAY BOULEVARD","BOS_DIST":4,"ROOM":"BRUMMETT HALL"}},{"type":"Feature","id":101,"geometry":{"type":"Point","coordinates":[-110.897752844912,32.3001114451502]},"properties":{"FID":101,"VC_ID":102,"VC_NAME":"St. Thomas the Apostle Catholic Church","VC_ADDRESS":"5150 N Valley View Road","BOS_DIST":1,"ROOM":"O'LEARY HALL"}},{"type":"Feature","id":102,"geometry":{"type":"Point","coordinates":[-110.940126973332,32.460990186267]},"properties":{"FID":102,"VC_ID":103,"VC_NAME":"Sun City Oro Valley - Catalina Vista","VC_ADDRESS":"14055 N Del Webb Boulevard","BOS_DIST":1,"ROOM":"MT. LEMMON ROOM"}},{"type":"Feature","id":103,"geometry":{"type":"Point","coordinates":[-111.070698345895,31.7342268549914]},"properties":{"FID":103,"VC_ID":104,"VC_NAME":"SUSD - Sopori Elementary School","VC_ADDRESS":"5000 W Arivaca Road","BOS_DIST":3,"ROOM":"GYMNASIUM"}},{"type":"Feature","id":104,"geometry":{"type":"Point","coordinates":[-110.970012400881,32.4307132966009]},"properties":{"FID":104,"VC_ID":105,"VC_NAME":"The Church of Latter Day Saints","VC_ADDRESS":"55 W Arrowsmith Drive","BOS_DIST":1,"ROOM":"CULTURAL HALL"}},{"type":"Feature","id":105,"geometry":{"type":"Point","coordinates":[-111.006007197707,31.8145034213475]},"properties":{"FID":105,"VC_ID":106,"VC_NAME":"The Springs at Santa Rita","VC_ADDRESS":"951 W Via Rio Fuerte","BOS_DIST":4,"ROOM":"The Anza"}},{"type":"Feature","id":106,"geometry":{"type":"Point","coordinates":[-110.994122513509,32.4094379792858]},"properties":{"FID":106,"VC_ID":107,"VC_NAME":"Oro Valley Public Library","VC_ADDRESS":"1305 W Naranja Dr.","BOS_DIST":1,"ROOM":"No Information"}},{"type":"Feature","id":107,"geometry":{"type":"Point","coordinates":[-111.090753244485,32.1876389230336]},"properties":{"FID":107,"VC_ID":108,"VC_NAME":"Tucson Estates","VC_ADDRESS":"5900 W Western Way Circle","BOS_DIST":3,"ROOM":"MULTIPURPOSE HALL"}},{"type":"Feature","id":108,"geometry":{"type":"Point","coordinates":[-110.912291485933,32.161566580211]},"properties":{"FID":108,"VC_ID":109,"VC_NAME":"Tucson Expo Center","VC_ADDRESS":"3750 E Irvington Road","BOS_DIST":2,"ROOM":"Sapphire Room"}},{"type":"Feature","id":109,"geometry":{"type":"Point","coordinates":[-110.914788679962,32.2700568413144]},"properties":{"FID":109,"VC_ID":110,"VC_NAME":"Tucson FOP Lodge #1","VC_ADDRESS":"3445 N Dodge Boulevard","BOS_DIST":3,"ROOM":"Hall"}},{"type":"Feature","id":110,"geometry":{"type":"Point","coordinates":[-111.086772146458,32.1665305650919]},"properties":{"FID":110,"VC_ID":111,"VC_NAME":"TUCSON MOUNTAIN BAPTIST CHURCH","VC_ADDRESS":"5757 W AJO HIGHWAY","BOS_DIST":3,"ROOM":"ROOM 108"}},{"type":"Feature","id":111,"geometry":{"type":"Point","coordinates":[-110.972524300107,32.134629790921]},"properties":{"FID":111,"VC_ID":112,"VC_NAME":"VALENCIA BRANCH PUBLIC LIBRARY","VC_ADDRESS":"202 W VALENCIA ROAD","BOS_DIST":5,"ROOM":"LARGE MEETING ROOM"}},{"type":"Feature","id":112,"geometry":{"type":"Point","coordinates":[-110.976165160971,32.1562739564469]},"properties":{"FID":112,"VC_ID":113,"VC_NAME":"VIDA NUEVA CHURCH OF GOD","VC_ADDRESS":"504 W NEBRASKA STREET","BOS_DIST":5,"ROOM":"YOUTH CENTER"}},{"type":"Feature","id":113,"geometry":{"type":"Point","coordinates":[-110.721444789256,32.0560246012069]},"properties":{"FID":113,"VC_ID":114,"VC_NAME":"VUSD - Cienega High School","VC_ADDRESS":"12775 E Mary Ann Cleveland Way","BOS_DIST":4,"ROOM":"LIBRARY"}},{"type":"Feature","id":114,"geometry":{"type":"Point","coordinates":[-110.800814688586,31.9348557745163]},"properties":{"FID":114,"VC_ID":115,"VC_NAME":"VUSD - Copper Ridge Elementary School","VC_ADDRESS":"17650 S Canyon Edge Trail","BOS_DIST":4,"ROOM":"LIBRARY"}},{"type":"Feature","id":115,"geometry":{"type":"Point","coordinates":[-110.782229032688,32.1069957046413]},"properties":{"FID":115,"VC_ID":116,"VC_NAME":"VUSD - Desert Sky Middle School","VC_ADDRESS":"9850 E Rankin Loop","BOS_DIST":4,"ROOM":"GYM FOYER"}},{"type":"Feature","id":116,"geometry":{"type":"Point","coordinates":[-110.702546350282,32.0672947874517]},"properties":{"FID":116,"VC_ID":117,"VC_NAME":"VUSD - Ocotillo Ridge Elementary School","VC_ADDRESS":"10170 S White Lightning Lane","BOS_DIST":4,"ROOM":"LIBRARY"}},{"type":"Feature","id":117,"geometry":{"type":"Point","coordinates":[-110.770439216081,31.9531827314741]},"properties":{"FID":117,"VC_ID":118,"VC_NAME":"VUSD - Sycamore Elementary School","VC_ADDRESS":"16701 S Houghton Rd","BOS_DIST":4,"ROOM":"LIBRARY"}},{"type":"Feature","id":118,"geometry":{"type":"Point","coordinates":[-110.9650803606,32.342966513051]},"properties":{"FID":118,"VC_ID":119,"VC_NAME":"Westward Look Resort","VC_ADDRESS":"245 E Ina Road","BOS_DIST":1,"ROOM":"Sonoran Ballroom"}},{"type":"Feature","id":119,"geometry":{"type":"Point","coordinates":[-110.943716218407,32.0660625508627]},"properties":{"FID":119,"VC_ID":120,"VC_NAME":"SUSD - Summit View Elementary School","VC_ADDRESS":"1900 E SUMMIT STREET","BOS_DIST":2,"ROOM":"CAFETERIA"}},{"type":"Feature","id":120,"geometry":{"type":"Point","coordinates":[-111.027516330331,32.1282817135838]},"properties":{"FID":120,"VC_ID":121,"VC_NAME":"Santa Cruz Lutheran Church","VC_ADDRESS":"6809 S Cardinal Ave.","BOS_DIST":5,"ROOM":"No Information"}},{"type":"Feature","id":121,"geometry":{"type":"Point","coordinates":[-110.905498106417,32.2492615386806]},"properties":{"FID":121,"VC_ID":123,"VC_NAME":"LIVING FAITH CHRISTIAN CENTER","VC_ADDRESS":"4108 E NORTH STREET","BOS_DIST":5,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":122,"geometry":{"type":"Point","coordinates":[-112.737102199372,32.2542765625335]},"properties":{"FID":122,"VC_ID":122,"VC_NAME":"WHY DOMESTIC WATER IMPROVEMENT DISTRICT","VC_ADDRESS":"341 S SONOITA WAY, HIGHWAY 85 SOUTH","BOS_DIST":3,"ROOM":"WHY COMMUNITY BUILDING"}},{"type":"Feature","id":123,"geometry":{"type":"Point","coordinates":[-110.787366879247,32.1907255494672]},"properties":{"FID":123,"VC_ID":124,"VC_NAME":"Miller-Golf Links Library","VC_ADDRESS":"9640 E GOLFLINKS ROAD","BOS_DIST":4,"ROOM":"No Information"}},{"type":"Feature","id":124,"geometry":{"type":"Point","coordinates":[-111.007161425844,32.2347203143635]},"properties":{"FID":124,"VC_ID":125,"VC_NAME":"GATES PASS COMMUNITY CHURCH","VC_ADDRESS":"1895 W SPEEDWAY BOULEVARD","BOS_DIST":5,"ROOM":"FELLOWSHIP HALL"}},{"type":"Feature","id":125,"geometry":{"type":"Point","coordinates":[-111.010989405728,32.201300992063]},"properties":{"FID":125,"VC_ID":126,"VC_NAME":"FRED ARCHER NEIGHBORHOOD CENTER","VC_ADDRESS":"1665 S LA CHOLLA BOULEVARD","BOS_DIST":5,"ROOM":"ROOM 133"}},{"type":"Feature","id":126,"geometry":{"type":"Point","coordinates":[-110.957437863638,32.230553892951]},"properties":{"FID":126,"VC_ID":127,"VC_NAME":"FIRST UNITED METHODIST CHURCH","VC_ADDRESS":"915 E 4TH STREET","BOS_DIST":5,"ROOM":"ARIZONA ROOM"}},{"type":"Feature","id":127,"geometry":{"type":"Point","coordinates":[-111.033745925508,32.2498038714585]},"properties":{"FID":127,"VC_ID":128,"VC_NAME":"FAITH CHRISTIAN FELLOWSHIP","VC_ADDRESS":"3141 W IRONWOOD HILLS DRIVE","BOS_DIST":5,"ROOM":"Foyer"}},{"type":"Feature","id":128,"geometry":{"type":"Point","coordinates":[-111.021500513036,32.2101445649775]},"properties":{"FID":128,"VC_ID":129,"VC_NAME":"TUSD-Tolson Elementary","VC_ADDRESS":"1000 S Greasewood","BOS_DIST":5,"ROOM":"No Information"}},{"type":"Feature","id":129,"geometry":{"type":"Point","coordinates":[-112.32470245114,32.348531704867]},"properties":{"FID":129,"VC_ID":46,"VC_NAME":"Hickiwan District Vaya Chin Village","VC_ADDRESS":"HC 03 BOX 873","BOS_DIST":3,"ROOM":"No Information"}}]}
+{
+   "type":"FeatureCollection",
+   "crs":{
+      "type":"name",
+      "properties":{
+         "name":"EPSG:4326"
+      }
+   },
+   "features":[
+      {
+         "type":"Feature",
+         "id":1,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.065526557114,
+               32.3033186001062
+            ]
+         },
+         "properties":{
+            "FID":1,
+            "VC_ID":1,
+            "VC_NAME":"Accelerated Elementary & Secondary School",
+            "VC_ADDRESS":"5245 N Camino De Oeste",
+            "BOS_DIST":3,
+            "ROOM":"Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":2,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.863408635396,
+               32.3722482846573
+            ]
+         },
+         "properties":{
+            "FID":2,
+            "VC_ID":2,
+            "VC_NAME":"Ajo Federated Church",
+            "VC_ADDRESS":"101 W Lomita Avenue",
+            "BOS_DIST":3,
+            "ROOM":"Social Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":3,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.012165684583,
+               32.3820813177266
+            ]
+         },
+         "properties":{
+            "FID":3,
+            "VC_ID":3,
+            "VC_NAME":"Alive Christian Fellowship",
+            "VC_ADDRESS":"9662 N La Cholla Blvd",
+            "BOS_DIST":1,
+            "ROOM":"Lobby"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":4,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.856572094412,
+               32.1817485250138
+            ]
+         },
+         "properties":{
+            "FID":4,
+            "VC_ID":4,
+            "VC_NAME":"Ambassador Event Center",
+            "VC_ADDRESS":"3455 S Wilmot Road",
+            "BOS_DIST":2,
+            "ROOM":"Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":5,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.771606003279,
+               31.9663945270734
+            ]
+         },
+         "properties":{
+            "FID":5,
+            "VC_ID":5,
+            "VC_NAME":"American Legion Post 109",
+            "VC_ADDRESS":"15921 S Houghton Road",
+            "BOS_DIST":4,
+            "ROOM":"Dining Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":6,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.977788285256,
+               32.1663172256991
+            ]
+         },
+         "properties":{
+            "FID":6,
+            "VC_ID":6,
+            "VC_NAME":"American Legion Sahuaro Post 68",
+            "VC_ADDRESS":"4724 S 12th Avenue",
+            "BOS_DIST":5,
+            "ROOM":"Legion Main Ballroom"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":7,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.995709963737,
+               31.9277242700251
+            ]
+         },
+         "properties":{
+            "FID":7,
+            "VC_ID":7,
+            "VC_NAME":"The Good Shepherd United Church",
+            "VC_ADDRESS":"17750 S La Canada Dr",
+            "BOS_DIST":3,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":8,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.329909054015,
+               31.5767966114308
+            ]
+         },
+         "properties":{
+            "FID":8,
+            "VC_ID":8,
+            "VC_NAME":"Arivaca Old School Building",
+            "VC_ADDRESS":"17180 W 4th St",
+            "BOS_DIST":3,
+            "ROOM":"Old School House"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":9,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.967354133945,
+               32.2195712643375
+            ]
+         },
+         "properties":{
+            "FID":9,
+            "VC_ID":9,
+            "VC_NAME":"Armory Park Center",
+            "VC_ADDRESS":"220 S 5th Ave",
+            "BOS_DIST":2,
+            "ROOM":"Quiet Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":10,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.011383767516,
+               32.3337798369436
+            ]
+         },
+         "properties":{
+            "FID":10,
+            "VC_ID":10,
+            "VC_NAME":"Donaldson Elementary School",
+            "VC_ADDRESS":"2040 W Omar Dr",
+            "BOS_DIST":1,
+            "ROOM":"Gymnasium"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":11,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.951664406257,
+               32.2839451522737
+            ]
+         },
+         "properties":{
+            "FID":11,
+            "VC_ID":11,
+            "VC_NAME":"Rio Vista Elementary School",
+            "VC_ADDRESS":"1351 E Limberlost Dr",
+            "BOS_DIST":3,
+            "ROOM":"Gymnasium"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":12,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.303018124889,
+               32.444864709608
+            ]
+         },
+         "properties":{
+            "FID":12,
+            "VC_ID":12,
+            "VC_NAME":"Avra Valley Fire District",
+            "VC_ADDRESS":"15790 W Silverbell Rd",
+            "BOS_DIST":3,
+            "ROOM":"Classroom"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":13,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.045340620636,
+               32.3442308225909
+            ]
+         },
+         "properties":{
+            "FID":13,
+            "VC_ID":14,
+            "VC_NAME":"Beautiful Savior Lutheran Church",
+            "VC_ADDRESS":"7570 N Thornydale Road",
+            "BOS_DIST":1,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":14,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.757248869643,
+               32.1766860430246
+            ]
+         },
+         "properties":{
+            "FID":14,
+            "VC_ID":15,
+            "VC_NAME":"Bethel Baptist Church",
+            "VC_ADDRESS":"11040 E Escalante Rd",
+            "BOS_DIST":4,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":15,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.028989459472,
+               31.7882000735662
+            ]
+         },
+         "properties":{
+            "FID":15,
+            "VC_ID":16,
+            "VC_NAME":"Canoa Ranch Recreation Center",
+            "VC_ADDRESS":"5750 S Turquoise Mountain Dr",
+            "BOS_DIST":4,
+            "ROOM":"Amado Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":16,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.030817191023,
+               32.3961567633285
+            ]
+         },
+         "properties":{
+            "FID":16,
+            "VC_ID":17,
+            "VC_NAME":"Canyon del Oro Assembly of God",
+            "VC_ADDRESS":"2950 W Lambert Lane",
+            "BOS_DIST":1,
+            "ROOM":"Foyer"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":17,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.964923963729,
+               32.3746376707204
+            ]
+         },
+         "properties":{
+            "FID":17,
+            "VC_ID":18,
+            "VC_NAME":"Canyon del Oro Baptist Church",
+            "VC_ADDRESS":"9200 N Oracle Rd",
+            "BOS_DIST":1,
+            "ROOM":"Chapel Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":18,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.812473668336,
+               31.7979672945606
+            ]
+         },
+         "properties":{
+            "FID":18,
+            "VC_ID":13,
+            "VC_NAME":"Baboquivari District Office",
+            "VC_ADDRESS":"Federal Route 19 & Fresnal Canyon Road",
+            "BOS_DIST":3,
+            "ROOM":"Main Office"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":19,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.996826514126,
+               31.8737087856613
+            ]
+         },
+         "properties":{
+            "FID":19,
+            "VC_ID":19,
+            "VC_NAME":"Casa Paloma I Recreation Center",
+            "VC_ADDRESS":"400 W Circulo del Paladin",
+            "BOS_DIST":4,
+            "ROOM":"Recreation Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":20,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.016938050059,
+               32.4027097028074
+            ]
+         },
+         "properties":{
+            "FID":20,
+            "VC_ID":20,
+            "VC_NAME":"Casas Adobes Baptist Church",
+            "VC_ADDRESS":"10801 N La Cholla Boulevard",
+            "BOS_DIST":1,
+            "ROOM":"Palo Verde Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":21,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.925280911003,
+               32.5044466667465
+            ]
+         },
+         "properties":{
+            "FID":21,
+            "VC_ID":21,
+            "VC_NAME":"Catalina Community Center",
+            "VC_ADDRESS":"16562 N Oracle Road",
+            "BOS_DIST":1,
+            "ROOM":"Recreation Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":22,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.682958545638,
+               32.0533961658989
+            ]
+         },
+         "properties":{
+            "FID":22,
+            "VC_ID":22,
+            "VC_NAME":"Christ Lutheran Vail Church",
+            "VC_ADDRESS":"14600 E Colossal Cave Road",
+            "BOS_DIST":4,
+            "ROOM":"Sanctuary Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":23,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.779847786238,
+               31.6163828286224
+            ]
+         },
+         "properties":{
+            "FID":23,
+            "VC_ID":23,
+            "VC_NAME":"Chukut Kuk District",
+            "VC_ADDRESS":"Federal Route 19, Mile Post 8, Miguel Community",
+            "BOS_DIST":3,
+            "ROOM":"MIGUEL Community Building"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":24,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.037102514596,
+               32.2356342235747
+            ]
+         },
+         "properties":{
+            "FID":24,
+            "VC_ID":24,
+            "VC_NAME":"Church of The Painted Hills",
+            "VC_ADDRESS":"3295 W Speedway Boulevard",
+            "BOS_DIST":5,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":25,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.818713105072,
+               32.1683849305149
+            ]
+         },
+         "properties":{
+            "FID":25,
+            "VC_ID":25,
+            "VC_NAME":"Clements Regional Center",
+            "VC_ADDRESS":"8155 E Poinciana Drive",
+            "BOS_DIST":2,
+            "ROOM":"Room 117 - City Of Tucson"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":26,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.122545749894,
+               32.3676245441151
+            ]
+         },
+         "properties":{
+            "FID":26,
+            "VC_ID":26,
+            "VC_NAME":"Continental Ranch Community Center",
+            "VC_ADDRESS":"8881 N Coachline Boulevard",
+            "BOS_DIST":3,
+            "ROOM":"Community Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":27,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.961451918496,
+               32.2699459447192
+            ]
+         },
+         "properties":{
+            "FID":27,
+            "VC_ID":27,
+            "VC_NAME":"Woods Memorial Library",
+            "VC_ADDRESS":"3455 N. 1st Ave.",
+            "BOS_DIST":3,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":28,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.014136404678,
+               31.8285846701287
+            ]
+         },
+         "properties":{
+            "FID":28,
+            "VC_ID":28,
+            "VC_NAME":"Desert Hills Center",
+            "VC_ADDRESS":"2980 S Camino Del Sol",
+            "BOS_DIST":4,
+            "ROOM":"Auditorium 2,400 Sq Ft"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":29,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.048005907039,
+               32.3958013066818
+            ]
+         },
+         "properties":{
+            "FID":29,
+            "VC_ID":29,
+            "VC_NAME":"Desert Springs Baptist Church",
+            "VC_ADDRESS":"10425 N Thornydale Rd",
+            "BOS_DIST":1,
+            "ROOM":"Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":30,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.998902016121,
+               32.3666426579871
+            ]
+         },
+         "properties":{
+            "FID":30,
+            "VC_ID":30,
+            "VC_NAME":"Desert Springs Presbyterian Church",
+            "VC_ADDRESS":"1555 W Overton Road",
+            "BOS_DIST":1,
+            "ROOM":"Sanctuary"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":31,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.968098402378,
+               32.2478219799209
+            ]
+         },
+         "properties":{
+            "FID":31,
+            "VC_ID":31,
+            "VC_NAME":"Donna R Liggins Neighborhood Center",
+            "VC_ADDRESS":"2160 N 6th Avenue",
+            "BOS_DIST":5,
+            "ROOM":"Multipurpose Rooms 1,2,3"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":32,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.9733360253,
+               32.2184745039506
+            ]
+         },
+         "properties":{
+            "FID":32,
+            "VC_ID":32,
+            "VC_NAME":"Tucson Convention Center",
+            "VC_ADDRESS":"260 S. Church Ave",
+            "BOS_DIST":2,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":33,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.980423561311,
+               32.3088343331609
+            ]
+         },
+         "properties":{
+            "FID":33,
+            "VC_ID":33,
+            "VC_NAME":"Dove of Peace Lutheran Church",
+            "VC_ADDRESS":"665 W Roller Coaster Road",
+            "BOS_DIST":3,
+            "ROOM":"Library"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":34,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.988061496735,
+               31.8699256136045
+            ]
+         },
+         "properties":{
+            "FID":34,
+            "VC_ID":34,
+            "VC_NAME":"East Social Center",
+            "VC_ADDRESS":"7 S Abergo Drive",
+            "BOS_DIST":4,
+            "ROOM":"Auditorium"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":35,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.969165589225,
+               32.1627748228922
+            ]
+         },
+         "properties":{
+            "FID":35,
+            "VC_ID":35,
+            "VC_NAME":"El Pueblo Senior Center",
+            "VC_ADDRESS":"101 W Irvington Road",
+            "BOS_DIST":5,
+            "ROOM":"Senior Center Building, Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":36,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.001089415606,
+               32.287555452309
+            ]
+         },
+         "properties":{
+            "FID":36,
+            "VC_ID":36,
+            "VC_NAME":"Ellie Town Flowing Wells Community Center",
+            "VC_ADDRESS":"1660 W Ruthrauff Road",
+            "BOS_DIST":3,
+            "ROOM":"Multipurpose Rooms 2 & 3"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":37,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.853195360813,
+               32.2362166196809
+            ]
+         },
+         "properties":{
+            "FID":37,
+            "VC_ID":37,
+            "VC_NAME":"Embassy Suites by Hilton Tucson East",
+            "VC_ADDRESS":"6555 E Speedway Boulevard",
+            "BOS_DIST":4,
+            "ROOM":"Largest conference room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":38,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.926629502713,
+               32.3217293121874
+            ]
+         },
+         "properties":{
+            "FID":38,
+            "VC_ID":38,
+            "VC_NAME":"Embassy Suites Tucson-Paloma Village",
+            "VC_ADDRESS":"3110 E Skyline Drive",
+            "BOS_DIST":1,
+            "ROOM":"La Paloma Ballroom"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":39,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.039038472386,
+               32.3732618921143
+            ]
+         },
+         "properties":{
+            "FID":39,
+            "VC_ID":39,
+            "VC_NAME":"Foothills Community Church",
+            "VC_ADDRESS":"3301 W Overton Rd",
+            "BOS_DIST":1,
+            "ROOM":"Fellowship Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":40,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.933584452012,
+               32.1282508707293
+            ]
+         },
+         "properties":{
+            "FID":40,
+            "VC_ID":40,
+            "VC_NAME":"Best Western Tucson International Airport",
+            "VC_ADDRESS":"6801 S. Tucson Blvd",
+            "BOS_DIST":2,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":41,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.840321812777,
+               32.2287492261113
+            ]
+         },
+         "properties":{
+            "FID":41,
+            "VC_ID":41,
+            "VC_NAME":"Glad Tidings Assembly of God",
+            "VC_ADDRESS":"600 N Kolb Rd",
+            "BOS_DIST":4,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":42,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.014477466047,
+               32.3834294368428
+            ]
+         },
+         "properties":{
+            "FID":42,
+            "VC_ID":42,
+            "VC_NAME":"Grace Community Covenant Church",
+            "VC_ADDRESS":"9755 N La Cholla Blvd",
+            "BOS_DIST":1,
+            "ROOM":"Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":43,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.04081476157,
+               32.3255891089159
+            ]
+         },
+         "properties":{
+            "FID":43,
+            "VC_ID":43,
+            "VC_NAME":"Gu Achi District",
+            "VC_ADDRESS":"Santa Rosa Community",
+            "BOS_DIST":3,
+            "ROOM":"Santa Rosa Multipurpose Building"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":44,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.573916182203,
+               32.0601128036204
+            ]
+         },
+         "properties":{
+            "FID":44,
+            "VC_ID":44,
+            "VC_NAME":"Gu Vo District Office Compound",
+            "VC_ADDRESS":"Indian Route 1, Mile Post 19, Gu Vo Village",
+            "BOS_DIST":3,
+            "ROOM":"Gu Vo District Compound Conference Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":45,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.872555065812,
+               32.2764919852647
+            ]
+         },
+         "properties":{
+            "FID":45,
+            "VC_ID":45,
+            "VC_NAME":"Dusenberry library",
+            "VC_ADDRESS":"5605 E River Rd, Tucson, AZ 85750",
+            "BOS_DIST":1,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":46,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.92566298334,
+               32.1328141106734
+            ]
+         },
+         "properties":{
+            "FID":46,
+            "VC_ID":47,
+            "VC_NAME":"Hilton Garden Inn",
+            "VC_ADDRESS":"6575 S Country Club Road",
+            "BOS_DIST":2,
+            "ROOM":"Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":47,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.830239252564,
+               32.2198382078987
+            ]
+         },
+         "properties":{
+            "FID":47,
+            "VC_ID":48,
+            "VC_NAME":"Hilton Tucson East",
+            "VC_ADDRESS":"7600 E Broadway Boulevard",
+            "BOS_DIST":2,
+            "ROOM":"Rosewood C"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":48,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.773271832227,
+               32.268149372656
+            ]
+         },
+         "properties":{
+            "FID":48,
+            "VC_ID":49,
+            "VC_NAME":"Hope Church",
+            "VC_ADDRESS":"3353 N Houghton Road",
+            "BOS_DIST":4,
+            "ROOM":"Church / Education Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":49,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.979259507807,
+               32.2262789675899
+            ]
+         },
+         "properties":{
+            "FID":49,
+            "VC_ID":50,
+            "VC_NAME":"Hotel Tucson City Center",
+            "VC_ADDRESS":"475 N Granada Avenue",
+            "BOS_DIST":5,
+            "ROOM":"Gold/Silver/Copper Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":50,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.968019700132,
+               32.2024311986608
+            ]
+         },
+         "properties":{
+            "FID":50,
+            "VC_ID":51,
+            "VC_NAME":"Sam Lena Library",
+            "VC_ADDRESS":"1607 S 6th Ave",
+            "BOS_DIST":2,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":51,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.891321419541,
+               32.292535129847
+            ]
+         },
+         "properties":{
+            "FID":51,
+            "VC_ID":52,
+            "VC_NAME":"Journey Church",
+            "VC_ADDRESS":"4700 N Swan Rd",
+            "BOS_DIST":2,
+            "ROOM":"Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":52,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.930174971026,
+               32.1802731433208
+            ]
+         },
+         "properties":{
+            "FID":52,
+            "VC_ID":53,
+            "VC_NAME":"Kino Sports Complex",
+            "VC_ADDRESS":"2805 E Ajo Way",
+            "BOS_DIST":2,
+            "ROOM":"Catalina & Rincon Rooms"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":53,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.890506379967,
+               32.2054465273545
+            ]
+         },
+         "properties":{
+            "FID":53,
+            "VC_ID":54,
+            "VC_NAME":"Knights of Columbus #5133",
+            "VC_ADDRESS":"1330 S Mountain View Avenue",
+            "BOS_DIST":2,
+            "ROOM":"HALL"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":54,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.801303520371,
+               32.2595321973575
+            ]
+         },
+         "properties":{
+            "FID":54,
+            "VC_ID":55,
+            "VC_NAME":"Kirk-Bear Canyon Library",
+            "VC_ADDRESS":"8959 E. Tanque Verde Rd.",
+            "BOS_DIST":4,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":55,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.001330048617,
+               31.8689184834239
+            ]
+         },
+         "properties":{
+            "FID":55,
+            "VC_ID":56,
+            "VC_NAME":"Las Campanas",
+            "VC_ADDRESS":"565 W Belltower Drive",
+            "BOS_DIST":4,
+            "ROOM":"Ocotillo & Agave Rooms"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":56,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.106200625134,
+               32.3382697062245
+            ]
+         },
+         "properties":{
+            "FID":56,
+            "VC_ID":57,
+            "VC_NAME":"Lord of Grace Lutheran Church",
+            "VC_ADDRESS":"7250 N Cortaro Road",
+            "BOS_DIST":3,
+            "ROOM":"Meeting Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":57,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.874549044994,
+               32.2985233770141
+            ]
+         },
+         "properties":{
+            "FID":57,
+            "VC_ID":58,
+            "VC_NAME":"Lutheran Church of the Foothills",
+            "VC_ADDRESS":"5102 N Craycroft Road",
+            "BOS_DIST":1,
+            "ROOM":"Activities Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":58,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.210871200091,
+               32.4477325446839
+            ]
+         },
+         "properties":{
+            "FID":58,
+            "VC_ID":59,
+            "VC_NAME":"Marana Municipal Complex",
+            "VC_ADDRESS":"11555 W Civic Center",
+            "BOS_DIST":3,
+            "ROOM":"Marana Police Dept Community Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":59,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.976730631868,
+               32.1199187272604
+            ]
+         },
+         "properties":{
+            "FID":59,
+            "VC_ID":60,
+            "VC_NAME":"Maranatha Ministries",
+            "VC_ADDRESS":"334 W Los Reales Road",
+            "BOS_DIST":5,
+            "ROOM":"Fellowship hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":60,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.938407545477,
+               32.1643359727875
+            ]
+         },
+         "properties":{
+            "FID":60,
+            "VC_ID":61,
+            "VC_NAME":"Marymar Events",
+            "VC_ADDRESS":"2264 E Benson Highway",
+            "BOS_DIST":2,
+            "ROOM":"Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":61,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.839743967622,
+               32.2494720734055
+            ]
+         },
+         "properties":{
+            "FID":61,
+            "VC_ID":62,
+            "VC_NAME":"Morris K. Udall Regional Center",
+            "VC_ADDRESS":"7200 E Tanque Verde Road",
+            "BOS_DIST":4,
+            "ROOM":"Senior Center Building"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":62,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.771325934019,
+               32.1980992212982
+            ]
+         },
+         "properties":{
+            "FID":62,
+            "VC_ID":63,
+            "VC_NAME":"Mount Olive Lutheran Church",
+            "VC_ADDRESS":"2005 S Houghton Rd",
+            "BOS_DIST":4,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":63,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.760362011067,
+               32.4452342672943
+            ]
+         },
+         "properties":{
+            "FID":63,
+            "VC_ID":64,
+            "VC_NAME":"Mt. Lemmon Community Center",
+            "VC_ADDRESS":"12949 N Sabino Canyon Park, Mt lemmon",
+            "BOS_DIST":4,
+            "ROOM":"Recreation Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":64,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.061190299108,
+               32.1750513258314
+            ]
+         },
+         "properties":{
+            "FID":64,
+            "VC_ID":65,
+            "VC_NAME":"Mt Zion Lutheran Church",
+            "VC_ADDRESS":"4520 W Ajo Way",
+            "BOS_DIST":5,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":65,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.221997219524,
+               32.3674134968497
+            ]
+         },
+         "properties":{
+            "FID":65,
+            "VC_ID":66,
+            "VC_NAME":"Marana High School",
+            "VC_ADDRESS":"12000 W Emigh Road",
+            "BOS_DIST":3,
+            "ROOM":"Library Classroom"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":66,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.323557817866,
+               32.4146677523452
+            ]
+         },
+         "properties":{
+            "FID":66,
+            "VC_ID":67,
+            "VC_NAME":"Roadrunner Elementary School",
+            "VC_ADDRESS":"16651 West Calle Carmela",
+            "BOS_DIST":3,
+            "ROOM":"AM Stage"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":67,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.805721223607,
+               32.2164906366896
+            ]
+         },
+         "properties":{
+            "FID":67,
+            "VC_ID":68,
+            "VC_NAME":"New Spirit Church",
+            "VC_ADDRESS":"8701 E Old Spanish Trail",
+            "BOS_DIST":4,
+            "ROOM":"Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":68,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.042285406265,
+               32.3215855709183
+            ]
+         },
+         "properties":{
+            "FID":68,
+            "VC_ID":69,
+            "VC_NAME":"Orange Grove Mobile Estates",
+            "VC_ADDRESS":"3635 W Mango Drive",
+            "BOS_DIST":1,
+            "ROOM":"Clubhouse"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":69,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.976966915972,
+               32.3740579984939
+            ]
+         },
+         "properties":{
+            "FID":69,
+            "VC_ID":70,
+            "VC_NAME":"Oro Valley Church of the Nazarene",
+            "VC_ADDRESS":"500 W Calle Concordia",
+            "BOS_DIST":1,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":70,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.970798858859,
+               32.3897407675481
+            ]
+         },
+         "properties":{
+            "FID":70,
+            "VC_ID":71,
+            "VC_NAME":"Oro Valley County Club",
+            "VC_ADDRESS":"300 W Greenock Drive",
+            "BOS_DIST":1,
+            "ROOM":"Larger Meeting Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":71,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.008517144058,
+               32.163996561491
+            ]
+         },
+         "properties":{
+            "FID":71,
+            "VC_ID":72,
+            "VC_NAME":"Our Lady of Fatima Parish",
+            "VC_ADDRESS":"1950 W Irvington Place",
+            "BOS_DIST":5,
+            "ROOM":"Fellowship"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":72,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.984618911398,
+               32.248876753357
+            ]
+         },
+         "properties":{
+            "FID":72,
+            "VC_ID":73,
+            "VC_NAME":"Pascua Neighborhood Center",
+            "VC_ADDRESS":"785 W Sahuaro Street",
+            "BOS_DIST":5,
+            "ROOM":"Building #1"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":73,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.078571403449,
+               32.1114512858131
+            ]
+         },
+         "properties":{
+            "FID":73,
+            "VC_ID":74,
+            "VC_NAME":"Pascua Yaqui Tribe Wellness Center",
+            "VC_ADDRESS":"5305 Calle Torim",
+            "BOS_DIST":5,
+            "ROOM":"Azul Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":74,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.237552958774,
+               32.3079534852751
+            ]
+         },
+         "properties":{
+            "FID":74,
+            "VC_ID":75,
+            "VC_NAME":"Picture Rocks Community Center",
+            "VC_ADDRESS":"5615 N Sanders Road",
+            "BOS_DIST":3,
+            "ROOM":"Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":75,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.778943858676,
+               32.0417942273391
+            ]
+         },
+         "properties":{
+            "FID":75,
+            "VC_ID":76,
+            "VC_NAME":"Pima County Fairgounds",
+            "VC_ADDRESS":"11300 S Houghton Road",
+            "BOS_DIST":4,
+            "ROOM":"Green Room or Ferber Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":76,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.312505452405,
+               32.0341378141677
+            ]
+         },
+         "properties":{
+            "FID":76,
+            "VC_ID":77,
+            "VC_NAME":"Pisinemo District",
+            "VC_ADDRESS":"West Highway 86, Route 21",
+            "BOS_DIST":3,
+            "ROOM":"District Office"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":77,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.980991483655,
+               32.2161475761282
+            ]
+         },
+         "properties":{
+            "FID":77,
+            "VC_ID":78,
+            "VC_NAME":"Ramada by Wyndham",
+            "VC_ADDRESS":"777 W Cushing Street",
+            "BOS_DIST":5,
+            "ROOM":"Larger Meeting Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":78,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.878432732103,
+               32.2227645543855
+            ]
+         },
+         "properties":{
+            "FID":78,
+            "VC_ID":79,
+            "VC_NAME":"DoubleTree Suites by Hilton Tucson Williams Center",
+            "VC_ADDRESS":"5335 E Broadway Boulevard",
+            "BOS_DIST":5,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":79,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.908774262681,
+               32.2239439245833
+            ]
+         },
+         "properties":{
+            "FID":79,
+            "VC_ID":80,
+            "VC_NAME":" La Quinta Inn & Suites Tucson Reid Park",
+            "VC_ADDRESS":"102 N Alvernon Way",
+            "BOS_DIST":2,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":80,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.132463796544,
+               32.3671334346672
+            ]
+         },
+         "properties":{
+            "FID":80,
+            "VC_ID":81,
+            "VC_NAME":"Redeemer Evangelical Lutheran Church & School",
+            "VC_ADDRESS":"8845 N Silverbell Road",
+            "BOS_DIST":3,
+            "ROOM":"Ministry Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":81,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.310495597556,
+               32.0791381252999
+            ]
+         },
+         "properties":{
+            "FID":81,
+            "VC_ID":82,
+            "VC_NAME":"Robles Ranch Community Center",
+            "VC_ADDRESS":"16150 W Ajo Way",
+            "BOS_DIST":3,
+            "ROOM":"Community Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":82,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.934823519607,
+               32.2138312632162
+            ]
+         },
+         "properties":{
+            "FID":82,
+            "VC_ID":84,
+            "VC_NAME":"Knight of Columbus",
+            "VC_ADDRESS":"601 S Tucson Boulevard",
+            "BOS_DIST":2,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":83,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.771335073443,
+               32.1964333239181
+            ]
+         },
+         "properties":{
+            "FID":83,
+            "VC_ID":85,
+            "VC_NAME":"Sahuaro Baptist Church",
+            "VC_ADDRESS":"10361 E Old Spanish Trail",
+            "BOS_DIST":4,
+            "ROOM":"Aaron Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":84,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.646101047994,
+               31.9173344673619
+            ]
+         },
+         "properties":{
+            "FID":84,
+            "VC_ID":83,
+            "VC_NAME":"Charron Vineyards",
+            "VC_ADDRESS":"18585 S Sonoita Hwy, Vail, AZ 85641",
+            "BOS_DIST":4,
+            "ROOM":"Main Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":85,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.070540943634,
+               32.3722085988191
+            ]
+         },
+         "properties":{
+            "FID":85,
+            "VC_ID":86,
+            "VC_NAME":"Countryside Community Club",
+            "VC_ADDRESS":"9151 N Bald Eagle",
+            "BOS_DIST":1,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":86,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.799386183115,
+               32.211068460547
+            ]
+         },
+         "properties":{
+            "FID":86,
+            "VC_ID":87,
+            "VC_NAME":"Saint Matthew's Episcopal Church",
+            "VC_ADDRESS":"9071 E Old Spanish Trail",
+            "BOS_DIST":4,
+            "ROOM":"Matt's Place"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":87,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.009804565363,
+               32.1075002820656
+            ]
+         },
+         "properties":{
+            "FID":87,
+            "VC_ID":88,
+            "VC_NAME":"San Xavier District",
+            "VC_ADDRESS":"2018 San Xavier Rd",
+            "BOS_DIST":3,
+            "ROOM":"San Xavier District Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":88,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.219499533891,
+               32.3314334608712
+            ]
+         },
+         "properties":{
+            "FID":88,
+            "VC_ID":89,
+            "VC_NAME":"Sandario Baptist Church",
+            "VC_ADDRESS":"6971 N Sandario Road",
+            "BOS_DIST":3,
+            "ROOM":"Auditorium"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":89,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.92368861953,
+               32.4661258070978
+            ]
+         },
+         "properties":{
+            "FID":89,
+            "VC_ID":90,
+            "VC_NAME":"Santa Catalina Catholic Church",
+            "VC_ADDRESS":"14380 N Oracle Road",
+            "BOS_DIST":1,
+            "ROOM":"Multipurpose Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":90,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.974923227827,
+               31.9591990680697
+            ]
+         },
+         "properties":{
+            "FID":90,
+            "VC_ID":91,
+            "VC_NAME":"Santa Cruz Valley United Methodist Church",
+            "VC_ADDRESS":"71 E Sahuarita Rd",
+            "BOS_DIST":2,
+            "ROOM":"Sanctuary"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":91,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.706025453453,
+               32.0015942616066
+            ]
+         },
+         "properties":{
+            "FID":91,
+            "VC_ID":92,
+            "VC_NAME":"Schuk Toak District Office",
+            "VC_ADDRESS":"Highway 86, Mile Post 126.5",
+            "BOS_DIST":3,
+            "ROOM":"District Office Conference Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":92,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.882662257015,
+               32.2515967727365
+            ]
+         },
+         "properties":{
+            "FID":92,
+            "VC_ID":95,
+            "VC_NAME":"Sheraton Tucson Hotel",
+            "VC_ADDRESS":"5151 E Grant Road",
+            "BOS_DIST":4,
+            "ROOM":"Sabino Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":93,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.89945351559,
+               31.9243046993371
+            ]
+         },
+         "properties":{
+            "FID":93,
+            "VC_ID":93,
+            "VC_NAME":"Sells District Office",
+            "VC_ADDRESS":"Arizona Highway 86 and Mile Post 112",
+            "BOS_DIST":3,
+            "ROOM":"Conference Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":94,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.181285438624,
+               31.8950195067571
+            ]
+         },
+         "properties":{
+            "FID":94,
+            "VC_ID":96,
+            "VC_NAME":"Sierrita Mining and Ranching Co. Community Building",
+            "VC_ADDRESS":"10094 W McGee Ranch Road",
+            "BOS_DIST":3,
+            "ROOM":"Community Building"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":95,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.294298261577,
+               32.0800748146258
+            ]
+         },
+         "properties":{
+            "FID":95,
+            "VC_ID":94,
+            "VC_NAME":"Serenity Baptist Church",
+            "VC_ADDRESS":"15501 W Ajo Way, Three Points",
+            "BOS_DIST":3,
+            "ROOM":"WORSHIP AREA"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":96,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.978836495751,
+               31.9752935914712
+            ]
+         },
+         "properties":{
+            "FID":96,
+            "VC_ID":97,
+            "VC_NAME":"Sahuarita Town Hall",
+            "VC_ADDRESS":"375 W Sahuarita Center Way",
+            "BOS_DIST":3,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":97,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.838850189018,
+               32.2754500489455
+            ]
+         },
+         "properties":{
+            "FID":97,
+            "VC_ID":98,
+            "VC_NAME":"St. Alban's Episcopal Church",
+            "VC_ADDRESS":"3738 N Old Sabino Canyon Road",
+            "BOS_DIST":1,
+            "ROOM":"Parish Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":98,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.773907194346,
+               32.2563341170123
+            ]
+         },
+         "properties":{
+            "FID":98,
+            "VC_ID":99,
+            "VC_NAME":"St. John on the Desert Presbyterian Church",
+            "VC_ADDRESS":"2695 N Houghton Rd",
+            "BOS_DIST":4,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":99,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.018191879896,
+               32.4188482093679
+            ]
+         },
+         "properties":{
+            "FID":99,
+            "VC_ID":100,
+            "VC_NAME":"Richard Wilson K-8 School",
+            "VC_ADDRESS":"2330 W Glover",
+            "BOS_DIST":1,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":100,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.820441196287,
+               32.2219888453599
+            ]
+         },
+         "properties":{
+            "FID":100,
+            "VC_ID":101,
+            "VC_NAME":"St. Paul's United Methodist Church",
+            "VC_ADDRESS":"8051 E Broadway Blvd",
+            "BOS_DIST":4,
+            "ROOM":"Brummett Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":101,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.897752844912,
+               32.3001114451502
+            ]
+         },
+         "properties":{
+            "FID":101,
+            "VC_ID":102,
+            "VC_NAME":"St. Thomas the Apostle Catholic Church",
+            "VC_ADDRESS":"5150 N Valley View Road",
+            "BOS_DIST":1,
+            "ROOM":"O'Leary Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":102,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.940126973332,
+               32.460990186267
+            ]
+         },
+         "properties":{
+            "FID":102,
+            "VC_ID":103,
+            "VC_NAME":"Sun City Oro Valley - Catalina Vista",
+            "VC_ADDRESS":"14055 N Del Webb Boulevard",
+            "BOS_DIST":1,
+            "ROOM":"Mt. Lemmon Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":103,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.070698345895,
+               31.7342268549914
+            ]
+         },
+         "properties":{
+            "FID":103,
+            "VC_ID":104,
+            "VC_NAME":"SUSD - Sopori Elementary School",
+            "VC_ADDRESS":"5000 W Arivaca Road",
+            "BOS_DIST":3,
+            "ROOM":"Gymnasium"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":104,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.970012400881,
+               32.4307132966009
+            ]
+         },
+         "properties":{
+            "FID":104,
+            "VC_ID":105,
+            "VC_NAME":"The Church of Latter Day Saints",
+            "VC_ADDRESS":"55 W Arrowsmith Drive",
+            "BOS_DIST":1,
+            "ROOM":"Cultural Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":105,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.006007197707,
+               31.8145034213475
+            ]
+         },
+         "properties":{
+            "FID":105,
+            "VC_ID":106,
+            "VC_NAME":"The Springs at Santa Rita",
+            "VC_ADDRESS":"951 W Via Rio Fuerte",
+            "BOS_DIST":4,
+            "ROOM":"The Anza"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":106,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.994122513509,
+               32.4094379792858
+            ]
+         },
+         "properties":{
+            "FID":106,
+            "VC_ID":107,
+            "VC_NAME":"Oro Valley Public Library",
+            "VC_ADDRESS":"1305 W Naranja Dr.",
+            "BOS_DIST":1,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":107,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.090753244485,
+               32.1876389230336
+            ]
+         },
+         "properties":{
+            "FID":107,
+            "VC_ID":108,
+            "VC_NAME":"Tucson Estates",
+            "VC_ADDRESS":"5900 W Western Way Circle",
+            "BOS_DIST":3,
+            "ROOM":"Multipurpose Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":108,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.912291485933,
+               32.161566580211
+            ]
+         },
+         "properties":{
+            "FID":108,
+            "VC_ID":109,
+            "VC_NAME":"Tucson Expo Center",
+            "VC_ADDRESS":"3750 E Irvington Road",
+            "BOS_DIST":2,
+            "ROOM":"Sapphire Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":109,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.914788679962,
+               32.2700568413144
+            ]
+         },
+         "properties":{
+            "FID":109,
+            "VC_ID":110,
+            "VC_NAME":"Tucson FOP Lodge #1",
+            "VC_ADDRESS":"3445 N Dodge Boulevard",
+            "BOS_DIST":3,
+            "ROOM":"Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":110,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.086772146458,
+               32.1665305650919
+            ]
+         },
+         "properties":{
+            "FID":110,
+            "VC_ID":111,
+            "VC_NAME":"Tucson Mountain Baptist Church",
+            "VC_ADDRESS":"5757 W AJO HIGHWAY",
+            "BOS_DIST":3,
+            "ROOM":"Room 108"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":111,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.972524300107,
+               32.134629790921
+            ]
+         },
+         "properties":{
+            "FID":111,
+            "VC_ID":112,
+            "VC_NAME":"Valencia Branch Public Library",
+            "VC_ADDRESS":"202 W Valencia Rd",
+            "BOS_DIST":5,
+            "ROOM":"Large Meeting Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":112,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.976165160971,
+               32.1562739564469
+            ]
+         },
+         "properties":{
+            "FID":112,
+            "VC_ID":113,
+            "VC_NAME":"Vida Nueva Church of God",
+            "VC_ADDRESS":"504 W Nebraska St",
+            "BOS_DIST":5,
+            "ROOM":"Youth Center"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":113,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.721444789256,
+               32.0560246012069
+            ]
+         },
+         "properties":{
+            "FID":113,
+            "VC_ID":114,
+            "VC_NAME":"Cienega High School",
+            "VC_ADDRESS":"12775 E Mary Ann Cleveland Way",
+            "BOS_DIST":4,
+            "ROOM":"Library"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":114,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.800814688586,
+               31.9348557745163
+            ]
+         },
+         "properties":{
+            "FID":114,
+            "VC_ID":115,
+            "VC_NAME":"Copper Ridge Elementary School",
+            "VC_ADDRESS":"17650 S Canyon Edge Trail",
+            "BOS_DIST":4,
+            "ROOM":"Library"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":115,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.782229032688,
+               32.1069957046413
+            ]
+         },
+         "properties":{
+            "FID":115,
+            "VC_ID":116,
+            "VC_NAME":"Desert Sky Middle School",
+            "VC_ADDRESS":"9850 E Rankin Loop",
+            "BOS_DIST":4,
+            "ROOM":"Gym Foyer"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":116,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.702546350282,
+               32.0672947874517
+            ]
+         },
+         "properties":{
+            "FID":116,
+            "VC_ID":117,
+            "VC_NAME":"Ocotillo Ridge Elementary School",
+            "VC_ADDRESS":"10170 S White Lightning Lane",
+            "BOS_DIST":4,
+            "ROOM":"Library"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":117,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.770439216081,
+               31.9531827314741
+            ]
+         },
+         "properties":{
+            "FID":117,
+            "VC_ID":118,
+            "VC_NAME":"Sycamore Elementary School",
+            "VC_ADDRESS":"16701 S Houghton Rd",
+            "BOS_DIST":4,
+            "ROOM":"Library"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":118,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.9650803606,
+               32.342966513051
+            ]
+         },
+         "properties":{
+            "FID":118,
+            "VC_ID":119,
+            "VC_NAME":"Westward Look Resort",
+            "VC_ADDRESS":"245 E Ina Road",
+            "BOS_DIST":1,
+            "ROOM":"Sonoran Ballroom"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":119,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.943716218407,
+               32.0660625508627
+            ]
+         },
+         "properties":{
+            "FID":119,
+            "VC_ID":120,
+            "VC_NAME":"Summit View Elementary School",
+            "VC_ADDRESS":"1900 E Summit St",
+            "BOS_DIST":2,
+            "ROOM":"Cafeteria"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":120,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.027516330331,
+               32.1282817135838
+            ]
+         },
+         "properties":{
+            "FID":120,
+            "VC_ID":121,
+            "VC_NAME":"Santa Cruz Lutheran Church",
+            "VC_ADDRESS":"6809 S Cardinal Ave.",
+            "BOS_DIST":5,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":121,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.905498106417,
+               32.2492615386806
+            ]
+         },
+         "properties":{
+            "FID":121,
+            "VC_ID":123,
+            "VC_NAME":"Living Faith Christian Center",
+            "VC_ADDRESS":"4108 E North St",
+            "BOS_DIST":5,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":122,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.737102199372,
+               32.2542765625335
+            ]
+         },
+         "properties":{
+            "FID":122,
+            "VC_ID":122,
+            "VC_NAME":"Why Domestic Water Improvement District",
+            "VC_ADDRESS":"341 S Sonoita Way, Highway 85 South",
+            "BOS_DIST":3,
+            "ROOM":"Why Community Building"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":123,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.787366879247,
+               32.1907255494672
+            ]
+         },
+         "properties":{
+            "FID":123,
+            "VC_ID":124,
+            "VC_NAME":"Miller-Golf Links Library",
+            "VC_ADDRESS":"9640 E Golf Links Rd",
+            "BOS_DIST":4,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":124,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.007161425844,
+               32.2347203143635
+            ]
+         },
+         "properties":{
+            "FID":124,
+            "VC_ID":125,
+            "VC_NAME":"Gates Pass Community Church",
+            "VC_ADDRESS":"1895 W Speedway Blvd",
+            "BOS_DIST":5,
+            "ROOM":"Fellowship Hall"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":125,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.010989405728,
+               32.201300992063
+            ]
+         },
+         "properties":{
+            "FID":125,
+            "VC_ID":126,
+            "VC_NAME":"Fred Archer Neighborhood Center",
+            "VC_ADDRESS":"1665 S La Cholla Boulevard",
+            "BOS_DIST":5,
+            "ROOM":"Room 133"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":126,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -110.957437863638,
+               32.230553892951
+            ]
+         },
+         "properties":{
+            "FID":126,
+            "VC_ID":127,
+            "VC_NAME":"First United Methodist Church",
+            "VC_ADDRESS":"915 E 4th Street",
+            "BOS_DIST":5,
+            "ROOM":"Arizona Room"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":127,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.033745925508,
+               32.2498038714585
+            ]
+         },
+         "properties":{
+            "FID":127,
+            "VC_ID":128,
+            "VC_NAME":"Faith Christian Fellowship",
+            "VC_ADDRESS":"3141 W Ironwood Hills Dr",
+            "BOS_DIST":5,
+            "ROOM":"Foyer"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":128,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -111.021500513036,
+               32.2101445649775
+            ]
+         },
+         "properties":{
+            "FID":128,
+            "VC_ID":129,
+            "VC_NAME":"Tolson Elementary School",
+            "VC_ADDRESS":"1000 S Greasewood Rd",
+            "BOS_DIST":5,
+            "ROOM":"No Information"
+         }
+      },
+      {
+         "type":"Feature",
+         "id":129,
+         "geometry":{
+            "type":"Point",
+            "coordinates":[
+               -112.32470245114,
+               32.348531704867
+            ]
+         },
+         "properties":{
+            "FID":129,
+            "VC_ID":46,
+            "VC_NAME":"Hickiwan District Vaya Chin Village",
+            "VC_ADDRESS":"HC 03 BOX 873",
+            "BOS_DIST":3,
+            "ROOM":"No Information"
+         }
+      }
+   ]
+}
