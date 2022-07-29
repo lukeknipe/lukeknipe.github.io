@@ -321,7 +321,7 @@
       "properties": {
         "FID": 17,
         "VC_ID": 18,
-        "VC_NAME": "Canyon del Oro Baptist Church",
+        "VC_NAME": "Canyon del Oro Bible Church",
         "VC_ADDRESS": "9200 N Oracle Rd",
         "BOS_DIST": 1,
         "ROOM": "Chapel Hall"
@@ -732,17 +732,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -111.039038472386,
-          32.3732618921143
+          -111.02816462516783,
+          32.33984552708788
         ]
       },
       "properties": {
         "FID": 39,
         "VC_ID": 39,
-        "VC_NAME": "Foothills Community Church",
-        "VC_ADDRESS": "3301 W Overton Rd",
+        "VC_NAME": "Nanini Branch Public Library",
+        "VC_ADDRESS": "7300 N Shannon Road",
         "BOS_DIST": 1,
-        "ROOM": "Fellowship Center"
+        "ROOM": "Large Meeting Room"
       }
     },
     {
@@ -922,17 +922,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.979259507807,
-          32.2262789675899
+          -110.9794020652771,
+          32.22877587128845
         ]
       },
       "properties": {
         "FID": 49,
         "VC_ID": 50,
-        "VC_NAME": "Hotel Tucson City Center",
-        "VC_ADDRESS": "475 N Granada Avenue",
+        "VC_NAME": "Davis Elementary School",
+        "VC_ADDRESS": "500 W Saint Mary's Road",
         "BOS_DIST": 5,
-        "ROOM": "Gold/Silver/Copper Room"
+        "ROOM": "Gym/Multipurpose Room"
       }
     },
     {
@@ -998,17 +998,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.890506379967,
-          32.2054465273545
+          -110.90034361928701,
+          32.20657092826606
         ]
       },
       "properties": {
         "FID": 53,
         "VC_ID": 54,
-        "VC_NAME": "Knights of Columbus #5133",
-        "VC_ADDRESS": "1330 S Mountain View Avenue",
+        "VC_NAME": "Eckstrom-Columbus Library",
+        "VC_ADDRESS": "4350 E 22nd Street",
         "BOS_DIST": 2,
-        "ROOM": "HALL"
+        "ROOM": "Large Meeting Room"
       }
     },
     {
@@ -1112,17 +1112,17 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.976730631868,
-          32.1199187272604
+          -110.96155062317847,
+          32.12279398179798
         ]
       },
       "properties": {
         "FID": 59,
         "VC_ID": 60,
-        "VC_NAME": "Maranatha Ministries",
-        "VC_ADDRESS": "334 W Los Reales Road",
+        "VC_NAME": "El Mezquite Salon de Eventos",
+        "VC_ADDRESS": "7130 S Nogales Highway",
         "BOS_DIST": 5,
-        "ROOM": "Fellowship hall"
+        "ROOM": "All"
       }
     },
     {
@@ -1359,15 +1359,15 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.984618911398,
-          32.248876753357
+          -110.98331272602081,
+          32.24815062833048
         ]
       },
       "properties": {
         "FID": 72,
         "VC_ID": 73,
-        "VC_NAME": "Pascua Neighborhood Center",
-        "VC_ADDRESS": "785 W Sahuaro Street",
+        "VC_NAME": "Richey Resource Center",
+        "VC_ADDRESS": "2209 N. 15th Ave",
         "BOS_DIST": 5,
         "ROOM": "Building #1"
       }
@@ -1955,7 +1955,7 @@
       "properties": {
         "FID": 103,
         "VC_ID": 104,
-        "VC_NAME": "SUSD - Sopori Elementary School",
+        "VC_NAME": "Sopori Elementary School",
         "VC_ADDRESS": "5000 W Arivaca Road",
         "BOS_DIST": 3,
         "ROOM": "Gymnasium"
@@ -2297,7 +2297,7 @@
       "properties": {
         "FID": 121,
         "VC_ID": 123,
-        "VC_NAME": "Living Faith Christian Center",
+        "VC_NAME": "HIS Presence Church Arizona",
         "VC_ADDRESS": "4108 E North St",
         "BOS_DIST": 5,
         "ROOM": "Fellowship Hall"
@@ -2449,8 +2449,8 @@
       "properties": {
         "FID": 129,
         "VC_ID": 46,
-        "VC_NAME": "Hickiwan District Vaya Chin Village",
-        "VC_ADDRESS": "HC 03 BOX 873",
+        "VC_NAME": "Hickiwan District",
+        "VC_ADDRESS": "Vaya Chin Village, Rt 34, MP 53",
         "BOS_DIST": 3,
         "ROOM": "No Information"
       }
