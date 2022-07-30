@@ -42,6 +42,7 @@
     }
     #hours {
         font-family: Roboto;
+        font-size: 2vh;
         color: #FFF;
         position: fixed;
         right: 1vh;
