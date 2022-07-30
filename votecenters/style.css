@@ -41,6 +41,7 @@
          pointer-events: none;
     }
     #hours {
+        font-family: Roboto;
         color: #FFF;
         position: fixed;
         right: 1vh;
