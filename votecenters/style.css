@@ -40,6 +40,15 @@
          z-index: 3;
          pointer-events: none;
     }
+    #hours {
+        color: #FFF;
+        position: fixed;
+        right: 1vh;
+        top: 1vh;
+        z-index: 3;
+        pointer-events: none;
+    }
+
      .logo {
          max-width: 28vh;
          height: auto;
