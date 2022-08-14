@@ -12,7 +12,7 @@ body {
 .card {
 	background-color: hsl(0, 0%, 100%);
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-	border-radius: 0.625rem;
+	border-radius: 0.6rem;
 	max-width: 17rem;
 	padding: 1rem;
 	margin-bottom: 1rem;
@@ -20,7 +20,7 @@ body {
 
 img {
 	width: 100%;
-	border-radius: 1.5rem;
+	border-radius: .6rem;
 	max-height: 18rem;
 	max-width: 18rem;
 }
