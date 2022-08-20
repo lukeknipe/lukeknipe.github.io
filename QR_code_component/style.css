@@ -11,7 +11,7 @@ body {
 .card {
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 1rem;
-	max-width: 17rem;
+	max-width: 320px;
 	padding: 1rem;
 	margin-bottom: 1rem;
 }
@@ -24,18 +24,14 @@ img {
 }
 
 h1 {
-/*	font-size: 1.375rem;
-	font-family: 'Outfit', sans-serif; */
 	font-weight: 700;
 	font-size: 22px;
 	color: hsl(218, 44%, 22%);
 	text-align: center;
-	width: 100%;
+	max-width: 288px;
 }
 
 p {
-/*	font-size: 0.94rem;
-	font-family: 'Outfit', sans-serif; */
 	font-size: 15px;
 	font-weight: 400;
 	color: hsl(220, 15%, 55%);
