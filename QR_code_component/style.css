@@ -16,10 +16,9 @@ body {
 }
 
 img {
-	width: 288px;
+	max-width: 288px;
+	max-height: 288px;
 	border-radius: 20px;
-	max-height: 18rem;
-	max-width: 18rem;
 }
 
 h1 {
