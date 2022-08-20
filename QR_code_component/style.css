@@ -12,12 +12,13 @@ body {
 	background-color: hsl(0, 0%, 100%);
 	border-radius: 20px;
 	max-width: 320px;
+	max-height: 497px;
 	padding: 1rem;
 	margin-bottom: 1rem;
 }
 
 img {
-	width: 100%;
+	width: 288px;
 	border-radius: 20px;
 	max-height: 18rem;
 	max-width: 18rem;
