@@ -13,8 +13,6 @@ body {
 	border-radius: 20px;
 	max-width: 320px;
 	max-height: 497px;
-	padding: 1rem;
-	margin-bottom: 1rem;
 }
 
 img {
@@ -37,4 +35,5 @@ p {
 	font-weight: 400;
 	color: hsl(220, 15%, 55%);
 	text-align: center;
+	max-width: 256px;
 }
