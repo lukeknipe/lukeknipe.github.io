@@ -15,8 +15,6 @@ Hello. This is a solution to the [QR code component challenge on Frontend Mentor
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 This is my first time using Frontend Mentor. Frontend Mentor suggested I try this as my first challenge.
