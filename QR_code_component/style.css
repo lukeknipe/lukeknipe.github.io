@@ -14,10 +14,10 @@ body {
 	width: 320px;
 	height: 497px;
 	text-align: center;
+	top: 16px;
 }
 
 img {
-	top: 16px;
 	max-width: 288px;
 	max-height: 288px;
 	border-radius: 20px;
