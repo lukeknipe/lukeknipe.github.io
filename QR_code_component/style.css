@@ -29,6 +29,8 @@ h1 {
 	color: hsl(218, 44%, 22%);
 	text-align: center;
 	width: 288px;
+	margin-left: 16px;
+	margin-right: 16px;
 }
 
 p {
