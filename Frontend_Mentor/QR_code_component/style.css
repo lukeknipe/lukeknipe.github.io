@@ -13,6 +13,7 @@ body {
 	border-radius: 20px;
 	width: 320px;
 	text-align: center;
+	padding-bottom: 16px;
 }
 
 img {
@@ -39,5 +40,4 @@ p {
 	width: 256px;
 	margin-left: 32px;
 	margin-right: 32px;
-	margin-bottom: 32px;
 }
