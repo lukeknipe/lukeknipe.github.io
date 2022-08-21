@@ -50,8 +50,6 @@ I'm looking forward to submitting this first solution and learning more with Fro
 - [Google, duh](https://www.google.com/) - The most useful resource of all. Can't remember a CSS property? Google it! Need a JavaScript function for a particular thing, and don't remember how to do it? Google to the rescue!
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools/) - An indispensable means of examining your code and what it's causing to happen (or not happen) in the browser.
 
-**Note: Delete this note and replace the list above with resou
-
 ## Author
 
 - Website - [Luke Knipe](https://lukeknipe.github.io)
