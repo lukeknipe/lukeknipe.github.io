@@ -17,8 +17,7 @@ body {
 
 img {
 	margin-top: 16px;
-	max-width: 288px;
-	max-height: 288px;
+	max-width: 100%;
 	border-radius: 20px;
 }
 
