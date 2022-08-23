@@ -23,9 +23,8 @@ body {
 }
 
 img {
-	margin-top: 16px;
-	max-width: 288px;
-	border-radius: 20px;
+	float: right;
+	max-width: 50%;
 }
 
 h1 {
