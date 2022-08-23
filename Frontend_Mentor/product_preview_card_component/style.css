@@ -27,6 +27,11 @@ img {
 	max-width: 50%;
 }
 
+text {
+	float: right;
+	max-width: 50%;
+}
+
 h1 {
 	font-weight: 700;
 	font-size: 22px;
