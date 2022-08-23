@@ -12,7 +12,7 @@ body {
   display: grid;
   grid-template-columns: auto auto;
 	border-radius: 10px;
-	width: 600px;
+	max-width: 600px;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
