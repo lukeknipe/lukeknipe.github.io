@@ -10,10 +10,8 @@ body {
 
 .card {
 	background-color: hsl(0, 0%, 100%);
-	border-radius: 20px;
-	width: 320px;
-	text-align: center;
-	padding-bottom: 16px;
+	border-radius: 10px;
+	width: 600px;
 }
 
 img {
