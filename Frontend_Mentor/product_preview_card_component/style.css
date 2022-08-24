@@ -5,6 +5,7 @@ body {
 }
 
 .grid-container {
+	margin: auto;
   display: inline-grid;
   grid-template-columns: auto auto;
 	border-radius: 10px;
