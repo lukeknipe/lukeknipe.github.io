@@ -10,7 +10,6 @@ body {
 
 
 .grid-container {
-	margin: auto;
   display: inline-grid;
   grid-template-columns: auto auto;
 	border-radius: 10px;
@@ -20,7 +19,6 @@ body {
 .grid-item {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid rgba(0, 0, 0, 0.8);
-	max-width: 100%;
 }
 .attribution {
 	font-size: 11px; text-align: center;
