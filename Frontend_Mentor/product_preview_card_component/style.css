@@ -8,7 +8,6 @@ body {
 	justify-items: center;
 }
 
-
 .grid-container {
   display: inline-grid;
   grid-template-columns: auto auto;
