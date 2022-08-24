@@ -18,11 +18,13 @@ body {
 .grid-item-image {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 10px 0px 0px 10px;
 }
 
 .grid-item-text {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid rgba(0, 0, 0, 0.8);
+	border-radius: 0px 10px 10px 0px;
 }
 
 .attribution {
@@ -36,6 +38,7 @@ body {
 img {
 	float: left;
 	max-width: 100%;
+	border-radius: 10px 0px 0px 10px;
 }
 
 text {
