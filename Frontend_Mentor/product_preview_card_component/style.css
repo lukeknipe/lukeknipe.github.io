@@ -1,6 +1,7 @@
 body {
 	background-color: hsl(30, 38%, 92%);
 	font-family: 'Outfit', sans-serif;
+	max-height: 100vh;
 }
 
 .grid-container {
@@ -12,7 +13,7 @@ body {
 .grid-item {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid rgba(0, 0, 0, 0.8);
-	max-width: 50%;
+	max-width: 100%;
 }
 .attribution {
 	font-size: 11px; text-align: center;
