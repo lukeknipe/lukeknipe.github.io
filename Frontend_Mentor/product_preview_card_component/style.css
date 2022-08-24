@@ -1,6 +1,5 @@
 body {
 	background-color: hsl(30, 38%, 92%);
-	font-family: 'Outfit', sans-serif;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 100vh;
@@ -11,19 +10,16 @@ body {
 .grid-container {
   display: inline-grid;
   grid-template-columns: auto auto;
-	border-radius: 10px;
 	max-width: 600px;
 }
 
 .grid-item-image {
   background-color: hsl(0, 0%, 100%);
-  border: 1px solid rgba(0, 0, 0, 0.8);
 	border-radius: 10px 0px 0px 10px;
 }
 
 .grid-item-text {
   background-color: hsl(0, 0%, 100%);
-  border: 1px solid rgba(0, 0, 0, 0.8);
 	border-radius: 0px 10px 10px 0px;
 }
 
@@ -47,6 +43,7 @@ text {
 }
 
 h1 {
+	font-family: 'Fraunces', sans-serif;
 	font-weight: 700;
 	font-size: 22px;
 	color: hsl(218, 44%, 22%);
