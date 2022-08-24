@@ -1,15 +1,10 @@
 body {
-	background-color: hsl(212, 45%, 89%);
+	background-color: hsl(30, 38%, 92%);
 	font-family: 'Outfit', sans-serif;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
 }
 
 .grid-container {
-  display: grid;
+  display: inline-grid;
   grid-template-columns: auto auto;
 	border-radius: 10px;
 	max-width: 600px;
