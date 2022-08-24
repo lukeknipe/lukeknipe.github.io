@@ -16,10 +16,16 @@ body {
 	max-width: 600px;
 }
 
-.grid-item {
+.grid-item-image {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid rgba(0, 0, 0, 0.8);
 }
+
+.grid-item-text {
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
 .attribution {
 	font-size: 11px; text-align: center;
 }
