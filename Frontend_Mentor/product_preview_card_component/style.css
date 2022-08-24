@@ -1,7 +1,11 @@
 body {
 	background-color: hsl(30, 38%, 92%);
 	font-family: 'Outfit', sans-serif;
-	max-height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100vh;
+	align-items: center;
+	justify-items: center;
 }
 
 .grid-container {
@@ -11,6 +15,7 @@ body {
 	border-radius: 10px;
 	max-width: 600px;
 }
+
 .grid-item {
   background-color: hsl(0, 0%, 100%);
   border: 1px solid rgba(0, 0, 0, 0.8);
