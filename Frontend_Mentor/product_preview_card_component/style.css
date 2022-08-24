@@ -16,11 +16,13 @@ body {
 .grid-item-image {
   background-color: hsl(0, 0%, 100%);
 	border-radius: 10px 0px 0px 10px;
+	max-width: 300px;
 }
 
 .grid-item-text {
   background-color: hsl(0, 0%, 100%);
 	border-radius: 0px 10px 10px 0px;
+	max-width: 300px;
 }
 
 .attribution {
@@ -45,11 +47,12 @@ text {
 h1 {
 	font-family: 'Fraunces', sans-serif;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 32px;
+	line-height: 32px;
 	color: #1C232B;
 	text-align: left;
-	margin-left: 16px;
-	margin-right: 16px;
+	margin-left: 32px;
+	margin-right: 32px;
 }
 
 p {
