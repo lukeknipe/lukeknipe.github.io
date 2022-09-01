@@ -74,7 +74,7 @@
       "properties": {
         "id": 5,
         "name": "Pima County Parks & Rec",
-        "address": "3500 W. River Rd, Tucson",
+        "address": "3500 W. River, Tucson",
         "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
@@ -91,7 +91,7 @@
       "properties": {
         "id": 6,
         "name": "Woods Memorial Library",
-        "address": "3455 N 1st Ave, Tucson",
+        "address": "3455 N 1st, Tucson",
         "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
@@ -108,7 +108,7 @@
       "properties": {
         "id": 7,
         "name": "Wheeler Taft Abbett Sr Library",
-        "address": "7800 N Schisler Dr, Tucson",
+        "address": "7800 N Schisler, Tucson",
         "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
@@ -117,6 +117,23 @@
         "coordinates": [
           -111.09528288245201,
           32.3487698374007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 8,
+        "name": "Miller Golf Links Library",
+        "address": "9640 E Golf Links, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "emergency_voting": "Closed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.78660890460014,
+          32.190861774430694
         ]
       }
     }
