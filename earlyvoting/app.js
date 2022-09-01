@@ -241,7 +241,7 @@ function initMap() {
 
     card.setAttribute('id', 'pac-card');
     title.setAttribute('id', 'title');
-    title.textContent = 'Find your nearest vote center';
+    title.textContent = 'Find your nearest early voting site';
     titleBar.appendChild(title);
     container.setAttribute('id', 'pac-container');
     input.setAttribute('id', 'pac-input');
