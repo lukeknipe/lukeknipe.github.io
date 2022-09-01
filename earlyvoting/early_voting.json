@@ -187,6 +187,23 @@
           31.92821740608393
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 12,
+        "name": "U of A Student Union, Catalina Room",
+        "address": "1303 E University, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
+        "emergency_voting": "Closed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.95208778977394,
+          32.23256947452974
+        ]
+      }
     }
   ]
 }
