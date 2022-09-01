@@ -337,7 +337,7 @@ async function calculateDistances(data, origin, response) {
   const qlocArray = [];
   const qdistanceArray = [];
   data.forEach(q => {
-    const qNum = q.getProperty('FID');
+    const qNum = q.getProperty('id');
     const qLoc = q.getGeometry().get();
     const qDistance = haversine_distance(origin, qLoc);
     if (qNum < 130) {
@@ -431,7 +431,7 @@ async function evcalculateDistances(data, origin, response) {
   const qlocArray = [];
   const qdistanceArray = [];
   data.forEach(q => {
-    const qNum = q.getProperty('FID');
+    const qNum = q.getProperty('id');
     const qLoc = q.getGeometry().get();
     const qDistance = haversine_distance(origin, qLoc);
     if (qNum > 130) {
@@ -460,7 +460,7 @@ async function evcalculateDistances(data, origin, response) {
 // Sort our object array according to Haversine distance
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
 
-// Make an array of the ten closest store IDs according to the Haversine formula
+// Make an array of the ten closest IDs according to the Haversine formula
   let storeResult = toptenDistances.map(a => a.storeid);
   const stores = storeResult;
 
@@ -556,7 +556,7 @@ function showStoresList(data, stores) {
     const name = document.createElement('p');
     name.classList.add('place');
     const currentStore = data.getFeatureById(store.storeid);
-    name.textContent = currentStore.getProperty('VC_NAME');
+    name.textContent = currentStore.getProperty('name');
     panel.appendChild(name);
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
@@ -607,7 +607,7 @@ function evshowStoresList(data, stores) {
     const name = document.createElement('p');
     name.classList.add('place');
     const currentStore = data.getFeatureById(store.storeid);
-    name.textContent = currentStore.getProperty('VC_NAME');
+    name.textContent = currentStore.getProperty('name');
     panel.appendChild(name);
     const distanceText = document.createElement('p');
     distanceText.classList.add('distanceText');
