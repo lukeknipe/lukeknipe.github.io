@@ -186,7 +186,7 @@ function initMap() {
     });
 
     // Load the vote centers GeoJSON onto the map
-    map.data.loadGeoJson('vote_centers.json', {
+    map.data.loadGeoJson('early_voting.json', {
         idPropertyName: 'FID'
     });
 
