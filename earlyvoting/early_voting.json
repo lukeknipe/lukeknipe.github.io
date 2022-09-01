@@ -170,6 +170,23 @@
           32.17850079018836
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 11,
+        "name": "The Good Shepherd UCC ",
+        "address": "17750 S La Cañada, Sahuarita",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.99583864212036,
+          31.92821740608393
+        ]
+      }
     }
   ]
 }
