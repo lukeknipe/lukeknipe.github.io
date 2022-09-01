@@ -6,7 +6,7 @@
       "properties": {
         "id": 1,
         "name": "Recorder's Main Office",
-        "address": "240 N Stone Ave., Tucson",
+        "address": "240 N Stone, Tucson",
         "days_times": "Mon, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
@@ -49,6 +49,23 @@
         "coordinates": [
           -110.92676505446434,
           32.13250110888136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 4,
+        "name": "Oro Valley Public Library",
+        "address": "1305 W Naranja, Oro Valley",
+        "days_times": "Mon, Oct 24 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.99451899528503,
+          32.408832059339666
         ]
       }
     }
