@@ -102,6 +102,23 @@
           32.26985951105436
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 7,
+        "name": "Wheeler Taft Abbett Sr Library",
+        "address": "7800 N Schisler Dr, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.09528288245201,
+          32.3487698374007
+        ]
+      }
     }
   ]
 }
