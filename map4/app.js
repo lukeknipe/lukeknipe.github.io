@@ -193,13 +193,13 @@ function sanitizeHTML(strings) {
 }
 
 // Initialize the map.
- 
+
 function initMap() {
-  
+
   // Display overlays
   document.getElementById("overlay_a").style.display = "block";
   document.getElementById("overlay_b").style.display = "block";
-  
+
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
@@ -218,13 +218,13 @@ function initMap() {
   map.data.setStyle((feature) => {
     return {
       icon: {
-        url: `./img/${feature.getProperty('TYPE')}.png`,
+        url: './img/EV.png',
 //        scaledSize: new google.maps.Size(25, 20),
       },
     };
   });
 
-  // Define API key 
+  // Define API key
   const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
   const infoWindow = new google.maps.InfoWindow();
@@ -275,7 +275,7 @@ function initMap() {
   // Make the search bar into a Places Autocomplete search bar and select
   // which detail fields should be returned about the place that
   // the user selects from the suggestions.
-  
+
   const autocomplete = new google.maps.places.Autocomplete(input, options);
 
   autocomplete.setFields(
@@ -297,14 +297,14 @@ function initMap() {
       window.alert('No address available for input: \'' + place.name + '\'');
       return;
     }
-    
+
     // Recenter the map to the selected address
     originLocation = place.geometry.location;
     map.setCenter(originLocation);
     map.setZoom(13);
     console.log(place.name);
     globalThis.streetAddress = (place.name);
-    
+
     originMarker.setPosition(originLocation);
     originMarker.setVisible(true);
 
@@ -312,25 +312,25 @@ function initMap() {
     // to each vote center
     const rankedStores = await calculateDistances(map.data, originLocation);
     showStoresList(map.data, rankedStores);
-    
+
     const rankedEvs = await evcalculateDistances(map.data, originLocation);
     evshowStoresList(map.data, rankedEvs);
 
     return;
   });
-    
+
 }
 
 // Use Distance Matrix API to calculate driving distance from origin to each vote center
 async function calculateDistances(data, origin, response) {
-  
+
 // Since Google won't let us run more than 25 origins or destinations through the API at a time, we'll
 // use a Haversine distance function to narrow our list down to 10 by making simple "as the crow flies"
 // distance calculations on the client side. Once we've done that, we can send our short list off to
-// Google and let api calculate proper driving distances. 
-  
-// We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances. 
-  
+// Google and let api calculate proper driving distances.
+
+// We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances.
+
   const qnumArray = [];
   const qlocArray = [];
   const qdistanceArray = [];
@@ -344,9 +344,9 @@ async function calculateDistances(data, origin, response) {
     qdistanceArray.push(qDistance);
     }
   });
-  
+
 // Now we'll dump those parallel arrays into an object array for easy sorting.
-  
+
   const topTen = [];
   const nDistance = [];
   qnumArray.forEach(element => {
@@ -363,15 +363,15 @@ async function calculateDistances(data, origin, response) {
 
 // Sort our object array according to Haversine distance
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,3);
-  
-// Make an array of the ten closest store IDs according to the Haversine formula  
+
+// Make an array of the ten closest store IDs according to the Haversine formula
   let storeResult = toptenDistances.map(a => a.storeid);
   const stores = storeResult;
-  
+
 // Make an array of the ten closest destinations according to haversine distance
   let destResult = toptenDistances.map(a => a.destination);
   const destinations = destResult;
-  
+
 // Now we call Google with our short list
   const service = new google.maps.DistanceMatrixService();
   const getDistanceMatrix =
@@ -391,7 +391,7 @@ async function calculateDistances(data, origin, response) {
               distanceText: distanceText,
               distanceVal: distanceVal,
             };
-    
+
             distances.push(distanceObject);
           }
 
@@ -399,7 +399,7 @@ async function calculateDistances(data, origin, response) {
         }
       });
     });
-  
+
   const distancesList = await getDistanceMatrix(service, {
     origins: [origin],
     destinations: destinations,
@@ -410,21 +410,21 @@ async function calculateDistances(data, origin, response) {
   distancesList.sort((first, second) => {
     return first.distanceVal - second.distanceVal;
   });
-  
+
   return distancesList;
-  
+
 }
 
 // Use Distance Matrix API to calculate driving distance from origin to each early voting location
 async function evcalculateDistances(data, origin, response) {
-  
+
 // Since Google won't let us run more than 25 origins or destinations through the API at a time, we'll
 // use a Haversine distance function to narrow our list down to 10 by making simple "as the crow flies"
 // distance calculations on the client side. Once we've done that, we can send our short list off to
-// Google and let api calculate proper driving distances. 
-  
-// We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances. 
-  
+// Google and let api calculate proper driving distances.
+
+// We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances.
+
   const qnumArray = [];
   const qlocArray = [];
   const qdistanceArray = [];
@@ -438,9 +438,9 @@ async function evcalculateDistances(data, origin, response) {
     qdistanceArray.push(qDistance);
     }
   });
-  
+
 // Now we'll dump those parallel arrays into an object array for easy sorting.
-  
+
   const topTen = [];
   const nDistance = [];
   qnumArray.forEach(element => {
@@ -457,15 +457,15 @@ async function evcalculateDistances(data, origin, response) {
 
 // Sort our object array according to Haversine distance
   const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0,10);
-  
-// Make an array of the ten closest store IDs according to the Haversine formula  
+
+// Make an array of the ten closest store IDs according to the Haversine formula
   let storeResult = toptenDistances.map(a => a.storeid);
   const stores = storeResult;
-  
+
 // Make an array of the ten closest destinations according to haversine distance
   let destResult = toptenDistances.map(a => a.destination);
   const destinations = destResult;
-  
+
 // Now we call Google with our short list
   const service = new google.maps.DistanceMatrixService();
   const getDistanceMatrix =
@@ -485,7 +485,7 @@ async function evcalculateDistances(data, origin, response) {
               distanceText: distanceText,
               distanceVal: distanceVal,
             };
-    
+
             distances.push(distanceObject);
           }
 
@@ -493,7 +493,7 @@ async function evcalculateDistances(data, origin, response) {
         }
       });
     });
-  
+
   const distancesList = await getDistanceMatrix(service, {
     origins: [origin],
     destinations: destinations,
@@ -504,9 +504,9 @@ async function evcalculateDistances(data, origin, response) {
   distancesList.sort((first, second) => {
     return first.distanceVal - second.distanceVal;
   });
-  
+
   return distancesList;
-  
+
 }
 
 /**
@@ -548,7 +548,7 @@ function showStoresList(data, stores) {
   name.classList.add('panelHeader');
   name.textContent = "Vote centers closest to " + streetAddress + ":";
   panel.appendChild(name);
-  
+
   stores.forEach((store) => {
     // Add store details with text formatting
     const name = document.createElement('p');
@@ -561,7 +561,7 @@ function showStoresList(data, stores) {
     distanceText.textContent = store.distanceText;
     panel.appendChild(distanceText);
   });
-  
+
   // Open the panel
   panel.classList.add('open');
 
@@ -599,7 +599,7 @@ function evshowStoresList(data, stores) {
   name.classList.add('panelHeader-two');
   name.textContent = "Early vote locations closest to " + streetAddress + ":";
   panel.appendChild(name);
-  
+
   stores.forEach((store) => {
     // Add store details with text formatting
     const name = document.createElement('p');
@@ -612,7 +612,7 @@ function evshowStoresList(data, stores) {
     distanceText.textContent = store.distanceText;
     panel.appendChild(distanceText);
   });
-  
+
   // Open the panel
   panel.classList.add('open');
 
