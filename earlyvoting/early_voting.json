@@ -153,6 +153,23 @@
           32.25908482186553
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 10,
+        "name": "Richard Elías Mission Library",
+        "address": "3770 S Mission Rd, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.00421451032162,
+          32.17850079018836
+        ]
+      }
     }
   ]
 }
