@@ -204,6 +204,57 @@
           32.23256947452974
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 13,
+        "name": "TOKA Community Building",
+        "address": "51 Baboquivari Dr, Sells",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 9am - 4pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.86515867710114,
+          31.918838072454776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 14,
+        "name": "Salazar Ajo Library",
+        "address": "15 W Plaza #179, Ajo",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm, closed 1-2pm",
+        "emergency_voting": "Closed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -112.86192655563353,
+          32.37266506855907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 15,
+        "name": "Pascua Yaqui Wellness Center",
+        "address": "5305 W Calle Torim, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 4pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.07787132263184,
+          32.11122744416996
+        ]
+      }
     }
   ]
 }
