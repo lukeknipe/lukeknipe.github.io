@@ -235,11 +235,13 @@ function initMap() {
     const name = event.feature.getProperty('name');
     const address = event.feature.getProperty('address');
     const days_times = event.feature.getProperty('days_times');
+    const emergency_voting = event.feature.getProperty('emergency_voting');
     const dpos = event.feature.getGeometry().get();
     const content = `
       <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
         <p><b>Days/Times:</b> ${days_times}<br/><br/>
+        <p><b>Emergency Voting:</b> ${emergency_voting}
       </div>
       `;
     infoWindow.setContent(content);
