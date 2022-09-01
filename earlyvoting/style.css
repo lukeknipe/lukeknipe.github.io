@@ -104,7 +104,7 @@
     }
     /* Styling for an info pane that slides out from the left. * Hidden by default. */
      #panel {
-         padding-top: 250px;
+         padding-top: 300px;
          padding-bottom: 30px;
          height: 100%;
          width: null;
