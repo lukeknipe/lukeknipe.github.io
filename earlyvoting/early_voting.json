@@ -4,11 +4,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 1,
-        "name": "Recorder's Main Office",
-        "address": "240 N Stone, Tucson",
-        "days_times": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 1,
+        "VC_NAME": "Recorder's Main Office",
+        "VC_ADDRESS": "240 N Stone, Tucson",
+        "DAYS_TIMES": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -21,11 +21,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 2,
-        "name": "Fellowship Bible Church",
-        "address": "6700 E Broadway, Tucson",
-        "days_times": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 2,
+        "VC_NAME": "Fellowship Bible Church",
+        "VC_ADDRESS": "6700 E Broadway, Tucson",
+        "DAYS_TIMES": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -38,11 +38,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 3,
-        "name": "Recorder's Country Club Office",
-        "address": "6550 S Country Club, Tucson",
-        "days_times": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 3,
+        "VC_NAME": "Recorder's Country Club Office",
+        "VC_ADDRESS": "6550 S Country Club, Tucson",
+        "DAYS_TIMES": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -55,11 +55,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 4,
-        "name": "Oro Valley Public Library",
-        "address": "1305 W Naranja, Oro Valley",
-        "days_times": "Mon, Oct 24 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 4,
+        "VC_NAME": "Oro Valley Public Library",
+        "VC_ADDRESS": "1305 W Naranja, Oro Valley",
+        "DAYS_TIMES": "Mon, Oct 24 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -72,11 +72,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 5,
-        "name": "Pima County Parks & Rec",
-        "address": "3500 W. River, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 5,
+        "VC_NAME": "Pima County Parks & Rec",
+        "VC_ADDRESS": "3500 W. River, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -89,11 +89,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 6,
-        "name": "Woods Memorial Library",
-        "address": "3455 N 1st, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 6,
+        "VC_NAME": "Woods Memorial Library",
+        "VC_ADDRESS": "3455 N 1st, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -106,11 +106,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 7,
-        "name": "Wheeler Taft Abbett Sr Library",
-        "address": "7800 N Schisler, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 7,
+        "VC_NAME": "Wheeler Taft Abbett Sr Library",
+        "VC_ADDRESS": "7800 N Schisler, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -123,11 +123,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 8,
-        "name": "Miller Golf Links Library",
-        "address": "9640 E Golf Links, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "emergency_voting": "Closed"
+        "FID": 8,
+        "VC_NAME": "Miller Golf Links Library",
+        "VC_ADDRESS": "9640 E Golf Links, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "EMERGENCY_VOTING": "Closed"
       },
       "geometry": {
         "type": "Point",
@@ -140,11 +140,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 9,
-        "name": "Kirk Bear Canyon Library",
-        "address": "8959 E Tanque Verde, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 9,
+        "VC_NAME": "Kirk Bear Canyon Library",
+        "VC_ADDRESS": "8959 E Tanque Verde, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -157,11 +157,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 10,
-        "name": "Richard Elías Mission Library",
-        "address": "3770 S Mission Rd, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 10,
+        "VC_NAME": "Richard Elías Mission Library",
+        "VC_ADDRESS": "3770 S Mission Rd, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -174,11 +174,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 11,
-        "name": "The Good Shepherd UCC ",
-        "address": "17750 S La Cañada, Sahuarita",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "FID": 11,
+        "VC_NAME": "The Good Shepherd UCC ",
+        "VC_ADDRESS": "17750 S La Cañada, Sahuarita",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
         "type": "Point",
@@ -191,11 +191,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 12,
-        "name": "U of A Student Union, Catalina Room",
-        "address": "1303 E University, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
-        "emergency_voting": "Closed"
+        "FID": 12,
+        "VC_NAME": "U of A Student Union, Catalina Room",
+        "VC_ADDRESS": "1303 E University, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
+        "EMERGENCY_VOTING": "Closed"
       },
       "geometry": {
         "type": "Point",
@@ -208,11 +208,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 13,
-        "name": "TOKA Community Building",
-        "address": "51 Baboquivari Dr, Sells",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 9am - 4pm"
+        "FID": 13,
+        "VC_NAME": "TOKA Community Building",
+        "VC_ADDRESS": "51 Baboquivari Dr, Sells",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 9am - 4pm"
       },
       "geometry": {
         "type": "Point",
@@ -225,11 +225,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 14,
-        "name": "Salazar Ajo Library",
-        "address": "15 W Plaza #179, Ajo",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm, closed 1-2pm",
-        "emergency_voting": "Closed"
+        "FID": 14,
+        "VC_NAME": "Salazar Ajo Library",
+        "VC_ADDRESS": "15 W Plaza #179, Ajo",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm, closed 1-2pm",
+        "EMERGENCY_VOTING": "Closed"
       },
       "geometry": {
         "type": "Point",
@@ -242,11 +242,11 @@
     {
       "type": "Feature",
       "properties": {
-        "id": 15,
-        "name": "Pascua Yaqui Wellness Center",
-        "address": "5305 W Calle Torim, Tucson",
-        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
-        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 4pm"
+        "FID": 15,
+        "VC_NAME": "Pascua Yaqui Wellness Center",
+        "VC_ADDRESS": "5305 W Calle Torim, Tucson",
+        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 4pm"
       },
       "geometry": {
         "type": "Point",
