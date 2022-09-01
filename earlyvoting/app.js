@@ -234,12 +234,12 @@ function initMap() {
     const id_num = event.feature.getProperty('id');
     const name = event.feature.getProperty('name');
     const address = event.feature.getProperty('address');
-    const room = event.feature.getProperty('ROOM');
+    const days_times = event.feature.getProperty('days_times');
     const dpos = event.feature.getGeometry().get();
     const content = `
       <div style="margin-left:10px; margin-bottom:10px;">
         <h2>${name}</h2><p>${address}</p>
-        <p><b>Room:</b> ${room}<br/><br/>
+        <p><b>Days/Times:</b> ${days_times}<br/><br/>
       </div>
       `;
     infoWindow.setContent(content);
