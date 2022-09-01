@@ -68,6 +68,23 @@
           32.408832059339666
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 5,
+        "name": "Pima County Parks & Rec",
+        "address": "3500 W. River Rd, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -111.03873454034328,
+          32.31565487870758
+        ]
+      }
     }
   ]
 }
