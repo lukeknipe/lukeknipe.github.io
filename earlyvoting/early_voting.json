@@ -7,7 +7,7 @@
         "id": 1,
         "name": "Recorder's Main Office",
         "address": "240 N Stone, Tucson",
-        "days_times": "Mon, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
+        "days_times": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
@@ -24,7 +24,7 @@
         "id": 2,
         "name": "Fellowship Bible Church",
         "address": "6700 E Broadway, Tucson",
-        "days_times": "Mon, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
+        "days_times": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
@@ -41,7 +41,7 @@
         "id": 3,
         "name": "Recorder's Country Club Office",
         "address": "6550 S Country Club, Tucson",
-        "days_times": "Mon, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
+        "days_times": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
         "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
       },
       "geometry": {
@@ -83,6 +83,23 @@
         "coordinates": [
           -111.03873454034328,
           32.31565487870758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": 6,
+        "name": "Woods Memorial Library",
+        "address": "3455 N 1st Ave, Tucson",
+        "days_times": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
+        "emergency_voting": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -110.96194088459015,
+          32.26985951105436
         ]
       }
     }
