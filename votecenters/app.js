@@ -455,6 +455,7 @@ function showList(data, stores) {
 
         const centerCoordinates = data.getFeatureById(store.storeid);
         coordinates = centerCoordinates.getGeometry().get();
+        console.log(coordinates);
 
     });
 
