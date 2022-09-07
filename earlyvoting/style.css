@@ -63,6 +63,14 @@
      p {
          margin: 0px;
     }
+  
+    /* Styling for popup */
+  .popup {
+     top: 1vh;
+     right: 1vh;
+  }
+  
+  
     /* Styling for autocomplete search bar */
      #pac-card {
          background-color: #fff;
