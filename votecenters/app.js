@@ -283,10 +283,11 @@ function initMap() {
         }
 
         // Recenter the map to the selected address
-        globalThis.originLocation = place.geometry.location;
+        originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
         globalThis.streetAddress = (place.name);
+        globalThis.originLoc = place.geometry.location;
 
 
         originMarker.setPosition(originLocation);
@@ -458,8 +459,8 @@ function showList(data, stores) {
         coordinates = centerCoordinates.getGeometry().get();
         const dlat = coordinates.lat();
         const dlng = coordinates.lng();
-        const olat = originLocation.lat();
-        const olng = originLocation.lng();
+        const olat = originLoc.lat();
+        const olng = originLoc.lng();
         const directionsLink = '<span class="directionsLink">&mdash;<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">get directions</a></span>';
         panel.insertAdjacentHTML('beforeend', directionsLink);
     });
