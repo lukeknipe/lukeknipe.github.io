@@ -458,8 +458,7 @@ function showList(data, stores) {
         console.log(coordinates);
         const dlat = coordinates.lat();
         const dlng = coordinates.lng();
-        console.log(dlat);
-        console.log(dlng);
+        console.log(dlat, dlng);
     });
 
     // Open the panel
