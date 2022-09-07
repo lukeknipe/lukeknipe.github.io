@@ -464,7 +464,7 @@ function showList(data, stores) {
         const olng = originLocation.lng();
         console.log(dlat, dlng);
         console.log(olat, olng);
-        directionsLink.textContent = '<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a>';
+        directionsLink.insertAdjacentHTML = '<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a>';
         panel.insertAdjacentHTML('beforeend', directionsLink);
     });
 
