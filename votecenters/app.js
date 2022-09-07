@@ -454,6 +454,8 @@ function showList(data, stores) {
         distanceText.textContent = store.distanceText;
         panel.appendChild(distanceText);
 
+        const directionsLink = document.createElement('p');
+        directionsLink.classList.add('directionsLink');
         const centerCoordinates = data.getFeatureById(store.storeid);
         coordinates = centerCoordinates.getGeometry().get();
         const dlat = coordinates.lat();
@@ -462,9 +464,8 @@ function showList(data, stores) {
         const olng = originLocation.lng();
         console.log(dlat, dlng);
         console.log(olat, olng);
-        const directionsLink = '<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a>';
+        directionsLink.textContent = '<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a>';
         panel.insertAdjacentHTML('beforeend', directionsLink);
-        directionsLink.classList.add('directionsLink');
     });
 
     // Open the panel
