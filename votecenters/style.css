@@ -153,16 +153,25 @@
          font-weight: 400;
          margin-block-start: 0em;
          padding-left: 18px;
-         padding-right: 18px;
+         display: inline;
     }
        .directionsLink {
          color: #F5CE42;
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.6vh;
          font-weight: 400;
-         margin-block-start: 0em;
-         padding-left: 18px;
-         padding-right: 18px;
+    }
+       .directionsLink a:link {
+         color:#FFFFFF;
+    }   
+        .directionsLink a:visited {
+         color:#FFFFFF;
+    }
+        .directionsLink a:hover {
+         color:#FFFFFF;
+    }
+        .directionsLink a:active {
+         color:#FFFFFF;
     }
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
