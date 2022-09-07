@@ -463,7 +463,7 @@ function showList(data, stores) {
         console.log(olat, olng);
         const directionsLink = document.createElement('p');
         directionsLink.textContent = "<b>bl</b>ah";
-        panel.innerHTML(directionsLink);
+        panel.appendChild(directionsLink);
     });
 
     // Open the panel
