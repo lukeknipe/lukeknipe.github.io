@@ -286,7 +286,7 @@ function initMap() {
         originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
-        console.log(place.name);
+        console.log(place.geometry.location;
         globalThis.streetAddress = (place.name);
 
         originMarker.setPosition(originLocation);
@@ -457,9 +457,7 @@ function showList(data, stores) {
         coordinates = centerCoordinates.getGeometry().get();
         const dlat = coordinates.lat();
         const dlng = coordinates.lng();
-        const olat = origin.lat();
         console.log(dlat, dlng);
-        console.log(olat);
     });
 
     // Open the panel
