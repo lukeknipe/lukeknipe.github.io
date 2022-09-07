@@ -457,7 +457,8 @@ function showList(data, stores) {
         coordinates = centerCoordinates.getGeometry().get();
         console.log(coordinates);
         const lat = coordinates.lat();
-        console.log(lat);
+        const lon = coordinates.lon();
+        console.log(lat, lon);
 
     });
 
