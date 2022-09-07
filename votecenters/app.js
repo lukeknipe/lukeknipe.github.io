@@ -454,15 +454,13 @@ function showList(data, stores) {
         distanceText.textContent = store.distanceText;
         panel.appendChild(distanceText);
 
-        const directionsLink = document.createElement('p');
-        directionsLink.classList.add('directionsLink');
         const centerCoordinates = data.getFeatureById(store.storeid);
         coordinates = centerCoordinates.getGeometry().get();
         const dlat = coordinates.lat();
         const dlng = coordinates.lng();
         const olat = originLocation.lat();
         const olng = originLocation.lng();
-        directionsLink.insertAdjacentHTML = '<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a>';
+        const directionsLink = '<span class="directionsLink"><a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a></span>';
         panel.insertAdjacentHTML('beforeend', directionsLink);
     });
 
