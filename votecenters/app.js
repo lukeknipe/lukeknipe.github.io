@@ -434,6 +434,7 @@ function showList(data, stores) {
     header.textContent = "Vote centers closest to " + streetAddress + ":";
     panel.appendChild(header);
 
+    // Now we populate the panel
     stores.forEach((store) => {
         // Add store details with text formatting
         const name = document.createElement('p');
@@ -463,6 +464,7 @@ function showList(data, stores) {
         console.log(olat, olng);
         const directionsLink = '<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">Get directions</a>';
         panel.insertAdjacentHTML('beforeend', directionsLink);
+        directionsLink.classList.add('directionsLink');
     });
 
     // Open the panel
