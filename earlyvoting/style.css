@@ -62,12 +62,14 @@
     }
      p {
          margin: 0px;
+         line-height: 3vh;
     }
   
     /* Styling for popup */
   .popup {
-     top: 1vh;
-     right: 1vh;
+     margin-top: 1vh;;
+     margin-right: 1vh;
+     margin-left: 1vh;
   }
   
   
