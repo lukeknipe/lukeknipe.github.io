@@ -283,11 +283,12 @@ function initMap() {
         }
 
         // Recenter the map to the selected address
-        originLocation = place.geometry.location;
+        globalThis.originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
         console.log(originLocation);
         globalThis.streetAddress = (place.name);
+
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
