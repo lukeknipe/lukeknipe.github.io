@@ -455,10 +455,10 @@ function showList(data, stores) {
 
         const centerCoordinates = data.getFeatureById(store.storeid);
         coordinates = centerCoordinates.getGeometry().get();
-        console.log(coordinates);
         const dlat = coordinates.lat();
         const dlng = coordinates.lng();
         console.log(dlat, dlng);
+        console.log(origin);
     });
 
     // Open the panel
