@@ -461,7 +461,8 @@ function showList(data, stores) {
         const olng = originLocation.lng();
         console.log(dlat, dlng);
         console.log(olat, olng);
-        panel.innerHTML = 'blah';
+        const directionsLink = 'blah <b>blah</b> blah';
+        panel.insertAdjacentHTML('beforeend', directionsLink);
     });
 
     // Open the panel
