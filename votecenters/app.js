@@ -461,6 +461,9 @@ function showList(data, stores) {
         const olng = originLocation.lng();
         console.log(dlat, dlng);
         console.log(olat, olng);
+        const directionsLink = document.createElement('p');
+        directionsLink.textContent = "blah";
+        panel.appendChild(directionsLink);
     });
 
     // Open the panel
