@@ -162,16 +162,20 @@
          font-weight: 400;
     }
        .directionsLink a:link {
-         color:#FFFFFF;
+         color:#F5CE42;
+         text-decoration: none;
     }   
         .directionsLink a:visited {
-         color:#FFFFFF;
+         color:#F5CE42;
+         text-decoration: none;
     }
         .directionsLink a:hover {
-         color:#FFFFFF;
+         color:#F5CE42;
+         text-decoration: underline;
     }
         .directionsLink a:active {
          color:#FFFFFF;
+         text-decoration: none;
     }
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
