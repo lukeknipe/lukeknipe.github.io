@@ -1,5 +1,5 @@
 /* CSS for desktop devices -------------------------------------------------- */
- @media only screen and (min-width: 600px) {
+ @media only screen and (min-width: 750px) {
      #overlay_a {
          color: #FFFFFF;
          border-top: 5vh solid #1F3161;
@@ -179,7 +179,7 @@
     }
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
- @media only screen and (max-width: 710px) and (orientation:portrait) {
+ @media only screen and (max-width: 750px) and (orientation:portrait) {
      #map {
          position: absolute;
          top: 0px;
@@ -327,7 +327,7 @@
     }
 }
 /* CSS for mobile devices in landscape view ------------------------------- */
- @media only screen and (max-width: 600px) and (orientation:landscape) {
+ @media only screen and (max-width: 750px) and (orientation:landscape) {
      #map {
          position: absolute;
          top: 0px;
