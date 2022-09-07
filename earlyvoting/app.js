@@ -283,10 +283,9 @@ function initMap() {
         }
 
         // Recenter the map to the selected address
-        originLocation = place.geometry.location;
+        globalThis.originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
-        console.log(place.name);
         globalThis.streetAddress = (place.name);
 
         originMarker.setPosition(originLocation);
@@ -452,6 +451,15 @@ function showList(data, stores) {
         distanceText.classList.add('distanceText');
         distanceText.textContent = store.distanceText;
         panel.appendChild(distanceText);
+            
+        const centerCoordinates = data.getFeatureById(store.storeid);
+        coordinates = centerCoordinates.getGeometry().get();
+        const dlat = coordinates.lat();
+        const dlng = coordinates.lng();
+        const olat = originLocation.lat();
+        const olng = originLocation.lng();
+        const directionsLink = '<span class="directionsLink">&mdash;<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">get directions</a></span>';
+        panel.insertAdjacentHTML('beforeend', directionsLink);
     });
 
     // Open the panel
