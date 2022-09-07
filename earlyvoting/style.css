@@ -155,6 +155,28 @@
          padding-left: 18px;
          padding-right: 18px;
     }
+     .directionsLink {
+         color: #F5CE42;
+         font-family: 'open sans', arial, sans-serif;
+         font-size: 1.6vh;
+         font-weight: 400;
+    }
+     .directionsLink a:link {
+         color:#F5CE42;
+         text-decoration: none;
+    }   
+     .directionsLink a:visited {
+         color:#F5CE42;
+         text-decoration: none;
+    }
+     .directionsLink a:hover {
+         color:#F5CE42;
+         text-decoration: underline;
+    }
+     .directionsLink a:active {
+         color:#FFFFFF;
+         text-decoration: none;
+    }
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
  @media only screen and (max-width: 710px) and (orientation:portrait) {
