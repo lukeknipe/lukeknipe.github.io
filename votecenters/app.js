@@ -286,7 +286,7 @@ function initMap() {
         originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
-        console.log(place.geometry.location;
+        console.log(originLocation);
         globalThis.streetAddress = (place.name);
 
         originMarker.setPosition(originLocation);
