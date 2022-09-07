@@ -457,8 +457,9 @@ function showList(data, stores) {
         coordinates = centerCoordinates.getGeometry().get();
         const dlat = coordinates.lat();
         const dlng = coordinates.lng();
+        const olat = origin.lat();
         console.log(dlat, dlng);
-        console.log(origin);
+        console.log(olat);
     });
 
     // Open the panel
