@@ -214,7 +214,7 @@ function initMap() {
         const emergencyVoting = event.feature.getProperty('EMERGENCY_VOTING');
         const dpos = event.feature.getGeometry().get();
         const content = `
-      <div style="margin-left:10px; margin-bottom:10px;">
+      <div class="popup">
         <h2>${name}</h2>
         <p>${address}</p>
         <p><b>Days and Hours:</b> ${daysTimes}
