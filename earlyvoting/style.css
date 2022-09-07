@@ -60,9 +60,11 @@
          width: 100%;
          margin: 0;
     }
+  
      p {
          margin: 0px;
          line-height: 3vh;
+         font-size: 1.75vh
     }
   
     /* Styling for popup */
