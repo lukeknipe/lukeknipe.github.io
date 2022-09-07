@@ -462,7 +462,7 @@ function showList(data, stores) {
         console.log(dlat, dlng);
         console.log(olat, olng);
         const directionsLink = document.createElement('p');
-        directionsLink.textContent = "blah";
+        directionsLink.textContent = "<b>bl</b>ah";
         panel.appendChild(directionsLink);
     });
 
