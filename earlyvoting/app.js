@@ -210,12 +210,16 @@ function initMap() {
         const id_num = event.feature.getProperty('FID');
         const name = event.feature.getProperty('VC_NAME');
         const address = event.feature.getProperty('VC_ADDRESS');
-        const room = event.feature.getProperty('ROOM');
+        const daysTimes = event.feature.getProperty('DAYS_TIMES');
+        const emergencyVoting = event.feature.getProperty('EMERGENCY_VOTING');
         const dpos = event.feature.getGeometry().get();
         const content = `
       <div style="margin-left:10px; margin-bottom:10px;">
-        <h2>${name}</h2><p>${address}</p>
-        <p><b>Room:</b> ${room}<br/><br/>
+        <h2>${name}</h2>
+        <p>${address}</p>
+        <p><b>Days and Hours:</b> ${daysTimes}
+        <p><b>Emergency Voting:</b> ${emergencyVoting}
+        <br/><br/>
       </div>
       `;
         infoWindow.setContent(content);
