@@ -185,6 +185,14 @@
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
  @media only screen and (max-width: 710px) and (orientation:portrait) {
+ 
+  #overlay_c {
+         position: fixed;
+         top: 14vh;
+         left: 8px;
+         z-index: 2;
+    }
+  
      #map {
          position: absolute;
          top: 0px;
