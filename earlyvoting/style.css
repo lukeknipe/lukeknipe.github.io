@@ -1,7 +1,6 @@
 /* CSS for desktop devices -------------------------------------------------- */
  @media only screen and (min-width: 600px) {
      #overlay_a {
-         color: #FFFFFF;
          border-top: 5vh solid #F2352F;
          position: fixed;
          top: 0;
@@ -11,7 +10,6 @@
     }
      #overlay_b {
          position: fixed;
-         display: none;
          top: 1vh;
          left: 16px;
          z-index: 2;
