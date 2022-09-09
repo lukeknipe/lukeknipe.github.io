@@ -210,12 +210,16 @@ function initMap() {
         const id_num = event.feature.getProperty('FID');
         const name = event.feature.getProperty('VC_NAME');
         const address = event.feature.getProperty('VC_ADDRESS');
-        const room = event.feature.getProperty('ROOM');
+        const daysTimes = event.feature.getProperty('DAYS_TIMES');
+        const emergencyVoting = event.feature.getProperty('EMERGENCY_VOTING');
         const dpos = event.feature.getGeometry().get();
         const content = `
-      <div style="margin-left:10px; margin-bottom:10px;">
-        <h2>${name}</h2><p>${address}</p>
-        <p><b>Room:</b> ${room}<br/><br/>
+      <div class="popup">
+        <h2>${name}</h2>
+        <p>${address}</p>
+        <p><b>Days and Hours:</b> ${daysTimes}
+        <p><b>Emergency Voting:</b> ${emergencyVoting}
+        <br/><br/>
       </div>
       `;
         infoWindow.setContent(content);
@@ -286,8 +290,8 @@ function initMap() {
         originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
-        console.log(place.name);
         globalThis.streetAddress = (place.name);
+        globalThis.originLoc = place.geometry.location;
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
@@ -452,6 +456,15 @@ function showList(data, stores) {
         distanceText.classList.add('distanceText');
         distanceText.textContent = store.distanceText;
         panel.appendChild(distanceText);
+            
+        const centerCoordinates = data.getFeatureById(store.storeid);
+        coordinates = centerCoordinates.getGeometry().get();
+        const dlat = coordinates.lat();
+        const dlng = coordinates.lng();
+        const olat = originLoc.lat();
+        const olng = originLoc.lng();
+        const directionsLink = '<span class="directionsLink">&mdash;<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">get directions</a></span>';
+        panel.insertAdjacentHTML('beforeend', directionsLink);
     });
 
     // Open the panel

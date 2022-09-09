@@ -4,9 +4,9 @@
          color: #FFFFFF;
          border-top: 5vh solid #F2352F;
          position: fixed;
-         display: none;
-         width: 100%;
-         height: 100%;
+ /*      display: none;  */
+ /*      width: 100%;    */
+ /*      height: 100%;   */
          top: 0;
          left: 0;
          right: 0;
@@ -60,9 +60,21 @@
          width: 100%;
          margin: 0;
     }
+  
      p {
          margin: 0px;
+         line-height: 3vh;
+         font-size: 1.75vh
     }
+  
+    /* Styling for popup */
+  .popup {
+     margin-top: 1vh;;
+     margin-right: 1vh;
+     margin-left: 1vh;
+  }
+  
+  
     /* Styling for autocomplete search bar */
      #pac-card {
          background-color: #fff;
@@ -153,7 +165,29 @@
          font-weight: 400;
          margin-block-start: 0em;
          padding-left: 18px;
-         padding-right: 18px;
+         display: inline;
+    }
+     .directionsLink {
+         color: #F5CE42;
+         font-family: 'open sans', arial, sans-serif;
+         font-size: 1.6vh;
+         font-weight: 400;
+    }
+     .directionsLink a:link {
+         color:#F5CE42;
+         text-decoration: none;
+    }   
+     .directionsLink a:visited {
+         color:#F5CE42;
+         text-decoration: none;
+    }
+     .directionsLink a:hover {
+         color:#F5CE42;
+         text-decoration: underline;
+    }
+     .directionsLink a:active {
+         color:#FFFFFF;
+         text-decoration: none;
     }
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
