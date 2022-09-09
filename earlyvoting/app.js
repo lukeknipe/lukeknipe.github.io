@@ -200,7 +200,7 @@ function initMap() {
         };
     });
 
-    // Define API key 
+    // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
     const infoWindow = new google.maps.InfoWindow();
@@ -219,7 +219,6 @@ function initMap() {
         <p>${address}</p>
         <p><b>Days and Hours:</b> ${daysTimes}
         <p><b>Emergency Voting:</b> ${emergencyVoting}
-        <br/><br/>
       </div>
       `;
         infoWindow.setContent(content);
@@ -312,9 +311,9 @@ async function calculateDistances(data, origin, response) {
     // Since Google won't let us run more than 25 origins or destinations through the API at a time, we'll
     // use a Haversine distance function to narrow our list down to 10 by making simple "as the crow flies"
     // distance calculations on the client side. Once we've done that, we can send our short list off to
-    // Google and let api calculate proper driving distances. 
+    // Google and let api calculate proper driving distances.
 
-    // We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances. 
+    // We'll start by making parallel arrays of vote center IDs, locations, and Haversine distances.
 
     const qnumArray = [];
     const qlocArray = [];
@@ -347,7 +346,7 @@ async function calculateDistances(data, origin, response) {
     // Sort our object array according to Haversine distance
     const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0, 10);
 
-    // Make an array of the ten closest store IDs according to the Haversine formula  
+    // Make an array of the ten closest store IDs according to the Haversine formula
     let storeResult = toptenDistances.map(a => a.storeid);
     const stores = storeResult;
 
@@ -456,7 +455,7 @@ function showList(data, stores) {
         distanceText.classList.add('distanceText');
         distanceText.textContent = store.distanceText;
         panel.appendChild(distanceText);
-            
+
         const centerCoordinates = data.getFeatureById(store.storeid);
         coordinates = centerCoordinates.getGeometry().get();
         const dlat = coordinates.lat();

@@ -49,10 +49,15 @@
          margin: 0;
     }
 
+    h2 {
+      line-height: 0vh;
+          font-size: 2vh;
+      }
+
      p {
          margin: 0px;
          line-height: 3vh;
-         font-size: 1.75vh
+         font-size: 1.5vh
     }
 
     /* Styling for popup */
