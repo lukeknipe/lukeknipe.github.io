@@ -48,9 +48,26 @@
          width: 100%;
          margin: 0;
     }
+
+   h2 {
+      line-height: 0vh;
+          font-size: 2vh;
+      }
+
      p {
          margin: 0px;
+         line-height: 3vh;
+         font-size: 1.5vh
     }
+
+    /* Styling for popup */
+  .popup {
+     margin-top: 1vh;;
+     margin-right: 1vh;
+     margin-left: 1vh;
+  }
+
+  
     /* Styling for autocomplete search bar */
      #pac-card {
          background-color: #fff;
