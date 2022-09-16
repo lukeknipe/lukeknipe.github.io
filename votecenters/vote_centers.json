@@ -884,17 +884,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.830239252564,
-          32.2198382078987
+          -110.85718989372253,
+          32.227673155473695
         ]
       },
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "FID": 47,
         "VC_ID": 48,
-        "VC_NAME": "Hilton Tucson East",
-        "VC_ADDRESS": "7600 E Broadway Boulevard",
+        "VC_NAME": "Murphy Wilmot Library",
+        "VC_ADDRESS": "530 N Wilmot Road",
         "BOS_DIST": 2,
-        "ROOM": "Rosewood C"
+        "ROOM": "Large Meeting Room"
       }
     },
     {
@@ -1416,17 +1419,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.778943858676,
-          32.0417942273391
+          -110.77128946781158,
+          31.96612565826446
         ]
       },
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "FID": 75,
         "VC_ID": 76,
-        "VC_NAME": "Pima County Fairgounds",
-        "VC_ADDRESS": "11300 S Houghton Road",
+        "VC_NAME": "American Legion Post 109",
+        "VC_ADDRESS": "15921 S Houghton Road",
         "BOS_DIST": 4,
-        "ROOM": "Green Room or Ferber Room"
+        "ROOM": "Dining Room"
       }
     },
     {
@@ -1967,17 +1973,20 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.970012400881,
-          32.4307132966009
+          -110.96179604530334,
+          32.4166134801697
         ]
       },
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
         "FID": 104,
         "VC_ID": 105,
-        "VC_NAME": "The Church of Latter Day Saints",
-        "VC_ADDRESS": "55 W Arrowsmith Drive",
+        "VC_NAME": "Resurrection Lutheran Church",
+        "VC_ADDRESS": "11575 N. First Ave. Building C",
         "BOS_DIST": 1,
-        "ROOM": "Cultural Hall"
+        "ROOM": "Katie's Quarters, Luther's Lair and Outreach Kitchen"
       }
     },
     {
@@ -2138,8 +2147,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.721444789256,
-          32.0560246012069
+          -110.72158813476562,
+          32.055808605387014
         ]
       },
       "properties": {
