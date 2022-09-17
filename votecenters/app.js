@@ -213,9 +213,10 @@ function initMap() {
         const room = event.feature.getProperty('ROOM');
         const dpos = event.feature.getGeometry().get();
         const content = `
-      <div style="margin-left:10px; margin-bottom:10px;">
-        <h2>${name}</h2><p>${address}</p>
-        <p><b>Room:</b> ${room}<br/><br/>
+      <div class="popup">
+        <h2>${name}</h2>
+        <p>${address}</p>
+        <p><b>Room:</b> ${room}
       </div>
       `;
         infoWindow.setContent(content);
