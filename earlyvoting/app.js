@@ -235,16 +235,11 @@ function initMap() {
     const title = document.createElement('div');
     const container = document.createElement('div');
     const input = document.createElement('input');
-    const defaultBounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(32.4926, -113.3335),
-        new google.maps.LatLng(31.3327, -110.4586));
     const options = {
         types: ['address'],
         componentRestrictions: {
             country: 'us'
         },
-        bounds: defaultBounds,
-        strictBounds: true,
     };
 
     card.setAttribute('id', 'pac-card');
