@@ -244,6 +244,7 @@ function initMap() {
             country: 'us'
         },
         bounds: defaultBounds,
+        strictBounds: true,
     };
 
     card.setAttribute('id', 'pac-card');
