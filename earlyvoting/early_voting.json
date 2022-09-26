@@ -8,7 +8,8 @@
         "VC_NAME": "Recorder's Main Office",
         "VC_ADDRESS": "240 N Stone, Tucson",
         "DAYS_TIMES": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -25,7 +26,8 @@
         "VC_NAME": "Fellowship Bible Church",
         "VC_ADDRESS": "6700 E Broadway, Tucson",
         "DAYS_TIMES": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -42,7 +44,8 @@
         "VC_NAME": "Recorder's Country Club Office",
         "VC_ADDRESS": "6550 S Country Club, Tucson",
         "DAYS_TIMES": "Wed, Oct 12 - Fri, Nov 4: M-F 8am - 5pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -59,7 +62,8 @@
         "VC_NAME": "Oro Valley Public Library",
         "VC_ADDRESS": "1305 W Naranja, Oro Valley",
         "DAYS_TIMES": "Mon, Oct 24 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -76,7 +80,8 @@
         "VC_NAME": "Pima County Parks & Rec",
         "VC_ADDRESS": "3500 W. River, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -93,7 +98,8 @@
         "VC_NAME": "Woods Memorial Library",
         "VC_ADDRESS": "3455 N 1st, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -110,7 +116,8 @@
         "VC_NAME": "Wheeler Taft Abbett Sr Library",
         "VC_ADDRESS": "7800 N Schisler, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -127,7 +134,8 @@
         "VC_NAME": "Miller Golf Links Library",
         "VC_ADDRESS": "9640 E Golf Links, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Closed"
+        "EMERGENCY_VOTING": "Closed",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -144,7 +152,8 @@
         "VC_NAME": "Kirk Bear Canyon Library",
         "VC_ADDRESS": "8959 E Tanque Verde, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -161,7 +170,8 @@
         "VC_NAME": "Richard Elías Mission Library",
         "VC_ADDRESS": "3770 S Mission Rd, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -178,7 +188,8 @@
         "VC_NAME": "The Good Shepherd UCC ",
         "VC_ADDRESS": "17750 S La Cañada, Sahuarita",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 5pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -195,7 +206,8 @@
         "VC_NAME": "U of A Student Union, Catalina Room",
         "VC_ADDRESS": "1303 E University, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
-        "EMERGENCY_VOTING": "Closed"
+        "EMERGENCY_VOTING": "Closed",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -212,7 +224,8 @@
         "VC_NAME": "TOKA Community Building",
         "VC_ADDRESS": "51 Baboquivari Dr, Sells",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 9am - 4pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 9am - 4pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -229,7 +242,8 @@
         "VC_NAME": "Salazar Ajo Library",
         "VC_ADDRESS": "15 W Plaza #179, Ajo",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm, closed 1-2pm",
-        "EMERGENCY_VOTING": "Closed"
+        "EMERGENCY_VOTING": "Closed",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
@@ -246,13 +260,28 @@
         "VC_NAME": "Pascua Yaqui Wellness Center",
         "VC_ADDRESS": "5305 W Calle Torim, Tucson",
         "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm",
-        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 4pm"
+        "EMERGENCY_VOTING": "Sat, Nov 5: 9am - 3pm; Mon, Nov 7: 8am - 4pm",
+        "marker-symbol": "dot"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -111.07787132263184,
           32.11122744416996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 0,
+        "marker-symbol": "none"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.54488670825958,
+          31.30558764479616
         ]
       }
     }
