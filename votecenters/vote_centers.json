@@ -2475,7 +2475,7 @@
         "BOS_DIST": 0
       },
       "geometry": {
-        
+        "type": "Point",
         "coordinates": [
           -113.54498863220215,
           31.30549597670067
