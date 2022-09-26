@@ -380,8 +380,6 @@ async function calculateDistances(data, origin, response) {
                 }
             });
         });
-
-        console.log(getDistanceMatrix);
         
     const distancesList = await getDistanceMatrix(service, {
         origins: [origin],
@@ -390,6 +388,8 @@ async function calculateDistances(data, origin, response) {
         unitSystem: google.maps.UnitSystem.IMPERIAL,
     });
 
+        console.log(distancesList);
+        
     distancesList.sort((first, second) => {
         return first.distanceVal - second.distanceVal;
     });
