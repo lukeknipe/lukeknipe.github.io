@@ -341,13 +341,10 @@ async function calculateDistances(data, origin, response) {
         };
         topTen.push(toptenObject);
     });
-
-        console.log(topTen);
         
     // Sort our object array according to Haversine distance
     const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0, 10);
-        
-        console.log(toptenDistances);
+  
 
     // Make an array of the ten closest store IDs according to the Haversine formula
     let storeResult = toptenDistances.map(a => a.storeid);
@@ -391,8 +388,6 @@ async function calculateDistances(data, origin, response) {
         travelMode: 'DRIVING',
         unitSystem: google.maps.UnitSystem.IMPERIAL,
     });
-
-        console.log(distancesList);
         
     distancesList.sort((first, second) => {
         return first.distanceVal - second.distanceVal;
