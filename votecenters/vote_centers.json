@@ -2588,7 +2588,8 @@
         "VC_ID": 0,
         "VC_NAME": "undefined",
         "VC_ADDRESS": "undefined",
-        "BOS_DIST": 0
+        "BOS_DIST": 0,
+        "marker-symbol": "none"
       },
       "geometry": {
         "type": "Point",
