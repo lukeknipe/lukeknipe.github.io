@@ -344,6 +344,7 @@ async function calculateDistances(data, origin, response) {
 
     // Sort our object array according to Haversine distance
     const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0, 10);
+        console.log(toptenDistances);
 
     // Make an array of the ten closest store IDs according to the Haversine formula
     let storeResult = toptenDistances.map(a => a.storeid);
@@ -363,7 +364,7 @@ async function calculateDistances(data, origin, response) {
                 } else {
                     const distances = [];
                     const results = response.rows[0].elements;
-                    for (let j = 1; j < results.length; j++) {
+                    for (let j = 0; j < results.length; j++) {
                         const element = results[j];
                         const distanceText = element.distance.text;
                         const distanceVal = element.distance.value;
