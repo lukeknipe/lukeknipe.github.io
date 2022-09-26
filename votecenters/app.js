@@ -342,6 +342,8 @@ async function calculateDistances(data, origin, response) {
         topTen.push(toptenObject);
     });
 
+        console.log(topTen);
+        
     // Sort our object array according to Haversine distance
     const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0, 10);
         
