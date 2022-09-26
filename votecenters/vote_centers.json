@@ -77,17 +77,17 @@
         "ROOM": "Hall"
       }
     },
+          -110.78003883361815,
+          32.094354914212026
+        ]
+      },
+      "properties": {
     {
       "type": "Feature",
       "id": 5,
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -110.78003883361815,
-          32.094354914212026
-        ]
-      },
-      "properties": {
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "",
@@ -2475,7 +2475,7 @@
         "BOS_DIST": 0
       },
       "geometry": {
-        "type": "Point",
+        
         "coordinates": [
           -113.54498863220215,
           31.30549597670067
