@@ -2463,6 +2463,23 @@
         "BOS_DIST": 3,
         "ROOM": "No Information"
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "FID": 0,
+        "VC_ID": 0,
+        "VC_NAME": "undefined",
+        "VC_ADDRESS": "undefined",
+        "BOS_DIST": 0
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -113.54498863220215,
+          31.30549597670067
+        ]
+      }
     }
   ]
 }
