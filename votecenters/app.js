@@ -381,6 +381,8 @@ async function calculateDistances(data, origin, response) {
             });
         });
 
+        console.log(getDistanceMatrix);
+        
     const distancesList = await getDistanceMatrix(service, {
         origins: [origin],
         destinations: destinations,
@@ -393,7 +395,6 @@ async function calculateDistances(data, origin, response) {
     });
 
     return distancesList;
-console.log(distancesList);
 }
 
 /**
