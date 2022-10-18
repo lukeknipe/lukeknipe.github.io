@@ -867,17 +867,19 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -112.573916182203,
-          32.0601128036204
+          -112.4065464735031,
+          32.18682694687266
         ]
       },
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
         "FID": 44,
         "VC_ID": 44,
-        "VC_NAME": "Gu Vo District Office Compound",
-        "VC_ADDRESS": "Indian Route 1, Mile Post 19, Gu Vo Village",
+        "VC_NAME": "Tohono O’Odham High School",
+        "VC_ADDRESS": "Highway 86 Mile Marker 74.5, Sells",
         "BOS_DIST": 3,
-        "ROOM": "Gu Vo District Compound Conference Room",
+        "ROOM": "No information",
         "marker-symbol": "checkmark"
       }
     },
