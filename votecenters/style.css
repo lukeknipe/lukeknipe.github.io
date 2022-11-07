@@ -283,7 +283,7 @@
          width: 100%;
     }
      .panelHeader {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 2.7vh;
          font-weight: 700;
@@ -301,7 +301,7 @@
          padding-right: 10px;
     }
      .address {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 2.4vh;
          font-weight: 500;
@@ -309,7 +309,7 @@
          padding-right: 10px;
     }
     .distanceText {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 2.1vh;
          font-weight: 400;
@@ -318,26 +318,26 @@
          display: inline;
     }
      .directionsLink {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 2.1vh;
          font-weight: 400;
     }
      .directionsLink a:link {
-         color:#F5CE42;
-         text-decoration: none;
+         color:#FFFFFF;
+         text-decoration: underline;
     }
      .directionsLink a:visited {
-         color:#F5CE42;
-         text-decoration: none;
+         color:#FFFFFF;
+         text-decoration: underline;
     }
      .directionsLink a:hover {
-         color:#F5CE42;
+         color:#CCCCCC;
          text-decoration: underline;
     }
      .directionsLink a:active {
          color:#FFFFFF;
-         text-decoration: none;
+         text-decoration: underline;
     }
 }
 /* CSS for mobile devices in landscape view ------------------------------- */
@@ -417,7 +417,7 @@
          width: 100%;
     }
      .panelHeader {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.2em;
          font-weight: 700;
@@ -435,7 +435,7 @@
          padding-right: 18px;
     }
      .distanceText {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 1em;
          font-weight: 400;
