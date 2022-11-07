@@ -67,7 +67,7 @@
      margin-left: 1vh;
   }
 
-  
+
     /* Styling for autocomplete search bar */
      #pac-card {
          background-color: #fff;
@@ -127,6 +127,7 @@
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.2em;
          font-weight: 700;
+         line-height: 1.4em;
          margin-block-end: 0px;
          padding-top: 30px;
          padding-left: 18px;
@@ -137,22 +138,24 @@
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.9vh;
          font-weight: 500;
+         line-height: 1.1em;
          margin-block-end: 0px;
          padding-top: 1.7vh;
          padding-left: 18px;
          padding-right: 18px;
     }
      .address {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.7vh;
          font-weight: 500;
+         line-height: 1.1em;
          margin-block-start: 0em;
          padding-left: 18px;
          padding-right: 18px;
     }
      .distanceText {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.6vh;
          font-weight: 400;
@@ -161,26 +164,26 @@
          display: inline;
     }
        .directionsLink {
-         color: #F5CE42;
+         color: #FFFFFF;
          font-family: 'open sans', arial, sans-serif;
          font-size: 1.6vh;
          font-weight: 400;
     }
        .directionsLink a:link {
-         color:#F5CE42;
-         text-decoration: none;
-    }   
+         color:#FFFFFF;
+         text-decoration: underline;
+    }
         .directionsLink a:visited {
-         color:#F5CE42;
-         text-decoration: none;
+         color:#FFFFFF;
+         text-decoration: underline;
     }
         .directionsLink a:hover {
-         color:#F5CE42;
+         color:#CCCCCC;
          text-decoration: underline;
     }
         .directionsLink a:active {
          color:#FFFFFF;
-         text-decoration: none;
+         text-decoration: underline;
     }
 }
 /* CSS for mobile devices in portrait view ---------------------------------- */
@@ -323,7 +326,7 @@
      .directionsLink a:link {
          color:#F5CE42;
          text-decoration: none;
-    }   
+    }
      .directionsLink a:visited {
          color:#F5CE42;
          text-decoration: none;
