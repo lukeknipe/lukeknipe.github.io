@@ -130,24 +130,6 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 8,
-        "VC_NAME": "Miller Golf Links Library",
-        "VC_ADDRESS": "9640 E Golf Links, Tucson",
-        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: MWF 9am - 5pm, TTh 9am - 6pm",
-        "EMERGENCY_VOTING": "Closed",
-        "marker-symbol": "dot"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -110.78660890460014,
-          32.190861774430694
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "FID": 9,
         "VC_NAME": "Kirk Bear Canyon Library",
         "VC_ADDRESS": "8959 E Tanque Verde, Tucson",
@@ -202,24 +184,6 @@
     {
       "type": "Feature",
       "properties": {
-        "FID": 12,
-        "VC_NAME": "U of A Student Union, Catalina Room",
-        "VC_ADDRESS": "1303 E University, Tucson",
-        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 5 pm",
-        "EMERGENCY_VOTING": "Closed",
-        "marker-symbol": "dot"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -110.95208778977394,
-          32.23256947452974
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "FID": 13,
         "VC_NAME": "TOKA Community Building",
         "VC_ADDRESS": "51 Baboquivari Dr, Sells",
@@ -232,24 +196,6 @@
         "coordinates": [
           -111.86515867710114,
           31.918838072454776
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "FID": 14,
-        "VC_NAME": "Salazar Ajo Library",
-        "VC_ADDRESS": "15 W Plaza #179, Ajo",
-        "DAYS_TIMES": "Mon, Oct 31 - Fri, Nov 4: M-F 9am - 4 pm, closed 1-2pm",
-        "EMERGENCY_VOTING": "Closed",
-        "marker-symbol": "dot"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -112.86192655563353,
-          32.37266506855907
         ]
       }
     },
