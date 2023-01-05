@@ -168,7 +168,7 @@ function sanitizeHTML(strings) {
 function initMap() {
 
     // Display overlays
-    document.getElementById("overlay_a").style.display = "block";
+//    document.getElementById("overlay_a").style.display = "block";
     document.getElementById("overlay_b").style.display = "block";
 
     // Create the map.
@@ -341,10 +341,10 @@ async function calculateDistances(data, origin, response) {
         };
         topTen.push(toptenObject);
     });
-        
+
     // Sort our object array according to Haversine distance
     const toptenDistances = topTen.sort((a, b) => a.distance - b.distance).slice(0, 10);
-  
+
 
     // Make an array of the ten closest store IDs according to the Haversine formula
     let storeResult = toptenDistances.map(a => a.storeid);
@@ -381,14 +381,14 @@ async function calculateDistances(data, origin, response) {
                 }
             });
         });
-        
+
     const distancesList = await getDistanceMatrix(service, {
         origins: [origin],
         destinations: destinations,
         travelMode: 'DRIVING',
         unitSystem: google.maps.UnitSystem.IMPERIAL,
     });
-        
+
     distancesList.sort((first, second) => {
         return first.distanceVal - second.distanceVal;
     });
