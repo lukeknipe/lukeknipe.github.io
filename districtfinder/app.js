@@ -436,36 +436,6 @@ function showList(data, stores) {
     header.textContent = "Vote centers closest to " + streetAddress + ":";
     panel.appendChild(header);
 
-    // Now we populate the panel
-    stores.forEach((store) => {
-        // Add store details with text formatting
-        const name = document.createElement('p');
-        name.classList.add('place');
-        const centerName = data.getFeatureById(store.storeid);
-        name.textContent = centerName.getProperty('VC_NAME');
-        panel.appendChild(name);
-
-        const address = document.createElement('p');
-        address.classList.add('address');
-        const centerAddress = data.getFeatureById(store.storeid);
-        address.textContent = centerAddress.getProperty('VC_ADDRESS');
-        panel.appendChild(address);
-
-        const distanceText = document.createElement('p');
-        distanceText.classList.add('distanceText');
-        distanceText.textContent = store.distanceText;
-        panel.appendChild(distanceText);
-
-        const centerCoordinates = data.getFeatureById(store.storeid);
-        coordinates = centerCoordinates.getGeometry().get();
-        const dlat = coordinates.lat();
-        const dlng = coordinates.lng();
-        const olat = originLoc.lat();
-        const olng = originLoc.lng();
-        const directionsLink = '<span class="directionsLink">&mdash;<a href="https://maps.google.com?saddr=' + olat +',' + olng + '&daddr=' + dlat + ',' + dlng + '"base target="_blank">get directions</a></span>';
-        panel.insertAdjacentHTML('beforeend', directionsLink);
-    });
-
     // Open the panel
     panel.classList.add('open');
 
