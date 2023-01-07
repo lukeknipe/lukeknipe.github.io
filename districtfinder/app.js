@@ -186,8 +186,8 @@ function initMap() {
     });
 
     // Load the vote centers GeoJSON onto the map
-    map.data.loadGeoJson('vote_centers.json', {
-        idPropertyName: 'FID'
+    map.data.loadGeoJson('wards.json', {
+        idPropertyName: 'OBJECTID'
     });
 
     // Define the marker icons
