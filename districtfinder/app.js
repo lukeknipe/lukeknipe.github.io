@@ -207,14 +207,14 @@ function initMap() {
 
     // Display information in a popup when a marker is clicked.
     map.data.addListener('click', (event) => {
-        const id_num = event.feature.getProperty('FID');
+        const id_num = event.feature.getProperty('OBJECTID');
         const name = event.feature.getProperty('VC_NAME');
         const address = event.feature.getProperty('VC_ADDRESS');
         const room = event.feature.getProperty('ROOM');
         const dpos = event.feature.getGeometry().get();
         const content = `
       <div class="popup">
-        <h2>${name}</h2>
+        <h2>${id_num}</h2>
         <p>${address}</p>
         <p><b>Room:</b> ${room}
       </div>
