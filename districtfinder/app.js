@@ -289,11 +289,6 @@ function initMap() {
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
 
-        // Use the selected address as the origin to calculate distances
-        // to each vote center
-        const rankedStores = await calculateDistances(map.data, originLocation);
-        showList(map.data, rankedStores);
-
         return;
     });
 
