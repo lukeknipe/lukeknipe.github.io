@@ -269,7 +269,7 @@ function initMap() {
         map.setZoom(13);
         globalThis.streetAddress = (place.name);
         globalThis.originLoc = place.geometry.location;
-//        const id_num = place.feature.getProperty('OBJECTID');
+        const id_num = place.feature.getProperty('OBJECTID');
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
