@@ -191,6 +191,7 @@ function initMap() {
     });
 
     console.log(map);
+    console.log('map');
 
     // Define the marker icons
     map.data.setStyle((feature) => {
