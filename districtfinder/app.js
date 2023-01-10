@@ -284,10 +284,18 @@ function initMap() {
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
 
-        infowindow.open({
-        anchor: marker,
-        map,
+     const content = `
+      <div class="popup">
+        <h2>Blah</h2>
+        <p>blah</p>
+      </div>
+      `;
+        infoWindow.setContent(content);
+        infoWindow.setPosition(originLoc);
+        infoWindow.setOptions({
+            pixelOffset: new google.maps.Size(0, -30)
         });
+        infoWindow.open(map);
             
         return;
     });
