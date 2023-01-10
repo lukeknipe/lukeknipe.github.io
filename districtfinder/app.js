@@ -213,6 +213,7 @@ function initMap() {
         <h2>${id_num}xxx</h2>
       </div>
       `;
+      console.log(id_num);
         infoWindow.setContent(content);
   //      infoWindow.setPosition(dpos);
         infoWindow.setOptions({
