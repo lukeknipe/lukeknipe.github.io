@@ -210,6 +210,7 @@ console.log(map.data);
 
     // Display information in a popup when a marker is clicked.
     map.data.addListener('click', (event) => {
+        const id_num = event.feature.getProperty('OBJECTID');
         const content = `
       <div class="popup">
         <h2>${id_num}xxx</h2>
