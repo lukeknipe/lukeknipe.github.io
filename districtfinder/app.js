@@ -281,10 +281,14 @@ function initMap() {
         globalThis.streetAddress = (place.name);
         globalThis.originLoc = place.geometry.location;
 
-
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
 
+        infowindow.open({
+        anchor: marker,
+        map,
+        });
+            
         return;
     });
 
