@@ -190,6 +190,8 @@ function initMap() {
         idPropertyName: 'OBJECTID'
     });
 
+    console.log(map);
+
     // Define the marker icons
     map.data.setStyle((feature) => {
         return {
