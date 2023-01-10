@@ -267,7 +267,7 @@ function initMap() {
         originLocation = place.geometry.location;
         map.setCenter(originLocation);
         map.setZoom(13);
-        globalThis.streetAddress = (place.name);
+        const streetAddress = (place.name);
         globalThis.originLoc = place.geometry.location;
 //        const ward_num = event.feature.getProperty('OBJECTID');
 
