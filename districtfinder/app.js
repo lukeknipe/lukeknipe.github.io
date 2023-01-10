@@ -251,7 +251,7 @@ function initMap() {
     originMarker.setVisible(false);
     let originLocation = map.getCenter();
 
-    autocomplete.addListener('place_changed', async () => {
+    autocomplete.addListener('place_changed', async (event) => {
         originMarker.setVisible(false);
         originLocation = map.getCenter();
         const place = autocomplete.getPlace();
@@ -269,7 +269,7 @@ function initMap() {
         map.setZoom(13);
         globalThis.streetAddress = (place.name);
         globalThis.originLoc = place.geometry.location;
-        const id_num = feature.getProperty('OBJECTID');
+        const id_num = event.feature.getProperty('OBJECTID');
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
