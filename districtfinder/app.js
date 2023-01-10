@@ -214,7 +214,7 @@ function initMap() {
       </div>
       `;
         infoWindow.setContent(content);
-        infoWindow.setPosition(dpos);
+  //      infoWindow.setPosition(dpos);
         infoWindow.setOptions({
             pixelOffset: new google.maps.Size(0, -30)
         });
