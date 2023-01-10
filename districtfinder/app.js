@@ -269,6 +269,7 @@ function initMap() {
         map.setZoom(13);
         globalThis.streetAddress = (place.name);
         globalThis.originLoc = place.geometry.location;
+        const id_num = event.feature.getProperty('OBJECTID');
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
@@ -276,7 +277,7 @@ function initMap() {
      const content = `
       <div class="popup">
         <h2>${streetAddress}</h2>
-        <p>blah</p>
+        <p>${id_num}</p>
       </div>
       `;
         infoWindow.setContent(content);
