@@ -167,10 +167,6 @@ function sanitizeHTML(strings) {
 
 function initMap() {
 
-    // Display overlays
-//    document.getElementById("overlay_a").style.display = "block";
-//    document.getElementById("overlay_b").style.display = "block";
-
     // Create the map.
     const map = new google.maps.Map(document.getElementById('map'), {
         zoom: 11,
@@ -237,7 +233,7 @@ function initMap() {
 
     card.setAttribute('id', 'pac-card');
     title.setAttribute('id', 'title');
-    title.textContent = 'Find your nearest vote center';
+    title.textContent = 'Enter your address';
     titleBar.appendChild(title);
     container.setAttribute('id', 'pac-container');
     input.setAttribute('id', 'pac-input');
