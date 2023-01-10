@@ -204,18 +204,7 @@ function initMap() {
     // Display information in a popup when a marker is clicked.
     map.data.addListener('click', (event) => {
         const id_num = event.feature.getProperty('OBJECTID');
-        const content = `
-      <div class="popup">
-        <h2>${id_num}xxx</h2>
-      </div>
-      `;
       console.log(id_num);
-        infoWindow.setContent(content);
-  //      infoWindow.setPosition(dpos);
-        infoWindow.setOptions({
-            pixelOffset: new google.maps.Size(0, -30)
-        });
-        infoWindow.open(map);
     });
 
     // Build and add the search bar
@@ -286,7 +275,7 @@ function initMap() {
 
      const content = `
       <div class="popup">
-        <h2>Blah</h2>
+        <h2>${streetAddress}</h2>
         <p>blah</p>
       </div>
       `;
