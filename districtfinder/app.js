@@ -186,16 +186,14 @@ function initMap() {
         idPropertyName: 'OBJECTID'
     });
 
-  console.log('189 - move on');
-
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
     const infoWindow = new google.maps.InfoWindow();
 
-    // Display information in a popup when a marker is clicked.
+    // Log district number to console when one is clicked
     map.data.addListener('click', (event) => {
-        const id_num = event.feature.getProperty('OBJECTID');
+      const id_num = event.feature.getProperty('OBJECTID');
       console.log(id_num);
     });
 
@@ -260,18 +258,17 @@ function initMap() {
         map.setCenter(originLocation);
         map.setZoom(13);
         const streetAddress = (place.name);
-        globalThis.originLoc = place.geometry.location;
-//        const ward_num = event.feature.getProperty('OBJECTID');
+        const originLoc = place.geometry.location;
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
 
-     const content = `
-      <div class="popup">
+        const content = `
+        <div class="popup">
         <h2>${streetAddress}</h2>
         <p>Blah</p>
-      </div>
-      `;
+        </div>
+        `;
         infoWindow.setContent(content);
         infoWindow.setPosition(originLoc);
         infoWindow.setOptions({
@@ -284,60 +281,4 @@ function initMap() {
 
 }
 
-
-
-/**
- * Build the content of the side panel from the sorted list of stores
- * and display it.
- * @param {google.maps.Data} data The geospatial data object layer for the map
- * @param {object[]} stores An array of objects with a distanceText,
- * distanceVal, and storeid property.
- */
-
-function showList(data, stores) {
-    if (stores.length == 0) {
-        console.log('No centers to display');
-        return;
-    }
-
-    let panel = document.createElement('div');
-    // If the panel already exists, use it. Else, create it and add to the page.
-    if (document.getElementById('panel')) {
-        panel = document.getElementById('panel');
-        // If panel is already open, close it
-        if (panel.classList.contains('open')) {
-            panel.classList.remove('open');
-        }
-    } else {
-        panel.setAttribute('id', 'panel');
-        const body = document.body;
-        body.insertBefore(panel, body.childNodes[0]);
-    }
-
-
-    // Clear the previous details
-    while (panel.lastChild) {
-        panel.removeChild(panel.lastChild);
-    }
-
-    // Let's give this panel a header, shall we? Google's example didn't have one, but here's a way to make one
-    const header = document.createElement('p');
-    header.classList.add('panelHeader');
-    header.textContent = "Vote centers closest to " + streetAddress + ":";
-    panel.appendChild(header);
-
-    // Open the panel
-    panel.classList.add('open');
-
-    return;
-}
-
-function haversine_distance(origin, storeLoc) {
-    const R = 3958.8; // Radius of the Earth in miles
-    const rlat1 = origin.lat() * (Math.PI / 180); // Convert degrees to radians
-    const rlat2 = storeLoc.lat() * (Math.PI / 180); // Convert degrees to radians
-    const difflat = rlat2 - rlat1; // Radian difference (latitudes)
-    const difflon = (storeLoc.lng() - origin.lng()) * (Math.PI / 180); // Radian difference (longitudes)
-    const d = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) + Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)));
-    return d;
-}
+  console.log('284 - move on');
