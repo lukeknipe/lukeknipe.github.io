@@ -289,9 +289,9 @@ function initMap() {
 					console.log(feature.getProperty("WARD")); 
 					
 					if(isInsidePoly){
-						ward = feature.getProperty("WARD")};
+						ward = feature.getProperty("WARD");
 				
-					}
+				}
 			}
 			
 			  
