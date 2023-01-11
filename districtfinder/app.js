@@ -232,7 +232,7 @@ function initMap() {
     autocomplete.setFields(
         ['address_components', 'geometry', 'name']);
 
-    // Set the origin point when the user selects an address
+    // Set marker when the user selects an address
     const originMarker = new google.maps.Marker({
         map: map,
         icon: "./img/locator.png",
@@ -259,6 +259,8 @@ function initMap() {
         map.setZoom(13);
         const streetAddress = (place.name);
         const originLoc = place.geometry.location;
+        const ward = feature.getProperty('OBJECTID');
+
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
@@ -280,5 +282,3 @@ function initMap() {
     });
 
 }
-
-  console.log('284 - move on');
