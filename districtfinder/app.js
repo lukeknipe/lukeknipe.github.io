@@ -273,9 +273,8 @@ function initMap() {
 				console.log(feature.getProperty("WARD")); 
 				if(isInside){
 				
-					ward = feature.getProperty("WARD")};
-			
-				}
+					ward = feature.getProperty("WARD");
+			  }
 				
 			  });
 			}else if(feature.getGeometry().getType() === 'Polygon'){
