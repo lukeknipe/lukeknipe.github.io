@@ -182,8 +182,8 @@ function initMap() {
     });
 
     // Load districts onto map
-    map.data.loadGeoJson('wards.json', {
-        idPropertyName: 'OBJECTID'
+    map.data.loadGeoJson('districts.json', {
+        idPropertyName: 'WARD'
     });
 	
 	
@@ -195,7 +195,7 @@ function initMap() {
 
     // Log district number to console when one is clicked
     map.data.addListener('click', (event) => {
-      const id_num = event.feature.getProperty('OBJECTID');
+      const id_num = event.feature.getProperty('WARD');
       console.log(id_num);
     });
 
@@ -258,13 +258,10 @@ function initMap() {
         // Recenter the map to the selected address
         originLocation = place.geometry.location;
 		
-		
-		
         map.setCenter(originLocation);
         map.setZoom(13);
         const streetAddress = (place.name);
         const originLoc = place.geometry.location;
-//        const ward = event.feature.getProperty('OBJECTID');
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
@@ -289,13 +286,13 @@ function initMap() {
 				var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly)
 				console.log(isInside); 
 				
-				console.log(feature.getProperty("OBJECTID")); 
+				console.log(feature.getProperty("WARD")); 
 				if(isInside){
 				
 					content = `
 					<div class="popup">
 					<h2>${streetAddress}</h2>
-					<p>Ward ${feature.getProperty("OBJECTID")}</p>
+					<p>Ward ${feature.getProperty("WARD")}</p>
 					</div>
 					`;
 			
@@ -312,14 +309,14 @@ function initMap() {
 					var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly)
 					console.log(isInsidePoly); 
 					
-					console.log(feature.getProperty("OBJECTID")); 
+					console.log(feature.getProperty("WARD")); 
 					
 					if(isInsidePoly){
 					
 						content = `
 						<div class="popup">
 						<h2>${streetAddress}</h2>
-						<p>Ward ${feature.getProperty("OBJECTID")}</p>
+						<p>Ward ${feature.getProperty("WARD")}</p>
 						</div>
 						`;
 				
