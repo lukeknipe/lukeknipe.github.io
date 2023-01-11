@@ -256,14 +256,7 @@ function initMap() {
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
-		
-		
-		var content = `
-					<div class="popup">
-					<h2>${streetAddress}</h2>
-					<p>Blah</p>
-					</div>
-					`;
+	    
 		map.data.forEach(function(feature) { 
 		
 			if (feature.getGeometry().getType() === 'MultiPolygon' ) {
@@ -280,12 +273,7 @@ function initMap() {
 				console.log(feature.getProperty("WARD")); 
 				if(isInside){
 				
-					content = `
-					<div class="popup">
-					<h2>${streetAddress}</h2>
-					<p>Ward ${feature.getProperty("WARD")}</p>
-					</div>
-					`;
+					ward = feature.getProperty("WARD")};
 			
 				}
 				
@@ -302,20 +290,20 @@ function initMap() {
 					console.log(feature.getProperty("WARD")); 
 					
 					if(isInsidePoly){
-					
-						content = `
-						<div class="popup">
-						<h2>${streetAddress}</h2>
-						<p>Ward ${feature.getProperty("WARD")}</p>
-						</div>
-						`;
+						ward = feature.getProperty("WARD")};
 				
 					}
 			}
 			
 			  
 		});
-		
+	
+	   	var content = `
+			<div class="popup">
+			<h2>${streetAddress}</h2>
+			<p>${ward}</p>
+			</div>
+			`;
         
         infoWindow.setContent(content);
         infoWindow.setPosition(originLoc);
