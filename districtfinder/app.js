@@ -183,19 +183,12 @@ function initMap() {
 
     // Load districts onto map
     map.data.loadGeoJson('districts.json', {
-//        idPropertyName: 'WARD'
     });
 	
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
     const infoWindow = new google.maps.InfoWindow();
-
-    // Log district number to console when one is clicked
-    map.data.addListener('click', (event) => {
-      const id_num = event.feature.getProperty('WARD');
-      console.log(id_num);
-    });
 
     // Build and add the search bar
     const card = document.createElement('div');
@@ -296,7 +289,6 @@ function initMap() {
 			
 				}
 				
-
 			  });
 			}else if(feature.getGeometry().getType() === 'Polygon'){
 					var polyPath = feature.getGeometry().getAt(0).getArray();
