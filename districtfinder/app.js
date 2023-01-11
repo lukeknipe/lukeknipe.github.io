@@ -297,10 +297,14 @@ function initMap() {
 			  
 		});
 	
+	    if (ward) {
+		    const tucsonWard = `City of Tucson Ward ${ward}`;
+		    }
+	    
 	   	var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
-			<p>${ward}</p>
+			<p>${tucsonWard}</p>
 			</div>
 			`;
         
