@@ -181,20 +181,12 @@ function initMap() {
         }
     });
 
-    // Load the vote centers GeoJSON onto the map
+    // Load districts onto map
     map.data.loadGeoJson('wards.json', {
         idPropertyName: 'OBJECTID'
     });
 
-    // Define the marker icons
-    map.data.setStyle((feature) => {
-        return {
-            icon: {
-                url: `img/${feature.getProperty('marker-symbol')}.png`,
-                //        scaledSize: new google.maps.Size(25, 20),
-            },
-        };
-    });
+  console.log('189 - move on');
 
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
@@ -286,7 +278,7 @@ function initMap() {
             pixelOffset: new google.maps.Size(0, -30)
         });
         infoWindow.open(map);
-            
+
         return;
     });
 
