@@ -295,7 +295,7 @@ function initMap() {
 					content = `
 					<div class="popup">
 					<h2>${streetAddress}</h2>
-					<p>${feature.getProperty("OBJECTID")}</p>
+					<p>Ward ${feature.getProperty("OBJECTID")}</p>
 					</div>
 					`;
 			
@@ -319,7 +319,7 @@ function initMap() {
 						content = `
 						<div class="popup">
 						<h2>${streetAddress}</h2>
-						<p>${feature.getProperty("OBJECTID")}</p>
+						<p>Ward ${feature.getProperty("OBJECTID")}</p>
 						</div>
 						`;
 				
