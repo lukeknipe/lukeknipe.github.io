@@ -259,7 +259,7 @@ function initMap() {
         map.setZoom(13);
         const streetAddress = (place.name);
         const originLoc = place.geometry.location;
-        const ward = location.getProperty('OBJECTID');
+        const ward = feature.getProperty('OBJECTID');
 
 
         originMarker.setPosition(originLocation);
