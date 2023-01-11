@@ -273,7 +273,7 @@ function initMap() {
 				console.log(feature.getProperty("WARD")); 
 				if(isInside){
 				
-					ward = feature.getProperty("WARD");
+					ward = 'City of Tucson Ward '${feature.getProperty("WARD")}';
 			  }
 				
 			  });
@@ -289,7 +289,7 @@ function initMap() {
 					console.log(feature.getProperty("WARD")); 
 					
 					if(isInsidePoly){
-						ward = feature.getProperty("WARD");
+						ward = 'City of Tucson Ward '${feature.getProperty("WARD")}';
 				
 				}
 			}
