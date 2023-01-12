@@ -180,8 +180,6 @@ function initMap() {
             gestureHandling: 'greedy'
         }
     });
-	
-    featureLayer = map.getFeatureLayer("LOCALITY");
 
     // Load City of Tucson wards onto map
     map.data.loadGeoJson('wards.json', {});
