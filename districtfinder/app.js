@@ -182,8 +182,7 @@ function initMap() {
     });
 
     // Load districts onto map
-    map.data.loadGeoJson('districts.json', {
-    });
+    map.data.loadGeoJson('districts.json', {});
 
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
@@ -257,46 +256,48 @@ function initMap() {
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
 
-		map.data.forEach(function(feature) {
+        ward = [];
 
-			if (feature.getGeometry().getType() === 'MultiPolygon' ) {
-			  var array = feature.getGeometry().getArray();
-			  array.forEach(function(item,i){
+        map.data.forEach(function(feature) {
 
-				var coords= item.getAt(0).getArray();
-				var multiPoly = new google.maps.Polygon({
-				  paths: coords
-				});
-				var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+            if (feature.getGeometry().getType() === 'MultiPolygon') {
+                var array = feature.getGeometry().getArray();
+                array.forEach(function(item, i) {
 
-				if(isInside){
-					ward = feature.getProperty("WARD");
-			  }
+                    var coords = item.getAt(0).getArray();
+                    var multiPoly = new google.maps.Polygon({
+                        paths: coords
+                    });
+                    var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
 
-			  });
-			}else if(feature.getGeometry().getType() === 'Polygon'){
-					var polyPath = feature.getGeometry().getAt(0).getArray();
+                    if (isInside) {
+                        ward = feature.getProperty("WARD");
+                    }
 
-				  var poly = new google.maps.Polygon({
-					paths: polyPath
-				  });
-					var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly); 
+                });
+            } else if (feature.getGeometry().getType() === 'Polygon') {
+                var polyPath = feature.getGeometry().getAt(0).getArray();
 
-					if(isInsidePoly){
-						ward = feature.getProperty("WARD");
+                var poly = new google.maps.Polygon({
+                    paths: polyPath
+                });
+                var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
 
-				}
-			}
+                if (isInsidePoly) {
+                    ward = feature.getProperty("WARD");
+
+                }
+            }
 
 
-		});
+        });
 
 
-	    if (ward) {
-		    tucsonWard = `City of Tucson Ward ${ward}`;
-		    }
+        if (ward) {
+            tucsonWard = `City of Tucson Ward ${ward}`;
+        }
 
-	   	var content = `
+        var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
 			<p>${tucsonWard}</p>
