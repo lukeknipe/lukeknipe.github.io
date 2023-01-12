@@ -184,7 +184,7 @@ function initMap() {
     // Load districts onto map
     map.data.loadGeoJson('wards.json', {});
 
-    map.data.loadGeoJson('sup_dist.json', {});
+//    map.data.loadGeoJson('sup_dist.json', {});
 
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
