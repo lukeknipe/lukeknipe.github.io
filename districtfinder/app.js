@@ -377,6 +377,11 @@ function initMap() {
 
         });
 
+	if (sup_dist > 0 && sup_dist < 6) {
+            countyCheck = `<p><b>You vote in:</b></p>`;
+        } else {
+            countyCheck = `You do not vote in Pima County.`;
+        }
 
         if (ward > 0 && ward < 7) {
             tucsonWard = `City of Tucson Ward ${ward}`;
@@ -399,7 +404,7 @@ function initMap() {
         var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
-			<p><b>You vote in:</b></p>
+			${countyCheck}
       			${congDist}<br>
 			${pimaSup}<br>
 			${tucsonWard}<br>
