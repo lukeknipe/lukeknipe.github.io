@@ -205,6 +205,8 @@ function initMap() {
         },
     };
 
+	map.setMap(null);
+	
     card.setAttribute('id', 'pac-card');
     title.setAttribute('id', 'title');
     title.textContent = 'Enter your address';
