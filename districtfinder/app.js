@@ -190,12 +190,16 @@ function initMap() {
         }
     });
 
-    // Load City of Tucson wards onto map
-    map.data.loadGeoJson('wards.json', {});
-
-    // Load Pima supervisor districts onto map
-    map.data.loadGeoJson('sup_dist.json', {});
+    // Load congressional districts onto map
+    map.data.loadGeoJson('cong_dist.json', {});
 	
+    // Load Pima County supervisor districts onto map
+    map.data.loadGeoJson('sup_dist.json', {});
+
+    // Load City of Tucson wards onto map
+    map.data.loadGeoJson('wards.json', {});	
+	
+    // Hide districts on map
     map.data.setStyle({
     fillColor: "none",
     fillOpacity: 0,
@@ -338,6 +342,35 @@ function initMap() {
                 }
             }
 
+		// Find congressional district
+            if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'cong_dist') {
+                var array = feature.getGeometry().getArray();
+                array.forEach(function(item, i) {
+
+                    var coords = item.getAt(0).getArray();
+                    var multiPoly = new google.maps.Polygon({
+                        paths: coords
+                    });
+                    var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
+                    if (isInside) {
+                        sup_dist = feature.getProperty("CONG_DIST");
+                    }
+
+                });
+            } else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'cong_dist') {
+                var polyPath = feature.getGeometry().getAt(0).getArray();
+
+                var poly = new google.maps.Polygon({
+                    paths: polyPath
+                });
+                var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
+
+                if (isInsidePoly) {
+                    sup_dist = feature.getProperty("CONG_DIST");
+
+                }
+            }
 
         });
 
@@ -354,12 +387,18 @@ function initMap() {
             pimaSup = []
         }
 
+        if (cong_dist > 5 && cong_dist < 8) {
+            congDist = `Congressional District ${cong_dist}`;
+        } else {
+            congDist = []
+        }
 
         var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
-      <p>${pimaSup}</p>
+      			<p>${pimaSup}</p>
 			<p>${tucsonWard}</p>
+			<p>${congDist}</p>
 			</div>
 			`;
 
