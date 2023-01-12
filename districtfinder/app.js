@@ -184,7 +184,7 @@ function initMap() {
     // Load districts onto map
     map.data.loadGeoJson('districts.json', {
     });
-	
+
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
@@ -248,7 +248,7 @@ function initMap() {
 
         // Recenter the map to the selected address
         originLocation = place.geometry.location;
-		
+
         map.setCenter(originLocation);
         map.setZoom(13);
         const streetAddress = (place.name);
@@ -256,9 +256,9 @@ function initMap() {
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
-	    
-		map.data.forEach(function(feature) { 
-		
+
+		map.data.forEach(function(feature) {
+
 			if (feature.getGeometry().getType() === 'MultiPolygon' ) {
 			  var array = feature.getGeometry().getArray();
 			  array.forEach(function(item,i){
@@ -267,48 +267,42 @@ function initMap() {
 				var multiPoly = new google.maps.Polygon({
 				  paths: coords
 				});
-				var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly)
-				console.log(isInside); 
-				
-				console.log(feature.getProperty("WARD")); 
+				var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
 				if(isInside){
-				
 					ward = feature.getProperty("WARD");
 			  }
-				
+
 			  });
 			}else if(feature.getGeometry().getType() === 'Polygon'){
 					var polyPath = feature.getGeometry().getAt(0).getArray();
-				
+
 				  var poly = new google.maps.Polygon({
 					paths: polyPath
 				  });
-					var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly)
-					console.log(isInsidePoly); 
-					
-					console.log(feature.getProperty("WARD")); 
-					
+					var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly); 
+
 					if(isInsidePoly){
 						ward = feature.getProperty("WARD");
-				
+
 				}
 			}
-			
-			  
+
+
 		});
-	
-	    
+
+
 	    if (ward) {
 		    tucsonWard = `City of Tucson Ward ${ward}`;
 		    }
-	    
+
 	   	var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
 			<p>${tucsonWard}</p>
 			</div>
 			`;
-        
+
         infoWindow.setContent(content);
         infoWindow.setPosition(originLoc);
         infoWindow.setOptions({
