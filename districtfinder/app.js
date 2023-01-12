@@ -293,9 +293,12 @@ function initMap() {
         });
 
 
-        if (ward) {
+        if (ward > 0 && < 7) {
             tucsonWard = `City of Tucson Ward ${ward}`;
+        } else {
+            tucsonWard = []
         }
+
 
         var content = `
 			<div class="popup">
