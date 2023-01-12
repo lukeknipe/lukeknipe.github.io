@@ -260,7 +260,7 @@ function initMap() {
 
         map.data.forEach(function(feature) {
 
-            if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") = 'ward') {
+            if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'ward') {
                 var array = feature.getGeometry().getArray();
                 array.forEach(function(item, i) {
 
@@ -275,7 +275,7 @@ function initMap() {
                     }
 
                 });
-            } else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") = 'ward') {
+            } else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'ward') {
                 var polyPath = feature.getGeometry().getAt(0).getArray();
 
                 var poly = new google.maps.Polygon({
