@@ -378,7 +378,7 @@ function initMap() {
         });
 
 	if (sup_dist > 0 && sup_dist < 6) {
-            countyCheck = `<p><b>You vote in:</b></p>`;
+            countyCheck = `<p><b>Your districts:</b></p>`;
         } else {
             countyCheck = `You do not vote in Pima County.`;
         }
