@@ -277,9 +277,12 @@ function initMap() {
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
-
+	
+	// Zero out selected districts from previous search
         ward = [];
-
+	sup_dist = [];
+	cong_dist = [];
+	    
         map.data.forEach(function(feature) {
 
           // Find City of Tucson Ward
