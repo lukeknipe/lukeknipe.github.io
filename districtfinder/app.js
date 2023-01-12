@@ -262,6 +262,7 @@ function initMap() {
 
         map.data.forEach(function(feature) {
 
+          // Find City of Tucson Ward
             if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'ward') {
                 var array = feature.getGeometry().getArray();
                 array.forEach(function(item, i) {
@@ -291,6 +292,36 @@ function initMap() {
                 }
             }
 
+            // Find county supervisor district
+            if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'sup_dist') {
+                var array = feature.getGeometry().getArray();
+                array.forEach(function(item, i) {
+
+                    var coords = item.getAt(0).getArray();
+                    var multiPoly = new google.maps.Polygon({
+                        paths: coords
+                    });
+                    var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
+                    if (isInside) {
+                        sup_dist = feature.getProperty("SUP_DIST");
+                    }
+
+                });
+            } else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'sup_dist') {
+                var polyPath = feature.getGeometry().getAt(0).getArray();
+
+                var poly = new google.maps.Polygon({
+                    paths: polyPath
+                });
+                var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
+
+                if (isInsidePoly) {
+                    sup_dist = feature.getProperty("SUP_DIST");
+
+                }
+            }
+
 
         });
 
@@ -301,10 +332,17 @@ function initMap() {
             tucsonWard = []
         }
 
+        if (sup_dist > 0 && ward < 6) {
+            pimaSup = `Pima Supervisor District ${sup_dist}`;
+        } else {
+            pimaSup = []
+        }
+
 
         var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
+      <p>${pimaSup}</p>
 			<p>${tucsonWard}</p>
 			</div>
 			`;
