@@ -179,6 +179,7 @@ function initMap() {
         options: {
             gestureHandling: 'greedy'
         }
+	featureLayer = map.getFeatureLayer("LOCALITY");
     });
 
     // Load City of Tucson wards onto map
@@ -186,7 +187,6 @@ function initMap() {
 
     // Load Pima supervisor districts onto map
     map.data.loadGeoJson('sup_dist.json', {});
-	map.setMap(null);
 
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
