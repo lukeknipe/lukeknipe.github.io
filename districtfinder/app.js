@@ -299,7 +299,7 @@ function initMap() {
 	
 	    
 	    if (ward) {
-		    const tucsonWard = `City of Tucson Ward ${ward}`;
+		    tucsonWard = `City of Tucson Ward ${ward}`;
 		    }
 	    
 	   	var content = `
