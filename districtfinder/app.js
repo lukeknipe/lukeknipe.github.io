@@ -332,7 +332,7 @@ function initMap() {
             tucsonWard = []
         }
 
-        if (sup_dist > 0 && ward < 6) {
+        if (sup_dist > 0 && sup_dist < 6) {
             pimaSup = `Pima Supervisor District ${sup_dist}`;
         } else {
             pimaSup = []
