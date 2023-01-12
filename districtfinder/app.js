@@ -197,8 +197,9 @@ function initMap() {
     map.data.loadGeoJson('sup_dist.json', {});
 	
     map.data.setStyle({
-    fillColor: "green",
-    strokeWeight: 1,
+    fillColor: "none",
+    fillOpacity: 0,
+    strokeOpacity: 0
     });
 
     // Define API key
