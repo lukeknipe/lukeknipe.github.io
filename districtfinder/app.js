@@ -181,6 +181,9 @@ function initMap() {
         }
     });
 
+    // Load districts onto map
+    map.data.loadGeoJson('wards.json', {});
+
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
 
@@ -254,9 +257,6 @@ function initMap() {
         originMarker.setVisible(true);
 
         ward = [];
-
-        // Load districts onto map
-        map.data.loadGeoJson('wards.json', {});
 
         map.data.forEach(function(feature) {
 
