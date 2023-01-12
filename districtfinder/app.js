@@ -195,6 +195,11 @@ function initMap() {
 
     // Load Pima supervisor districts onto map
     map.data.loadGeoJson('sup_dist.json', {});
+	
+    map.data.setStyle({
+    fillColor: "green",
+    strokeWeight: 1,
+    });
 
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
