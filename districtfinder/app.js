@@ -396,9 +396,9 @@ function initMap() {
         var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
-      			<p>${pimaSup}</p>
-			<p>${tucsonWard}</p>
-			<p>${congDist}</p>
+      			${pimaSup}<br>
+			${tucsonWard}<br>
+			${congDist}<br>
 			</div>
 			`;
 
