@@ -297,7 +297,6 @@ function initMap() {
 			  
 		});
 	
-	    const tucsonWard = [];
 	    
 	    if (ward) {
 		    const tucsonWard = `City of Tucson Ward ${ward}`;
