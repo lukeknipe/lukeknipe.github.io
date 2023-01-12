@@ -226,12 +226,12 @@ function initMap() {
 	
     card.setAttribute('id', 'pac-card');
     title.setAttribute('id', 'title');
-    title.textContent = 'Enter your address';
+    title.textContent = 'Pima County Voting District Finder';
     titleBar.appendChild(title);
     container.setAttribute('id', 'pac-container');
     input.setAttribute('id', 'pac-input');
     input.setAttribute('type', 'text');
-    input.setAttribute('placeholder', 'Enter an address');
+    input.setAttribute('placeholder', 'Enter your address');
     container.appendChild(input);
     card.appendChild(titleBar);
     card.appendChild(container);
