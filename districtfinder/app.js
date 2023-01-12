@@ -181,9 +181,10 @@ function initMap() {
         }
     });
 
-    // Load districts onto map
+    // Load City of Tucson wards onto map
     map.data.loadGeoJson('wards.json', {});
 
+    // Load Pima supervisor districts onto map
     map.data.loadGeoJson('sup_dist.json', {});
 
     // Define API key
