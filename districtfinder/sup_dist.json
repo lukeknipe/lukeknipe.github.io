@@ -4,7 +4,8 @@
     {
       "type": "Feature",
       "properties": {
-        "SUP_DIST": 5
+        "SUP_DIST": 5,
+        "TYPE": "sup_dist"
       },
       "geometry": {
         "type": "Polygon",
@@ -11537,7 +11538,8 @@
     {
       "type": "Feature",
       "properties": {
-        "SUP_DIST": 2
+        "SUP_DIST": 2,
+        "TYPE": "sup_dist"
       },
       "geometry": {
         "type": "Polygon",
@@ -26318,7 +26320,8 @@
     {
       "type": "Feature",
       "properties": {
-        "SUP_DIST": 1
+        "SUP_DIST": 1,
+        "TYPE": "sup_dist"
       },
       "geometry": {
         "type": "Polygon",
@@ -34351,7 +34354,8 @@
     {
       "type": "Feature",
       "properties": {
-        "SUP_DIST": 3
+        "SUP_DIST": 3,
+        "TYPE": "sup_dist"
       },
       "geometry": {
         "type": "Polygon",
@@ -55884,7 +55888,8 @@
     {
       "type": "Feature",
       "properties": {
-        "SUP_DIST": 4
+        "SUP_DIST": 4,
+        "TYPE": "sup_dist"
       },
       "geometry": {
         "type": "Polygon",
