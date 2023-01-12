@@ -354,7 +354,7 @@ function initMap() {
                     var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
 
                     if (isInside) {
-                        sup_dist = feature.getProperty("CONG_DIST");
+                        cong_dist = feature.getProperty("CONG_DIST");
                     }
 
                 });
@@ -367,7 +367,7 @@ function initMap() {
                 var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
 
                 if (isInsidePoly) {
-                    sup_dist = feature.getProperty("CONG_DIST");
+                    cong_dist = feature.getProperty("CONG_DIST");
 
                 }
             }
