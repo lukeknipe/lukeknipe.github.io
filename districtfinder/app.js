@@ -25,6 +25,15 @@ const mapStyle = [{
             }
         ]
     },
+		  {
+        "featureType": "administrative.locality",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
     {
         "featureType": "administrative.neighborhood",
         "stylers": [{
