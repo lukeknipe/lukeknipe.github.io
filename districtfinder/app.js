@@ -182,7 +182,7 @@ function initMap() {
     });
 
     // Load districts onto map
-    map.data.loadGeoJson('districts.json', {});
+    map.data.loadGeoJson('wards.json', {});
 
     // Define API key
     const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
