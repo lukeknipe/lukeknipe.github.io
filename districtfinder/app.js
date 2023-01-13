@@ -192,13 +192,16 @@ function initMap() {
 
     // Load congressional districts onto map
     map.data.loadGeoJson('cong_dist.json', {});
-	
+
+    // Load legislative districts onto map
+    map.data.loadGeoJson('leg_dist.json', {});
+
     // Load Pima County supervisor districts onto map
     map.data.loadGeoJson('sup_dist.json', {});
 
     // Load City of Tucson wards onto map
-    map.data.loadGeoJson('wards.json', {});	
-	
+    map.data.loadGeoJson('wards.json', {});
+
     // Hide districts on map
     map.data.setStyle({
     fillColor: "none",
@@ -223,7 +226,7 @@ function initMap() {
             country: 'us'
         },
     };
-	
+
     card.setAttribute('id', 'pac-card');
     title.setAttribute('id', 'title');
     title.textContent = 'Pima County Voting District Finder';
@@ -277,12 +280,12 @@ function initMap() {
 
         originMarker.setPosition(originLocation);
         originMarker.setVisible(true);
-	
+
 	// Zero out selected districts from previous search
         ward = [];
 	sup_dist = [];
 	cong_dist = [];
-	    
+
         map.data.forEach(function(feature) {
 
           // Find City of Tucson Ward
@@ -375,6 +378,36 @@ function initMap() {
                 }
             }
 
+            // Find legislative district
+                    if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'leg_dist') {
+                        var array = feature.getGeometry().getArray();
+                        array.forEach(function(item, i) {
+
+                            var coords = item.getAt(0).getArray();
+                            var multiPoly = new google.maps.Polygon({
+                                paths: coords
+                            });
+                            var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
+                            if (isInside) {
+                                leg_dist = feature.getProperty("LEG_DIST");
+                            }
+
+                        });
+                    } else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'leg_dist') {
+                        var polyPath = feature.getGeometry().getAt(0).getArray();
+
+                        var poly = new google.maps.Polygon({
+                            paths: polyPath
+                        });
+                        var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
+
+                        if (isInsidePoly) {
+                            leg_dist = feature.getProperty("LEG_DIST");
+
+                        }
+                    }
+
         });
 
 	if (sup_dist > 0 && sup_dist < 6) {
@@ -401,14 +434,21 @@ function initMap() {
             congDist = []
         }
 
+        if (leg_dist > 15 && leg_dist < 24) {
+            congDist = `Legislative District ${leg_dist}`;
+        } else {
+            legDist = []
+        }
+
         var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
 			${countyCheck}
-      			${congDist}<br>
+      ${congDist}<br>
+      ${legDist}<br>
 			${pimaSup}<br>
 			${tucsonWard}<br>
-			
+
 			</div>
 			`;
 
