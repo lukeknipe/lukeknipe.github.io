@@ -282,9 +282,10 @@ function initMap() {
         originMarker.setVisible(true);
 
 	// Zero out selected districts from previous search
-        ward = [];
+  ward = [];
 	sup_dist = [];
 	cong_dist = [];
+  leg_dist = [];
 
         map.data.forEach(function(feature) {
 
@@ -435,7 +436,7 @@ function initMap() {
         }
 
         if (leg_dist > 15 && leg_dist < 24) {
-            congDist = `Legislative District ${leg_dist}`;
+            legDist = `Legislative District ${leg_dist}`;
         } else {
             legDist = []
         }
