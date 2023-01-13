@@ -203,6 +203,9 @@ function initMap() {
 	// Load other incorporated jurisdictions onto map
 	map.data.loadGeoJson('incorp.json', {});
 
+	// Load school districts onto map
+	map.data.loadGeoJson('sch_dist.json', {});
+	
 	// Hide districts on map
 	map.data.setStyle({
 		fillColor: "none",
