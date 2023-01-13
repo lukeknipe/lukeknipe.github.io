@@ -202,6 +202,9 @@ function initMap() {
     // Load City of Tucson wards onto map
     map.data.loadGeoJson('wards.json', {});
 
+    // Load other incorporated jurisdictions onto map
+    map.data.loadGeoJson('incorp.json', {});
+
     // Hide districts on map
     map.data.setStyle({
     fillColor: "none",
@@ -286,6 +289,7 @@ function initMap() {
 	sup_dist = [];
 	cong_dist = [];
   leg_dist = [];
+  incorp = [];
 
         map.data.forEach(function(feature) {
 
@@ -409,6 +413,36 @@ function initMap() {
                         }
                     }
 
+                    // Find incorporated areas other than Tucson
+                            if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'incorp') {
+                                var array = feature.getGeometry().getArray();
+                                array.forEach(function(item, i) {
+
+                                    var coords = item.getAt(0).getArray();
+                                    var multiPoly = new google.maps.Polygon({
+                                        paths: coords
+                                    });
+                                    var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
+                                    if (isInside) {
+                                        incorp = feature.getProperty("INCORP");
+                                    }
+
+                                });
+                            } else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'incorp') {
+                                var polyPath = feature.getGeometry().getAt(0).getArray();
+
+                                var poly = new google.maps.Polygon({
+                                    paths: polyPath
+                                });
+                                var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
+
+                                if (isInsidePoly) {
+                                    incorp = feature.getProperty("INCORP");
+
+                                }
+                            }
+
         });
 
 	if (sup_dist > 0 && sup_dist < 6) {
@@ -441,6 +475,12 @@ function initMap() {
             legDist = []
         }
 
+        if (incorp) {
+            otherIncorp = incorp;
+        } else {
+            otherIncorp = []
+        }
+
         var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
@@ -449,6 +489,7 @@ function initMap() {
       ${legDist}<br>
 			${pimaSup}<br>
 			${tucsonWard}<br>
+      ${otherIncorp}<br>
 
 			</div>
 			`;

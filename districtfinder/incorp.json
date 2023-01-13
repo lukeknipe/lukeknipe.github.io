@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "TYPE": "incorp",
-        "INCORP": "Sahuarita"
+        "INCORP": "Town of Sahuarita"
       },
       "geometry": {
         "type": "Polygon",
@@ -3423,7 +3423,7 @@
       "type": "Feature",
       "properties": {
         "TYPE": "incorp",
-        "INCORP": "Oro Valley"
+        "INCORP": "Town of Oro Valley"
       },
       "geometry": {
         "type": "Polygon",
@@ -15171,7 +15171,7 @@
       "type": "Feature",
       "properties": {
         "TYPE": "incorp",
-        "INCORP": "South Tucson"
+        "INCORP": "City of South Tucson"
       },
       "geometry": {
         "type": "Polygon",
@@ -16577,7 +16577,7 @@
       "type": "Feature",
       "properties": {
         "TYPE": "incorp",
-        "INCORP": "Marana"
+        "INCORP": "Town of Marana"
       },
       "geometry": {
         "type": "Polygon",
