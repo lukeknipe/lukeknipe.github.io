@@ -288,6 +288,7 @@ function initMap() {
 		cong_dist = [];
 		leg_dist = [];
 		incorp = [];
+		sch_dist = [];
 
 		map.data.forEach(function(feature) {
 
@@ -440,9 +441,40 @@ function initMap() {
 
 				}
 			}
+			
+			// Find school district
+			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'sch_dist') {
+				var array = feature.getGeometry().getArray();
+				array.forEach(function(item, i) {
+
+					var coords = item.getAt(0).getArray();
+					var multiPoly = new google.maps.Polygon({
+						paths: coords
+					});
+					var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
+					if (isInside) {
+						sch_dist = feature.getProperty("SCH_DIST");
+					}
+
+				});
+			} else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'sch_dist') {
+				var polyPath = feature.getGeometry().getAt(0).getArray();
+
+				var poly = new google.maps.Polygon({
+					paths: polyPath
+				});
+				var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
+
+				if (isInsidePoly) {
+					sch_dist = feature.getProperty("SCH_DIST");
+
+				}
+			}
 
 		});
-
+                
+		// Build our pop-up info
 		if (sup_dist > 0 && sup_dist < 6) {
 			countyCheck = `<p><b>Your districts:</b></p>`;
 		} else {
@@ -478,17 +510,23 @@ function initMap() {
 		} else {
 			otherIncorp = []
 		}
+		
+		if (sch_dist) {
+			schDist = `${sch_dist}<br>`;
+		} else {
+			schDist = []
+		}
 
 		var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
 			${countyCheck}
-      ${congDist}
-      ${legDist}
+      			${congDist}
+      			${legDist}
 			${pimaSup}
 			${tucsonWard}
-      ${otherIncorp}
-
+      			${otherIncorp}
+			${schDist}
 			</div>
 			`;
 
