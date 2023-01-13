@@ -508,7 +508,7 @@ function initMap() {
 			legDist = []
 		}
 
-		if (incorp = "City of South Tucson" || "Town of Marana" || "Town of Sahuarita" || "Town of Oro Valley") {
+		if (incorp == "City of South Tucson" || incorp == "Town of Marana" || incorp == "Town of Sahuarita" || incorp == "Town of Oro Valley") {
 			otherIncorp = `${incorp}<br>`;
 		} else {
 			otherIncorp = []
