@@ -452,31 +452,31 @@ function initMap() {
         }
 
         if (ward > 0 && ward < 7) {
-            tucsonWard = `City of Tucson Ward ${ward}`;
+            tucsonWard = `City of Tucson Ward ${ward}<br>`;
         } else {
             tucsonWard = []
         }
 
         if (sup_dist > 0 && sup_dist < 6) {
-            pimaSup = `Pima Supervisor District ${sup_dist}`;
+            pimaSup = `Pima Supervisor District ${sup_dist}<br>`;
         } else {
             pimaSup = []
         }
 
         if (cong_dist > 5 && cong_dist < 8) {
-            congDist = `Congressional District ${cong_dist}`;
+            congDist = `Congressional District ${cong_dist}<br>`;
         } else {
             congDist = []
         }
 
         if (leg_dist > 15 && leg_dist < 24) {
-            legDist = `Legislative District ${leg_dist}`;
+            legDist = `Legislative District ${leg_dist}<br>`;
         } else {
             legDist = []
         }
 
         if (incorp) {
-            otherIncorp = incorp;
+            otherIncorp = `${incorp}<br>`;
         } else {
             otherIncorp = []
         }
@@ -485,11 +485,11 @@ function initMap() {
 			<div class="popup">
 			<h2>${streetAddress}</h2>
 			${countyCheck}
-      ${congDist}<br>
-      ${legDist}<br>
-			${pimaSup}<br>
-			${tucsonWard}<br>
-      ${otherIncorp}<br>
+      ${congDist}
+      ${legDist}
+			${pimaSup}
+			${tucsonWard}
+      ${otherIncorp}
 
 			</div>
 			`;
