@@ -205,7 +205,10 @@ function initMap() {
 
 	// Load school districts onto map
 	map.data.loadGeoJson('sch_dist.json', {});
-	
+
+	// Load voting precincts onto map
+	map.data.loadGeoJson('precincts.json', {});
+
 	// Hide districts on map
 	map.data.setStyle({
 		fillColor: "none",
@@ -444,7 +447,7 @@ function initMap() {
 
 				}
 			}
-			
+
 			// Find school district
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'sch_dist') {
 				var array = feature.getGeometry().getArray();
@@ -475,8 +478,38 @@ function initMap() {
 				}
 			}
 
+			// Find voting precinct
+			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'precinct') {
+				var array = feature.getGeometry().getArray();
+				array.forEach(function(item, i) {
+
+					var coords = item.getAt(0).getArray();
+					var multiPoly = new google.maps.Polygon({
+						paths: coords
+					});
+					var isInside = google.maps.geometry.poly.containsLocation(originLocation, multiPoly);
+
+					if (isInside) {
+						precinct = feature.getProperty("PRECINCT");
+					}
+
+				});
+			} else if (feature.getGeometry().getType() === 'Polygon' && feature.getProperty("TYPE") == 'precinct') {
+				var polyPath = feature.getGeometry().getAt(0).getArray();
+
+				var poly = new google.maps.Polygon({
+					paths: polyPath
+				});
+				var isInsidePoly = google.maps.geometry.poly.containsLocation(originLocation, poly);
+
+				if (isInsidePoly) {
+					precinct = feature.getProperty("PRECINCT");
+
+				}
+			}
+
 		});
-                
+
 		// Build our pop-up info
 		if (sup_dist > 0 && sup_dist < 6) {
 			countyCheck = `<p><b>Your districts:</b></p>`;
@@ -513,22 +546,29 @@ function initMap() {
 		} else {
 			otherIncorp = []
 		}
-		
+
 		if (sch_dist) {
 			schDist = `${sch_dist}<br>`;
 		} else {
 			schDist = []
 		}
 
+		if (precinct) {
+			votingPrecinct = `<p><b>Your precinct: </b>${precinct}<br>`;
+		} else {
+			votingPrecinct = []
+		}
+
 		var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
+		  ${votingPrecinct}
 			${countyCheck}
-      			${congDist}
-      			${legDist}
+      ${congDist}
+      ${legDist}
 			${pimaSup}
 			${tucsonWard}
-      			${otherIncorp}
+      ${otherIncorp}
 			${schDist}
 			</div>
 			`;
