@@ -220,6 +220,7 @@ function initMap() {
   var county = feature.getProperty('TYPE');
   var color = '';
 
+map.data.forEach(function(feature) {
   if ( TYPE === 'ward' ) {
     color = 'orange'
   }
@@ -232,6 +233,7 @@ function initMap() {
     strokeWeight: 1
   };
 });
+}
 
 	// Define API key
 	const apiKey = 'AIzaSyA09BCz4Abyu7GMF_jnLa7Ds1N9iRbxAnI';
