@@ -585,9 +585,8 @@ function initMap() {
 
 }
 
+
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	document.getElementById("map").strokeOpacity = 1;
 	}
-
-}
