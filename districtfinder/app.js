@@ -561,9 +561,9 @@ function initMap() {
 
 		var content = `
 			<div class="popup">
-			<h2>${streetAddress}</h2>
+			<h2 id="county" onclick="test()>${streetAddress}</h2>
 		  ${votingPrecinct}
-			<span id="county" onclick="test()">${countyCheck}<id>
+			${countyCheck}
       ${congDist}
       ${legDist}
 			${pimaSup}
