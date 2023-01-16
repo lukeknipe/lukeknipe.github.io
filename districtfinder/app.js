@@ -561,10 +561,10 @@ function initMap() {
 
 		var content = `
 			<div class="popup">
-			<h2 id="county" onclick="test()">${streetAddress}</h2>
+			<h2>${streetAddress}</h2>
 		  ${votingPrecinct}
 			${countyCheck}
-      ${congDist}
+      <span id="cong"" onclick="congLite()">${congDist}</span>
       ${legDist}
 			${pimaSup}
 			${tucsonWard}
@@ -585,6 +585,6 @@ function initMap() {
 
 }
 
-function test() {
-  document.getElementById("county").style.color = "red";
+function congLite() {
+  document.getElementById("cong").style.color = "red";
 }
