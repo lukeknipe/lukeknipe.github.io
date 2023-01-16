@@ -563,7 +563,7 @@ function initMap() {
 			<div class="popup">
 			<h2>${streetAddress}</h2>
 		  ${votingPrecinct}
-			${countyCheck}
+			<span id="county" onclick="test()">${countyCheck}<id>
       ${congDist}
       ${legDist}
 			${pimaSup}
@@ -583,4 +583,8 @@ function initMap() {
 		return;
 	});
 
+}
+
+function test() {
+  document.getElementById("county").style.color = "red";
 }
