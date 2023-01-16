@@ -583,11 +583,11 @@ function initMap() {
 		return;
 	});
 
-}
+	function congLite() {
+	  document.getElementById("cong").style.color = "red";
+		map.data.overrideStyle({
+			strokeOpacity: 1
+		});
+	}
 
-function congLite() {
-  document.getElementById("cong").style.color = "red";
-	map.data.overrideStyle({
-		strokeOpacity: 1
-	});
 }
