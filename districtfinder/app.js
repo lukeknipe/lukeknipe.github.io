@@ -587,7 +587,7 @@ function initMap() {
 
 function congLite() {
   document.getElementById("cong").style.color = "red";
-	map.data.setStyle({
+	featureLayer.style = {
 		strokeOpacity: 1
-	});
+	};
 }
