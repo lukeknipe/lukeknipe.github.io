@@ -561,7 +561,7 @@ function initMap() {
 
 		var content = `
 			<div class="popup">
-			<h2 id="county" onclick="test()>${streetAddress}</h2>
+			<h2 id="county" onclick="test()">${streetAddress}</h2>
 		  ${votingPrecinct}
 			${countyCheck}
       ${congDist}
