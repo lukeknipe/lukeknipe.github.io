@@ -219,7 +219,7 @@ function initMap() {
 	map.data.setStyle( function ( feature ) {
   var county = feature.getProperty('TYPE');
   var color = '';
-};
+)};
 
 map.data.forEach(function(feature) {
   if ( TYPE === 'ward' ) {
