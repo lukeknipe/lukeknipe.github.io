@@ -592,6 +592,6 @@ function congLite() {
 	console.log(cong_dist);
 	
 	map.data.revertStyle();
-	map.data.overrideStyle(function.feature, {strokeWeight: 8});
+	map.data.overrideStyle(feature, {strokeWeight: 8});
 	
 	}
