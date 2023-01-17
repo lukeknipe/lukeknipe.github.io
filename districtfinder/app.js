@@ -563,13 +563,13 @@ function initMap() {
 		var content = `
 			<div class="popup">
 			<h2>${streetAddress}</h2>
-		  ${votingPrecinct}
+			${votingPrecinct}
 			${countyCheck}
-      <span id="cong"" onclick="congLite()">${congDist}</span>
-      ${legDist}
+      			<span id="cong" onclick="congLite(cong_dist)">${congDist}</span>
+      			${legDist}
 			${pimaSup}
 			${tucsonWard}
-      ${otherIncorp}
+      			${otherIncorp}
 			${schDist}
 			</div>
 			`;
@@ -589,4 +589,5 @@ function initMap() {
 
 function congLite() {
 	document.getElementById("cong").style.color = "red";
+	console.log(cong_dist);
 	}
