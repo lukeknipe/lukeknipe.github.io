@@ -192,7 +192,7 @@ function initMap() {
 	// Load Pima County supervisor districts onto map
 	map.data.loadGeoJson('sup_dist.json', {});
 
-	data_layer.overrideStyle(new_boundary.feature, {
+	map.overrideStyle(new_boundary.feature, {
 	    fillColor: '#0000FF',
 	    fillOpacity: 0.9
 	});
