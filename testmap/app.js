@@ -199,6 +199,5 @@ function initMap() {
 
 
 		return;
-	});
 
 }
