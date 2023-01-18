@@ -589,6 +589,6 @@ function initMap() {
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
-	map.setZoom(15);
+	new google.maps.setZoom(15);
 
 	}
