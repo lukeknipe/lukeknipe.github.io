@@ -590,8 +590,6 @@ function initMap() {
 function congLite(map) {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
-
-	map.data.revertStyle();
-	map.data.overrideStyle(feature, {strokeWeight: 8});
+	map.data.overrideStyle(event.feature, {strokeWeight: 8});
 
 	}
