@@ -195,6 +195,7 @@ function initMap() {
 	map.data.addListener('mouseover', function(event) {
 	  map.data.revertStyle();
 	  map.data.overrideStyle(event.feature, {strokeWeight: 8});
+		console.log(event);
 	});
 
 	map.data.addListener('mouseout', function(event) {
