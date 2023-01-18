@@ -586,10 +586,8 @@ function initMap() {
 
 }
 
-function congLite(initMap) {
+function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
-	map.setZoom(13);
 
-	return;
 	}
