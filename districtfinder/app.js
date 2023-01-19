@@ -509,7 +509,7 @@ function initMap() {
 				}
 			}
 
-			map.data.overrideStyle(feature, {strokeWeight: 8});
+			map.data.overrideStyle(feature.getProperty("PRECINCT"), {strokeWeight: 8});
 
 
 		});
