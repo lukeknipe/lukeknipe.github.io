@@ -566,7 +566,7 @@ function initMap() {
 			<h2>${streetAddress}</h2>
 			${votingPrecinct}
 			${countyCheck}
-      			<span id="cong" onclick="congLite(cong_dist, feature)">${congDist}</span>
+      			<span id="cong" onclick="congLite(cong_dist)">${congDist}</span>
       			${legDist}
 			${pimaSup}
 			${tucsonWard}
@@ -592,6 +592,6 @@ function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
 
-map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+map.data.overrideStyle(feature.getProperty("CONG_DIST"), {strokeOpacity: 1, strokeWeight: 8});
 
 	}
