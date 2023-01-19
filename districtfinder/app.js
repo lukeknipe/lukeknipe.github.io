@@ -509,8 +509,7 @@ function initMap() {
 				}
 			}
 
-			map.data.overrideStyle(feature.getProperty("PRECINCT"), {strokeOpacity: 1, strokeWeight: 8});
-// map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+			map.data.overrideStyle(feature.getProperty("CONG_DIST"), {strokeOpacity: 1, strokeWeight: 8});
 
 		});
 
