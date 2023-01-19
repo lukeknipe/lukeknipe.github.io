@@ -201,7 +201,7 @@ function initMap() {
 
 	map.data.addListener('mouseover', function(event) {
 	  map.data.revertStyle();
-	  map.data.overrideStyle(event.feature, {strokeWeight: 8});
+	  map.data.overrideStyle(event.feature, {strokeOpacity: 1, strokeWeight: 8});
 		console.log(event);
 	});
 
