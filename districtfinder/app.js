@@ -574,7 +574,9 @@ function initMap() {
 			</div>
 			`;
 
+		map.data.forEach(function(feature) {
 map.data.overrideStyle(event.feature, {strokeWeight: 8});
+};
 
 		infoWindow.setContent(content);
 		infoWindow.setPosition(originLoc);
