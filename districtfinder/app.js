@@ -389,8 +389,6 @@ function initMap() {
 				}
 			}
 
-			map.data.overrideStyle(feature.getProperty("CONG_DIST"), {strokeOpacity: 1, strokeWeight: 8});
-
 			// Find legislative district
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'leg_dist') {
 				var array = feature.getGeometry().getArray();
@@ -593,5 +591,7 @@ function initMap() {
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
+
+map.data.overrideStyle(feature), {strokeOpacity: 1, strokeWeight: 8});
 
 	}
