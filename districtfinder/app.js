@@ -509,8 +509,15 @@ function initMap() {
 				}
 			}
 
-
 		});
+
+
+map.data.forEach(function(feature) {
+	if (feature.getProperty("CONG_DIST") == 7) {
+		map.data.overrideStyle(feature.getProperty("CONG_DIST"), {strokeOpacity: 1, strokeWeight: 8});
+	}
+	}
+
 
 		// Build our pop-up info
 		if (sup_dist > 0 && sup_dist < 6) {
@@ -591,7 +598,5 @@ function initMap() {
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
-
-map.data.overrideStyle(feature.getProperty("CONG_DIST"), {strokeOpacity: 1, strokeWeight: 8});
 
 	}
