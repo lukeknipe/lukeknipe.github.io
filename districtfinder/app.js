@@ -516,7 +516,7 @@ map.data.forEach(function(feature) {
 	if (feature.getProperty("CONG_DIST") == 7) {
 		map.data.overrideStyle(feature.getProperty("CONG_DIST"), {strokeOpacity: 1, strokeWeight: 8});
 	}
-	}
+});
 
 
 		// Build our pop-up info
