@@ -512,11 +512,11 @@ function initMap() {
 		});
 
 
-map.data.forEach(function(feature) {
-	if (feature.getProperty("CONG_DIST") == cong_dist) {
-		map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-	}
-});
+// map.data.forEach(function(feature) {
+// if (feature.getProperty("CONG_DIST") == cong_dist) {
+// map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+// }
+// });
 
 
 		// Build our pop-up info
@@ -598,5 +598,11 @@ map.data.forEach(function(feature) {
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
+
+	map.data.forEach(function(feature) {
+	if (feature.getProperty("CONG_DIST") == cong_dist) {
+	map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+	}
+	});
 
 	}
