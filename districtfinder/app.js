@@ -594,11 +594,11 @@ if (showDist) {
 
 }
 
-function congLite(initMap) {
+function congLite() {
 
 	console.log(cong_dist);
 	console.log(map);
-	const showDist=1;
+	globalThis.showDist=1;
 	return;
 	
 	// map.data.forEach(function(feature) {
