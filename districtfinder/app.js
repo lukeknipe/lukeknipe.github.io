@@ -513,15 +513,6 @@ function initMap() {
 
 		});
 
-console.log(showDist);
-if (showDist == 1) {
- map.data.forEach(function(feature) {
- if (feature.getProperty("CONG_DIST") == cong_dist) {
- map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
- }
- });
-}
-
 		// Build our pop-up info
 		if (sup_dist > 0 && sup_dist < 6) {
 			countyCheck = `<p><b>Your districts:</b></p>`;
@@ -600,9 +591,6 @@ if (showDist == 1) {
 function congLite() {
 
 	console.log(cong_dist);
-	console.log(map);
-	globalThis.showDist=1;
-	return;
 	
 	// map.data.forEach(function(feature) {
 // if (feature.getProperty("CONG_DIST") == cong_dist) {
