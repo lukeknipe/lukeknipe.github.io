@@ -607,4 +607,6 @@ function congLite() {
 
 map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
 
+return this;
+
 	}
