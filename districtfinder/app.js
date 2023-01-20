@@ -599,6 +599,7 @@ function congLite(initMap) {
 	console.log(cong_dist);
 	console.log(map);
 	const showDist=1;
+	return;
 	
 	// map.data.forEach(function(feature) {
 // if (feature.getProperty("CONG_DIST") == cong_dist) {
