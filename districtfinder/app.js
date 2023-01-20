@@ -598,7 +598,7 @@ function initMap() {
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	document.getElementById('map'), {
-		setZoom(15);
+		setZoom(15); 
 }
 	
 //	map.data.forEach(function(feature) {
