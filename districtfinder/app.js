@@ -107,7 +107,7 @@ const mapStyle = [{
 		}]
 	},
 	{
-		"featureType": "poi.government",
+		"featureType": "poi.government",S
 		"stylers": [{
 			"visibility": "off"
 		}]
@@ -513,6 +513,7 @@ function initMap() {
 
 		});
 
+console.log(showDist);
 if (showDist == 1) {
  map.data.forEach(function(feature) {
  if (feature.getProperty("CONG_DIST") == cong_dist) {
