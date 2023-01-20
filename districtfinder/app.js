@@ -598,5 +598,6 @@ function congLite() {
 
 	console.log(cong_dist);
 	console.log(map);
+	map.setZoom(15);
 
 }
