@@ -107,7 +107,7 @@ const mapStyle = [{
 		}]
 	},
 	{
-		"featureType": "poi.government",S
+		"featureType": "poi.government",
 		"stylers": [{
 			"visibility": "off"
 		}]
