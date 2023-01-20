@@ -596,6 +596,7 @@ function initMap() {
 
 function congLite() {
 
-	console.log(cong_dist)
+	console.log(cong_dist);
+	console.log(map);
 
 }
