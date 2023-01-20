@@ -511,13 +511,13 @@ function initMap() {
 
 		});
 
-
-// map.data.forEach(function(feature) {
-// if (feature.getProperty("CONG_DIST") == cong_dist) {
-// map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-// }
-// });
-
+if (showDist) {
+ map.data.forEach(function(feature) {
+ if (feature.getProperty("CONG_DIST") == cong_dist) {
+ map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+ }
+ });
+}
 
 		// Build our pop-up info
 		if (sup_dist > 0 && sup_dist < 6) {
@@ -594,9 +594,16 @@ function initMap() {
 
 }
 
-function congLite() {
+function congLite(initMap) {
 
 	console.log(cong_dist);
 	console.log(map);
+	const showDist=1;
+	
+	// map.data.forEach(function(feature) {
+// if (feature.getProperty("CONG_DIST") == cong_dist) {
+// map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+// }
+// });
 
 }
