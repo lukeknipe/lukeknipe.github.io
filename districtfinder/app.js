@@ -172,7 +172,7 @@ function sanitizeHTML(strings) {
 
 // Initialize the map.
 
-function initMap() {
+function initMap(congLite) {
 
 	// Create the map.
 	const map = new google.maps.Map(document.getElementById('map'), {
