@@ -172,7 +172,7 @@ function sanitizeHTML(strings) {
 
 // Initialize the map.
 
-function initMap(congLite) {
+function initMap() {
 
 	// Create the map.
 	const map = new google.maps.Map(document.getElementById('map'), {
@@ -595,8 +595,12 @@ function initMap(congLite) {
 
 }
 
-function congLite(map) {
+function congLite() {
 	document.getElementById("cong").style.color = "red";
+	document.getElementById('map'), {
+		map.setZoom(13);
+}
+		
 	console.log(cong_dist);
 
 //	map.data.forEach(function(feature) {
