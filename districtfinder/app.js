@@ -600,7 +600,6 @@ map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
 
 });
 
-)}
 
 function congLite() {
 	document.getElementById("cong").style.color = "red";
