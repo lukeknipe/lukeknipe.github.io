@@ -589,7 +589,7 @@ function initMap() {
 		});
 		infoWindow.open(map);
 
-		document.getElementById("cong").addEventListener("click", (event) => {
+		document.getElementById("cong").addEventListener("click", => {
 		map.data.forEach(function(feature) {
 		if (feature.getProperty("CONG_DIST") == cong_dist) {
 		map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
