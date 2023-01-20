@@ -595,7 +595,7 @@ document.getElementById("cong").addEventListener("click", (event) => {
 map.data.forEach(function(feature) {
 if (feature.getProperty("CONG_DIST") == cong_dist) {
 map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-})
+}
 });
 
 });
