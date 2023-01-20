@@ -592,6 +592,7 @@ function initMap() {
 		return;
 });
 
+}
 
 // document.getElementById("cong").addEventListener("click", (event) => {
 // map.data.forEach(function(feature) {
