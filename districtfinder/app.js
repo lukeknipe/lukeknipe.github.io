@@ -573,7 +573,7 @@ function initMap() {
 			<h2>${streetAddress}</h2>
 			${votingPrecinct}
 			${countyCheck}
-      			<span id="cong" onclick="congLite(cong_dist)">${congDist}</span>
+      			<span id="cong">${congDist}</span>
       			${legDist}
 			${pimaSup}
 			${tucsonWard}
@@ -589,20 +589,21 @@ function initMap() {
 			pixelOffset: new google.maps.Size(0, -30)
 		});
 		infoWindow.open(map);
-
 		return;
-	});
+
+document.getElementById("cong").addEventListener("click", (event) =>
+map.data.forEach(function(feature) {
+if (feature.getProperty("CONG_DIST") == cong_dist) {
+map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+}
+});
+
+});
 
 }
 
 function congLite() {
 	document.getElementById("cong").style.color = "red";
 	console.log(cong_dist);
-
-	map.data.forEach(function(feature) {
-	if (feature.getProperty("CONG_DIST") == cong_dist) {
-	map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-	}
-	});
 
 	}
