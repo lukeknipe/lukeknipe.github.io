@@ -573,7 +573,7 @@ function initMap() {
 			<h2>${streetAddress}</h2>
 			${votingPrecinct}
 			${countyCheck}
-      			<span id="cong">${congDist}</span>
+      			<span id="cong" onclick="congLite(cong_dist)">${congDist}</span>
       			${legDist}
 			${pimaSup}
 			${tucsonWard}
@@ -582,6 +582,7 @@ function initMap() {
 			</div>
 			`;
 
+
 		infoWindow.setContent(content);
 		infoWindow.setPosition(originLoc);
 		infoWindow.setOptions({
@@ -589,18 +590,19 @@ function initMap() {
 		});
 		infoWindow.open(map);
 
-		document.getElementById("cong").addEventListener("click", () => {
-		map.data.forEach(function(feature) {
-		if (feature.getProperty("CONG_DIST") == cong_dist) {
-		map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-		}
-		});
-		});
-
 		return;
-
-
-
-});
+	});
 
 }
+
+function congLite() {
+	document.getElementById("cong").style.color = "red";
+	console.log(cong_dist);
+
+	map.data.forEach(function(feature) {
+	if (feature.getProperty("CONG_DIST") == cong_dist) {
+	map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+	}
+	});
+
+	}
