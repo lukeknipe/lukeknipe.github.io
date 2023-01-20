@@ -170,6 +170,8 @@ function sanitizeHTML(strings) {
 	return result;
 }
 
+const showDist = [];
+
 // Initialize the map.
 
 function initMap() {
@@ -511,7 +513,7 @@ function initMap() {
 
 		});
 
-if (showDist) {
+if (showDist == 1) {
  map.data.forEach(function(feature) {
  if (feature.getProperty("CONG_DIST") == cong_dist) {
  map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
