@@ -582,6 +582,13 @@ function initMap() {
 			</div>
 			`;
 
+			document.getElementById("cong").addEventListener("click", (event) => {
+			map.data.forEach(function(feature) {
+			if (feature.getProperty("CONG_DIST") == cong_dist) {
+			map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+			}
+			});
+			});
 
 		infoWindow.setContent(content);
 		infoWindow.setPosition(originLoc);
@@ -591,14 +598,8 @@ function initMap() {
 		infoWindow.open(map);
 		return;
 
-		document.getElementById("cong").addEventListener("click", (event) => {
-		map.data.forEach(function(feature) {
-		if (feature.getProperty("CONG_DIST") == cong_dist) {
-		map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-		}
-		});
-	});
-	
+
+
 });
 
 }
