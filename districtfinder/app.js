@@ -286,6 +286,7 @@ function initMap() {
 
 		map.setCenter(originLocation);
 		map.setZoom(13);
+		map.data.revertStyle();
 		const streetAddress = (place.name);
 		const originLoc = place.geometry.location;
 
