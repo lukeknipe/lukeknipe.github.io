@@ -572,7 +572,7 @@ function initMap() {
 			<a href="#" onclick="congLite('${cong_dist}')">${congDist}</a>
       <a href="#" onclick="legLite('${leg_dist}')">${legDist}</a>
 			<a href="#" onclick="supLite('${sup_dist}')">${pimaSup}</a>
-			${tucsonWard}
+			<a href="#" onclick="wardLite('${ward}')">${tucsonWard}</a>
       			${otherIncorp}
 			${schDist}
 			</div>
@@ -620,6 +620,18 @@ function supLite(sup_dist) {
   map.data.revertStyle();
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("SUP_DIST") == sup_dist) {
+			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
+		}
+	});
+	map.setZoom(11);
+
+}
+
+function wardLite(ward) {
+
+  map.data.revertStyle();
+	map.data.forEach(function (feature) {
+		if (feature.getProperty("WARD") == ward) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
 		}
 	});
