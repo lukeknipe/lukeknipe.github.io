@@ -1,154 +1,154 @@
 const mapStyle = [{
-		"featureType": "administrative.country",
-		"elementType": "labels",
-		"stylers": [{
-			"visibility": "off"
-		}]
+	"featureType": "administrative.country",
+	"elementType": "labels",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "administrative.land_parcel",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "administrative.locality",
+	"elementType": "labels",
+	"stylers": [{
+		"lightness": 55
 	},
 	{
-		"featureType": "administrative.land_parcel",
-		"stylers": [{
-			"visibility": "off"
-		}]
+		"visibility": "simplified"
 	},
 	{
-		"featureType": "administrative.locality",
-		"elementType": "labels",
-		"stylers": [{
-				"lightness": 55
-			},
-			{
-				"visibility": "simplified"
-			},
-			{
-				"weight": 2
-			}
-		]
-	},
-	{
-		"featureType": "administrative.locality",
-		"elementType": "geometry",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "administrative.neighborhood",
-		"stylers": [{
-				"saturation": 5
-			},
-			{
-				"visibility": "off"
-			}
-		]
-	},
-	{
-		"featureType": "administrative.neighborhood",
-		"elementType": "labels",
-		"stylers": [{
-			"lightness": 5
-		}]
-	},
-	{
-		"featureType": "administrative.province",
-		"elementType": "labels",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "landscape.man_made",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "landscape.natural",
-		"stylers": [{
-				"saturation": -10
-			},
-			{
-				"lightness": 5
-			},
-			{
-				"weight": 5
-			}
-		]
-	},
-	{
-		"featureType": "landscape.natural",
-		"elementType": "labels",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "landscape.natural.landcover",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "poi",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "poi.attraction",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "poi.business",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "poi.government",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "poi.medical",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "road.highway",
-		"stylers": [{
-				"saturation": 20
-			},
-			{
-				"lightness": 25
-			},
-			{
-				"visibility": "simplified"
-			}
-		]
-	},
-	{
-		"featureType": "road.local",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "transit",
-		"stylers": [{
-			"visibility": "off"
-		}]
-	},
-	{
-		"featureType": "water",
-		"stylers": [{
-			"lightness": 45
-		}]
+		"weight": 2
 	}
+	]
+},
+{
+	"featureType": "administrative.locality",
+	"elementType": "geometry",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "administrative.neighborhood",
+	"stylers": [{
+		"saturation": 5
+	},
+	{
+		"visibility": "off"
+	}
+	]
+},
+{
+	"featureType": "administrative.neighborhood",
+	"elementType": "labels",
+	"stylers": [{
+		"lightness": 5
+	}]
+},
+{
+	"featureType": "administrative.province",
+	"elementType": "labels",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "landscape.man_made",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "landscape.natural",
+	"stylers": [{
+		"saturation": -10
+	},
+	{
+		"lightness": 5
+	},
+	{
+		"weight": 5
+	}
+	]
+},
+{
+	"featureType": "landscape.natural",
+	"elementType": "labels",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "landscape.natural.landcover",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "poi",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "poi.attraction",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "poi.business",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "poi.government",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "poi.medical",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "road.highway",
+	"stylers": [{
+		"saturation": 20
+	},
+	{
+		"lightness": 25
+	},
+	{
+		"visibility": "simplified"
+	}
+	]
+},
+{
+	"featureType": "road.local",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "transit",
+	"stylers": [{
+		"visibility": "off"
+	}]
+},
+{
+	"featureType": "water",
+	"stylers": [{
+		"lightness": 45
+	}]
+}
 ];
 
 // Escape HTML characters in a template literal string to prevent XSS.
@@ -171,13 +171,14 @@ function sanitizeHTML(strings) {
 }
 
 const showDist = [];
-
+var precinct;
+var map;
 // Initialize the map.
 
 function initMap() {
 
 	// Create the map.
-	const map = new google.maps.Map(document.getElementById('map'), {
+	 map = new google.maps.Map(document.getElementById('map'), {
 		zoom: 11,
 		center: {
 			lat: 32.252,
@@ -299,12 +300,12 @@ function initMap() {
 		incorp = [];
 		sch_dist = [];
 
-		map.data.forEach(function(feature) {
+		map.data.forEach(function (feature) {
 
 			// Find City of Tucson Ward
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'ward') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -334,7 +335,7 @@ function initMap() {
 			// Find county supervisor district
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'sup_dist') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -364,7 +365,7 @@ function initMap() {
 			// Find congressional district
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'cong_dist') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -394,7 +395,7 @@ function initMap() {
 			// Find legislative district
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'leg_dist') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -424,7 +425,7 @@ function initMap() {
 			// Find incorporated areas other than Tucson
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'incorp') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -454,7 +455,7 @@ function initMap() {
 			// Find school district
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'sch_dist') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -484,7 +485,7 @@ function initMap() {
 			// Find voting precinct
 			if (feature.getGeometry().getType() === 'MultiPolygon' && feature.getProperty("TYPE") == 'precinct') {
 				var array = feature.getGeometry().getArray();
-				array.forEach(function(item, i) {
+				array.forEach(function (item, i) {
 
 					var coords = item.getAt(0).getArray();
 					var multiPoly = new google.maps.Polygon({
@@ -567,6 +568,9 @@ function initMap() {
 			<h2>${streetAddress}</h2>
 			${votingPrecinct}
 			${countyCheck}
+			</div>
+			<a href="#" onclick="congLite('${cong_dist}')">${congDist}</a>
+
       			<span id="cong" onclick="const congClick=1">${congDist}</span>
       			${legDist}
 			${pimaSup}
@@ -583,19 +587,18 @@ function initMap() {
 		});
 		infoWindow.open(map);
 
-		map.data.forEach(function(feature) {
-		if (feature.getProperty("CONG_DIST") == cong_dist) {
-		map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-		}
-		});
 
 		return;
 	});
 
 }
 
-function congLite() {
+function congLite(cong_dist) {
 
-	console.log(cong_dist);
+	map.data.forEach(function (feature) {
+		if (feature.getProperty("CONG_DIST") == cong_dist) {
+			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
+		}
+	});
 
 }
