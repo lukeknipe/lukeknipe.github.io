@@ -573,7 +573,7 @@ function initMap() {
       <a href="#" onclick="legLite('${leg_dist}')">${legDist}</a>
 			<a href="#" onclick="supLite('${sup_dist}')">${pimaSup}</a>
 			<a href="#" onclick="wardLite('${ward}')">${tucsonWard}</a>
-      			${otherIncorp}
+      <a href="#" onclick="incorpLite('${incorp}')">${otherIncorp}</a>
 			${schDist}
 			</div>
 			`;
@@ -636,5 +636,17 @@ function wardLite(ward) {
 		}
 	});
 	map.setZoom(13);
+
+}
+
+function incorpLite(incorp) {
+
+  map.data.revertStyle();
+	map.data.forEach(function (feature) {
+		if (feature.getProperty("INCORP") == incorp) {
+			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
+		}
+	});
+	map.setZoom(11);
 
 }
