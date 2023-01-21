@@ -597,6 +597,6 @@ function congLite(cong_dist) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
 		}
 	});
-	map.setZoom(11);
+	map.setZoom(10);
 
 }
