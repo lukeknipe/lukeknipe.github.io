@@ -647,6 +647,6 @@ function incorpLite(incorp) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
 		}
 	});
-	map.setZoom(11);
+	map.setZoom(12);
 
 }
