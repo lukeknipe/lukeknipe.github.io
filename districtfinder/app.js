@@ -568,10 +568,7 @@ function initMap() {
 			<h2>${streetAddress}</h2>
 			${votingPrecinct}
 			${countyCheck}
-			</div>
 			<a href="#" onclick="congLite('${cong_dist}')">${congDist}</a>
-
-
       ${legDist}
 			${pimaSup}
 			${tucsonWard}
