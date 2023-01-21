@@ -569,7 +569,7 @@ function initMap() {
 			${votingPrecinct}
 			${countyCheck}
 			<a href="#" onclick="congLite('${cong_dist}')">${congDist}</a>
-      ${legDist}
+      <a href="#" onclick="legLite('${leg_dist}')">${legDist}</a>
 			${pimaSup}
 			${tucsonWard}
       			${otherIncorp}
@@ -594,6 +594,17 @@ function congLite(cong_dist) {
 
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("CONG_DIST") == cong_dist) {
+			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
+		}
+	});
+	map.setZoom(10);
+
+}
+
+function legLite(leg_dist) {
+
+	map.data.forEach(function (feature) {
+		if (feature.getProperty("LEG_DIST") == leg_dist) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
 		}
 	});
