@@ -592,7 +592,7 @@ function initMap() {
 
 function congLite(cong_dist) {
 
-	map.data.overrideStyle({ strokeOpacity: 0, strokeWeight: 0 });
+	map.data.revertStyle();
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("CONG_DIST") == cong_dist) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
@@ -604,7 +604,7 @@ function congLite(cong_dist) {
 
 function legLite(leg_dist) {
 
-  map.data.overrideStyle({ strokeOpacity: 0, strokeWeight: 0 });
+  map.data.revertStyle();
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("LEG_DIST") == leg_dist) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
