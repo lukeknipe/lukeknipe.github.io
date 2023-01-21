@@ -561,13 +561,6 @@ function initMap() {
 		} else {
 			votingPrecinct = []
 		}
-		
-
-map.data.forEach(function(feature) {
-if (feature.getProperty("CONG_DIST") == cong_dist) {
-map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
-}
-});
 
 		var content = `
 			<div class="popup">
@@ -590,6 +583,12 @@ map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
 		});
 		infoWindow.open(map);
 
+		map.data.forEach(function(feature) {
+		if (feature.getProperty("CONG_DIST") == cong_dist) {
+		map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
+		}
+		});
+
 		return;
 	});
 
@@ -598,7 +597,7 @@ map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
 function congLite() {
 
 	console.log(cong_dist);
-	
+
 	// map.data.forEach(function(feature) {
 // if (feature.getProperty("CONG_DIST") == cong_dist) {
 // map.data.overrideStyle(feature, {strokeOpacity: 1, strokeWeight: 8});
