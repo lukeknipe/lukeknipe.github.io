@@ -571,7 +571,7 @@ function initMap() {
 			${countyCheck}
 			<a href="#" onclick="congLite('${cong_dist}')">${congDist}</a>
       <a href="#" onclick="legLite('${leg_dist}')">${legDist}</a>
-			${pimaSup}
+			<a href="#" onclick="supLite('${sup_dist}')">${pimaSup}</a>
 			${tucsonWard}
       			${otherIncorp}
 			${schDist}
@@ -612,5 +612,17 @@ function legLite(leg_dist) {
 		}
 	});
 	map.setZoom(12);
+
+}
+
+function supLite(sup_dist) {
+
+  map.data.revertStyle();
+	map.data.forEach(function (feature) {
+		if (feature.getProperty("SUP_DIST") == sup_dist) {
+			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
+		}
+	});
+	map.setZoom(11);
 
 }
