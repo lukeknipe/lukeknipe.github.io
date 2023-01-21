@@ -571,8 +571,8 @@ function initMap() {
 			</div>
 			<a href="#" onclick="congLite('${cong_dist}')">${congDist}</a>
 
-      			<span id="cong" onclick="const congClick=1">${congDist}</span>
-      			${legDist}
+
+      ${legDist}
 			${pimaSup}
 			${tucsonWard}
       			${otherIncorp}
@@ -600,5 +600,6 @@ function congLite(cong_dist) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 8 });
 		}
 	});
+	map.setZoom(11);
 
 }
