@@ -29,6 +29,17 @@
     opacity: 0.5;
   }
 
+  /* Styling for popup links */
+  .popup a:link,
+  .popup a:visited,
+  .popup a:active {
+    text-decoration: none;
+  }
+
+  .popup a:hover {
+    text-decoration: underline;
+  }
+
   /* Styling for autocomplete search bar */
   #pac-card {
     background-color: #fff;
