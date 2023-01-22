@@ -574,7 +574,7 @@ function initMap() {
 			<a href="#" onclick="supLite('${sup_dist}')">${pimaSup}</a>
 			<a href="#" onclick="wardLite('${ward}')">${tucsonWard}</a>
       <a href="#" onclick="incorpLite('${incorp}')">${otherIncorp}</a>
-			${schDist}
+			<a href="#" onclick="schLite('${sch_dist}')">${schDist}</a>
 			</div>
 			`;
 
@@ -644,6 +644,18 @@ function incorpLite(incorp) {
   map.data.revertStyle();
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("INCORP") == incorp) {
+			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
+		}
+	});
+	map.setZoom(12);
+
+}
+
+function schLite(sch_dist) {
+
+  map.data.revertStyle();
+	map.data.forEach(function (feature) {
+		if (feature.getProperty("SCH_DIST") == sch_dist) {
 			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
 		}
 	});
