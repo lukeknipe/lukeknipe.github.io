@@ -26,7 +26,8 @@
     margin-right: 1vh;
     margin-left: 1vh;
     font-size: 1.4vh;
-    background-color: #red;
+    background-color: #0000FF;
+    opacity: 0.5;
   }
 
   /* Styling for autocomplete search bar */
