@@ -21,10 +21,12 @@
 
   /* Styling for popup */
   .popup {
+
     margin-top: 1vh;
     margin-right: 1vh;
     margin-left: 1vh;
     font-size: 1.4vh;
+    background-color: #red;
   }
 
   /* Styling for autocomplete search bar */
