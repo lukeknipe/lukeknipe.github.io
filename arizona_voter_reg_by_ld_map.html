@@ -104,13 +104,13 @@
 
 	function style(feature) {
 
-const demEdge = (feature.properties.DEMOCRATS / (feature.properties.DEMOCRATS + feature.properties.REPUGS + feature.properties.LIBERTS +
-	feature.properties.OTHERS)*100) - (feature.properties.REPUGS / (feature.properties.DEMOCRATS + feature.properties.REPUGS + feature.properties.LIBERTS +
-		feature.properties.OTHERS)*100);
+const demEdge = (feature.properties.DEM / (feature.properties.DEM + feature.properties.REP + feature.properties.LIB + feature.properties.NL +
+	feature.properties.OTR)*100) - (feature.properties.REP / (feature.properties.DEM + feature.properties.REP + feature.properties.LIB + feature.properties.NL +
+		feature.properties.OTR)*100);
 		console.log(demEdge);
-const repEdge = (feature.properties.REPUGS / (feature.properties.DEMOCRATS + feature.properties.REPUGS + feature.properties.LIBERTS +
-	feature.properties.OTHERS)*100) - (feature.properties.DEMOCRATS / (feature.properties.DEMOCRATS + feature.properties.REPUGS + feature.properties.LIBERTS +
-		feature.properties.OTHERS)*100);
+const repEdge = (feature.properties.REP / (feature.properties.DEM + feature.properties.REP + feature.properties.LIB + feature.properties.NL +
+	feature.properties.OTR)*100) - (feature.properties.DEM / (feature.properties.DEM + feature.properties.REP + feature.properties.LIB + feature.properties.NL +
+		feature.properties.OTR)*100);
 		console.log(repEdge);
 
 if (demEdge > 0.001) {
