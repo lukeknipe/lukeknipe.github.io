@@ -52,14 +52,15 @@
 	info.update = function (props) {
 		this._div.innerHTML = (props ?
 			'<h2><b><center>' + props.LONGNAME
-			+ '</b></center></h2>' + ((props.REPUGS / (props.DEMOCRATS + props.REPUGS + props.LIBERTS + props.OTHERS))*100).toFixed(2) + '% Republican '
-			+ '<br>' + ((props.DEMOCRATS / (props.DEMOCRATS + props.REPUGS + props.LIBERTS + props.OTHERS))*100).toFixed(2) + '% Democrat '
-			+ '<br>' + ((props.OTHERS / (props.DEMOCRATS + props.REPUGS + props.LIBERTS + props.OTHERS))*100).toFixed(2) + '% Other '
-			+ '<h4>' + props.REPUGS + ' Republicans '
-			+ '<br>' + props.DEMOCRATS + ' Democrats '
-		  + '<br>' + props.OTHERS + ' Others '
-			+ '<br>' + props.LIBERTS + ' Libertarians '
-			+ '<br>' + (props.DEMOCRATS + props.REPUGS + props.LIBERTS + props.OTHERS) + ' Total </h4>'
+			+ '</b></center></h2>' + ((props.REP / (props.DEM + props.REP + props.LIB + props.NL + props.OTR))*100).toFixed(2) + '% Republican '
+			+ '<br>' + ((props.DEM / (props.DEM + props.REP + props.LIB + props.OTR))*100).toFixed(2) + '% Democrat '
+			+ '<br>' + ((props.OTR / (props.DEM + props.REP + props.LIB + props.OTR))*100).toFixed(2) + '% Other '
+			+ '<h4>' + props.REP + ' Republicans '
+			+ '<br>' + props.DEM + ' Democrats '
+		        + '<br>' + props.OTR + ' Others '
+			+ '<br>' + props.LIB + ' Libertarians '
+			+ '<br>' + props.NL + ' No Labels '
+			+ '<br>' + (props.DEM + props.REP + props.LIB + props.OTR + props.NL) + ' Total </h4>'
 			+ '<b><u>Senate Candidates</u></b><br>'
 			+ props.SEN_CAN
 			+ '<br><br><b><u>House Candidates</u></b><br>'
