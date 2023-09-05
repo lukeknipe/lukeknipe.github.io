@@ -25,6 +25,17 @@ body {
 	max-width: 300px;
 }
 
+.grid-item-price {
+	font-family: 'Fraunces', sans-serif;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+	color: #3D8168;
+	text-align: left;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+
 .attribution {
 	font-size: 11px; text-align: center;
 }
