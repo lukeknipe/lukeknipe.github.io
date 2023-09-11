@@ -36,6 +36,18 @@ body {
 	margin-right: 32px;
 }
 
+.grid-item-list-price {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	color: #6C7289;
+	text-align: left;
+	margin-top: 32px;
+	margin-left: 32px;
+	margin-right: 40px;
+	letter-spacing: 1px;
+}
+
 .attribution {
 	font-size: 11px; text-align: center;
 }
