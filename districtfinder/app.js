@@ -600,7 +600,7 @@ function congLite(cong_dist) {
 				strokeOpacity: 1, 
 				strokeWeight: 6,
 				fillColor: '#CCCCCC',
-				fillOpacity: 1
+				fillOpacity: .5
 					});
 		}
 	});
