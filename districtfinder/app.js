@@ -599,7 +599,7 @@ function congLite(cong_dist) {
 			map.data.overrideStyle(feature, { 
 				strokeOpacity: 1, 
 				strokeWeight: 6,
-				fillColor: #CCCCCC,
+				fillColor: '#CCCCCC',
 					});
 		}
 	});
