@@ -596,10 +596,15 @@ function congLite(cong_dist) {
 	map.data.revertStyle();
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("CONG_DIST") == cong_dist) {
-			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
+			map.data.overrideStyle(feature, { 
+				strokeOpacity: 1, 
+				strokeWeight: 6,
+				fillColor: #CCCCCC
+					});
 		}
 	});
 	map.setZoom(10);
+	const distLabel = 
 
 }
 
