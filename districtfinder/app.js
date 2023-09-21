@@ -598,8 +598,8 @@ function congLite(cong_dist) {
 		if (feature.getProperty("CONG_DIST") == cong_dist) {
 			map.data.overrideStyle(feature, { 
 				strokeOpacity: 1, 
-				strokeWeight: 6,
-				fillColor: '#CCCCCC',
+				strokeWeight: 5,
+				fillColor: '#BBBBBB',
 				fillOpacity: .5
 					});
 		}
