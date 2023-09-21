@@ -599,13 +599,11 @@ function congLite(cong_dist) {
 			map.data.overrideStyle(feature, { 
 				strokeOpacity: 1, 
 				strokeWeight: 6,
-				fillColor: '#CCCCCC',
+				fillColor: '#CCCCCC'
 					});
 		}
 	});
 	map.setZoom(10);
-	const distLabel = 
-
 }
 
 function legLite(leg_dist) {
@@ -617,7 +615,6 @@ function legLite(leg_dist) {
 		}
 	});
 	map.setZoom(12);
-
 }
 
 function supLite(sup_dist) {
