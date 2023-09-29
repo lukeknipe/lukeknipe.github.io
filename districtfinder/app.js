@@ -628,7 +628,12 @@ function supLite(sup_dist) {
   map.data.revertStyle();
 	map.data.forEach(function (feature) {
 		if (feature.getProperty("SUP_DIST") == sup_dist) {
-			map.data.overrideStyle(feature, { strokeOpacity: 1, strokeWeight: 6 });
+			map.data.overrideStyle(feature, { 
+				strokeOpacity: 1, 
+				strokeWeight: 5,
+				fillColor: '#BBBBBB',
+				fillOpacity: .5
+					});
 		}
 	});
 	map.setZoom(11);
