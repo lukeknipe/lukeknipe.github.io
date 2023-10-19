@@ -49,8 +49,8 @@ p {
 
 #global_nav li {
 	display:block;
-	width:10em;
-	float:left;
+	width:8em;
+	float:right;
 	margin-top: 2.5em;
 	margin-left: 5em;
 }
