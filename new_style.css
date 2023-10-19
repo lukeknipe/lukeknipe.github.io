@@ -16,3 +16,7 @@ p {
   float: left;
   margin-left: .1em;
 }
+
+.global_nav {
+  align-items: center;
+}
