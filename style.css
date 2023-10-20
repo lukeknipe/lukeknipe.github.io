@@ -31,6 +31,9 @@ p {
 font-size: 1em;
 }
 
+.header {
+}
+
 .logo {
 float: left;
 margin-left: .1em;
