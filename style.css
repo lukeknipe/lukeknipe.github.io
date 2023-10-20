@@ -47,6 +47,16 @@ font-size: 1em;
 font-weight: 700;
 }
 
+.teaser {
+float: left;
+border: 1px #000000;
+text-align: left;
+}
+
+.nav {
+float: right;
+}
+  
 #global_nav li {
 display:block;
 width:8em;
