@@ -47,6 +47,10 @@ p {
   margin-top: .1em;
 }
 
+.path {
+  font-size: 1em;
+}
+
 #global_nav li {
 	display:block;
 	width:8em;
