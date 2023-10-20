@@ -1,65 +1,56 @@
 body {
-    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: #000000;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #000000;
 }
 
 a:link {
-  text-decoration: none;
-  color: #000000;
+text-decoration: none;
+color: #000000;
 }
 
 a:visited {
-  text-decoration: none;
-  color: #000000;
+text-decoration: none;
+color: #000000;
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #000000;
+text-decoration: underline;
+color: #000000;
 }
 
 a:active {
-  text-decoration: underline;
-  color: #000000;
+text-decoration: underline;
+color: #000000;
 }
 
 ol,ul {
-	list-style: none;
-}
-
-h1 {
-  font-size: 2.2em;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 1em;
-  font-weight: 700;
+list-style: none;
 }
 
 p {
-  font-size: 1em;
+font-size: 1em;
 }
 
 .header {
-  float: left;
-  margin-left: .1em;
-  margin-top: .1em;
+float: left;
+margin-left: .1em;
+margin-top: .1em;
 }
 
 .lk {
-  font-size: 2.2em;
-  font-weight: 700;
+font-size: 2.2em;
+font-weight: 700;
 }
 
 .path {
-  font-size: 1em;
+font-size: 1em;
+font-weight: 700;
 }
 
 #global_nav li {
-	display:block;
-	width:8em;
-	float:right;
-	margin-top: 2.5em;
-	margin-left: 5em;
+display:block;
+width:8em;
+float:right;
+margin-top: 1.4em;
+margin-left: 5em;
 }
