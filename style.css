@@ -34,6 +34,7 @@ font-size: 1em;
 .header {
   border-style: solid;
   height: 4em;
+  min-width: 300px;
 }
 
 .logo {
@@ -61,13 +62,20 @@ text-align: left;
 
 .nav {
 float: right;
+  right: 1em;
+  left: 4em;
   border-style: solid;
   margin-right: .2em;
   margin-top: .1em;
+  position: absolute;
+  min-width: 255px;
 }
   
 #global_nav li {
-display:block;
-width:8em;
-float:right;
+display: block;
+width: 8em;
+float: right;
+margin-right: 2em;
+position: relative;
+top: -1em;
 }
