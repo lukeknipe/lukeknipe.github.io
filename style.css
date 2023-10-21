@@ -32,7 +32,6 @@ font-size: 1em;
 }
 
 .header {
-  border-style: solid;
   height: 4em;
   min-width: 300px;
 }
@@ -41,7 +40,6 @@ font-size: 1em;
 float: left;
 margin-left: .1em;
 margin-top: .1em;
-border-style: solid;
 }
 
 .lk {
@@ -50,13 +48,12 @@ font-weight: 700;
 }
 
 .path {
-font-size: 1em;
+font-size: 1.3em;
 font-weight: 700;
 }
 
 .teaser {
 float: left;
-border: 1px #000000;
 text-align: left;
 }
 
@@ -64,7 +61,6 @@ text-align: left;
 float: right;
   right: 1em;
   left: 4em;
-  border-style: solid;
   margin-right: .2em;
   margin-top: .1em;
   position: absolute;
@@ -78,4 +74,6 @@ float: right;
 margin-right: 2em;
 position: relative;
 top: -1em;
+font-size: 1.1em;
+font-weight: 500;
 }
