@@ -59,6 +59,7 @@ font-weight: 700;
   border-radius: .8em;
   max-width: 30em;
   padding: .4em;
+  background-size: cover;
   }
 
 .nav {
