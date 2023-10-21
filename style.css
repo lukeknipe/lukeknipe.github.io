@@ -55,6 +55,7 @@ font-weight: 700;
 .teaser {
 float: left;
 text-align: left;
+border-style: solid;
 }
 
 .nav {
@@ -66,7 +67,21 @@ float: right;
   position: absolute;
   min-width: 255px;
 }
+
+.teaser-cat {
+  font-size: .8em;
+  color: #888888;
+  }
   
+.teaser-hed {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.teaser-blurb {
+  font-size: 1em;
+}
+
 #global_nav li {
 display: block;
 width: 8em;
@@ -77,3 +92,4 @@ top: -1em;
 font-size: 1.1em;
 font-weight: 500;
 }
+
