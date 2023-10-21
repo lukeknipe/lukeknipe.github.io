@@ -53,10 +53,13 @@ font-weight: 700;
 }
 
 .teaser {
-float: left;
-text-align: left;
-border-style: solid;
-}
+  float: left;
+  text-align: left;
+  border-style: solid;
+  border-radius: .8em;
+  max-width: 30em;
+  padding: .4em;
+  }
 
 .nav {
 float: right;
