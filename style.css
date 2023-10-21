@@ -60,6 +60,8 @@ font-weight: 700;
   max-width: 30em;
   padding: .4em;
   background-size: cover;
+  border-width: 1px;
+  border-color: #888888;
   }
 
 .nav {
