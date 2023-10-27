@@ -54,6 +54,7 @@ font-weight: 700;
 
 .teaser {
   float: left;
+  margin: .4em;
   text-align: left;
   border-style: solid;
   border-radius: .8em;
