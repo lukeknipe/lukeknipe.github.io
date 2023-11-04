@@ -1,3 +1,6 @@
+/* CSS for desktop devices -------------------------------------------------- */
+ @media only screen and (min-width: 750px) {
+
 body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #000000;
@@ -103,3 +106,114 @@ font-size: 1.1em;
 font-weight: 500;
 }
 
+}
+
+/* CSS for mobile devices in portrait view ---------------------------------- */
+ @media only screen and (max-width: 749px) and (orientation:portrait) {
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #000000;
+}
+
+a:link {
+text-decoration: none;
+color: #000000;
+}
+
+a:visited {
+text-decoration: none;
+color: #000000;
+}
+
+a:hover {
+text-decoration: underline;
+color: #000000;
+}
+
+a:active {
+text-decoration: underline;
+color: #000000;
+}
+
+ol,ul {
+list-style: none;
+}
+
+p {
+font-size: 1em;
+}
+
+.header {
+  height: 4em;
+  min-width: 300px;
+}
+
+.logo {
+float: left;
+margin-left: .1em;
+margin-top: .1em;
+}
+
+.lk {
+font-size: 2.2em;
+font-weight: 700;
+}
+
+.path {
+font-size: 1.3em;
+font-weight: 700;
+}
+
+.teaser {
+  float: left;
+  margin: .4em;
+  text-align: left;
+  border-style: solid;
+  border-radius: .8em;
+  width: 25em;
+  height: 10em;
+  padding: .4em;
+  background-size: cover;
+  border-width: 1px;
+  border-color: #888888;
+  }
+
+.nav {
+float: right;
+  right: 1em;
+  left: 4em;
+  margin-right: .2em;
+  margin-top: .1em;
+  position: absolute;
+  min-width: 255px;
+}
+
+.teaser-cat {
+  font-size: .8em;
+  color: #888888;
+  }
+  
+.teaser-hed {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-right: 8em;
+}
+
+.teaser-blurb {
+  font-size: 1em;
+  margin-right: 8em;
+}
+
+#global_nav li {
+display: block;
+width: 8em;
+float: right;
+margin-right: 2em;
+position: relative;
+top: -1em;
+font-size: 1.1em;
+font-weight: 500;
+}
+
+}
