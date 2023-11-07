@@ -45,6 +45,7 @@
   float: left;
   margin-left: 0.1em;
   margin-top: 0.1em;
+    position: absolute;
   }
   
   .lk {
@@ -82,11 +83,10 @@
   }
   
   .article {
-  float: left;
   margin-right: 0.2em;
   margin-left: 0.1em;
-  margin-top: 1em;
-  clear: both;
+  margin-top: em;
+  clear: left;
   }
   
   .teaser-cat {
