@@ -89,8 +89,12 @@
   clear: left;
   max-width: 75%;
   }
-  .article-image-right {
-  max-width: 20%;
+
+  .article-image-right img {
+  max-width: 50%;
+  height: auto;
+  float: right;
+  border-radius: .8em;
   }
 
   .teaser-cat {
