@@ -94,7 +94,8 @@
   max-width: 50%;
   height: auto;
   float: right;
-  border-radius: .8em;
+  border-radius: 1em;
+  padding: .5em;
   }
 
   .teaser-cat {
