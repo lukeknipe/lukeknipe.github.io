@@ -90,6 +90,10 @@
   max-width: 75%;
   }
   
+.article-image {
+  width: 20%;
+}
+
   .teaser-cat {
   font-size: 0.8em;
   color: #888888;
