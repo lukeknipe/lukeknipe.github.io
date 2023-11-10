@@ -91,7 +91,7 @@
   }
   
 .article-image {
-  width: 20%;
+  max-width: 20%;
 }
 
   .teaser-cat {
