@@ -27,13 +27,13 @@
     <p>November 9, 2023</p>
     <p>I recently had occasion to set up one of those new Verizon 5G Home Internet cubes as internet gateway for a Google Wifi network. A bit of googling turned up scant information on how to do this, and some of the information I found was bad. But I figured it out on my own. This is a simple set of instructions for anyone in the same situation.</p>
     <p>You're going to want to locate your Verizon Cube close enough to one of your Google Wifi pucks to connect the two with a short ethernet patch cable.</p>
-    <h2>Step 1</h2>
-    <p>Disconnect both your Verizon cube and your Google puck from power, if they're not already off. (It's fine to leave the other pucks running.)</p>
-    <h2>Step 2</h2>
+    <h2>Step 1: Shut off your devices</h2>
+    <p>Disconnect from power both your Verizon cube and the Google puck you'll be hooking it up to. (It's fine to leave the other pucks running.)</p>
+    <h2>Step 2: Power up your cube and join its wifi network</h2>
     <p>Power up your Verizon cube. The only cable that should be connected to it at this point is the power cable. Once it indicates it's online and has a good signal (green light on the front), connect to its network using a laptop or some other type of computer that has a web browser.</p>
-    <h2>Step 3</h2>
+    <h2>Step 3: Put your cube into IP Passthrough/Bridge Mode</h2>
     <p>Log into your Verizon cube's access admin page using the "Network Settings" URL and password listed on the back of the unit. (Unless you've changed the password.) If you have trouble logging in, <u><a href="https://www.verizon.com/support/knowledge-base-301456/">these instructions from Verizon's knowledge base</a></u> may help.</p>
-    <p>Once logged in, <u><a href="https://www.verizon.com/support/knowledge-base-301824/">place the unit in IP Passthrough/Bridge Mode by following Verizon's instructions</a></u>. When you click "Save Changes", your Verizon cube will reboot, and you will get kicked off its wifi network. It will reboot into IP Passthrough/Bridge Mode, and its wifi radio will be shut off.</p>
+    <p>Once logged in, <u><a href="https://www.verizon.com/support/knowledge-base-301824/">place the unit in IP Passthrough/Bridge Mode by following Verizon's instructions</a></u>. After you click "Save Changes", your Verizon cube will reboot, and you will get kicked off its wifi network. It will reboot into IP Passthrough/Bridge Mode, and its wifi radio will be shut off. Now you're ready to plug your Verizon cube into your Google puck.</p>
 </div>
     
 </body>
