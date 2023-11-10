@@ -89,10 +89,9 @@
   clear: left;
   max-width: 75%;
   }
-  
-.article-image {
+  .article-image {
   max-width: 20%;
-}
+  }
 
   .teaser-cat {
   font-size: 0.8em;
