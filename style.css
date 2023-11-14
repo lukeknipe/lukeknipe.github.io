@@ -124,6 +124,11 @@
   font-size: 1.1em;
   font-weight: 500;
   }
+
+  .footer {
+  font-size: .8em;
+  }
+
   }
   
   /* CSS for mobile devices in portrait view ---------------------------------- */
