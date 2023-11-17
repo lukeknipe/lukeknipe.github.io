@@ -214,6 +214,22 @@
   position: absolute;
   min-width: 255px;
   }
+
+  .article {
+  margin-right: 0.2em;
+  margin-left: 0.1em;
+  margin-top: em;
+  clear: left;
+  max-width: 100%;
+  }
+
+  .article-image-right img {
+  max-width: 100%;
+  height: auto;
+  float: right;
+  border-radius: 1em;
+  padding: .5em;
+  }
   
   .teaser-cat {
   font-size: 0.8em;
