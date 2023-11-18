@@ -98,6 +98,14 @@
   padding: .5em;
   }
 
+  .article-image-left img {
+    max-width: 50%;
+    height: auto;
+    float: left;
+    border-radius: 1em;
+    padding: .5em;
+    }
+
   .teaser-cat {
   font-size: 0.8em;
   color: #888888;
