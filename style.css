@@ -83,6 +83,7 @@
   }
   
   .article {
+  line-height: 1.25em;
   margin-right: 0.2em;
   margin-left: 0.1em;
   margin-top: em;
@@ -104,6 +105,7 @@
     float: left;
     border-radius: 1em;
     padding: .5em;
+    margin-right: .5em;
     }
 
   .teaser-cat {
