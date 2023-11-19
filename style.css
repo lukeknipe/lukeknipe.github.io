@@ -1,102 +1,102 @@
 /* CSS for desktop devices -------------------------------------------------- */
 @media only screen and (min-width: 750px) {
   body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", "Noto Color Emoji";
-  color: #000000;
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #000000;
   }
-  
+
   a:link {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
   }
-  
+
   a:visited {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
   }
-  
+
   a:hover {
-  text-decoration: underline;
-  color: #000000;
+    text-decoration: underline;
+    color: #000000;
   }
-  
+
   a:active {
-  text-decoration: underline;
-  color: #000000;
+    text-decoration: underline;
+    color: #000000;
   }
 
   ol,
   ul {
-  list-style: none;
+    list-style: none;
   }
-  
+
   p {
-  font-size: 1em;
+    font-size: 1em;
   }
-  
+
   .header {
-  height: 4em;
-  min-width: 300px;
+    height: 4em;
+    min-width: 300px;
   }
-  
+
   .logo {
-  float: left;
-  margin-left: 0.1em;
-  margin-top: 0.1em;
+    float: left;
+    margin-left: 0.1em;
+    margin-top: 0.1em;
     position: absolute;
   }
-  
+
   .lk {
-  font-size: 2.2em;
-  font-weight: 700;
+    font-size: 2.2em;
+    font-weight: 700;
   }
-  
+
   .path {
-  font-size: 1.3em;
-  font-weight: 700;
+    font-size: 1.3em;
+    font-weight: 700;
   }
-  
+
   .teaser {
-  float: left;
-  margin: 0.4em;
-  text-align: left;
-  border-style: solid;
-  border-radius: 0.8em;
-  width: 25em;
-  height: 10em;
-  padding: 0.4em;
-  background-size: cover;
-  border-width: 1px;
-  border-color: #888888;
+    float: left;
+    margin: 0.4em;
+    text-align: left;
+    border-style: solid;
+    border-radius: 0.8em;
+    width: 25em;
+    height: 10em;
+    padding: 0.4em;
+    background-size: cover;
+    border-width: 1px;
+    border-color: #888888;
   }
-  
+
   .nav {
-  float: right;
-  right: 1em;
-  left: 4em;
-  margin-right: 0.2em;
-  margin-top: 0.1em;
-  position: absolute;
-  min-width: 255px;
+    float: right;
+    right: 1em;
+    left: 4em;
+    margin-right: 0.2em;
+    margin-top: 0.1em;
+    position: absolute;
+    min-width: 255px;
   }
-  
+
   .article {
-  line-height: 1.25em;
-  margin-right: 0.2em;
-  margin-left: 0.1em;
-  margin-top: em;
-  clear: left;
-  max-width: 75%;
+    line-height: 1.25em;
+    margin-right: 0.2em;
+    margin-left: 0.1em;
+    margin-top: em;
+    clear: left;
+    max-width: 75%;
   }
 
   .article-image-right img {
-  max-width: 50%;
-  height: auto;
-  float: right;
-  border-radius: 1em;
-  padding: .5em;
+    max-width: 50%;
+    height: auto;
+    float: right;
+    border-radius: 1em;
+    padding: 0.5em;
   }
 
   .article-image-left img {
@@ -104,168 +104,173 @@
     height: auto;
     float: left;
     border-radius: 1em;
-    padding: .5em;
-    margin-right: .5em;
-    }
+    padding: 0.5em;
+    margin-right: 0.5em;
+  }
 
   .teaser-cat {
-  font-size: 0.8em;
-  color: #888888;
+    font-size: 0.8em;
+    color: #888888;
   }
-  
+
   .teaser-hed {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin-right: 8em;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-right: 8em;
   }
-  
+
   .teaser-blurb {
-  font-size: 1em;
-  margin-right: 8em;
+    font-size: 1em;
+    margin-right: 8em;
   }
-  
+
   #global_nav li {
-  display: block;
-  width: 8em;
-  float: right;
-  margin-right: 2em;
-  position: relative;
-  top: -1em;
-  font-size: 1.1em;
-  font-weight: 500;
+    display: block;
+    width: 8em;
+    float: right;
+    margin-right: 2em;
+    position: relative;
+    top: -1em;
+    font-size: 1.1em;
+    font-weight: 500;
   }
 
   .footer {
-    text-align: center;  
-    font-size: .8em;
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+/* CSS for mobile devices in portrait view ---------------------------------- */
+@media only screen and (max-width: 749px) and (orientation: portrait) {
+  body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #000000;
   }
 
-  }
-  
-  /* CSS for mobile devices in portrait view ---------------------------------- */
-  @media only screen and (max-width: 749px) and (orientation: portrait) {
-  body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", "Noto Color Emoji";
-  color: #000000;
-  }
-  
   a:link {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
   }
-  
+
   a:visited {
-  text-decoration: none;
-  color: #000000;
+    text-decoration: none;
+    color: #000000;
   }
-  
+
   a:hover {
-  text-decoration: underline;
-  color: #000000;
+    text-decoration: underline;
+    color: #000000;
   }
-  
+
   a:active {
-  text-decoration: underline;
-  color: #000000;
+    text-decoration: underline;
+    color: #000000;
   }
-  
+
   ol,
   ul {
-  list-style: none;
+    list-style: none;
   }
-  
+
   p {
-  font-size: 1em;
+    font-size: 1em;
   }
-  
+
   .header {
-  height: 4em;
-  min-width: 300px;
+    height: 4em;
+    min-width: 300px;
   }
-  
+
   .logo {
-  float: left;
-  margin-left: 0.1em;
-  margin-top: 0.1em;
+    float: left;
+    margin-left: 0.1em;
+    margin-top: 0.1em;
   }
-  
+
   .lk {
-  font-size: 2.2em;
-  font-weight: 700;
+    font-size: 2.2em;
+    font-weight: 700;
   }
-  
+
   .path {
-  font-size: 1.3em;
-  font-weight: 700;
+    font-size: 1.3em;
+    font-weight: 700;
   }
-  
+
   .teaser {
-  float: left;
-  margin: 0.4em;
-  text-align: left;
-  border-style: solid;
-  border-radius: 0.8em;
-  width: 25em;
-  height: 10em;
-  padding: 0.4em;
-  background-size: cover;
-  border-width: 1px;
-  border-color: #888888;
+    float: left;
+    margin: 0.4em;
+    text-align: left;
+    border-style: solid;
+    border-radius: 0.8em;
+    width: 25em;
+    height: 10em;
+    padding: 0.4em;
+    background-size: cover;
+    border-width: 1px;
+    border-color: #888888;
   }
-  
+
   .nav {
-  float: right;
-  right: 1em;
-  left: 4em;
-  margin-right: 0.2em;
-  margin-top: 0.1em;
-  position: absolute;
-  min-width: 255px;
+    float: right;
+    right: 1em;
+    left: 4em;
+    margin-right: 0.2em;
+    margin-top: 0.1em;
+    position: absolute;
+    min-width: 255px;
   }
 
   .article {
-  margin-right: 0.2em;
-  margin-left: 0.1em;
-  margin-top: em;
-  clear: left;
-  max-width: 100%;
+    margin-right: 0.2em;
+    margin-left: 0.1em;
+    margin-top: em;
+    clear: left;
+    max-width: 100%;
   }
 
   .article-image-right img {
-  max-width: 100%;
-  height: auto;
-  float: right;
-  border-radius: 1em;
-  padding: .5em;
+    max-width: 100%;
+    height: auto;
+    float: right;
+    border-radius: 1em;
+    padding: 0.5em;
   }
-  
+
+  .article-image-left img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 1em;
+  }
+
   .teaser-cat {
-  font-size: 0.8em;
-  color: #888888;
+    font-size: 0.8em;
+    color: #888888;
   }
-  
+
   .teaser-hed {
-  font-size: 1.1em;
-  font-weight: 700;
-  margin-right: 8em;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-right: 8em;
   }
-  
+
   .teaser-blurb {
-  font-size: 1em;
-  margin-right: 8em;
+    font-size: 1em;
+    margin-right: 8em;
   }
-  
+
   #global_nav li {
-  display: block;
-  width: 8em;
-  float: right;
-  margin-right: 2em;
-  position: relative;
-  top: -1em;
-  font-size: 1.1em;
-  font-weight: 500;
+    display: block;
+    width: 8em;
+    float: right;
+    margin-right: 2em;
+    position: relative;
+    top: -1em;
+    font-size: 1.1em;
+    font-weight: 500;
   }
-  }
-  
+}
