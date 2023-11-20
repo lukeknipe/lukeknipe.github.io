@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DM5K75JW4Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-DM5K75JW4Z');
+    </script>
+    <title>Wifi programmable irrigation controller using SONOFF 4CH R3</title>
+    <meta name="description" content="How I made an open-source, programmable Wifi irrigation controller using a SONOFF 4CH R3 smart switch and about 60 bucks worth of parts.">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Wifi programmable irrigation controller using SONOFF 4CH R3">
+    <meta itemprop="description" content="How I made an open-source, programmable Wifi irrigation controller using a SONOFF 4CH R3 smart switch and about 60 bucks worth of parts.">
+    <meta itemprop="image" content="https://lukeknipe.com/img/bookshelf.jpg">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://lukeknipe.com/verizon_with_google">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wifi programmable irrigation controller using SONOFF 4CH R3">
+    <meta property="og:description" content="How I made an open-source, programmable Wifi irrigation controller using a SONOFF 4CH R3 smart switch and about 60 bucks worth of parts.">
+    <meta property="og:description" content="How I made an open-source, programmable Wifi irrigation controller using a SONOFF 4CH R3 smart switch and about 60 bucks worth of parts.">
+    <meta property="og:description" content="How I made an open-source, programmable Wifi irrigation controller using a SONOFF 4CH R3 smart switch and about 60 bucks worth of parts.">
+    <meta property="og:image" content="https://lukeknipe.com/img/bookshelf.jpg">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wifi programmable irrigation controller using SONOFF 4CH R3">
+    <meta name="twitter:description" content="How I made an open-source, programmable Wifi irrigation controller using a SONOFF 4CH R3 smart switch and about 60 bucks worth of parts.">
+    <meta name="twitter:image" content="https://lukeknipe.com/img/bookshelf.jpg">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <span class="lk">
+          <a href="/">LK</a>
+        </span>
+        <span class="path"> > <a href="https://lukeknipe.com/writing/">Writing</a>
+        </span>
+        </h1>
+      </div>
+      <div class="nav">
+        <ul id="global_nav">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/writing">Writing</a>
+          </li>
+          <li>
+            <a href="/maps">Maps</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="article">
+      <h1>How to set up Verizon 5G Home Internet with Google Wifi</h1>
+      <div class="article-image-right">
+        <img src="../img/bookshelf.jpg">
+      </div>
+      <p>November 9, 2023</p>
+      <p>I recently had occasion to set up one of those new Verizon 5G Home Internet cubes as internet gateway for a Google Wifi network. A bit of googling turned up scant information on how to do this, and some of the information I found was bad. But I figured it out on my own. This is a simple set of instructions for anyone in the same situation.</p>
+      <p>You're going to want to locate your Verizon cube close enough to one of your Google Wifi pucks to connect the two with a short ethernet patch cable.</p>
+      <h2>Step 1: Shut off your devices</h2>
+      <p>Disconnect power from both your Verizon cube and the Google puck you'll be hooking it up to. (It's fine to leave the other pucks running.) If you were previously using Google Wifi with some other kind of internet gateway, like a cable modem, use that same puck to connect to your Verizon cube.</p>
+      <h2>Step 2: Power up your cube and join its wifi network</h2>
+      <p>Plug in your Verizon cube and wait for it to boot up and register itself on the Verizon network. The only cable that should be connected to it at this point is the power cable. Once it shows it's online with a good signal (green light on the front), connect to its wifi using a laptop or some other type of computer with a web browser.</p>
+      <h2>Step 3: Put your Verizon cube into IP Passthrough/Bridge Mode</h2>
+      <p>Log into your Verizon cube's access admin page using the "Network Settings" URL and password listed on the back of the unit. (Unless you've changed the password.) If you have trouble logging in, <u>
+          <a href="https://www.verizon.com/support/knowledge-base-301456/">these instructions from Verizon's knowledge base</a>
+        </u> may help. </p>
+      <p>Once logged in, <u>
+          <a href="https://www.verizon.com/support/knowledge-base-301824/">place the unit in IP Passthrough/Bridge Mode by following Verizon's instructions</a>
+        </u>. After you click "Save Changes", your Verizon cube will reboot, and you will get kicked off its wifi network. It will reboot into IP Passthrough/Bridge Mode, and its wifi radio will shut off. Now you're ready to plug your Verizon cube into your Google puck. </p>
+      <h2>Step 4: Connect your Verizon cube to your Google wifi puck</h2>
+      <div class="article-image-right">
+        <img src="../img/lan2_not_lan1.jpg">
+      </div>
+      <p>Plug an ethernet patch cable into the LAN2 port on your Verizon cube. <b>It is critical that you use LAN2.</b> LAN1 will not work in IP Passthrough/Bridge Mode. </p>
+      <br clear="all">
+      <div class="article-image-right">
+        <img src="../img/wan_not_lan.jpg">
+      </div>
+      <p>Next, Plug the other end of the cable into the WAN (not the LAN!) port of your Google puck.</p>
+      <br clear="all">
+      <h2>Step 2: Power up your Google wifi puck and enjoy</h2>
+      <p>Plug your Google puck back into its power cable and wait for it to boot and join the network. This might take a few minutes. Its light will glow white when it's ready.</p>
+      <p>That should be all you need to do.</p>
+    </div>
+    <div class="footer">
+      <br>
+      <br>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+        <a property="dct:title" rel="cc:attributionURL" href="https://lukeknipe.com/verizon_with_google/">How to set up Verizon 5G Home Internet with Google Wifi</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lukeknipe.com/">Luke Knipe</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+        </a>
+      </p>
+    </div>
+  </body>
+</html>
