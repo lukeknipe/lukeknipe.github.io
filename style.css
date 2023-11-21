@@ -95,6 +95,12 @@
     max-width: 75%;
   }
 
+  .article-disclaimer {
+    font-size: .8em;
+    color: #666666;
+    font-style: italic;
+  }
+
   .article-image-right img {
     max-width: 50%;
     height: auto;
