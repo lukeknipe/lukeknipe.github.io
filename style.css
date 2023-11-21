@@ -36,6 +36,10 @@
     font-size: 1em;
   }
 
+  h1 {
+    line-height: 1.2em;
+  }
+
   .header {
     height: 4em;
     min-width: 300px;
