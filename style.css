@@ -112,6 +112,15 @@
     margin-right: 0.5em;
   }
 
+  .article-image-left-small img {
+    max-width: 25%;
+    height: auto;
+    float: left;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+  }
+
   .teaser-cat {
     font-size: 0.8em;
     color: #888888;
