@@ -203,6 +203,10 @@
     font-size: 1em;
   }
 
+  table {
+    border-spacing: .4em .9em;
+  }
+  
   .header {
     height: 4em;
     min-width: 300px;
