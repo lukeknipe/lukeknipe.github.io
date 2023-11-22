@@ -118,6 +118,11 @@
     margin-right: 0.5em;
   }
 
+  .article-image-left-small {
+    clear: both;
+    margin-bottom: 6em;
+}
+  
   .article-image-left-small img {
     max-width: 20%;
     height: auto;
