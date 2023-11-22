@@ -257,6 +257,12 @@
     max-width: 100%;
   }
 
+  .article-disclaimer {
+    font-size: .8em;
+    color: #666666;
+    font-style: italic;
+  }
+  
   .article-image-right img {
     max-width: 100%;
     height: auto;
@@ -269,10 +275,24 @@
     max-width: 100%;
     height: auto;
     float: left;
-    border-radius: .5em;
-    margin-bottom: 1em;
+    border-radius: 1em;
   }
 
+  .article-image-left-small {
+    clear: left;
+    margin-bottom: 6em;
+}
+  
+  .article-image-left-small img {
+    max-width: 90%;
+    height: auto;
+    float: left;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  
   .teaser-cat {
     font-size: 0.8em;
     color: #888888;
