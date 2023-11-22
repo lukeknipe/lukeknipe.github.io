@@ -119,7 +119,7 @@
   }
 
   .article-image-left-small {
-    clear: both;
+    clear: left;
     margin-bottom: 6em;
 }
   
