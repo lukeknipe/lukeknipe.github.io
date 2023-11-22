@@ -269,7 +269,8 @@
     max-width: 100%;
     height: auto;
     float: left;
-    border-radius: 1em;
+    border-radius: .5em;
+    margin-bottom: 1em;
   }
 
   .teaser-cat {
