@@ -210,6 +210,7 @@
   .header {
     height: 4em;
     min-width: 300px;
+    padding-bottom: 1em;
   }
 
   .logo {
@@ -234,8 +235,7 @@
     text-align: left;
     border-style: solid;
     border-radius: 0.8em;
-    width: 25em;
-    height: 10em;
+    width: 93%;
     padding: 0.4em;
     background-size: cover;
     border-width: 1px;
