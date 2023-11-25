@@ -69,7 +69,7 @@ body {
     map.on('load', function () {
       map.addSource('value_per', {
         type: 'vector',
-        url: 'mapbox://lukeknipe.bcey9pvm'  
+        url: 'mapbox://lukeknipe.bcey9pvm'  // Tileset URL
       });
 
       map.addLayer({
@@ -78,7 +78,7 @@ body {
         'source': 'value_per',
         'source-layer': 'value_per',
         paint: {
-          'circle-opacity': 0
+          'circle-opacity': 0 // Setting opacity to zero because this feature is only here to supply data to the popup
         }
 
       })
