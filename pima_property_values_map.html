@@ -67,15 +67,15 @@ body {
     });
 
     map.on('load', function () {
-      map.addSource('bcey9pvm', {
+      map.addSource('value_per', {
         type: 'vector',
         url: 'mapbox://lukeknipe.bcey9pvm'  
       });
 
       map.addLayer({
-        'id': 'bcey9pvm',
+        'id': 'value_per',
         'type': 'circle',
-        'source': 'bcey9pvm',
+        'source': 'value_per',
         'source-layer': 'value_per',
         paint: {
           'circle-opacity': 0
@@ -90,7 +90,7 @@ body {
         var sqft = e.features[0].properties.SQ_FT;
 //        var value_per = e.features[0].properties.VALUE_PER;
         var vp = value/sqft;
-        let bcey9pvm = vp.toFixed(2);
+        let value_per = vp.toFixed(2);
 
         while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
           coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
@@ -98,15 +98,15 @@ body {
 
         new mapboxgl.Popup()
           .setLngLat(coordinates)
-          .setHTML(address + "<br>2024 Value: " + value + "<br>Square Footage: " + sqft + "<br>Value/sqft: <b>$" + bcey9pvm + "</b>")
+          .setHTML(address + "<br>2024 Value: " + value + "<br>Square Footage: " + sqft + "<br>Value/sqft: <b>$" + value_per + "</b>")
           .addTo(map);
       });
 
-      map.on('mouseenter', 'bcey9pvm', function () {
+      map.on('mouseenter', 'value_per', function () {
         map.getCanvas().style.cursor = 'pointer';
       });
 
-      map.on('mouseleave', 'bcey9pvm', function () {
+      map.on('mouseleave', 'value_per', function () {
         map.getCanvas().style.cursor = '';
       });
 
