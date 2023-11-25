@@ -69,7 +69,7 @@ body {
     map.on('load', function () {
       map.addSource('value_per', {
         type: 'vector',
-        url: 'mapbox://lukeknipe.value_per'
+        url: 'mapbox://lukeknipe.bcey9pvm'  
       });
 
       map.addLayer({
@@ -98,7 +98,7 @@ body {
 
         new mapboxgl.Popup()
           .setLngLat(coordinates)
-          .setHTML(address + "<br>2023 Value: " + value + "<br>Square Footage: " + sqft + "<br>Value/sqft: <b>$" + value_per + "</b>")
+          .setHTML(address + "<br>2024 Value: " + value + "<br>Square Footage: " + sqft + "<br>Value/sqft: <b>$" + value_per + "</b>")
           .addTo(map);
       });
 
