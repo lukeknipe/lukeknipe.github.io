@@ -85,9 +85,9 @@ body {
 
       map.on('click', 'value_per', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
-        var address = e.features[0].properties.ADDRESS;
-        var value = e.features[0].properties.VALUE;
-        var sqft = e.features[0].properties.SQFT;
+        var address = e.features[0].properties.ADDRESS_OL;
+        var value = e.features[0].properties.FCV;
+        var sqft = e.features[0].properties.SQ_FT;
 //        var value_per = e.features[0].properties.VALUE_PER;
         var vp = value/sqft;
         let value_per = vp.toFixed(2);
