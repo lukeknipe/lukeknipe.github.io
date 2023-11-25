@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pima County: Changes in Residential Property Values</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
+<style>
+body {
+   margin: 0;
+   padding: 0;
+   }
+ h2,
+      h3 {
+        margin: 10px;
+        font-size: 14px;
+      }
+      h3 {
+        font-size: 14px;
+      }
+      p {
+        margin: 10px;
+      }
+.map-overlay {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: #fff;
+   margin-right: 20px;
+   font-family: Arial, sans-serif;
+   overflow: auto;
+   border-radius: 3px;
+   }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#legend {
+        opacity: 0.75;
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 16px;
+        font-size: 13px;
+        height: 270px;
+        margin-bottom: 40px;
+        width: 90px;
+      }
+   .legend-key {
+        display: inline-block;
+        border-radius: 20%;
+        width: 10px;
+        height: 10px;
+        margin-right: 5px;
+      }
+</style>
+
+</head>
+<body>
+<div id="map"></div>
+<div class="map-overlay" id="legend"><b>% Change in value from Tax Year 2019 to 2023</b><br><br></div>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoibHVrZWtuaXBlIiwiYSI6ImNqMTh5cnludzA2dmQzM210MHM1eXNoMncifQ.8jLT0llZDjWFbeXIewOKdw';
+
+    const map = new mapboxgl.Map({
+        container: 'map', // Container ID
+        style: 'mapbox://styles/lukeknipe/cl1s5do55001f14qlh4pen7na', // Style URL
+        center: [-111, 32.1], // Starting position [lng, lat]
+        zoom: 9 // Starting zoom
+    });
+
+    map.on('load', function () {
+      map.addSource('val_change', {
+        type: 'vector',
+        url: 'mapbox://lukeknipe.dyu290xd' // Tileset URL
+      });
+
+      map.addLayer({
+        'id': 'val_change',
+        'type': 'circle',
+        'source': 'val_change',
+        'source-layer': 'pima_val_change_1923',
+        paint: {
+          'circle-opacity': 0 // Setting opacity to zero because this feature is only here to supply data to the popup
+        }
+
+      })
+
+      // Display dollar amounts in currency number format
+      var formatter = new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      maximumFractionDigits: 0
+      });
+
+      map.on('click', 'val_change', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var address = e.features[0].properties.ADDRESS;
+        var change = e.features[0].properties.PCT_CHANGE;
+        var value23 = formatter.format(e.features[0].properties.ACTUAL_23);
+        var value22 = formatter.format(e.features[0].properties.ACTUAL_22);
+        var value21 = formatter.format(e.features[0].properties.ACTUAL_21);
+        var value20 = formatter.format(e.features[0].properties.ACTUAL_20);
+        var value19 = formatter.format(e.features[0].properties.ACTUAL_19);
+
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+          coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+          .setLngLat(coordinates)
+          .setHTML(address + "<br><b>5-Year Change: " + change + "%</b><br>2023: " + value23 + "<br>2022: " + value22 + "<br>2021: " + value21 + "<br>2020: " + value20 + "<br>2019: " + value19)
+          .addTo(map);
+      });
+
+      map.on('mouseenter', 'val_change', function () {
+        map.getCanvas().style.cursor = 'pointer';
+      });
+
+      map.on('mouseleave', 'val_change', function () {
+        map.getCanvas().style.cursor = '';
+      });
+
+      // Here's where the numbers go for our legend
+      const layers = [
+        '< 14.7',
+        '14.7 - 25.1',
+        '25.1 - 30',
+        '30 - 33.2',
+        '33.2 - 35.8',
+        '35.8 - 38.1',
+        '38.1 - 40.4',
+        '40.4 - 43',
+        '43 - 46.5',
+        '46.5 - 51.9',
+        '51.9 - 62.5',
+        '> 62.5',
+      ];
+
+    // Here's where the colors go
+    const colors = [
+        '#f1eef6',
+        '#e8daec',
+        '#dec5e1',
+        '#d8aed5',
+        '#db91c6',
+        '#de73b7',
+        '#df58a6',
+        '#de3d91',
+        '#de227c',
+        '#ca1469',
+        '#b10a56',
+        '#980043'
+      ];
+
+    // Here's where we draw the legend
+      const legend = document.getElementById('legend');
+
+      layers.forEach((layer, i) => {
+        const color = colors[i];
+        const item = document.createElement('div');
+        const key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        const value = document.createElement('span');
+        value.innerHTML = `${layer}`;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      });
+
+      });
+
+</script>
+
+</body>
+</html>
