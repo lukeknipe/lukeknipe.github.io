@@ -95,6 +95,11 @@
     max-width: 75%;
   }
 
+  .article a:link {
+    text-decoration: underline;
+    color: #000000;
+  }
+
   .article-disclaimer {
     font-size: .8em;
     color: #666666;
