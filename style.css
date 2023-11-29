@@ -109,6 +109,14 @@
     padding: 0.5em;
   }
 
+  .article-image-right-big img {
+    max-width: 70%;
+    height: auto;
+    float: right;
+    border-radius: 1em;
+    padding: 0.5em;
+  }
+
   .article-image-left img {
     max-width: 50%;
     height: auto;
