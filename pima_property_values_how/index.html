@@ -12,23 +12,23 @@
       gtag('js', new Date());
       gtag('config', 'G-DM5K75JW4Z');
     </script>
-    <title>How I made the Pima Property Values map</title>
-    <meta name="description" content="A brief explanation of how I created the Pima Property Values map.">
+    <title>About the Pima Property Values map</title>
+    <meta name="description" content="A brief explanation of the Pima Property Values map and how I created it.">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="How I made the Pima Property Values map">
-    <meta itemprop="description" content="A brief explanation of how I created the Pima Property Values map.">
+    <meta itemprop="name" content="About the Pima Property Values map">
+    <meta itemprop="description" content="A brief explanation of the Pima Property Values map and how I created it.">
     <meta itemprop="image" content="https://lukeknipe.com/img/pima_property_values.png">
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="http://lukeknipe.com/pima_property_values">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="How I made the Pima Property Values map">
-    <meta property="og:description" content="A brief explanation of how I created the Pima Property Values map.">
+    <meta property="og:title" content="About the Pima Property Values map">
+    <meta property="og:description" content="A brief explanation of the Pima Property Values map and how I created it.">
     <meta property="og:image" content="https://lukeknipe.com/img/pima_property_values.png">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="How I made the Pima Property Values map">
-    <meta name="twitter:description" content="A brief explanation of how I created the Pima Property Values map.">
+    <meta name="twitter:title" content="About the Pima Property Values map">
+    <meta name="twitter:description" content="A brief explanation of the Pima Property Values map and how I created it.">
     <meta name="twitter:image" content="https://lukeknipe.com/img/pima_property_values.png">
     <link rel="canonical" href="http://lukeknipe.com/pima_property_values" />
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -59,12 +59,23 @@
       </div>
     </div>
     <div class="article">
-      <h1>How to set up Verizon 5G Home Internet with Google Wifi</h1>
+      <h1>About the Pima Property Values Map</h1>
       <div class="article-image-right">
-        <img src="../img/bookshelf.jpg">
+        <a href="http://lukeknipe.com/pima_property_values"><img src="../img/pima_property_values.png"></a>
       </div>
       <p>November 28, 2023</p>
-      <p>I recently had occasion to set up one of those new Verizon 5G Home Internet cubes as internet gateway for a Google Wifi network. A bit of googling turned up scant information on how to do this, and some of the information I found was bad. But I figured it out on my own. This is a simple set of instructions for anyone in the same situation.</p>
+      <p>The <a href="http://lukeknipe.com/pima_property_values">Pima property values map</a> shows values per square foot of residential properties in Pima County.</p>
+      <p>Interact with the map by zooming in and out, and clicking on the dots to see individual property characteristics.</p>
+      <iframe loading="lazy" src="pima_property_values_map.html" width="100%" height="600"></iframe>
+      <h2 class="section-heading">The data</h2>
+      <p>The appraised value and square footage data shown here was obtained from records <a href="https://www.asr.pima.gov/Download" base target="_blank">publicly available for download on the Pima County Assessor’s website</a>. The values shown are for tax year 2023 and reflect the assessor’s most current appraisals.</p>
+      <p>This map shows the 304,486 parcels <a href="https://www.asr.pima.gov/Division/Real/Residential" base target="_blank">treated as “residential”</a> by the assessor. Each is represented by a color-coded dot, colored according to its value per square foot. (See the key in the bottom right corner of the map.)</p>
+      <h2 class="section-heading">A vector tile approach</h2>
+      <p>300K is too many features for a client-side mapping system like Leaflet to render. Instead, this map's features are displayed and accessed using vector tiles, which I created using <a href="https://github.com/mapbox/tippecanoe" base target="_blank">a cool program called Tippecanoe</a>. Tippecanoe inputs a GeoJSON file and outputs a vector <a href="https://docs.mapbox.com/help/glossary/mbtiles/" base target="_blank">.mbtiles file</a>, which can then be uploaded to <a href="https://www.mapbox.com/" base target="_blank">mapbox.com</a> and styled using <a href="https://www.mapbox.com/mapbox-studio" base target="_blank">Mapbox Studio</a>.
+      <p>The algorithms in Tippecanoe aim to represent the texture and density of your data at any level of zoom. They're complex, and the user has the option of specifying all sorts of parameters. But I found that just using the <a href="https://github.com/mapbox/tippecanoe#try-this-first" base target="_blank">"Try this first" command example</a> in the program's README file provided exactly the result I was looking for.
+      <h2 class="section-heading">Adding interactivity</h2>
+      <p>One of the things that makes this map special is its ability to quickly show attribute data in a pop-up window for any of its 304,486 features. Click on one of the dots, and the map will show you that property's address, value, square footage, and value per square feet. I developed this feature using the <a href="https://docs.mapbox.com/mapbox-gl-js/guides/" base target="_blank">Mapbox GL JavaScript Library</a>, which allows for client-side rendering of vector tile data in the form of pop-ups, hover effects, and so on.</p>
+  </div>
     </div>
     <div class="footer">
       <br>
