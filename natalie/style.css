@@ -1,0 +1,224 @@
+/* CSS for desktop devices -------------------------------------------------- */
+@media only screen and (min-width: 750px) {
+  body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #000000;
+    background-color: #000000;
+    height: 100%;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #000000;
+  }
+
+  a:active {
+    text-decoration: underline;
+    color: #000000;
+  }
+
+.container {
+  margin:0 auto;
+  border-style: none;
+  background-color: #ffffff;
+  
+  top: 40px;
+  bottom: 20px;
+max-width: 950px;
+  min-width: 790px;
+  height: 99vh;
+}
+
+.logo{
+  float: left;
+  width: 33%;
+  background-color: #ffffff;
+
+
+}
+
+.logo img{
+  margin:0 auto;
+  width: 100%;
+}
+
+.join_form{
+position: absolute;
+margin: 1em;
+top: clamp(200px, 25vw, 250px);
+padding: 1em;
+background-color: #add0eb;
+border-style: dotted;
+border-radius: .8em;
+border: 2px dotted #777777;
+max-width: clamp(170px, 23vw, 250px);
+}
+
+.join_form input[type=text],[type=email] {
+  margin: 1%;
+  border: 2px solid #509dae;
+  border-radius: 7px;
+  padding: .4vw;
+  width: 90%;
+}
+
+.join_form input[type=submit] {
+  margin: .2vw;
+  border: 2px solid #509dae;
+  border-radius: 7px;
+  padding: .4vw;
+  width: 17.5vw;
+}
+  
+.menu{
+float: left;
+width: 66%;
+line-height: 4em;
+font-size: 1.2em;
+font-weight: 600;
+background-color: #ffffff;
+display: flex; 
+justify-content: space-evenly;
+}
+
+.menu_item{
+  float: left;
+  background-color: #ffffff;
+}
+
+.headshot{
+  float: left;
+  width: 66%;
+  background-color: #ffffff;
+  display: flex; 
+  justify-content: space-evenly;
+
+}
+
+.logo img{
+  float: left;
+  width: 100%;
+}
+
+}
+ 
+
+/* CSS for mobile devices in portrait view ---------------------------------- */
+@media only screen and (max-width: 749px) and (orientation: portrait) {
+    body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #000000;
+    background-color: #000000;
+    height: 100%;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #000000;
+  }
+
+  a:active {
+    text-decoration: underline;
+    color: #000000;
+  }
+
+.container {
+  margin:0 auto;
+  border-style: none;
+  background-color: #ffffff;
+  height: 99vh;
+}
+
+.logo{
+  float: none;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.logo img{
+  margin:0 auto;
+  width: 100%;
+}
+
+.join_form{
+display: none;
+position: absolute;
+margin: 1em;
+top: clamp(200px, 25vw, 250px);
+padding: 1em;
+background-color: #add0eb;
+border-style: dotted;
+border-radius: .8em;
+border: 2px dotted #FFFFFF;
+max-width: clamp(170px, 23vw, 250px);
+}
+
+.join_form input[type=text],[type=email] {
+  margin: 1%;
+  border: 2px solid #509dae;
+  border-radius: 7px;
+  padding: .4vw;
+  width: 90%;
+}
+
+.join_form input[type=submit] {
+  margin: .2vw;
+  border: 2px solid #509dae;
+  border-radius: 7px;
+  padding: .4vw;
+  width: 17.5vw;
+}
+  
+.menu{
+width: 100%;
+line-height: 1.5em;
+font-size: 1.5em;
+font-weight: 600;
+text-align: center;
+background-color: #ffffff;
+}
+
+.headshot{
+  width: 96%;
+  display: flex; 
+  justify-content: space-evenly;
+  position: absolute;
+  height: 55vh;
+  background-color: #ffffff;
+}
+
+  .headshot img{
+  width: 94%;
+    left: 3vw;
+  display: flex; 
+  justify-content: space-evenly;
+  position: absolute;
+    background-color: #ffffff;
+
+}
+
+}
