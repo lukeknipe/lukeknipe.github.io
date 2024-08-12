@@ -99,6 +99,12 @@ justify-content: space-evenly;
   background-color: #ffffff;
 }
 
+.menu_item_red{
+  float: left;
+  background-color: #ffffff;
+color: #FF0000;
+}
+
 .headshot{
   float: left;
   width: 66%;
