@@ -121,6 +121,11 @@ justify-content: space-evenly;
   padding: 2%;
   border-radius: 5%;
 }
+
+  .text li {
+padding-top: .8em;
+    
+}
   
 .logo img{
   float: left;
