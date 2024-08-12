@@ -162,7 +162,7 @@ justify-content: space-evenly;
   margin:0 auto;
   border-style: none;
   background-color: #ffffff;
-  height: 99vh;
+  height: 100%;
 }
 
 .logo{
@@ -231,8 +231,19 @@ background-color: #ffffff;
   position: absolute;
     background-color: #ffffff;
  border-radius: 5%;
-
-
 }
+
+  .text{
+  margin-left: 5%;
+  margin-right: 5%;
+     background-color: #ffffff;
+}
+
+.text img {
+  width: 95%;
+  padding: 2%;
+  border-radius: 5%;
+}
+  
 
 }
