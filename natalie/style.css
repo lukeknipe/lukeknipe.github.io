@@ -42,6 +42,7 @@ max-width: 950px;
   border-radius: 10px;
   min-height: 100%;
   padding-bottom: 2vh;
+  height: 100%;
 }
 
 .logo{
@@ -115,7 +116,7 @@ justify-content: space-evenly;
 
 .text{
   margin-left: 38%;
-  margin-right: 5%;
+  margin-right: 5%;  
 }
 
 .text img {
