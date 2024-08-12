@@ -106,7 +106,6 @@ justify-content: space-evenly;
 
 .headshot img{
  border-radius: 5%;
-
 }
 
 .text{
@@ -231,6 +230,8 @@ background-color: #ffffff;
   justify-content: space-evenly;
   position: absolute;
     background-color: #ffffff;
+ border-radius: 5%;
+
 
 }
 
