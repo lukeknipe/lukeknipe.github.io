@@ -45,8 +45,6 @@ max-width: 950px;
   float: left;
   width: 33%;
   background-color: #ffffff;
-
-
 }
 
 .logo img{
@@ -104,6 +102,10 @@ justify-content: space-evenly;
   background-color: #ffffff;
   display: flex; 
   justify-content: space-evenly;
+}
+
+.headshot img{
+ border-radius: 5%;
 }
 
 .text{
