@@ -39,17 +39,22 @@
 max-width: 950px;
   min-width: 790px;
   height: 99vh;
+  border-radius: 10px;
+  height: 100%;
+  padding-bottom: 2vh;
 }
 
 .logo{
   float: left;
   width: 33%;
   background-color: #ffffff;
+  border-radius: 10px;
 }
 
 .logo img{
   margin:0 auto;
   width: 100%;
+  border-radius: 10px;
 }
 
 .join_form{
