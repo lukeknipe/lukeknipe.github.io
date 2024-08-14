@@ -83,6 +83,18 @@ max-width: clamp(170px, 23vw, 250px);
   width: 17.5vw;
 }
   
+.endorsements {
+position: absolute;
+margin: 1em;
+top: clamp(200px, 25vw, 250px);
+padding: 1em;
+background-color: #add0eb;
+border-style: dotted;
+border-radius: .8em;
+border: 2px dotted #777777;
+max-width: clamp(170px, 23vw, 250px);
+}
+
 .menu{
 float: left;
 width: 66%;
