@@ -64,7 +64,7 @@ background-color: #add0eb;
 border-style: dotted;
 border-radius: .8em;
 border: 2px dotted #777777;
-max-width: clamp(170px, 23vw, 250px);
+max-width: clamp(200px, 25.5vw, 250px);
 }
 
 .join_form input[type=text],[type=email] {
@@ -86,13 +86,13 @@ max-width: clamp(170px, 23vw, 250px);
 .endorsements {
 position: absolute;
 margin: 1em;
-top: clamp(200px, 25vw, 250px);
+top: clamp(390px, 48vw, 490px);
 padding: 1em;
 background-color: #add0eb;
 border-style: dotted;
 border-radius: .8em;
 border: 2px dotted #777777;
-max-width: clamp(170px, 23vw, 250px);
+max-width: clamp(200px, 25.5vw, 250px);
 }
 
 .menu{
