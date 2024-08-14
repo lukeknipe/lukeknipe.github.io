@@ -88,11 +88,16 @@ position: absolute;
 margin: 1em;
 top: clamp(390px, 48vw, 490px);
 padding: 1em;
-background-color: #add0eb;
+background-color: #ffffff;
 border-style: dotted;
 border-radius: .8em;
 border: 2px dotted #777777;
 max-width: clamp(200px, 25.5vw, 250px);
+}
+
+.endorsements img {
+  max-width: 48%;
+  padding: 2px;
 }
 
 .menu{
