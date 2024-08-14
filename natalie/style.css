@@ -93,6 +93,7 @@ border-style: dotted;
 border-radius: .8em;
 border: 2px dotted #777777;
 max-width: clamp(200px, 25.5vw, 250px);
+line-height: 2em;
 }
 
 .endorsements img {
