@@ -235,6 +235,24 @@ max-width: clamp(170px, 23vw, 250px);
   padding: .4vw;
   width: 17.5vw;
 }
+
+.endorsements {
+position: absolute;
+margin: 1em;
+top: 980px;
+padding: 1em;
+background-color: #ffffff;
+border-style: dotted;
+border-radius: .8em;
+border: 2px dotted #777777;
+max-width: 100%;
+line-height: 2em;
+}
+
+.endorsements img {
+  max-width: 48%;
+  padding: 2px;
+}
   
 .menu{
 width: 100%;
