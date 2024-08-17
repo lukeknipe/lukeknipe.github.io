@@ -165,7 +165,7 @@ padding-top: .8em;
       Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     color: #000000;
-    background-color: #000000;
+    background-color: #ffffff;
     height: 100%;
   }
 
@@ -193,7 +193,7 @@ padding-top: .8em;
   margin:0 auto;
   border-style: none;
   background-color: #ffffff;
-  height: 100%;
+  min-height: 100%;
 }
 
 .logo{
@@ -239,7 +239,7 @@ max-width: clamp(170px, 23vw, 250px);
 .endorsements {
 position: absolute;
 margin: 1em;
-top: 980px;
+top: 960px;
 padding: 1em;
 background-color: #ffffff;
 border-style: dotted;
