@@ -138,10 +138,10 @@ color: #FF0000;
 }
 
 .disclaimer{
-width: 66%
+  clear: both;
+  background-color: #ffffff;
 color: #777777;
 }
-
 
 .text{
   margin-left: 38%;
