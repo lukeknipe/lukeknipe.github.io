@@ -138,9 +138,10 @@ color: #FF0000;
 }
 
 .disclaimer{
-  clear: both;
-  background-color: #ffffff;
+position: relative;
 color: #777777;
+  text-align: center;
+  bottom: 10vh;
 }
 
 .text{
