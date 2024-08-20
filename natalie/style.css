@@ -137,6 +137,12 @@ color: #FF0000;
  border-radius: 5%;
 }
 
+.disclaimer{
+width: 66%
+color: #777777;
+}
+
+
 .text{
   margin-left: 38%;
   margin-right: 5%;  
