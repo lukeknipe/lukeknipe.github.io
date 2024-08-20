@@ -106,8 +106,9 @@ line-height: 2em;
 .menu{
 float: left;
 width: 66%;
-line-height: 4em;
-font-size: 1.2em;
+padding-top: 1em;
+padding-bottom: 1em;
+font-size: 1.1em;
 font-weight: 600;
 background-color: #ffffff;
 display: flex; 
@@ -117,6 +118,8 @@ justify-content: space-evenly;
 .menu_item{
   float: left;
   background-color: #ffffff;
+  padding-right: .5em;
+  text-align: center;
 }
 
 .menu_item_red{
