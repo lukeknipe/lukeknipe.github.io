@@ -249,9 +249,9 @@ max-width: clamp(170px, 23vw, 250px);
 }
 
 .endorsements {
-position: absolute;
+display: none;
 margin: 1em;
-top: 1020px;
+bottom: 20px;
 padding: 1em;
 background-color: #ffffff;
 border-style: dotted;
@@ -310,5 +310,13 @@ background-color: #ffffff;
 padding-top: 1em;
 }
 
+  .disclaimer{
+position: relative;
+color: #777777;
+  text-align: center;
+    padding: 2em;
+  bottom: 1vh;
+    font-size: 1em;
+}
 
 }
