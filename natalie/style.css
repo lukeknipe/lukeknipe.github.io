@@ -316,6 +316,7 @@ color: #777777;
   text-align: center;
     padding: 2em;
   bottom: 1vh;
+    top: clamp(470px, 25vw, 250px);
     font-size: 1em;
 }
 
