@@ -251,7 +251,7 @@ max-width: clamp(170px, 23vw, 250px);
 .endorsements {
 position: absolute;
 margin: 1em;
-top: 960px;
+top: 1020px;
 padding: 1em;
 background-color: #ffffff;
 border-style: dotted;
