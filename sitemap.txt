@@ -8,3 +8,4 @@ https://lukeknipe.com/verizon_with_google
 https://lukeknipe.com/sonoff_irrigation
 https://lukeknipe.com/pima_property_values
 https://lukeknipe.com/pima_property_values_how
+https://lukeknipe.com/la_crosse_pool_thermometer/
