@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DM5K75JW4Z"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-DM5K75JW4Z');
+    </script>
+    <title>I love Home Assistant. But it's messy.</title>
+    <meta name="description" content="Home Assistant is great. But don't expect it to 'just work'.">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="I love Home Assistant. But it's messy.">
+    <meta itemprop="description" content="Home Assistant is great. But don't expect it to 'just work'.">
+    <meta itemprop="image" content="../img/love_ha_but.png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://lukeknipe.com/love_ha_but/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="I love Home Assistant. But it's messy.">
+    <meta property="og:description" content="Home Assistant is great. But don't expect it to 'just work'.">
+    <meta property="og:image" content="../img/love_ha_but.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="I love Home Assistant. But it's messy.">
+    <meta name="twitter:description" content="Home Assistant is great. But don't expect it to 'just work'.">
+    <meta name="twitter:image" content="../img/love_ha_but.png">
+    <link rel="canonical" href="https://lukeknipe.com/love_ha_but/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <span class="lk">
+          <a href="/">LK</a>
+        </span>
+        <span class="path"> > <a href="https://lukeknipe.com/writing/">Writing</a>
+        </span>
+        </h1>
+      </div>
+      <div class="nav">
+        <ul id="global_nav">
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/writing">Writing</a>
+          </li>
+          <li>
+            <a href="/maps">Maps</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="article">
+      <h1>I love Home Assistant. But it's messy.</h1>
+      <div class="article-image-right">
+        <img src="../img/la_crosse.jpg">
+      </div>
+      <p>January 12, 2025</p>
+      <p>I love Home Assistant. It's the best open-source home automation system there is. (And I've tried a few.) But you're probably not going to love it unless you're someone who enjoys tinkering.</p>
+      <p>The specific model number on my Amazon purchase was 331-09667-INT. I'm not sure what the 'INT' means. (Introductory, maybe?) <a href="https://www.lacrossetechnology.com/products/331-09667v2-wireless-pool-thermometer"><u>An apparently identical product</u></a> sells on the La Crosse website under the model number 331-09667V2 for about ten bucks more. But there's no difference between the two that I can discern.</p><br clear="all">
+      <h2>Plenty of range, long battery life</h2>
+      <div class="article-image-left">
+        <img src="../img/thermometer_in_pool.png">
+      </div>
+      <p>My pool is about 80 feet from the spot inside my house where the remote display sits. The remote display has a little bar graph that shows signal strength on a scale of one bar to five. At 80 feet, with an exterior masonry wall between it and the pool thermometer, it shows five bars.</p>
+      <p>Unfortunately, there is no indicator on the remote display to show the battery condition of the transmitting unit. That would have been a nice feature. But three months along, the two disposable 'AA' batteries are powering the unit just fine.</p>
+      <p>I was initially concerned about the LCD screen on the transmitting unit. LCD screens constantly exposed to direct sun never do well over the long haul, and I'll be surprised if this one is still readable a year from now. But as long as it continues to transmit, I'm not going to worry about its display. It's nice being able to glance at it while walking past the pool and be able to see the temp, but the main reason I wanted this was so I could see the pool temp from inside the house.</p><br clear="all">
+      <h2>Transmits on 914.9MHz, can be made to work with Home Assistant</h2>
+      <div class="article-image-right">
+        <img src="../img/pool_water.png">
+      </div>
+    <p>My favorite thing about this wireless thermometer is I can pull its data into my Home Assistant instance. Achieving this took some tinkering: I used an RTL-SDR dongle, plus <a href="https://github.com/merbanan/rtl_433"><u>Benjamin Larsson's awesome RTL_433 program</u></a>, to capture the thermometer's signal and output it to my local network as MQTT. I also used <a href="https://github.com/pbkhrv/rtl_433-hass-addons/tree/main/rtl_433_mqtt_autodiscovery"><u>this great Home Assistant Add-on for RTL_433 users</u></a> that automatically discovers sensor data in the MQTT stream, making the data easy to use in your integrations. I'll try to write more on how to do this as soon as I get the chance.</p>
+    </div>
+    <div class="footer">
+      <br>
+      <br>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+        <a property="dct:title" rel="cc:attributionURL" href="https://lukeknipe.com/la_crosse_pool_thermometer/">Pretty Good Pool Thermometer</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://lukeknipe.com/">Luke Knipe</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+          <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+        </a>
+      </p>
+    </div>
+  </body>
+</html>
