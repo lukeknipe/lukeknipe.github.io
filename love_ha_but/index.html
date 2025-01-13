@@ -68,9 +68,10 @@
       <p>Sometimes the tinkering is fun. Other times, not so much. Last night I spent a few hours trying to fix my Z-Wave integration, which had vanished unexpectedly after my last round of updates. My Z-Wave JS add-on still worked, but I could no longer see its integration, and could no longer control my Z-Wave devices.</p>
 <p>And that's the thing about Home Assistant: This kind of stuff sometimes happens. You've just gotta roll with it.</p>
 <p>Searching online forums, I found a few instances of folks having the same problem, and some seeminlyg plausible theories of its cause (something to do with the USB bus), but no real solutions. I eventually discovered the J-Wave JS add-on has an MQTT Gateway option in its setting, which is disabled by default. Assuming you have an MQTT broker (like Mosquito) configured, which I did, you can just enable the Z-Wave MQTT Gateway; tweak its settings as needed; and then just control your Z-Wave devices via MQTT and get on with your life.</p><br clear="all">
- <h2>Different wireless technologies, different results</h2>
-<p>My HA setup involves a hodgepodge of wireless technologies, all of which have their pros and cons. Here's a rundown of what I'm using:</p>
-<li>802.11 Wifi:</li>
+ <h2>Different wireless technologies; different pros, cons</h2>
+<p>My HA setup involves a hodgepodge of wireless technologies. Here's a rundown:</p>
+<li><b>802.11 Wifi</b>: some Sonoff switches for lighting, and my irrigation controller. All my wifi IoT devices are Esperssif ESP8266-based, and all run Tasmota.</li>
+<li><b>RTL-SDR</b>: my swimming pool thermometer, which I wrote about the other day. It's an off-the-shelf La Crosse unit, but I was able to pick up its signal and integrate it into HA using the RTL_433 program and the HA RTL_433 add-on.</li>
     </div>
     <div class="footer">
       <br>
